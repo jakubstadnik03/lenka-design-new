@@ -1,0 +1,198 @@
+[
+  {
+    "id": 1,
+    "title": "Komerční projekty",
+    "description": "Vytvořte ve svém domově oázu klidu renovací koupelny. Služby mohou zahrnovat instalaci dlažby, modernizaci příslušenství, výměnu vany a optimalizaci úložných řešení.",
+    "link": "komercni-projekty",
+    "gallery": [
+      "/assets/images/gallery/komercni-projekty1.jpeg",
+      "/assets/images/gallery/komercni-projekty2.jpeg",
+      "/assets/images/gallery/komercni-projekty3.jpeg",
+      "/assets/images/gallery/komercni-projekty4.jpeg",
+      "/assets/images/gallery/komercni-projekty5.jpeg",
+      "/assets/images/gallery/komercni-projekty6.jpeg",
+      "/assets/images/gallery/komercni-projekty7.jpeg",
+      "/assets/images/gallery/komercni-projekty8.jpeg",
+      "/assets/images/gallery/komercni-projekty9.jpeg",
+      "/assets/images/gallery/komercni-projekty10.jpeg",
+      "/assets/images/gallery/komercni-projekty11.jpeg",
+      "/assets/images/gallery/komercni-projekty12.jpeg",
+      "/assets/images/gallery/komercni-projekty13.jpeg",
+      "/assets/images/gallery/komercni-projekty14.jpeg",
+      "/assets/images/gallery/komercni-projekty15.jpeg"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Malý byt",
+    "description": "Optimalizujte prostor ve vašem malém bytě pomocí chytrých úložných řešení, multifunkčního nábytku a designových triků pro vytvoření iluze většího prostoru.",
+    "link": "maly-byt",
+    "gallery": [
+      "/assets/images/gallery/maly-byt1.jpeg",
+      "/assets/images/gallery/maly-byt2.jpeg",
+      "/assets/images/gallery/maly-byt3.jpeg",
+      "/assets/images/gallery/maly-byt4.jpeg",
+      "/assets/images/gallery/maly-byt5.jpeg",
+      "/assets/images/gallery/maly-byt6.jpeg",
+      "/assets/images/gallery/maly-byt7.jpeg",
+      "/assets/images/gallery/maly-byt8.jpeg"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Celý dům",
+    "description": "Komplexní renovace celého domu, včetně všech místností, zajišťuje konzistentní styl a funkčnost v celém vašem domově.",
+    "link": "cely-dum",
+    "gallery": [
+      "/assets/images/gallery/cely-dum1.jpeg",
+      "/assets/images/gallery/cely-dum2.jpeg",
+      "/assets/images/gallery/cely-dum3.jpeg",
+      "/assets/images/gallery/cely-dum4.jpeg",
+      "/assets/images/gallery/cely-dum5.jpeg",
+      "/assets/images/gallery/cely-dum6.jpeg"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Homestaging",
+    "description": "Homestaging vám pomůže připravit váš domov k prodeji nebo pronájmu, zvýrazní jeho přednosti a zaujme potenciální kupce či nájemce.",
+    "link": "homestaging",
+    "gallery": [
+      "/assets/images/gallery/homestaging1.jpeg",
+      "/assets/images/gallery/homestaging2.jpeg",
+      "/assets/images/gallery/homestaging3.jpeg",
+      "/assets/images/gallery/homestaging4.jpeg",
+      "/assets/images/gallery/homestaging5.jpeg",
+      "/assets/images/gallery/homestaging6.jpeg"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Kuchyně",
+    "description": "Renovace kuchyně zahrnuje modernizaci spotřebičů, instalaci nových skříněk a pracovních ploch a vytvoření funkčního a stylového prostoru pro vaření.",
+    "link": "kuchyne",
+    "gallery": [
+      "/assets/images/gallery/kuchyne1.jpeg",
+      "/assets/images/gallery/kuchyne2.jpeg",
+      "/assets/images/gallery/kuchyne3.jpeg",
+      "/assets/images/gallery/kuchyne4.jpeg",
+      "/assets/images/gallery/kuchyne5.jpeg",
+      "/assets/images/gallery/kuchyne6.jpeg",
+      "/assets/images/gallery/kuchyne7.jpeg",
+      "/assets/images/gallery/kuchyne8.jpeg",
+      "/assets/images/gallery/kuchyne9.jpeg",
+      "/assets/images/gallery/kuchyne10.jpeg"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Obývací pokoje",
+    "description": "Vytvořte příjemný a stylový obývací pokoj, který bude sloužit jako hlavní prostor pro relaxaci a setkání s rodinou a přáteli.",
+    "link": "obyvaci-pokoje",
+    "gallery": [
+      "/assets/images/gallery/obyvaci-pokoje1.jpeg",
+      "/assets/images/gallery/obyvaci-pokoje2.jpeg",
+      "/assets/images/gallery/obyvaci-pokoje3.jpeg",
+      "/assets/images/gallery/obyvaci-pokoje4.jpeg",
+      "/assets/images/gallery/obyvaci-pokoje5.jpeg",
+      "/assets/images/gallery/obyvaci-pokoje6.jpeg",
+      "/assets/images/gallery/obyvaci-pokoje7.jpeg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Dětské pokoje",
+    "description": "Navrhněte dětský pokoj, který kombinuje hravost a funkčnost, a poskytne vašim dětem inspirativní a bezpečné prostředí.",
+    "link": "detske-pokoje",
+    "gallery": [
+      "/assets/images/gallery/detske-pokoje1.jpeg",
+      "/assets/images/gallery/detske-pokoje2.jpeg",
+      "/assets/images/gallery/detske-pokoje3.jpeg",
+      "/assets/images/gallery/detske-pokoje4.jpeg",
+      "/assets/images/gallery/detske-pokoje5.jpeg",
+      "/assets/images/gallery/detske-pokoje6.jpeg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Ložnice",
+    "description": "Transformujte svou ložnici v klidné útočiště s moderními prvky, pohodlným nábytkem a harmonickým designem.",
+    "link": "loznice",
+    "gallery": [
+      "/assets/images/gallery/loznice1.jpeg",
+      "/assets/images/gallery/loznice2.jpeg",
+      "/assets/images/gallery/loznice3.jpeg",
+      "/assets/images/gallery/loznice4.jpeg",
+      "/assets/images/gallery/loznice5.jpeg",
+      "/assets/images/gallery/loznice6.jpeg",
+      "/assets/images/gallery/loznice7.jpeg",
+      "/assets/images/gallery/loznice8.jpeg",
+      "/assets/images/gallery/loznice9.jpeg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Koupelny",
+    "description": "Renovujte svou koupelnu moderními materiály, elegantními prvky a praktickými řešeními, která zvýší komfort a styl vašeho domova.",
+    "link": "koupelny",
+    "gallery": [
+      "/assets/images/gallery/koupelny1.jpeg",
+      "/assets/images/gallery/koupelny2.jpeg",
+      "/assets/images/gallery/koupelny3.jpeg",
+      "/assets/images/gallery/koupelny4.jpeg",
+      "/assets/images/gallery/koupelny5.jpeg",
+      "/assets/images/gallery/koupelny6.jpeg",
+      "/assets/images/gallery/koupelny7.jpeg",
+      "/assets/images/gallery/koupelny8.jpeg",
+      "/assets/images/gallery/koupelny9.jpeg",
+      "/assets/images/gallery/koupelny10.jpeg",
+      "/assets/images/gallery/koupelny11.jpeg",
+      "/assets/images/gallery/koupelny12.jpeg",
+      "/assets/images/gallery/koupelny13.jpeg",
+      "/assets/images/gallery/koupelny14.jpeg",
+      "/assets/images/gallery/koupelny15.jpeg"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Wellness",
+    "description": "Vytvořte si doma wellness zónu s luxusními prvky jako sauna, vířivka a relaxační prostory pro regeneraci a odpočinek.",
+    "link": "wellness",
+    "gallery": [
+      "/assets/images/gallery/wellness1.jpeg",
+      "/assets/images/gallery/wellness2.jpeg",
+      "/assets/images/gallery/wellness3.jpeg",
+      "/assets/images/gallery/wellness4.jpeg",
+      "/assets/images/gallery/wellness5.jpeg",
+      "/assets/images/gallery/wellness6.jpeg"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Chodby",
+    "description": "Optimalizujte své chodby pro lepší využití prostoru a přidejte stylové prvky, které propojí jednotlivé místnosti ve vašem domě.",
+    "link": "chodby",
+    "gallery": [
+      "/assets/images/gallery/chodby1.jpeg",
+      "/assets/images/gallery/chodby2.jpeg",
+      "/assets/images/gallery/chodby3.jpeg",
+      "/assets/images/gallery/chodby4.jpeg",
+      "/assets/images/gallery/chodby5.jpeg",
+      "/assets/images/gallery/chodby6.jpeg"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Nábytek na míru",
+    "description": "Vytvořte si jedinečný nábytek na míru, který perfektně zapadne do vašeho interiéru a splní všechny vaše potřeby a přání.",
+    "link": "nabytek-na-miru",
+    "gallery": [
+      "/assets/images/gallery/nabytek-na-miru1.jpeg",
+      "/assets/images/gallery/nabytek-na-miru2.jpeg",
+      "/assets/images/gallery/nabytek-na-miru3.jpeg",
+      "/assets/images/gallery/nabytek-na-miru4.jpeg",
+      "/assets/images/gallery/nabytek-na-miru5.jpeg",
+      "/assets/images/gallery/nabytek-na-miru6.jpeg"
+    ]
+  }
+]

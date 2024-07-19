@@ -1,0 +1,59 @@
+/* Hide navigation buttons */
+.mySwiper-banner-one .swiper-button-next,
+.mySwiper-banner-one .swiper-button-prev {
+  display: none;
+}
+
+/* Swiper pagination bullets */
+.mySwiper-banner-one .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  background: transparent;
+  border: 2px solid white;
+  opacity: 1;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.mySwiper-banner-one .swiper-pagination-bullet-active {
+  border-color: var(--color-primary);
+  background-color: transparent;
+}
+
+/* Center pagination bullets */
+.mySwiper-banner-one .swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 45vw;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Left swiper slide visibility */
+.mySwiper-banner-oneleft .swiper-slide {
+  display: none;
+}
+
+.mySwiper-banner-oneleft .swiper-slide.active {
+  display: block;
+}
+
+.mySwiper-banner-oneleft .swiper-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.rts-btn.btn-border {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.rts-btn.btn-border:hover,
+.rts-btn.btn-border:focus {
+  background-color: var(--color-primary);
+  color: white;
+}
