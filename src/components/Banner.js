@@ -40,10 +40,10 @@ const Banner = () => {
                 className="mySwiper-banner-one"
                 spaceBetween={30}
                 centeredSlides={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //   delay: 2500,
+                //   disableOnInteraction: false,
+                // }}
                 pagination={{
                   clickable: true,
                 }}
@@ -54,7 +54,7 @@ const Banner = () => {
                   <SwiperSlide key={index}>
                     <div className="signle-swiper-start">
                       <div className="thumbnail-banner-one">
-                        <img src={banner.img} alt="banner" style={{ height: "90vh", width: "100vw", objectFit: "cover", objectPosition: "left" }} />
+                        <img src={banner.img} alt="banner" className="banner-img"  />
                       </div>
                     </div>
                   </SwiperSlide>

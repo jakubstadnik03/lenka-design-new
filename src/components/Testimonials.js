@@ -48,7 +48,16 @@ const Testimonials = () => {
                 modules={[Pagination]}
                 pagination={{ clickable: true }}
                 spaceBetween={30}
-                slidesPerView={2}
+                breakpoints={{
+                    // when window width is >= 640px
+                    640: {
+                      slidesPerView: 1,
+                    },
+                    // when window width is >= 768px
+                    768: {
+                      slidesPerView: 2,
+                    },
+                  }}
                 className="swiper-testimonails-one"
               >
                 {testimonialsData.map((testimonial, index) => (

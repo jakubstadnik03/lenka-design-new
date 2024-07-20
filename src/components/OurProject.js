@@ -52,7 +52,17 @@ const OurProject = () => {
                   prevEl: '.swiper-button-prev',
                 }}
                 spaceBetween={0}
-                slidesPerView={3}
+      
+                breakpoints={{
+                  // when window width is >= 640px
+                  640: {
+                    slidesPerView: 1,
+                  },
+                  // when window width is >= 768px
+                  768: {
+                    slidesPerView: 3,
+                  },
+                }}
                 className="swiper-product-one"
               >
                 {firstSixProjects.map((project, index) => (

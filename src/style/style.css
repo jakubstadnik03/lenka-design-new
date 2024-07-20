@@ -16440,7 +16440,7 @@ a {
 }
 @media only screen and (max-width: 767px) {
   .left-swiper-area-start .single-left-banner-swiper-start {
-    width: 271px;
+    width: 291px;
     padding: 30px 25px;
   }
 }
@@ -16913,7 +16913,6 @@ a {
   }
 
   .left-swiper-area-start .swiper-slide {
-    opacity: 0 !important;
   }
 
   .pagination-left-banner-one {
@@ -16972,7 +16971,11 @@ a {
   align-items: center;
   justify-content: center;
 }
-
+@media (max-width: 900px){
+  .mySwiper-banner-one .swiper-pagination {
+    left: 20% !important;
+  }
+}
 /* Left swiper slide visibility */
 .mySwiper-banner-oneleft .swiper-slide {
   display: none;
@@ -21251,7 +21254,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 }
 
 .bg-testimonials-1 {
-  /* background-image: url(../images/testimonials/01.jpg); */
+  background-image: url(../images/01.jpg);
 }
 
 .sigle-testimonials-one {
@@ -21382,6 +21385,17 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 @media only screen and (max-width: 575px) {
   .testimonials-style-two-wrapper .bottom-testimonials .rating-artea-two::after {
     display: none;
+  }
+}
+.banner-img{
+height: 90vh;
+ width: 100vw;
+object-fit: cover;
+ object-position: left;
+}
+@media (max-width: 1200px){
+  .banner-img{
+  height: 50vh;
   }
 }
 .testimonials-style-two-wrapper .bottom-testimonials .author-rating-area {

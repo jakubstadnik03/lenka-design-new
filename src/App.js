@@ -14,7 +14,7 @@ import Progress from './components/Progress';
 import FotogalerieDetail from './pages/FotogalerieDetail';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
-import Pricing from './components/PricingPlans';
+import Pricing from './pages/Pricing';
 import PodminkyAPravidla from './pages/PodminkyAPravidla';
 import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
 const App = () => {
