@@ -1,9 +1,32 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import emailjs from "@emailjs/browser";
 import { Link } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const ServiceSidebar = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_47m0lpw",
+        "template_m58cjss",
+        form.current,
+        "na8xge_55u88BuNEA"
+      )
+      .then(
+        (result) => {
+          alert("Vaš dotaz byl úspěšně odeslán!");
+          document.location.href = "/";
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div className="service-left-sidebar-wrapper">
       <div className="service-left-sidebar-wized mb--50">
@@ -27,11 +50,11 @@ const ServiceSidebar = () => {
         </div>
         <div className="body">
           <form action="#">
-            <input type="text" placeholder="Vaše jméno" />
-            <input type="tel" placeholder="Vaše číslo" />
-            <input type="email" placeholder="Váš email" />
-            <textarea placeholder="Zpáva pro mně "></textarea>
-            <button className="rts-btn btn-primary">Obeslat</button>
+            <input type="text" name="user_name" placeholder="Vaše jméno" />
+            <input type="tel" name="user_phone" placeholder="Vaše číslo" />
+            <input type="email" name="user_email" placeholder="Váš email" />
+            <textarea placeholder="Zpáva pro mně " name="message"></textarea>
+            <button className="rts-btn btn-primary" value="send" type="submit">Obeslat</button>
           </form>
         </div>
       </div>

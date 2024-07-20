@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import blogPosts from '../data/blogData.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import ServiceSidebar from '../components/ServiceSidebar';
 const BlogDetails = () => {
   const { id } = useParams();
   const [post, setPost] = useState(null);
@@ -136,21 +137,8 @@ const BlogDetails = () => {
                     ))}
                   </div>
                 </div>
-                <div className="service-left-sidebar-wized">
-                  <div className="topa-rea">
-                    <h4 className="title">Kontaktovat</h4>
-                  </div>
-                  <div className="body">
-                    <form action="#">
-                      <input type="text" placeholder="Vaše jméno" />
-                      <input type="tel" placeholder="Vaše číslo" />
-                      <input type="email" placeholder="Váš email" />
-                      <textarea placeholder="Zpáva pro mně "></textarea>
-                      <button className="rts-btn btn-primary">Obeslat</button>
-                    </form>
-                  </div>
+                <ServiceSidebar />
                 </div>
-              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,29 @@
-import React from 'react';
+import React, {useRef} from 'react';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_47m0lpw",
+        "template_m58cjss",
+        form.current,
+        "na8xge_55u88BuNEA"
+      )
+      .then(
+        (result) => {
+          alert("Vaš dotaz byl úspěšně odeslán!");
+          document.location.href = "/";
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <>
       <div className="breadcrumb-area-bg bg_image">
@@ -65,11 +88,11 @@ const Contact = () => {
             <div className="col-lg-4 col-md-6">
               <form action="#" className="contact-form-conatct-page">
                 <p className="top-contact mb--20">Kontaktní formulář</p>
-                <input type="text" placeholder="Vaše jméno" required />
-                <input type="phone" placeholder="Telefonní číslo" />
-                <input type="main" placeholder="Email" />
-                <textarea placeholder="Vaše zpráva"></textarea>
-                <button className="rts-btn btn-primary mt--30">Odeslat</button>
+                <input type="text"   name="user_name" placeholder="Vaše jméno" required />
+                <input type="tel"  name="user_phone" placeholder="Telefonní číslo" />
+                <input type="email"  name="user_email" placeholder="Email" />
+                <textarea name="message" placeholder="Vaše zpráva"></textarea>
+                <button className="rts-btn btn-primary mt--30" value="send" type="submit">Odeslat</button>
               </form>
             </div>
           </div>
