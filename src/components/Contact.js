@@ -68,10 +68,11 @@ const Contact = () => {
                 </div>
               </div>
               <div className="social-links">
-                <a href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i className="fa-brands fa-twitter"></i></a>
-                <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                <a href="#"><i className="fa-brands fa-linkedin-in"></i></a>
+              <ul className="social-style-two-wrapper social-anim">
+                <li style={{padding: "7px"}}><a className="counter__anim" href="https://www.facebook.com/lenkadesign.cz"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                <li style={{padding: "7px"}}><a className="counter__anim" href="https://www.instagram.com/designlenka/?hl=cs"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li style={{padding: "7px"}}><a className="counter__anim" href="https://cz.linkedin.com/in/lenka-stádn%C3%ADková"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+             </ul>
               </div>
             </div>
           </div>

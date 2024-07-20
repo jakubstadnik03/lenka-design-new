@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-const serviceIcons = ["/assets/icons/icon1.svg", "/assets/icons/icon2.svg", "/assets/icons/icon3.svg", "/assets/icons/icon4.svg"];
 import servicesData from '../data/services.json';
+const serviceIcons = ["/assets/icons/icon1.svg", "/assets/icons/icon2.svg", "/assets/icons/icon3.svg", "/assets/icons/icon4.svg"];
 
 const ServiceArea = () => {
   return (
@@ -23,7 +23,7 @@ const ServiceArea = () => {
               <p className="disc">
                 V Luxury Living Designs se specializujeme na vytváření mimořádných obytných prostor, které vyzařují eleganci.
               </p>
-              <a href="#" className="rts-read-more-circle-btn under-line">
+              <a href="/nase-sluzby" className="rts-read-more-circle-btn under-line">
                <i> <FontAwesomeIcon icon={faArrowRight} /></i>
                 <p>Zobrazit všechny služby</p>
               </a>
@@ -40,7 +40,7 @@ const ServiceArea = () => {
                 <img src={serviceIcons[index]} alt="Architectural Design" />
               </div>
               <div className="body">
-                <a href="#">
+                <a href={`/nase-sluzby/${service.nav}`} >
                   <h6 className="title">{service.title}</h6>
                 </a>
                 <p className="disc">

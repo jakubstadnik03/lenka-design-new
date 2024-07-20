@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home'; 
 import About from './pages/About'; 
 import Services from './pages/Services'; 
@@ -14,6 +14,9 @@ import Progress from './components/Progress';
 import FotogalerieDetail from './pages/FotogalerieDetail';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
+import Pricing from './components/PricingPlans';
+import PodminkyAPravidla from './pages/PodminkyAPravidla';
+import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
 const App = () => {
   return (
     <>
@@ -28,6 +31,9 @@ const App = () => {
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/fotogalerie" element={<Fotogalerie />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/cenik" element={<Pricing />} />
+        <Route path="/podminky-a-pravidla" element={<PodminkyAPravidla />} />
+        <Route path="/zasady-obchodnich-udaju" element={<ZasadyObchodnichUdaju />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/fotogalerie/:nav" element={<FotogalerieDetail />} />
      

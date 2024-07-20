@@ -11,8 +11,8 @@ const About = () => {
             <div className="col-lg-12">
               <div className="bread-crumb-area-inner">
                 <div className="breadcrumb-top">
-                  <a href="#">Domů</a> /
-                  <a className="active" href="#">O nás</a>
+                  <a href="/">Domů</a> /
+                  <a className="active" href="/o-nas">O nás</a>
                 </div>
                 <div className="bottom-title">
                   <h1 className="title">O nás</h1>

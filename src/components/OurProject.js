@@ -51,7 +51,7 @@ const OurProject = () => {
                   nextEl: '.swiper-button-next',
                   prevEl: '.swiper-button-prev',
                 }}
-                spaceBetween={30}
+                spaceBetween={0}
                 slidesPerView={3}
                 className="swiper-product-one"
               >
@@ -60,7 +60,7 @@ const OurProject = () => {
                     <div className="single-product-one">
                       <span className="number">{index + 1}</span>
                       <a href={`/portfolio/${project.id}`} className="thumbnail">
-                        <img src={project.images[0]} alt="product" style={{ height: "800px", objectFit: "cover" }} />
+                        <img src={project.images[0]} alt="product" style={{ height: "700px", objectFit: "cover" }} />
                       </a>
                       <div className="inenr-content-absolute">
                         <a href={`/portfolio/${project.id}`}>

@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faTwitter, faYoutube, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   return (
@@ -80,6 +78,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-12">
               <iframe
+              title='map'
 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.046698326372!2d15.063394499999998!3d50.774707899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935f116200101%3A0xefc5d6945328bb4f!2zTEVOS0EgRGVzaWduIC0gTWdBLkxlbmthIFN0w6FkbsOta292w6EsIE7DoXZyaHkgaW50ZXJpw6lyxa8!5e0!3m2!1scs!2scz!4v1721140495858!5m2!1scs!2scz"          width="600"
                 height="450"
                 style={{ border: 0 }}

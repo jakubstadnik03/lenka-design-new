@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 
 const Footer = () => {
@@ -41,11 +40,10 @@ const Footer = () => {
                     <h6 className="title">Užitečné odkazy</h6>
                   </div>
                   <ul>
-                    <li><a href="about.html">Why Choose</a></li>
-                    <li><a href="blog.html">Read Blog</a></li>
-                    <li><a href="portfolio-grid-1.html">Work Process</a></li>
-                    <li><a href="faq.html">FAQ’s</a></li>
-                    <li><a href="contact.html">Support</a></li>
+                    <li><a href="/o-nas">O nás</a></li>
+                    <li><a href="/cenik">Ceník</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/fotogalerie">Fotogalerie</a></li>
                   </ul>
                 </div>
               </div>
@@ -74,8 +72,8 @@ const Footer = () => {
                 <p className="disc">Copyright 2024. Všechna práva vyhrazena.</p>
                 <div className="right">
                   <ul>
-                    <li><a href="terms-and-condition.html">Podmínky a pravidla</a></li>
-                    <li><a href="privacy-policy.html">Zásady ochrany osobních údajů</a></li>
+                    <li><a href="/podminky-a-pravidla">Podmínky a pravidla</a></li>
+                    <li><a href="/zasady-obchodnich-udaju">Zásady ochrany osobních údajů</a></li>
                   </ul>
                 </div>
               </div>

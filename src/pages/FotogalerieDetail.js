@@ -20,20 +20,9 @@ const FotogalerieDetail = () => {
 
   useEffect(() => {
     if (service) {
+      // Wait for the service state to update before initializing fjGallery
       const galleryElement = document.querySelector('.gallery');
       if (galleryElement) {
-        // Clear existing gallery content
-        galleryElement.innerHTML = '';
-
-        // Initialize LightGallery
-        galleryElement.innerHTML = service.gallery.map(
-          (image, index) => `
-            <a class="gallery__item" href="${image}" data-lg-size="1600-2400">
-              <img class="img-responsive" src="${image}" alt="portfolio ${index}" />
-            </a>`
-        ).join('');
-
-        // Reinitialize fjGallery
         fjGallery(galleryElement, {
           itemSelector: '.gallery__item',
           rowHeight: 320,
@@ -78,30 +67,28 @@ const FotogalerieDetail = () => {
             <div className="col-lg-8">
               <div className="row mt--60 g-5">
                 <div className="col-lg-12">
-                  <div className="gallery">
-                    <LightGallery
-                      plugins={[lgZoom]}
-                      mode="lg-fade"
-                      pager={false}
-                      thumbnail={true}
-                      galleryId="nature"
-                      elementClassNames="gallery"
-                      showCloseIcon={false}
-                      download={false}
-                      getCaptionFromTitleOrAlt={false}
-                    >
-                      {service.gallery.map((image, index) => (
-                        <a
-                          key={index}
-                          className="gallery__item"
-                          href={image}
-                          data-lg-size="1600-2400"
-                        >
-                          <img className="img-responsive" src={image} alt={`portfolio ${index}`} />
-                        </a>
-                      ))}
-                    </LightGallery>
-                  </div>
+                  <LightGallery
+                    plugins={[lgZoom]}
+                    mode="lg-fade"
+                    pager={false}
+                    thumbnail={true}
+                    galleryId="nature"
+                    elementClassNames="gallery"
+                    showCloseIcon={false}
+                    download={false}
+                    getCaptionFromTitleOrAlt={false}
+                  >
+                    {service.gallery.map((image, index) => (
+                      <a
+                        key={index}
+                        className="gallery__item"
+                        href={image}
+                        data-lg-size="1600-2400"
+                      >
+                        <img className="img-responsive" src={image} alt={`portfolio ${index}`} />
+                      </a>
+                    ))}
+                  </LightGallery>
                 </div>
               </div>
             </div>

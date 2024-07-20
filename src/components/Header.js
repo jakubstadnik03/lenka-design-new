@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const handleMobileMenuToggle = () => {
     console.log("sss");
@@ -17,6 +16,10 @@ const Header = () => {
   const toggleServices = () => {
     console.log("sfsfa jak");
     setShowServices(!showServices);
+  };
+  const toggleProjekty = () => {
+    console.log("sfsfa jak");
+    setshowProjekty(!showProjekty);
   };
   return (
     <>
@@ -39,12 +42,12 @@ const Header = () => {
                   <ul className="submenu">
 
                                 <li className='lim'><a  className="sdm-main" href="/nase-sluzby/3d-navrhy-interieru">3D návrhy interiéru</a></li>
-                                <li className="lim"><a className="sdm-main"href="/nase-sluzby/2d-navrhy-interieru">2D návrhy interiéru</a></li>
-                                <li className="lim"><a className="sdm-main"href="/nase-sluzby/realizace">Realizace</a></li>
-                                <li className="lim"><a className="sdm-main"href="/nase-sluzby/konzultace">Konzultace</a></li>
-                                <li className="lim"><a className="sdm-main"href="/nase-sluzby/homestaging">Homestaging</a></li>
-                                <li className="lim"><a className="sdm-main"href="/nase-sluzby/navrhy-bytovych-interieru">Navrhy bytovych interieru</a></li>
-                                <li className="lim"><a className="sdm-main"href="/nase-sluzby/navrhy-komercnich-interieru">Navrhy komerčních interieru</a></li>
+                                <li className="lim"><a className="sdm-main" href="/nase-sluzby/2d-navrhy-interieru">2D návrhy interiéru</a></li>
+                                <li className="lim"><a className="sdm-main" href="/nase-sluzby/realizace">Realizace</a></li>
+                                <li className="lim"><a className="sdm-main" href="/nase-sluzby/konzultace">Konzultace</a></li>
+                                <li className="lim"><a className="sdm-main" href="/nase-sluzby/homestaging">Homestaging</a></li>
+                                <li className="lim"><a className="sdm-main" href="/nase-sluzby/navrhy-bytovych-interieru">Navrhy bytovych interieru</a></li>
+                                <li className="lim"><a className="sdm-main" href="/nase-sluzby/navrhy-komercnich-interieru">Navrhy komerčních interieru</a></li>
                                 <li className="lim"><a className="sdm-main" style={{borderBottom: "0"}} href="/nase-sluzby/realizace-celych-domu">Realizace celých domů</a></li>
                      
                    </ul>
@@ -95,7 +98,7 @@ const Header = () => {
           <Link className="main" to="/o-nas">O nás</Link>
         </li>
         <li className={`has-dropdown ${showServices ? 'mm-show' : ''}`}>
-          <a className="main"onClick={toggleServices} >Naše služby</a>
+          <div className="main"onClick={toggleServices} >Naše služby</div>
           <ul className={`mm-collapse ${showServices ? 'mm-show' : ''}`}>
             <li><a className="mobile-menu-link" href="/nase-sluzby">Seznam našich služeb</a></li>
             <li><a className="mobile-menu-link" href="/nase-sluzby/3d-navrhy-interieru">3D návrhy interiéru</a></li>
@@ -112,7 +115,7 @@ const Header = () => {
           </span>
         </li>
         <li className="has-dropdown">
-          <a className="main" onClick={toggleProjekty}>Projekty</a>
+          <div className="main" onClick={toggleProjekty}>Projekty</div>
           <ul className={`mm-collapse ${showProjekty ? 'mm-show' : ''}`}>           
            <li><a className="mobile-menu-link" href="/portfolio">Mé předchozí projekty</a></li>
             <li><a className="mobile-menu-link" href="/fotogalerie">Fotogalerie realizací</a></li>

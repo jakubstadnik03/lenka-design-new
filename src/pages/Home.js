@@ -1,12 +1,11 @@
 import React from 'react';
-import Header from '../components/Header';
 import Banner from '../components/Banner';
 import About from '../components/About';
-import Contact from '../components/Contact';
 import OurWorkProcess from '../components/OurWorkProcess';
 import OurProject from '../components/OurProject';
-import Footer from '../components/Footer';
 import ServicesComponent from '../components/ServicesComponent';
+import Testimonials from '../components/Testimonials';
+import ContactSection from '../components/ContactSection';
 
 const Home = () => {
   return (
@@ -19,6 +18,8 @@ const Home = () => {
           <ServicesComponent />
           <OurWorkProcess />
           <OurProject />
+          <Testimonials />
+          <ContactSection />
      </main>
 
     </>

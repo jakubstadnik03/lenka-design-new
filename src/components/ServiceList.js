@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ServiceList = () => {
-  const serviceIcons = ["/assets/icons/icon1.svg", "/assets/images/icons/icon2.svg", "/assets/images/icons/icon3.svg", "/assets/images/icons/icon4.svg"];
 
   const [services, setServices] = useState([]);
 
