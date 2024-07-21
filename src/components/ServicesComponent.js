@@ -24,13 +24,13 @@ const ServicesComponent = () => {
                 <h3 className="title quote">Komplexní služby interiérového designu</h3>
               </div>
               <p className="disc mb--10">
-                Vítejte u našich služeb interiérového designu, kde se specializujeme na transformaci prostor do ohromujících a funkčních prostředí.
+                Vítejte u našich služeb interiérového designu, kde se specializujeme na transformaci prostor do příjemných a .praktických interiérů.
               </p>
               <Accordion className="accordion-service-1 mb--40" defaultActiveKey="0">
                 <AccordionItem eventKey="0">
                   <AccordionHeader>Můžete pracovat v rámci mého rozpočtu?</AccordionHeader>
                   <AccordionBody>
-                    Absolutně! Chápeme důležitost rozpočtových úvah. Naši designéři jsou zruční ve vytváření řešení, která respektují váš rozpočet.
+                    Pokusíme se! Chápeme důležitost rozpočtových úvah. Máme zkušenosti ve vytváření řešení, která respektují váš rozpočet.
                   </AccordionBody>
                 </AccordionItem>
                 <AccordionItem eventKey="1">

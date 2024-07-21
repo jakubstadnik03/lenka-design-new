@@ -4,10 +4,8 @@ import galleryData from '../data/GalerieData.json';
 import GallerySideBar from '../components/GallerySideBar';
 import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
-import fjGallery from 'flickr-justified-gallery';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
-import 'flickr-justified-gallery/src/fjGallery.css';
 
 const FotogalerieDetail = () => {
   const { nav } = useParams();
@@ -17,23 +15,6 @@ const FotogalerieDetail = () => {
     const selectedService = galleryData.find(service => service.link === nav);
     setService(selectedService);
   }, [nav]);
-
-  useEffect(() => {
-    if (service) {
-      // Wait for the service state to update before initializing fjGallery
-      const galleryElement = document.querySelector('.gallery');
-      if (galleryElement) {
-        fjGallery(galleryElement, {
-          itemSelector: '.gallery__item',
-          rowHeight: 320,
-          lastRow: 'start',
-          gutter: 2,
-          rowHeightTolerance: 0.1,
-          calculateItemsHeight: false,
-        });
-      }
-    }
-  }, [service]);
 
   if (!service) {
     return <div>Načítání...</div>;

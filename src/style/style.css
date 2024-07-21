@@ -16436,6 +16436,27 @@ a {
     top: 20px;
   }
 }
+/* Add this CSS to your stylesheet or within a style block in your component */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adjust the gap as needed */
+}
+
+.gallery__item {
+  width: calc(50% - 5px); /* Two items per row with some space in between */
+  aspect-ratio: 1; /* Ensures the item maintains a square aspect ratio */
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .left-swiper-area-start .single-left-banner-swiper-start {
   background: #30373e;
   width: 354px;

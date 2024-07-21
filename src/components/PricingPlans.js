@@ -6,28 +6,22 @@ import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 const pricingPlans = [
   {
     id: 1,
-    title: "Základní plán",
-    price: "219 Kč",
+    title: "Balíček návrhu místnosti",
+    price: "Od 8 000 Kč / místnost",
     description: "Úvodní konzultace je schůzka mezi designérem a klientem k projednání projektu.",
     features: [
-      { name: "Vývoj konceptu", available: true },
-      { name: "Vývoj designu", available: false },
-      { name: "Administrace výstavby", available: true },
-      { name: "Další služby", available: false },
+      { name: "Zaměření", available: true },
+      { name: "Moodboard (barevná koláž použitých barev v interiéru)", available: true },
+      { name: "Komplexní návrh interiéru ", available: true },
+      { name: "Doporučení zdrojů nábytku", available: true },
+      { name: "Nákupní seznam doporučeného nábytku a doplňků", available: true },
+      { name: "Elektroinstalace", available: true },
+      { name: "Zajištění a ukázka vzorků materiálů", available: true },
+      { name: "Rozměry nábytku na míru", available: true },
+      { name: "Podklady na cen. nabídky a cenová nabídka od doporučených dodavatelů", available: true },
     ],
   },
-  {
-    id: 2,
-    title: "Populární plán",
-    price: "319 Kč",
-    description: "Úvodní konzultace je schůzka mezi designérem a klientem k projednání projektu.",
-    features: [
-      { name: "Vývoj konceptu", available: true },
-      { name: "Vývoj designu", available: true },
-      { name: "Administrace výstavby", available: true },
-      { name: "Další služby", available: false },
-    ],
-  },
+  
   {
     id: 3,
     title: "Prémiový plán",
@@ -52,6 +46,12 @@ const serviceDetails = {
     "Dále dojde k zaměření a domluvení termínu. Poté Vám zašlu cenovou nabídku a po Vašem souhlasu zálohovou fakturu na 60% z celkové částky. Následně budu pracovat na projektu dle dohody a požadavků. Během přípravy projektu budu s Vámi ve spojení telefonicky, emailem či videokonferencí a budeme případně konzultovat rozpracovaný projekt. Vždy zasílám několik verzí a možností, které konzultuji s klientem. Po dokončení projektu Vás požádám o doplatek ceny.",
     "Jsem plátce DPH a níže uvedené ceny jsou bez DPH."
   ],
+  subheading2: "Konzultace nad projektem či doporučení změn a tipů v interiéru",
+  details2: ["Konzultace bytového designu provádím nejčastěji v místě realizace změn či online po dodání podkladů. Časté konzultace jsou ohledně změn daného projektu od projektanta, aby se již zohlednil nábytek či ostatní požadavky na vybavení.", "Možno zakoupit dárkový poukaz, s platností 1 rok, na konzultaci či doporučení změn v interiéru. Součástí poukazu je následný souhrn doporučených změn a tipů v elektronické podobě."],
+  subheading3: "Home staging - příprava nemovitosti k prodeji či pronájmu",
+  details3: ["Nejprve domluvíme schůzku a konzultaci v místě nemovitosti. V průběhu konzultace s Vámi projdu celou nemovitost a zapíšu navrhované změny, úpravy a typy v jednotlivých místnostech k dosažení největšího efektu. Poté ode mě obdržíte podrobný rozpis a plán navrhovaných úprav, vše v ceně konzultace. Dále seznam a ceny produktů, které jsou doporučeny do interiéru doplnit, případně ode mě zapůjčit.", "Zapůjčené produkty jsou zpoplatnění dle doby zapůjčení. Cenová nabídka ihned po konzultaci."],
+ subheading4: "Fotodokumentace",
+details4: ["Fotodokumentace nemovitosti se nejčastěji provádí ihned po provedení doporučených úprav Home stagingu, ale také na požádání kdykoliv.", "Pěkné, vhodné fotografie jsou vhodné na inzerci nemovitosti na pronájme či prodej. Hotové fotografie Vám budou dodány na flashdisku do 5 pracovních dní." ],
   pricing: [
     { service: "Konzultace nad projektem či změn v interiéru", price: "1500 Kč/1hod." },
     { service: "3D vizualizace jedné místnosti", price: "6800 - 10000 Kč" },
@@ -63,25 +63,7 @@ const serviceDetails = {
     { service: "Konzultace s klientem v terénu či v showroomu", price: "800Kč/hod." },
     { service: "Doprava mimo Liberec", price: "20Kč/km" },
     { service: "Home staging bytu", price: "od 9000Kč" },
-    { service: "Fotodokumentace nemovitosti", price: "od 5000 Kč" },
-    { service: "Balíček návrhu místnosti", price: "6000 - 8000 Kč" },
-    { service: "Zaměření", price: "" },
-    { service: "Moodboard (barevná koláž použitých barev v interiéru)", price: "" },
-    { service: "Komplexní návrh interiéru - doporučení materiálů, výmalby, podlahy, osvětlení, zastínění oken, tapety, dekorace a ostatních doplňků", price: "" },
-    { service: "Doporučení zdrojů nábytku", price: "" },
-    { service: "Nákupní seznam doporučeného nábytku a doplňků", price: "" },
-    { service: "Elektroinstalace", price: "" },
-    { service: "Zajištění a ukázka vzorků materiálů", price: "" },
-    { service: "Rozměry nábytku na míru", price: "" },
-    { service: "Podklady na cen. nabídky a cenová nabídka od doporučených dodavatelů", price: "" },
-    { service: "Konzultace nad projektem či doporučení změn a tipů v interiéru", price: "" },
-    { service: "Konzultace bytového designu provádím nejčastěji v místě realizace změn či online po dodání podkladů. Časté konzultace jsou ohledně změn daného projektu od projektanta, aby se již zohlednil nábytek či ostatní požadavky na vybavení.", price: "" },
-    { service: "Možno zakoupit dárkový poukaz, s platností 1 rok, na konzultaci či doporučení změn v interiéru. Součástí poukazu je následný souhrn doporučených změn a tipů v elektronické podobě.", price: "" },
-    { service: "Home staging - příprava nemovitosti k prodeji či pronájmu", price: "" },
-    { service: "Fotodokumentace", price: "" },
-    { service: "Fotodokumentace nemovitosti se nejčastěji provádí ihned po provedení doporučených úprav Home stagingu, ale také na požádání kdykoliv.", price: "" },
-    { service: "Pěkné, vhodné fotografie jsou vhodné na inzerci nemovitosti na pronájme či prodej. Hotové fotografie Vám budou dodány na flashdisku do 5 pracovních dní.", price: "" },
-  ]
+    { service: "Fotodokumentace nemovitosti", price: "od 5000 Kč" }  ]
 };
 
 const PricingPlans = () => {
@@ -104,7 +86,7 @@ const PricingPlans = () => {
         </div>
         <div className="row g-5 mt--30">
           {pricingPlans.map(plan => (
-            <div key={plan.id} className="col-lg-4 col-md-6 col-sm-12 col-12">
+            <div key={plan.id} className="col-lg-6 col-md-6 col-sm-12 col-12">
               <div className="single-pricing-main">
                 <div className="head">
                   <span>{plan.title}</span>
@@ -147,6 +129,19 @@ const PricingPlans = () => {
                 ))}
               </tbody>
             </table>
+            <h3>{serviceDetails.subheading2}</h3>
+            {serviceDetails.details2.map((detail, index) => (
+              <p key={index}>{detail}</p>
+            ))}
+            <h3>{serviceDetails.subheading3}</h3>
+            {serviceDetails.details3.map((detail, index) => (
+              <p key={index}>{detail}</p>
+            ))}
+            <h3>{serviceDetails.subheading4}</h3>
+            {serviceDetails.details4.map((detail, index) => (
+              <p key={index}>{detail}</p>
+            ))}
+        
           </div>
         </div>
       </div>
