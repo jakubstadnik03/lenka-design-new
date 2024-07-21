@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import ServiceSidebar from '../components/ServiceSidebar';
+import SEOHead from "../SEOHead"
 
 const ServiceDetail = () => {
   const { nav } = useParams();
@@ -18,6 +19,12 @@ const ServiceDetail = () => {
   }
 
   return (
+    <>
+    <SEOHead
+      title={` ${service.title} - Lenka Design`}
+      description={service.title2}
+      keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci"
+    />
  <main>
       <div className="breadcrumb-area-bg bg_image">
       <div className="container">
@@ -108,6 +115,7 @@ const ServiceDetail = () => {
         </div>
       </div>
  </main>
+ </>
   );
 };
 

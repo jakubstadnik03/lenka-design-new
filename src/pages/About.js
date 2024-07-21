@@ -2,8 +2,16 @@ import React from "react";
 import ServiceArea from '../components/ServiceArea';
 import ContactUs from "../components/ContactUs";
 import OurWorkProcess from "../components/OurWorkProcess";
+import SEOHead from "../SEOHead"
+
 const About = () => {
   return (
+    <>
+      <SEOHead
+    title={`O firmě Lenka Design - Lenka Design`}
+    description="Oživte svůj domov nebo kancelář v Liberci s exkluzivními návrhy interiérů od Lenky Stádníkové. Objednejte si konzultaci ještě dnes a transformujte svůj prostor do místa, kde budete chtít trávit každou minutu."
+    keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+  />
     <main>
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">
@@ -67,6 +75,7 @@ const About = () => {
       <OurWorkProcess />
       <ContactUs />
     </main>
+    </>
   );
 };
 

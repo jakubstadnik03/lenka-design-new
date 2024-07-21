@@ -2,9 +2,16 @@ import React from 'react';
 import blogData from '../data/blogData.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import SEOHead from "../SEOHead"
 
 const Blog = () => {
   return (
+    <>
+    <SEOHead
+    title={`Blog | Lenka Design`}
+
+    keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+  />
     <main>
     <div className="breadcrumb-area-bg bg_image">
       <div className="container">
@@ -55,6 +62,7 @@ const Blog = () => {
       </div>
     </div>
     </main>
+    </>
   );
 };
 

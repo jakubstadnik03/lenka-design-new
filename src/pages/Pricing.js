@@ -1,7 +1,14 @@
 import React from 'react'
 import PricingPlans from "../components/PricingPlans"
+import SEOHead from "../SEOHead"
 const Pricing = () => {
   return (
+    <>
+    <SEOHead
+      title= "Ceník poskytovaných služeb - Lenka Design"
+      description="S každým klientem prodiskutuji jeho požadavky a následně předložím cenovou nabídku"
+      keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+    />
     <main>
         
       <div className="breadcrumb-area-bg bg_image">
@@ -23,6 +30,7 @@ const Pricing = () => {
       </div>
       <PricingPlans />
     </main>
+    </>
   )
 }
 

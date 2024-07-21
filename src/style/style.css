@@ -662,7 +662,10 @@ ol ul {
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gap {
-    padding: 60px 0;
+    padding: 30px 0;
+  }
+  .pb--60 {
+    padding-bottom: 30px !important;
   }
 }
 
@@ -1221,7 +1224,7 @@ ol ul {
 }
 
 .pb--60 {
-  padding-bottom: 60px !important;
+  padding-bottom: 60px ;
 }
 
 .pl--60 {

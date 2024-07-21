@@ -2,11 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import portfolioData from '../data/portfolioData.json';
 import GalerieList from '../components/GalerieList';
+import SEOHead from "../SEOHead"
 
 const Portfolio = () => {
   return (
     <>
-
+   <SEOHead
+    title={`Předchozí projekty | Lenka Design`}
+    description="Naše projekty interiérového designu se zaměřují na transformaci obytných prostor na moderní a přívětivá místa. S důrazem na funkčnost a estetiku, náš tým talentovaných návrhářů bude úzce spolupracovat."
+    keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+  />
       <div className="breadcrumb-area-bg bg_image">
         <div className="container" >
           <div className="row">

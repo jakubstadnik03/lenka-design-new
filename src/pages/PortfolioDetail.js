@@ -7,6 +7,7 @@ import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
 import 'flickr-justified-gallery/src/fjGallery.css';
 import portfolioData from '../data/portfolioData.json';
+import SEOHead from "../SEOHead"
 
 const PortfolioDetail = () => {
   const { id } = useParams();
@@ -33,6 +34,12 @@ const PortfolioDetail = () => {
   if (!portfolioItem) return <div>Načítání...</div>;
 
   return (
+    <>
+    <SEOHead
+    title={`${portfolioItem.name} - Lenka Design`}
+    description={portfolioItem.scope}
+    keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+  />
     <main>
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">
@@ -134,6 +141,7 @@ const PortfolioDetail = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 

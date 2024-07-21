@@ -1,8 +1,15 @@
 import React from 'react'
 import GalerieList from '../components/GalerieList'
+import SEOHead from "../SEOHead"
 
 const Fotogalerie = () => {
   return (
+    <>
+    <SEOHead
+    title={`Fotogalerie realizací - Lenka Design`}
+    description="Prohlédněte si naše nejnovější realizace interiéru a nechte se inspirovat dokončenými projekty od LenkaDesign.cz. Kvalita a styl, který promění váš prostor v Liberci a okolí."
+    keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+  />
     <main>
     <div className="breadcrumb-area-bg bg_image">
       <div className="container">
@@ -23,6 +30,7 @@ const Fotogalerie = () => {
     </div>
     <GalerieList />
     </main>
+    </>
   )
 }
 
