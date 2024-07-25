@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "nav": "moderni-chata",
     "name": "Penzióní chata u golfového hřiště",
     "client": "Neznámý",
     "startDate": "01.03.2023",
@@ -28,6 +29,7 @@
   {
     "id": 2,
     "name": "Kadeřnický salón",
+    "nav": "kadernicky-salon",
     "client": "Neznámý",
     "startDate": "15.05.2023",
     "duration": "4 měsíce",
@@ -46,6 +48,7 @@
   {
     "id": 3,
     "name": "Renovace 200 let staré chalupy",
+    "nav": "renovace-chalupy",
     "client": "Neznámý",
     "startDate": "01.09.2018",
     "duration": "12 měsíců",
@@ -68,6 +71,7 @@
   {
     "id": 4,
     "name": "Luxusní apartmá s moderním nábytkem",
+    "nav": "luxusni-apartma",
     "client": "Neznámý",
     "startDate": "05.11.2023",
     "duration": "5 měsíců",
@@ -93,6 +97,7 @@
   {
     "id": 5,
     "name": "Wellness salón u jezera",
+    "nav": "wellness-salon",
     "client": "Neznámý",
     "startDate": "20.01.2024",
     "duration": "8 měsíců",
@@ -112,6 +117,7 @@
   {
     "id": 6,
     "name": "Renovace advokátní kanceláře",
+    "nav": "renovace-advokatni--kancelare",
     "client": "Neznámý",
     "startDate": "15.03.2024",
     "duration": "6 měsíců",

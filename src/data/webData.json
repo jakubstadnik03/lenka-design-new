@@ -1,0 +1,124 @@
+[
+    {
+      "name": "Webová aplikace pro firmu Lenka Design",
+      "nav": "lenka-design",
+      "clientName": "Lenka Design",
+      "startDate": "01.05.2023",
+      "duration": "3 měsíce",
+      "location": "Praha",
+      "overview": "Pro firmu Lenka Design jsme vytvořili kompletní webovou aplikaci, která zahrnovala nejen samotný web, ale také návrh loga a vizitky. Spolupráce probíhala velmi hladce díky pravidelným konzultacím s klientem, kde jsme si ujasnili všechny požadavky a postupy.",
+      "scope": "Tvorba webové aplikace, návrh loga, tvorba vizitek",
+      "mainImage": "/assets/images/web/lenka-design-web.png",
+      "mainImageDescription": "Webová aplikace pro firmu Lenka Design",
+      "solution": "Spolupráce začala konzultací, kde jsme si vyjasnili potřeby klienta. Poté jsme vytvořili návrhy loga a vizitek, které byly po schválení klientem implementovány. Následovala tvorba webové aplikace, která zahrnovala moderní design a responzivní rozhraní.",
+      "solutionDetails": [
+        "Konzultace s klientem",
+        "Návrh a schválení loga",
+        "Tvorba a schválení vizitek",
+        "Vývoj webové aplikace",
+        "Nasazení a testování"
+      ],
+      "galleryImages": [
+        "assets/images/projects/lenka_design_1.jpg",
+        "assets/images/projects/lenka_design_2.jpg",
+        "assets/images/projects/lenka_design_3.jpg"
+      ],
+      "challenge": "Hlavní výzvou bylo vytvořit vizuálně atraktivní a funkční web, který by odrážel jedinečnost značky Lenka Design a zároveň poskytoval snadnou navigaci a uživatelskou přívětivost.",
+      "challengeImage": "assets/images/projects/lenka_design_challenge.jpg",
+      "finalSolution": "Konečným výsledkem je moderní webová aplikace s intuitivním designem, která zvyšuje viditelnost značky a nabízí skvělý uživatelský zážitek.",
+      "websiteLink": "https://www.lenkadesign.cz",
+      "websiteLook": "lenkadesign.cz"
+    },
+    {
+      "name": "Webová aplikace pro advokátní kancelář",
+      "nav": "akz-advokatni-kancelar",
+      "clientName": "AKZ",
+      "startDate": "15.03.2023",
+      "duration": "4 měsíce",
+      "location": "Brno",
+      "overview": "Pro advokátní kancelář AKZ jsme vytvořili moderní a profesionální webovou stránku, logo a šablonu pro dokumenty. Spolupráce zahrnovala podrobné konzultace, aby byly všechny požadavky klienta splněny.",
+      "scope": "Tvorba webové stránky, návrh loga, tvorba dokumentových šablon",
+      "mainImage": "/assets/images/web/AKZ-web.png",
+      "mainImageDescription": "Webová aplikace pro advokátní kancelář AKZ",
+      "solution": "Začali jsme podrobnými konzultacemi, abychom pochopili potřeby a vize klienta. Poté jsme navrhli logo, vytvořili šablony pro dokumenty a následně vyvinuli webovou stránku s důrazem na bezpečnost a profesionalitu.",
+      "solutionDetails": [
+        "Podrobné konzultace",
+        "Návrh a schválení loga",
+        "Tvorba šablon pro dokumenty",
+        "Vývoj a testování webové stránky",
+        "Nasazení a údržba"
+      ],
+      "galleryImages": [
+        "/assets/images/web/AKZ-web.png",
+        "/assets/images/web/zrnovska-vizitka.jpg",
+        "/assets/images/web/logo-main.svg"
+      ],
+      "challenge": "Výzvou bylo zajistit, aby webová stránka nejen odrážela profesionální image advokátní kanceláře, ale také splňovala vysoké standardy bezpečnosti a uživatelské přívětivosti.",
+      "challengeImage": "/assets/images/web/zrnovsky-web2.png",
+      "finalSolution": "Výsledkem je elegantní a profesionální webová stránka, která klientovi umožňuje efektivní komunikaci s klienty a prezentaci služeb.",
+      "websiteLink": "https://www.akzrnovsky.cz/",
+      "websiteLook": "akzrnovsky.cz"
+    },
+    {
+      "name": "Webová aplikace pro truhlářskou firmu",
+      "nav": "truhlarstvi-webstranka",
+      "clientName": "Truhlářství Hajlek",
+      "startDate": "01.04.2023",
+      "duration": "3 měsíce",
+      "location": "Liberec",
+      "overview": "Pro truhlářskou firmu Truhlářství Novák jsme vytvořili kompletní webovou aplikaci zahrnující návrh loga, webu a vizitek. Cílem bylo vytvořit web, který bude atraktivní a přehledný, a zároveň odrážet řemeslnou kvalitu firmy.",
+      "scope": "Tvorba webu, návrh loga, tvorba vizitek",
+      "mainImage": "/assets/images/web/laptop_mockup3.png",
+      "mainImageDescription": "Webová aplikace pro truhlářskou firmu Truhlářství Novák",
+      "solution": "Po konzultaci jsme začali s návrhem loga a vizitek, které byly schváleny klientem. Poté jsme vytvořili webovou aplikaci, která prezentuje portfolio firmy a umožňuje snadnou komunikaci s klienty.",
+      "solutionDetails": [
+        "Konzultace s klientem",
+        "Návrh a schválení loga",
+        "Tvorba vizitek",
+        "Vývoj webové aplikace",
+        "Nasazení a údržba"
+      ],
+      "galleryImages": [
+        "/assets/images/web/laptop_mockup3.png",
+        "/assets/images/web/business_card.jpg",
+        "/assets/images/web/logo2.png"
+      ],
+      "challenge": "Výzvou bylo vytvořit atraktivní a funkční web, který by odrážel řemeslnou kvalitu a spolehlivost truhlářské firmy.",
+      "challengeImage":  "/assets/images/web/hajlek-sluzby.png",
+      "finalSolution": "Konečný výsledek je profesionální webová aplikace, která zvyšuje viditelnost firmy a usnadňuje zákazníkům kontakt.",
+      "websiteLink": "https://truhlarstvi-hajlek.vercel.app",
+      "websiteLook": "truhlarstvi-hajlek.cz"
+    },
+    {
+      "name": "Webová aplikace pro kurzy šití",
+      "nav": "kurzy-siti-web",
+      "clientName": "Kurzy šití",
+      "startDate": "10.02.2023",
+      "duration": "2 měsíce",
+      "location": "Liberec",
+      "overview": "V tomto projektu jsme pro klienta vytvořili webovou aplikaci, plakát, vizitku a logo. Cílem bylo vytvořit atraktivní a uživatelsky přívětivý web, který bude propagovat kurzy šití a oslovovat nové zájemce.",
+      "scope": "Tvorba webové aplikace, návrh plakátu, vizitky a loga",
+      "mainImage": "/assets/images/web/laptop_mockup1.png",
+      "mainImageDescription": "Webová aplikace pro kurzy šití",
+      "solution": "Spolupráce začala konzultací, kde jsme si ujasnili požadavky klienta. Poté jsme vytvořili návrhy loga, vizitek a plakátů. Po jejich schválení jsme vyvinuli webovou aplikaci, která poskytuje veškeré informace o kurzech a umožňuje snadnou registraci.",
+      "solutionDetails": [
+        "Konzultace s klientem",
+        "Návrh a schválení loga",
+        "Tvorba vizitek a plakátů",
+        "Vývoj webové aplikace",
+        "Nasazení a testování"
+      ],
+      "galleryImages": [
+        "/assets/images/web/laptop_mockup1.png",
+        "/assets/images/web/business_card2.jpg",
+        "/assets/images/web/logo4.png",
+        "/assets/images/web/plakat1.png"
+      ],
+      "challenge": "Hlavní výzvou bylo vytvořit web, který by byl atraktivní a informativní, a zároveň umožňoval snadnou registraci na kurzy.",
+      "challengeImage": "/assets/images/web/kurzy-siti-web.png",
+      "finalSolution": "Výsledkem je moderní a uživatelsky přívětivá webová aplikace, která efektivně propaguje kurzy šití a usnadňuje registraci.",
+      "websiteLink": "https://ikurzysiti.cz/",
+      "websiteLook": "ikurzysiti.cz"
+    }
+  ]
+  

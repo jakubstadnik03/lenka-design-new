@@ -17,6 +17,8 @@ import BlogDetail from './pages/BlogDetail';
 import Pricing from './pages/Pricing';
 import PodminkyAPravidla from './pages/PodminkyAPravidla';
 import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
+import WebAGrafika from './pages/WebAGrafika';
+import WebDetail from './pages/ProjectDetail'
 const App = () => {
   return (
     <>
@@ -36,7 +38,8 @@ const App = () => {
         <Route path="/zasady-obchodnich-udaju" element={<ZasadyObchodnichUdaju />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/fotogalerie/:nav" element={<FotogalerieDetail />} />
-     
+        <Route path='/web-a-grafika' element={<WebAGrafika />} />
+        <Route path='/web-a-grafika/:nav' element={<WebDetail />} />
       </Routes>
       <Footer />
       <Progress />

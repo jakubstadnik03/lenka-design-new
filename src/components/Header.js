@@ -48,6 +48,7 @@ const Header = () => {
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/realizace">Realizace</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/konzultace">Konzultace</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/homestaging">Homestaging</a></li>
+                    <li className="lim"><a className="sdm-main" style={{color: "var(--color-primary) "}} href="/web-a-grafika">Webové aplikace a grafika</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/navrhy-bytovych-interieru">Navrhy bytovych interieru</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/navrhy-komercnich-interieru">Navrhy komerčních interieru</a></li>
                     <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/nase-sluzby/realizace-celych-domu">Realizace celých domů</a></li>
@@ -103,6 +104,8 @@ const Header = () => {
                   <li><a className="mobile-menu-link" href="/nase-sluzby/realizace" onClick={closeMobileMenu}>Realizace</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/konzultace" onClick={closeMobileMenu}>Konzultace</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/homestaging" onClick={closeMobileMenu}>Homestaging</a></li>
+                  <li><a className="mobile-menu-link" href="/web-a-grafika" onClick={closeMobileMenu} style={{color: "var(--color-primary) "}}>Webové aplikace a grafika</a></li>
+
                   <li><a className="mobile-menu-link" href="/nase-sluzby/navrhy-bytovych-interiéru" onClick={closeMobileMenu}>Návrhy bytových interiérů</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/navrhy-komercnich-interieru" onClick={closeMobileMenu}>Návrhy komerčních interiérů</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/realizace-celych-domu" onClick={closeMobileMenu}>Realizace celých domů</a></li>

@@ -17,7 +17,7 @@ const Contact = () => {
       .then(
         (result) => {
           alert("Vaš dotaz byl úspěšně odeslán!");
-          document.location.href = "/";
+        
           console.log(result.text);
         },
         (error) => {
@@ -92,7 +92,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
-              <form action="#" className="contact-form-conatct-page">
+              <form ref={form} onSubmit={sendEmail} className="contact-form-conatct-page">
                 <p className="top-contact mb--20">Kontaktní formulář</p>
                 <input type="text"   name="user_name" placeholder="Vaše jméno" required />
                 <input type="tel"  name="user_phone" placeholder="Telefonní číslo" />

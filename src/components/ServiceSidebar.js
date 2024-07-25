@@ -49,7 +49,7 @@ const ServiceSidebar = () => {
           <h4 className="title">Pište nebo volejte, ráda Vám pomohu a odpovím na Vaše otázky….</h4>
         </div>
         <div className="body">
-          <form action="#">
+          <form ref={form} onSubmit={sendEmail}>
             <input type="text" name="user_name" placeholder="Vaše jméno" />
             <input type="tel" name="user_phone" placeholder="Vaše číslo" />
             <input type="email" name="user_email" placeholder="Váš email" />

@@ -39,7 +39,7 @@ const ContactSection = () => {
                 <span className="pre">Neváhejte mě kontaktovat</span>
                 <h2 className="title">Máte nějaké dotazy?</h2>
               </div>
-              <form action="#">
+              <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="user_name" placeholder="Vaše jméno" required />
                 <input type="tel" name="user_phone"  placeholder="Vaše číslo" required />
                 <input type="email"  name="user_email"  placeholder="Váš email" required />
