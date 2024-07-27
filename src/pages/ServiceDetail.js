@@ -21,9 +21,9 @@ const ServiceDetail = () => {
   return (
     <>
     <SEOHead
-      title={` ${service.title} - Lenka Design`}
-      description={service.title2}
-      keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci"
+      title={service.seo.title}
+      description={service.seo.description}
+      keywords={service.seo.keywords}
     />
  <main>
       <div className="breadcrumb-area-bg bg_image">
@@ -52,8 +52,14 @@ const ServiceDetail = () => {
             <div className="col-lg-8 mt_md--50 mt_sm--50">
               <div className="service-details-content-right">
                 <div className="large-image">
-                  <img src={service.image} alt="service" style={{height: "400px", objectFit: "cover"}}/>
-                </div>
+                <img
+      src={service.image}
+      alt="service"
+      style={{
+        height: "400px",
+        objectFit: service.style === 'contain' ? 'contain' : 'cover'
+      }}
+    />                </div>
                 <h3 className="title-main-s">
                   {service.title}
                 </h3>
@@ -64,7 +70,7 @@ const ServiceDetail = () => {
               <div className="row mt--40 mb--40">
                 {service.additionalImages.map((image, index) => (
                   <div className="col-lg-6 col-md-6 col-sm-12" key={index}>
-                    <img style={{ width: '100%', objectFit: "cover", height: "100%" }} src={image} alt="services" />
+                    <img style={{ width: '100%',  objectFit: service.style === 'contain' ? 'contain' : 'cover', height: "100%" }} src={image} alt="services" />
                   </div>
                 ))}
               </div>

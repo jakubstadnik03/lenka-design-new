@@ -176,16 +176,14 @@ const WebAGrafika = () => {
                   <img src="assets/images/about/09.png" alt="about" />
                 </div>
                 <div className="title-area-style-six-left">
-                  <span className="pre">Příběh společnosti</span>
+                  <span className="pre">Co vytváříme?</span>
                   <h2 className="title">Naše firma</h2>
                 </div>
                 <p className="disc-1">
-                  Naše hodnoty tvoří základ naší práce. Integrita, kreativita a důraz na detail pohání vše, co děláme. 
-                  Ke každému projektu přistupujeme s odhodláním, výzvy vnímáme jako příležitosti k inovaci a excelenci.
+                Hledáte webovou stránku, která nejen dobře vypadá, ale také skvěle funguje? U nás jste na správném místě. V Lenka Design vytváříme moderní a uživatelsky přívětivé weby, které jsou snadno vyhledatelné na internetu. 
                 </p>
                 <p className="disc">
-                  S mnohaletými zkušenostmi v oboru náš tým přináší širokou škálu odborných znalostí. 
-                  Od rezidenčních projektů po komerční, od městského plánování po interiérový design.
+                Naše stránky jsou rychlé, bezpečné a optimalizované pro vyhledávače, takže vás zákazníci vždy snadno najdou.
                 </p>
                 <div className="short-service-small">
                   <div className="single-service-small-check">
@@ -225,12 +223,12 @@ const WebAGrafika = () => {
                   Nabízíme profesionální tvorbu reklamní grafiky. Pomůžeme Vám vytvořit poutavé plakáty, vizitky, loga a reklamy, 
                   které budou oslovovat Vaše zákazníky.
                 </p>
-                <a href="/service-1.html" className="rts-read-more-circle-btn under-line">
+                {/* <a href="/service-1.html" className="rts-read-more-circle-btn under-line">
 <i>
                     <FontAwesomeIcon icon={faArrowRight} />
   
 </i>                  <p>Zobrazit více o službách</p>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -239,16 +237,16 @@ const WebAGrafika = () => {
               <div className="thumbnail-serice-6-left">
                 <div className="image-hover-bg">
                   <div className="rts-img-hover one active">
-                    <img src="assets/images/about/10.jpg" alt="about" />
+                    <img src="/assets/images/about/10.jpg" alt="about" />
                   </div>
                   <div className="rts-img-hover two">
-                    <img src="assets/images/about/15.jpg" alt="about" />
+                    <img src="/assets/images/about/15.jpg" alt="about" />
                   </div>
                   <div className="rts-img-hover three">
-                    <img src="assets/images/about/16.jpg" alt="about" />
+                    <img src="/assets/images/about/16.jpg" alt="about" />
                   </div>
                   <div className="rts-img-hover four">
-                    <img src="assets/images/about/17.jpg" alt="about" />
+                    <img src="/assets/images/about/17.jpg" alt="about" />
                   </div>
                 </div>
               </div>
@@ -258,8 +256,8 @@ const WebAGrafika = () => {
                 <div className="signle-service-list one">
                   <div className="left-one">
                     <span>01</span>
-                    <a href="/service-details.html">
-                      <h5 className="title">Design vizitek</h5>
+                    <a href="/nase-sluzby/design-vizitek">
+                      <h3 className="title">Design vizitek</h3>
                     </a>
                   </div>
                   <div className="center-area">
@@ -267,7 +265,7 @@ const WebAGrafika = () => {
                       Poutavé vizitky, které budou oslovovat Vaše zákazníky.
                     </p>
                   </div>
-                  <a href="/service-details.html" className="rts-read-more-circle-btn">
+                  <a href="/nase-sluzby/design-vizitek" className="rts-read-more-circle-btn">
 <i>
                       <FontAwesomeIcon icon={faArrowRight} />
   
@@ -277,8 +275,8 @@ const WebAGrafika = () => {
                 <div className="signle-service-list two">
                   <div className="left-one">
                     <span>02</span>
-                    <a href="/service-details.html">
-                      <h5 className="title">Design loga</h5>
+                    <a href="/nase-sluzby/design-loga">
+                      <h3 className="title">Design loga</h3>
                     </a>
                   </div>
                   <div className="center-area">
@@ -286,7 +284,7 @@ const WebAGrafika = () => {
                       Logo, které zůstane v paměti a bude reprezentovat Vaši značku.
                     </p>
                   </div>
-                  <a href="/service-details.html" className="rts-read-more-circle-btn">
+                  <a href="/nase-sluzby/design-loga" className="rts-read-more-circle-btn">
 <i>
                       <FontAwesomeIcon icon={faArrowRight} />
   
@@ -296,8 +294,8 @@ const WebAGrafika = () => {
                 <div className="signle-service-list three">
                   <div className="left-one">
                     <span>03</span>
-                    <a href="/service-details.html">
-                      <h5 className="title">Design plakátů</h5>
+                    <a href="/nase-sluzby/design-plakatu">
+                      <h3 className="title">Design plakátů</h3>
                     </a>
                   </div>
                   <div className="center-area">
@@ -305,7 +303,7 @@ const WebAGrafika = () => {
                       Profesionální plakáty, které osloví Vaše zákazníky.
                     </p>
                   </div>
-                  <a href="/service-details.html" className="rts-read-more-circle-btn">
+                  <a href="/nase-sluzby/design-plakatu" className="rts-read-more-circle-btn">
 <i>
                       <FontAwesomeIcon icon={faArrowRight} />
   
@@ -315,8 +313,8 @@ const WebAGrafika = () => {
                 <div className="signle-service-list four">
                   <div className="left-one">
                     <span>04</span>
-                    <a href="/service-details.html">
-                      <h5 className="title">Fotografování</h5>
+                    <a href="/nase-sluzby/fotografovani">
+                      <h3 className="title">Fotografování</h3>
                     </a>
                   </div>
                   <div className="center-area">
@@ -324,7 +322,7 @@ const WebAGrafika = () => {
                       Kvalitní fotografie produktů a interiérů.
                     </p>
                   </div>
-                  <a href="/service-details.html" className="rts-read-more-circle-btn">
+                  <a href="/nase-sluzby/fotografovani" className="rts-read-more-circle-btn">
 <i>
                       <FontAwesomeIcon icon={faArrowRight} />
   

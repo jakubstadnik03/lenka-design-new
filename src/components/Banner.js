@@ -73,8 +73,8 @@ const Banner = () => {
             {banners.map((banner, index) => (
               <div className={`swiper-slide ${index === activeIndex ? 'active' : ''}`} key={index}>
                 <div className={`single-left-banner-swiper-start `}>
-                  <span className="pre">Interiérový densign</span>
-                  <h3 className={`title ${animating ? 'animate-fade-in-up' : ''}`}>{banner.title}</h3>
+                  <h1 style={{fontSize: "0.8em", lineHeight: "1em"}}> <span className="pre">Lenka design | návrh interiéru</span></h1>               
+                  <h2 className={`title ${animating ? 'animate-fade-in-up' : ''}`}>{banner.title}</h2>
                   <p className={`disc ${animating ? 'animate-fade-in-up' : ''}`}>{banner.description}</p>
                   <a href={`/nase-sluzby/${banner.link}`} className="rts-btn btn-border">Zjistit více</a>
                 </div>

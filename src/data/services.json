@@ -1,245 +1,421 @@
 [
-    {
+  {
       "id": 1,
       "title": "3D návrhy Interiérů",
       "nav": "3d-navrhy-interieru",
       "title2": "Realistické vizualizace pro váš interiér",
-
       "image": "/assets/images/service/3dNavrhy1.jpg",
       "details": [
-        "Nabízíme detailní 3D vizualizace, které vám umožní vidět váš interiér ještě před realizací. Naše 3D návrhy vám poskytnou realistický pohled na váš budoucí prostor a pomohou vám při rozhodování o designu.",
-        "Pomocí moderních technologií vytváříme přesné a detailní 3D modely, které vám umožní prozkoumat každý kout vašeho nového interiéru."
+          "Nabízíme detailní 3D vizualizace, které vám umožní vidět váš interiér ještě před realizací. Naše 3D návrhy vám poskytnou realistický pohled na váš budoucí prostor a pomohou vám při rozhodování o designu.",
+          "Pomocí moderních technologií vytváříme přesné a detailní 3D modely, které vám umožní prozkoumat každý kout vašeho nového interiéru."
       ],
       "additionalImages": [
-        "/assets/images/service/3dNavrhy2.jpg",
-        "/assets/images/service/3dNavrhy3.jpg"
+          "/assets/images/service/3dNavrhy2.jpg",
+          "/assets/images/service/3dNavrhy3.jpg"
       ],
       "additionalDetails": [
-        "3D vizualizace zlepšují komunikaci mezi designérem a klientem a zajišťují, že konečný výsledek bude přesně odpovídat vašim představám.",
-        "S našimi 3D návrhy můžete experimentovat s různými uspořádáními a designy, než se rozhodnete pro finální vzhled."
+          "3D vizualizace zlepšují komunikaci mezi designérem a klientem a zajišťují, že konečný výsledek bude přesně odpovídat vašim představám.",
+          "S našimi 3D návrhy můžete experimentovat s různými uspořádáními a designy, než se rozhodnete pro finální vzhled."
       ],
       "listItems": [
-        "Realistické vizualizace",
-        "Detailní modely",
-        "Interaktivní prohlídky",
-        "Rychlé úpravy"
+          "Realistické vizualizace",
+          "Detailní modely",
+          "Interaktivní prohlídky",
+          "Rychlé úpravy"
       ],
       "finalImage": "/assets/images/service/3dNavrhy4.jpg",
       "conclusion": [
-        "3D návrhy interiérů jsou klíčem k úspěšnému plánování a realizaci vašich designových projektů. Umožňují vám vidět konečný výsledek ještě před zahájením prací.",
-        "Díky 3D vizualizacím můžete snadno komunikovat své nápady a preference s našimi designéry, což vede k přesnějšímu a efektivnějšímu procesu návrhu."
-      ]
-    },
-    {
+          "3D návrhy interiérů jsou klíčem k úspěšnému plánování a realizaci vašich designových projektů. Umožňují vám vidět konečný výsledek ještě před zahájením prací.",
+          "Díky 3D vizualizacím můžete snadno komunikovat své nápady a preference s našimi designéry, což vede k přesnějšímu a efektivnějšímu procesu návrhu."
+      ],
+      "seo": {
+          "title": "3D návrhy Interiérů - Realistické Vizualizace",
+          "description": "Detailní 3D vizualizace interiérů pro realistický pohled na váš budoucí prostor. Pomocí moderních technologií vytváříme přesné a detailní 3D modely.",
+          "keywords": "3D návrhy interiérů, 3D vizualizace, realistické vizualizace, návrhy interiérů"
+      }
+  },
+  {
       "id": 2,
-      "nav": "2d-navrhy-interieru",
       "title": "2D návrhy Interiérů",
+      "nav": "2d-navrhy-interieru",
       "title2": "Detailní plány pro vaše projekty",
-
       "image": "/assets/images/service/2dNavrhy1.jpg",
       "details": [
-        "Poskytujeme profesionální 2D návrhy interiérů, které zahrnují detailní plány rozmístění nábytku a dalších prvků. Naše 2D návrhy jsou praktickým nástrojem pro plánování a realizaci vašeho interiéru.",
-        "Naše 2D plány zahrnují podrobné rozměry a uspořádání, které zajišťují efektivní využití prostoru."
+          "Poskytujeme profesionální 2D návrhy interiérů, které zahrnují detailní plány rozmístění nábytku a dalších prvků. Naše 2D návrhy jsou praktickým nástrojem pro plánování a realizaci vašeho interiéru.",
+          "Naše 2D plány zahrnují podrobné rozměry a uspořádání, které zajišťují efektivní využití prostoru."
       ],
       "additionalImages": [
-        "/assets/images/service/2dNavrhy2.jpg",
-        "/assets/images/service/2dNavrhy3.jpg"
+          "/assets/images/service/2dNavrhy2.jpg",
+          "/assets/images/service/2dNavrhy3.jpg"
       ],
       "additionalDetails": [
-        "2D návrhy poskytují jasný přehled o rozmístění jednotlivých prvků v prostoru, což usnadňuje plánování a realizaci.",
-        "S našimi 2D návrhy můžete snadno vizualizovat a upravovat uspořádání vašeho interiéru před zahájením fyzických úprav."
+          "2D návrhy poskytují jasný přehled o rozmístění jednotlivých prvků v prostoru, což usnadňuje plánování a realizaci.",
+          "S našimi 2D návrhy můžete snadno vizualizovat a upravovat uspořádání vašeho interiéru před zahájením fyzických úprav."
       ],
       "listItems": [
-        "Detailní plány",
-        "Efektivní využití prostoru",
-        "Jasné rozměry",
-        "Přesné uspořádání"
+          "Detailní plány",
+          "Efektivní využití prostoru",
+          "Jasné rozměry",
+          "Přesné uspořádání"
       ],
       "finalImage": "/assets/images/service/2dNavrhy4.jpg",
       "conclusion": [
-        "2D návrhy interiérů jsou základem každého úspěšného designového projektu. Umožňují přesné plánování a efektivní realizaci.",
-        "Díky našim 2D návrhům můžete mít jistotu, že váš interiér bude navržen a uspořádán s maximální přesností a efektivitou."
-      ]
-    },
-    {
+          "2D návrhy interiérů jsou základem každého úspěšného designového projektu. Umožňují přesné plánování a efektivní realizaci.",
+          "Díky našim 2D návrhům můžete mít jistotu, že váš interiér bude navržen a uspořádán s maximální přesností a efektivitou."
+      ],
+      "seo": {
+          "title": "2D návrhy Interiérů - Detailní Plány",
+          "description": "Profesionální 2D návrhy interiérů s detailními plány rozmístění nábytku a dalších prvků. Efektivní využití prostoru a jasné rozměry.",
+          "keywords": "2D návrhy interiérů, detailní plány, návrhy interiérů, efektivní využití prostoru"
+      }
+  },
+  {
       "id": 3,
-      "nav": "realizace",
       "title": "Realizace",
+      "nav": "realizace",
       "title2": "Kvalitní provedení našich projektů",
       "image": "/assets/images/service/realizace1.jpg",
       "details": [
-        "Provádíme kompletní realizaci interiérových návrhů od návrhu až po finální úpravy. Zajistíme, aby váš interiér odpovídal vašim představám a byl zrealizován na nejvyšší úrovni kvality.",
-        "Naše realizační tým má bohaté zkušenosti s prováděním široké škály interiérových projektů, od menších úprav po kompletní rekonstrukce."
+          "Provádíme kompletní realizaci interiérových návrhů od návrhu až po finální úpravy. Zajistíme, aby váš interiér odpovídal vašim představám a byl zrealizován na nejvyšší úrovni kvality.",
+          "Naše realizační tým má bohaté zkušenosti s prováděním široké škály interiérových projektů, od menších úprav po kompletní rekonstrukce."
       ],
       "additionalImages": [
-        "/assets/images/service/realizace2.jpg",
-        "/assets/images/service/realizace3.webp"
+          "/assets/images/service/realizace2.jpg",
+          "/assets/images/service/realizace3.webp"
       ],
       "additionalDetails": [
-        "Během realizace úzce spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou přesně zohledněny.",
-        "Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."
+          "Během realizace úzce spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou přesně zohledněny.",
+          "Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."
       ],
       "listItems": [
-        "Kompletní služby",
-        "Vysoce kvalitní materiály",
-        "Zkušený tým",
-        "Precizní provedení"
+          "Kompletní služby",
+          "Vysoce kvalitní materiály",
+          "Zkušený tým",
+          "Precizní provedení"
       ],
       "finalImage": "/assets/images/service/realizace4.webp",
       "conclusion": [
-        "Realizace interiérových projektů je klíčovým krokem k dosažení vašich designových cílů. Naše služby vám zaručí, že váš interiér bude přesně podle vašich představ.",
-        "S naším týmem můžete mít jistotu, že váš projekt bude zrealizován profesionálně a s maximální péčí."
-      ]
-    },
-    {
+          "Realizace interiérových projektů je klíčovým krokem k dosažení vašich designových cílů. Naše služby vám zaručí, že váš interiér bude přesně podle vašich představ.",
+          "S naším týmem můžete mít jistotu, že váš projekt bude zrealizován profesionálně a s maximální péčí."
+      ],
+      "seo": {
+          "title": "Realizace Interiérů - Kvalitní Provedení Projektů",
+          "description": "Kompletní realizace interiérových návrhů od návrhu až po finální úpravy. Vysoce kvalitní materiály a zkušený tým.",
+          "keywords": "realizace interiérů, kvalitní provedení, interiérové projekty, kompletní služby"
+      }
+  },
+  {
       "id": 4,
-      "nav": "konzultace",
       "title": "Konzultace",
+      "nav": "konzultace",
       "title2": "Odborné rady pro váš interiér",
       "image": "/assets/images/service/konzultace1.jpeg",
       "details": [
-        "Nabízíme odborné konzultace v oblasti interiérového designu. Pomůžeme vám s návrhem, výběrem materiálů a barev, a poskytneme cenné rady pro vytvoření harmonického a funkčního prostoru.",
-        "Naše konzultace jsou přizpůsobeny vašim specifickým potřebám a přáním, ať už se jedná o kompletní redesign nebo drobné úpravy."
+          "Nabízíme odborné konzultace v oblasti interiérového designu. Pomůžeme vám s návrhem, výběrem materiálů a barev, a poskytneme cenné rady pro vytvoření harmonického a funkčního prostoru.",
+          "Naše konzultace jsou přizpůsobeny vašim specifickým potřebám a přáním, ať už se jedná o kompletní redesign nebo drobné úpravy."
       ],
       "additionalImages": [
-        "/assets/images/service/konzultace2.jpeg",
-        "/assets/images/service/konzultace3.jpeg"
+          "/assets/images/service/konzultace2.jpeg",
+          "/assets/images/service/konzultace3.jpeg"
       ],
       "additionalDetails": [
-        "Během konzultace se zaměřujeme na vaše individuální potřeby a styl, abychom vytvořili prostor, který je skutečně váš.",
-        "Poskytujeme praktické a inovativní rady, které vám pomohou dosáhnout vašich designových cílů."
+          "Během konzultace se zaměřujeme na vaše individuální potřeby a styl, abychom vytvořili prostor, který je skutečně váš.",
+          "Poskytujeme praktické a inovativní rady, které vám pomohou dosáhnout vašich designových cílů."
       ],
       "listItems": [
-        "Osobní přístup",
-        "Praktické rady",
-        "Inovativní řešení",
-        "Individuální styl"
+          "Osobní přístup",
+          "Praktické rady",
+          "Inovativní řešení",
+          "Individuální styl"
       ],
       "finalImage": "/assets/images/service/konzultace4.jpeg",
       "conclusion": [
-        "Konzultace v oblasti interiérového designu jsou klíčovým krokem k dosažení vašich designových cílů. Naše odborné rady vám pomohou vytvořit prostor, který je krásný a funkční.",
-        "S našimi konzultacemi můžete mít jistotu, že váš interiér bude navržen přesně podle vašich představ a potřeb."
-      ]
-    },
-    {
+          "Konzultace v oblasti interiérového designu jsou klíčovým krokem k dosažení vašich designových cílů. Naše odborné rady vám pomohou vytvořit prostor, který je krásný a funkční.",
+          "S našimi konzultacemi můžete mít jistotu, že váš interiér bude navržen přesně podle vašich představ a potřeb."
+      ],
+      "seo": {
+          "title": "Konzultace Interiérového Designu - Odborné Rady",
+          "description": "Odborné konzultace v oblasti interiérového designu. Pomoc s návrhem, výběrem materiálů a barev, a cenné rady pro vytvoření harmonického prostoru.",
+          "keywords": "konzultace interiérového designu, odborné rady, návrhy interiérů, designové konzultace"
+      }
+  },
+  {
       "id": 5,
-      "nav": "homestaging",
       "title": "Homestaging",
+      "nav": "homestaging",
       "title2": "Připravte váš domov na prodej",
       "image": "/assets/images/service/homestaging1.jpeg",
       "details": [
-        "Specializujeme se na homestaging, který vám pomůže připravit váš domov na prodej nebo pronájem. Naše služby homestagingu zahrnují úpravy interiéru, které zvýší atraktivitu vašeho prostoru pro potenciální kupce nebo nájemce.",
-        "Pomocí homestagingu vytvoříme přívětivý a atraktivní prostor, který osloví co nejširší okruh zájemců."
+          "Specializujeme se na homestaging, který vám pomůže připravit váš domov na prodej nebo pronájem. Naše služby homestagingu zahrnují úpravy interiéru, které zvýší atraktivitu vašeho prostoru pro potenciální kupce nebo nájemce.",
+          "Pomocí homestagingu vytvoříme přívětivý a atraktivní prostor, který osloví co nejširší okruh zájemců."
       ],
       "additionalImages": [
-        "/assets/images/service/homestaging2.jpeg",
-        "/assets/images/service/homestaging3.jpeg"
+          "/assets/images/service/homestaging2.jpeg",
+          "/assets/images/service/homestaging3.jpeg"
       ],
       "additionalDetails": [
-        "Homestaging je efektivní nástroj pro zvýšení hodnoty a atraktivity vaší nemovitosti na trhu.",
-        "Naše služby zahrnují vše od základních úprav po kompletní redesign interiéru, aby váš domov vypadal co nejlépe."
+          "Homestaging je efektivní nástroj pro zvýšení hodnoty a atraktivity vaší nemovitosti na trhu.",
+          "Naše služby zahrnují vše od základních úprav po kompletní redesign interiéru, aby váš domov vypadal co nejlépe."
       ],
       "listItems": [
-        "Zvýšení atraktivity",
-        "Vyšší hodnota nemovitosti",
-        "Profesionální úpravy",
-        "Rychlý prodej"
+          "Zvýšení atraktivity",
+          "Vyšší hodnota nemovitosti",
+          "Profesionální úpravy",
+          "Rychlý prodej"
       ],
       "finalImage": "/assets/images/service/homestaging4.jpeg",
       "conclusion": [
-        "Homestaging je klíčovým prvkem při přípravě nemovitosti na prodej nebo pronájem. Naše služby vám pomohou zvýšit atraktivitu a hodnotu vašeho domova.",
-        "S naším homestagingem můžete očekávat rychlejší a výhodnější prodej nebo pronájem vaší nemovitosti."
-      ]
-    },
-    {
+          "Homestaging je klíčovým prvkem při přípravě nemovitosti na prodej nebo pronájem. Naše služby vám pomohou zvýšit atraktivitu a hodnotu vašeho domova.",
+          "S naším homestagingem můžete očekávat rychlejší a výhodnější prodej nebo pronájem vaší nemovitosti."
+      ],
+      "seo": {
+          "title": "Homestaging - Připravte Váš Domov na Prodej",
+          "description": "Profesionální homestaging pro přípravu vašeho domova na prodej nebo pronájem. Zvýšení atraktivity a hodnoty vaší nemovitosti.",
+          "keywords": "homestaging, příprava domova na prodej, zvýšení atraktivity, zvýšení hodnoty nemovitosti"
+      }
+  },
+  {
       "id": 6,
-      "nav": "navrhy-bytovych-interieru",
       "title": "Návrhy bytových interiérů",
+      "nav": "navrhy-bytovych-interieru",
       "title2": "Vytvořte dokonalý domov",
       "image": "/assets/images/service/bytInterier1.webp",
       "details": [
-        "Vytváříme návrhy bytových interiérů, které odrážejí váš osobní styl a potřeby. Naše návrhy zahrnují vše od výběru barev a materiálů po rozmístění nábytku a dekorací.",
-        "Soustředíme se na vytvoření harmonického a funkčního prostoru, který je přizpůsoben vašemu životnímu stylu."
+          "Vytváříme návrhy bytových interiérů, které odrážejí váš osobní styl a potřeby. Naše návrhy zahrnují vše od výběru barev a materiálů po rozmístění nábytku a dekorací.",
+          "Soustředíme se na vytvoření harmonického a funkčního prostoru, který je přizpůsoben vašemu životnímu stylu."
       ],
       "additionalImages": [
-        "/assets/images/service/bytInterier2.webp",
-        "/assets/images/service/bytInterier3.webp"
+          "/assets/images/service/bytInterier2.webp",
+          "/assets/images/service/bytInterier3.webp"
       ],
       "additionalDetails": [
-        "Naše návrhy bytových interiérů kombinují estetiku a funkčnost, aby vytvořily pohodlný a krásný domov.",
-        "Spolupracujeme s vámi, abychom pochopili vaše potřeby a přání, a vytvořili prostor, který je skutečně váš."
+          "Naše návrhy bytových interiérů kombinují estetiku a funkčnost, aby vytvořily pohodlný a krásný domov.",
+          "Spolupracujeme s vámi, abychom pochopili vaše potřeby a přání, a vytvořili prostor, který je skutečně váš."
       ],
       "listItems": [
-        "Osobní styl",
-        "Funkční design",
-        "Detailní plánování",
-        "Kreativní řešení"
+          "Osobní styl",
+          "Funkční design",
+          "Detailní plánování",
+          "Kreativní řešení"
       ],
       "finalImage": "/assets/images/service/bytInterier4.webp",
       "conclusion": [
-        "Návrhy bytových interiérů jsou klíčové pro vytvoření pohodlného a krásného domova. Naše služby vám pomohou vytvořit prostor, který odráží váš osobní styl a potřeby.",
-        "S našimi návrhy můžete mít jistotu, že váš domov bude navržen s maximální péčí a pozorností k detailu."
-      ]
-    },
-    {
+          "Návrhy bytových interiérů jsou klíčové pro vytvoření pohodlného a krásného domova. Naše služby vám pomohou vytvořit prostor, který odráží váš osobní styl a potřeby.",
+          "S našimi návrhy můžete mít jistotu, že váš domov bude navržen s maximální péčí a pozorností k detailu."
+      ],
+      "seo": {
+          "title": "Návrhy Bytových Interiérů - Dokonalý Domov",
+          "description": "Profesionální návrhy bytových interiérů od výběru barev po rozmístění nábytku. Vytvořte harmonický a funkční domov.",
+          "keywords": "návrhy bytových interiérů, design interiérů, bytový design, návrhy interiérů"
+      }
+  },
+  {
       "id": 7,
-      "nav": "navrhy-komercnich-interieru",
       "title": "Návrhy komerčních interiérů",
+      "nav": "navrhy-komercnich-interieru",
       "title2": "Profesionální prostory pro váš byznys",
       "image": "/assets/images/service/komercniInterier1.jpg",
       "details": [
-        "Navrhujeme komerční interiéry, které jsou funkční a esteticky přitažlivé. Naše návrhy zohledňují specifické požadavky vašich obchodních prostor a pomohou vytvořit prostředí, které podpoří váš obchodní úspěch.",
-        "Soustředíme se na vytvoření profesionálního a inspirujícího prostoru, který zvýší produktivitu a spokojenost vašich zaměstnanců."
+          "Navrhujeme komerční interiéry, které jsou funkční a esteticky přitažlivé. Naše návrhy zohledňují specifické požadavky vašich obchodních prostor a pomohou vytvořit prostředí, které podpoří váš obchodní úspěch.",
+          "Soustředíme se na vytvoření profesionálního a inspirujícího prostoru, který zvýší produktivitu a spokojenost vašich zaměstnanců."
       ],
       "additionalImages": [
-        "/assets/images/service/komercniInterier2.jpeg",
-        "/assets/images/service/komercniInterier3.jpeg"
+          "/assets/images/service/komercniInterier2.jpeg",
+          "/assets/images/service/komercniInterier3.jpeg"
       ],
       "additionalDetails": [
-        "Naše návrhy komerčních interiérů kombinují estetiku a funkčnost, aby vytvořily efektivní a příjemné pracovní prostředí.",
-        "Spolupracujeme s vámi, abychom pochopili potřeby vašeho podnikání a vytvořili prostor, který podporuje vaše cíle."
+          "Naše návrhy komerčních interiérů kombinují estetiku a funkčnost, aby vytvořily efektivní a příjemné pracovní prostředí.",
+          "Spolupracujeme s vámi, abychom pochopili potřeby vašeho podnikání a vytvořili prostor, který podporuje vaše cíle."
       ],
       "listItems": [
-        "Funkční design",
-        "Profesionální vzhled",
-        "Podpora produktivity",
-        "Inspirující prostředí"
+          "Funkční design",
+          "Profesionální vzhled",
+          "Podpora produktivity",
+          "Inspirující prostředí"
       ],
       "finalImage": "/assets/images/service/komercniInterier4.jpeg",
       "conclusion": [
-        "Návrhy komerčních interiérů jsou klíčové pro vytvoření efektivního a příjemného pracovního prostředí. Naše služby vám pomohou vytvořit prostor, který podporuje vaše obchodní cíle.",
-        "S našimi návrhy můžete mít jistotu, že váš komerční prostor bude navržen s ohledem na estetiku i funkčnost."
-      ]
-    },
-    {
+          "Návrhy komerčních interiérů jsou klíčové pro vytvoření efektivního a příjemného pracovního prostředí. Naše služby vám pomohou vytvořit prostor, který podporuje vaše obchodní cíle.",
+          "S našimi návrhy můžete mít jistotu, že váš komerční prostor bude navržen s ohledem na estetiku i funkčnost."
+      ],
+      "seo": {
+          "title": "Návrhy Komerčních Interiérů - Profesionální Prostory",
+          "description": "Profesionální návrhy komerčních interiérů pro funkční a esteticky přitažlivé obchodní prostory. Podpora produktivity a spokojenosti zaměstnanců.",
+          "keywords": "návrhy komerčních interiérů, komerční design, kancelářský design, obchodní prostory"
+      }
+  },
+  {
       "id": 8,
-      "nav": "realizace-celych-domu",
       "title": "Realizace celých domů",
+      "nav": "realizace-celych-domu",
       "title2": "Kompletní řešení pro váš domov",
       "image": "/assets/images/service/celyDum1.jpeg",
       "details": [
-        "Zajišťujeme kompletní realizaci interiérů celých domů. Naše služby zahrnují vše od prvotního návrhu až po finální úpravy, abychom zajistili, že váš domov bude přesně podle vašich představ.",
-        "Naše realizační tým pracuje na každém projektu s maximální péčí a pozorností k detailu, aby dosáhl vynikajících výsledků."
+          "Zajišťujeme kompletní realizaci interiérů celých domů. Naše služby zahrnují vše od prvotního návrhu až po finální úpravy, abychom zajistili, že váš domov bude přesně podle vašich představ.",
+          "Naše realizační tým pracuje na každém projektu s maximální péčí a pozorností k detailu, aby dosáhl vynikajících výsledků."
       ],
       "additionalImages": [
-        "/assets/images/service/celyDum2.jpeg",
-        "/assets/images/service/celyDum3.jpg"
+          "/assets/images/service/celyDum2.jpeg",
+          "/assets/images/service/celyDum3.jpg"
       ],
       "additionalDetails": [
-        "Během realizace celých domů úzce spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou přesně zohledněny.",
-        "Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."
+          "Během realizace celých domů úzce spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou přesně zohledněny.",
+          "Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."
       ],
       "listItems": [
-        "Kompletní služby",
-        "Vysoce kvalitní materiály",
-        "Zkušený tým",
-        "Precizní provedení"
+          "Kompletní služby",
+          "Vysoce kvalitní materiály",
+          "Zkušený tým",
+          "Precizní provedení"
       ],
       "finalImage": "/assets/images/service/celyDum4.jpeg",
       "conclusion": [
-        "Realizace interiérů celých domů je komplexní proces, který vyžaduje pečlivé plánování a provedení. Naše služby vám zaručí, že váš domov bude přesně podle vašich představ.",
-        "S naším týmem můžete mít jistotu, že váš projekt bude zrealizován profesionálně a s maximální péčí."
-      ]
-    }
-
-  ]
+          "Realizace interiérů celých domů je komplexní proces, který vyžaduje pečlivé plánování a provedení. Naše služby vám zaručí, že váš domov bude přesně podle vašich představ.",
+          "S naším týmem můžete mít jistotu, že váš projekt bude zrealizován profesionálně a s maximální péčí."
+      ],
+      "seo": {
+          "title": "Realizace Celých Domů - Kompletní Řešení",
+          "description": "Kompletní realizace interiérů celých domů od návrhu až po finální úpravy. Vysoce kvalitní materiály a precizní provedení.",
+          "keywords": "realizace celých domů, kompletní řešení interiérů, návrhy domů, realizace interiérů"
+      }
+  },
+  {
+      "id": 9,
+      "title": "Design Vizitek",
+      "nav": "design-vizitek",
+      "title2": "Profesionální návrhy vizitek",
+      "image": "/assets/images/web/business_card.jpg",
+      "details": [
+          "Vytváříme atraktivní a profesionální vizitky, které zanechají trvalý dojem. Naše vizitky jsou navrženy tak, aby odrážely váš brand a přitáhly pozornost.",
+          "Používáme kvalitní materiály a moderní designové prvky, které zajistí, že vaše vizitky budou působit prestižně a profesionálně."
+      ],
+      "additionalImages": [
+          "/assets/images/web/business_card5.jpg",
+          "/assets/images/web/business_card2.jpg"
+      ],
+      "additionalDetails": [
+          "Nabízíme širokou škálu stylů a formátů, aby vaše vizitky vyhovovaly vašim specifickým potřebám.",
+          "Naše služby zahrnují také tisk a doručení, takže se můžete spolehnout na kompletní servis od návrhu až po finální produkt."
+      ],
+      "listItems": [
+          "Unikátní designy",
+          "Kvalitní materiály",
+          "Rychlé dodání",
+          "Personalizace"
+      ],
+      "finalImage": "/assets/images/web/business_card3.jpg",
+      "conclusion": [
+          "Design vizitek je klíčovým prvkem vaší firemní identity. S našimi profesionálními návrhy budete vynikat a zanecháte silný dojem.",
+          "Díky našim zkušenostem a kreativitě vám pomůžeme vytvořit vizitky, které budou dokonale reprezentovat vaši značku."
+      ],
+      "seo": {
+          "title": "Design Vizitek - Profesionální Návrhy",
+          "description": "Atraktivní a profesionální vizitky navržené tak, aby odrážely váš brand. Kvalitní materiály a moderní designové prvky.",
+          "keywords": "design vizitek, návrhy vizitek, profesionální vizitky, firemní identity"
+      }
+  },
+  {
+      "id": 10,
+      "title": "Design loga",
+      "nav": "design-loga",
+      "title2": "Unikátní a zapamatovatelné logo",
+      "image": "/assets/images/web/logo4.png",
+      "details": [
+          "Navrhneme pro vás jedinečné logo, které dokonale vystihne vaši značku a bude snadno zapamatovatelné.",
+          "Používáme moderní designové techniky a trendy, aby vaše logo bylo aktuální a relevantní."
+      ],
+      "additionalImages": [
+          "/assets/images/web/logo2.png",
+          "/assets/images/web/logo-main.svg"
+      ],
+      "additionalDetails": [
+          "S našimi službami získáte více návrhů, ze kterých si můžete vybrat ten nejlepší.",
+          "Logo je základem vaší vizuální identity, proto klademe důraz na detail a kvalitu provedení."
+      ],
+      "listItems": [
+          "Kreativní návrhy",
+          "Detailní zpracování",
+          "Moderní trendy",
+          "Více variant"
+      ],
+      "finalImage": "/assets/images/web/logo3.png",
+      "conclusion": [
+          "Design loga je základním stavebním kamenem vaší značky. S našimi profesionálními službami získáte logo, které vás bude důstojně reprezentovat.",
+          "Pomůžeme vám vytvořit logo, které bude nejen krásné, ale i funkční a snadno použitelné na různých médiích."
+      ],
+      "seo": {
+          "title": "Design Loga - Unikátní a Zapamatovatelné",
+          "description": "Jedinečné logo, které dokonale vystihne vaši značku. Moderní designové techniky a trendy.",
+          "keywords": "design loga, návrh loga, profesionální logo, vizuální identita"
+      }
+  },
+  {
+      "id": 11,
+      "title": "Design plakátů",
+      "nav": "design-plakatu",
+      "title2": "Poutavé a efektivní plakáty",
+      "image": "/assets/images/web/plakat1.png",
+      "details": [
+          "Nabízíme profesionální návrhy plakátů, které přitáhnou pozornost a efektivně předají vaši zprávu.",
+          "Používáme kreativní designy a prvky, které zaručí, že vaše plakáty budou nepřehlédnutelné."
+      ],
+      "additionalImages": [
+          "/assets/images/web/plakat1.png"
+      ],
+      "additionalDetails": [
+          "Plakáty navrhujeme pro různé účely, od reklamních kampaní po kulturní akce.",
+          "Zajišťujeme také tisk a doručení, takže se můžete spolehnout na komplexní servis."
+      ],
+      "listItems": [
+          "Kreativní designy",
+          "Přitažlivé prvky",
+          "Kvalitní tisk",
+          "Rychlé dodání"
+      ],
+      "finalImage": "/assets/images/web/plakat1.png",
+      "conclusion": [
+          "Design plakátů je klíčovým nástrojem pro efektivní komunikaci s vašimi zákazníky. S našimi návrhy budete vždy na očích.",
+          "Naše zkušenosti a kreativita vám pomohou vytvořit plakáty, které skutečně zaujmou a předají vaši zprávu."
+      ],
+      "seo": {
+          "title": "Design Plakátů - Poutavé a Efektivní",
+          "description": "Profesionální návrhy plakátů pro reklamní kampaně i kulturní akce. Kreativní designy a prvky.",
+          "keywords": "design plakátů, návrhy plakátů, profesionální plakáty, reklamní plakáty"
+      }
+  },
+  {
+      "id": 12,
+      "title": "Fotografování",
+      "nav": "fotografovani",
+      "title2": "Profesionální fotografické služby",
+      "image": "/assets/images/product/kadernictvi1.jpg",
+      "details": [
+          "Nabízíme profesionální fotografické služby, které zajistí, že vaše produkty a prostory budou vypadat co nejlépe.",
+          "Naše fotografie jsou kvalitní a detailní, což vám pomůže prezentovat vaši nabídku v tom nejlepším světle."
+      ],
+      "additionalImages": [
+          "/assets/images/bannerImg/1.webp",
+          "/assets/images/bannerImg/6.webp"
+      ],
+      "additionalDetails": [
+          "Specializujeme se na fotografování produktů, interiérů i firemních akcí.",
+          "Používáme profesionální vybavení a techniky, aby výsledné fotografie byly vždy špičkové kvality."
+      ],
+      "listItems": [
+          "Kvalitní fotografie",
+          "Profesionální vybavení",
+          "Rychlé zpracování",
+          "Detailní snímky"
+      ],
+      "finalImage": "/assets/images/product/chalupa2.jpeg",
+      "conclusion": [
+          "Profesionální fotografování je klíčové pro úspěšnou prezentaci vašich produktů a služeb. S našimi fotografiemi budete vždy vypadat skvěle.",
+          "Díky našim zkušenostem a vybavení vám zajistíme fotografie, které zaujmou a přesvědčí vaše zákazníky."
+      ],
+      "seo": {
+          "title": "Fotografování - Profesionální Fotografické Služby",
+          "description": "Profesionální fotografické služby pro produkty, interiéry i firemní akce. Kvalitní a detailní fotografie.",
+          "keywords": "fotografování, profesionální fotografické služby, produktové fotografie, interiérové fotografie"
+      }
+  }
+]
