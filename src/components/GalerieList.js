@@ -24,7 +24,8 @@ const GalerieList = () => {
                 </div>
                 <h2 className="title">Fotogalerie realizací</h2>
               </div>
-              <p className="disc" style={{maxWidth: "55%"}}>Prohlédněte si naši fotogalerii, kde naleznete ukázky našich realizací. Od komerčních projektů až po útulné domácí interiéry, naše portfolio zahrnuje širokou škálu stylů a řešení. Inspirujte se našimi projekty a zjistěte, jak můžeme i váš prostor proměnit v krásné a funkční prostředí.</p>
+              <p className="disc gallery-description">Prohlédněte si naši fotogalerii, kde naleznete ukázky našich realizací. Od komerčních projektů až po útulné domácí interiéry, naše portfolio zahrnuje širokou škálu stylů a řešení. Inspirujte se našimi projekty a zjistěte, jak můžeme i váš prostor proměnit v krásné a funkční prostředí.</p>
+
               
             </div>
           </div>

@@ -15961,14 +15961,22 @@ a {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+.project-image{
+  height: 500px;
+  object-fit: contain;
+}
 @media only screen and (max-width: 767px) {
   .banner-content-inner-six .title {
-    font-size: 48px;
+    font-size: 33px;
     font-style: normal;
     font-weight: 800;
-    line-height: 77px;
+    line-height: 44px;
+  }
+  .project-image{
+    height: auto;
   }
 }
+
 .banner-content-inner-six p.disc {
   max-width: 43%;
   color: #a1a1a1;
@@ -16461,6 +16469,16 @@ a {
   width: 354px;
   padding: 40px 30px 40px 40px;
 }
+.gallery-description {
+  max-width: 55%;
+}
+
+@media (max-width: 768px) {
+  .gallery-description {
+    max-width: 100%;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .left-swiper-area-start .single-left-banner-swiper-start {
     width: 291px;
@@ -21320,7 +21338,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 }
 .sigle-testimonials-one .author-area .thumbnail img {
   padding: 5px;
-  width: 72px;
+  max-width: 72px;
   height: 72px;
   border-radius: 50%;
   border: 1px solid #E3E3E3;

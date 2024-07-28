@@ -20,6 +20,7 @@ import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
 import WebAGrafika from './pages/WebAGrafika';
 import WebDetail from './pages/ProjectDetail'
 const App = () => {
+  
   return (
     <>
       <Header />

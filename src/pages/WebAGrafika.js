@@ -105,12 +105,7 @@ const WebAGrafika = () => {
                 <p className="disc">
                   Navrhneme design, díky kterému váš web vynikne. Zapamatovatelné firemní stránky podpoří viditelnost značky a odliší vás od konkurence.
                 </p>
-                <a href="/portfolio" className="rts-read-more-circle-btn under-line">
-<i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-  
-</i>                  <p>Všechny projekty</p>
-                </a>
+               
               </div>
             </div>
           </div>

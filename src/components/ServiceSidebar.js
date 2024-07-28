@@ -1,11 +1,14 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 const ServiceSidebar = () => {
   const form = useRef();
+  const navigate = useNavigate();
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -27,6 +30,12 @@ const ServiceSidebar = () => {
         }
       );
   };
+
+  const handleLinkClick = (nav) => {
+    navigate(`/nase-sluzby/${nav}`);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="service-left-sidebar-wrapper">
       <div className="service-left-sidebar-wized mb--50">
@@ -35,11 +44,16 @@ const ServiceSidebar = () => {
         </div>
         <div className="body">
           {servicesData.map((service, index) => (
-            <Link to={`/nase-sluzby/${service.nav}`} key={service.id} className="single-short-service">
+            <div
+              key={service.id}
+              className="single-short-service"
+              onClick={() => handleLinkClick(service.nav)}
+              style={{ cursor: 'pointer' }}
+            >
               <span className="number">{service.id.toString().padStart(2, '0')}.</span>
-              <p className="name" style={{lineHeight: "normal"}}>{service.title}</p>
+              <p className="name" style={{ lineHeight: "normal" }}>{service.title}</p>
               <FontAwesomeIcon icon={faArrowRight} />
-            </Link>
+            </div>
           ))}
         </div>
       </div>

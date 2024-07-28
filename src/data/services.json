@@ -317,6 +317,7 @@
   {
       "id": 10,
       "title": "Design loga",
+      "style": "contain",
       "nav": "design-loga",
       "title2": "Unikátní a zapamatovatelné logo",
       "image": "/assets/images/web/logo4.png",
@@ -352,6 +353,7 @@
   {
       "id": 11,
       "title": "Design plakátů",
+      "style": "contain",
       "nav": "design-plakatu",
       "title2": "Poutavé a efektivní plakáty",
       "image": "/assets/images/web/plakat1.png",
