@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { CSSTransition } from 'react-transition-group';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -44,7 +45,7 @@ const Header = () => {
                   <Link className="nav-link" to="/nase-sluzby">Naše služby</Link>
                   <ul className="submenu">
                     <li className='lim'><a className="sdm-main" href="/nase-sluzby/3d-navrhy-interieru">3D návrhy interiéru</a></li>
-                    <li className="lim"><a className="sdm-main" href="/nase-sluzby/2d-navrhy-interieru">2D návrhy interiéru</a></li>
+                    <li className="lim"><a className="sdm-main" href="/nase-sluzby/2d-navrhy-interiéru">2D návrhy interiéru</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/realizace">Realizace</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/konzultace">Konzultace</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/homestaging">Homestaging</a></li>
@@ -85,7 +86,12 @@ const Header = () => {
       </header>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
+      <CSSTransition
+        in={isMobileMenuOpen}
+        timeout={300}
+        classNames="mobile-menu"
+        unmountOnExit
+      >
         <div className={`mobile-menu-main ${isMobileMenuOpen ? 'open' : ''}`}>
           <nav className="nav-main mainmenu-nav mt--30">
             <ul className="mainmenu metismenu" id="mobile-menu-active">
@@ -105,7 +111,6 @@ const Header = () => {
                   <li><a className="mobile-menu-link" href="/nase-sluzby/konzultace" onClick={closeMobileMenu}>Konzultace</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/homestaging" onClick={closeMobileMenu}>Homestaging</a></li>
                   <li><a className="mobile-menu-link" href="/web-a-grafika" onClick={closeMobileMenu} style={{color: "var(--color-primary) "}}>Webové aplikace a grafika</a></li>
-
                   <li><a className="mobile-menu-link" href="/nase-sluzby/navrhy-bytovych-interiéru" onClick={closeMobileMenu}>Návrhy bytových interiérů</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/navrhy-komercnich-interieru" onClick={closeMobileMenu}>Návrhy komerčních interiérů</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/realizace-celych-domu" onClick={closeMobileMenu}>Realizace celých domů</a></li>
@@ -136,7 +141,7 @@ const Header = () => {
             </ul>
           </nav>
         </div>
-      )}
+      </CSSTransition>
     </>
   );
 };
