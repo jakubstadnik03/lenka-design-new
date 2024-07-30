@@ -6,85 +6,128 @@ import { Navigation } from 'swiper/modules';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import portfolioData from '../data/portfolioData.json';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const OurProject = () => {
   const firstSixProjects = portfolioData.slice(0, 6);
 
+  const { ref: titleRef, inView: titleInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: sliderRef, inView: sliderInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="rts-project-area rts-section-gap bg-light" id="portfolio">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="title-area-product-one">
-              <div className="title-style-left">
-                <div className="pre-title-area">
-                  <img src="assets/images/about/02.png" alt="about" />
-                  <span className="pre-title">Naše Projekty</span>
+        <motion.div
+          ref={titleRef}
+          initial="hidden"
+          animate={titleInView ? 'visible' : 'hidden'}
+          variants={containerVariants}
+        >
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="title-area-product-one">
+                <div className="title-style-left">
+                  <div className="pre-title-area">
+                    <img src="assets/images/about/02.png" alt="about" />
+                    <span className="pre-title">Naše Projekty</span>
+                  </div>
+                  <h2 className="title quote" style={{ opacity: "1 !important" }}>
+                    Prozkoumejte naše úžasné <br />
+                    návrhy interiérů
+                  </h2>
                 </div>
-                <h2 className="title quote" style={{ opacity: "1 !important" }}>
-                  Prozkoumejte naše úžasné <br />
-                  návrhy interiérů
-                </h2>
-              </div>
-              <p className="disc">
-                Naše projekty interiérového designu se zaměřují na transformaci obytných prostor na moderní a přívětivá místa. S důrazem na funkčnost a estetiku, náš tým talentovaných návrhářů bude úzce spolupracovat.
-              </p>
-              <div className="swiper-next-prev-wrapper">
-                <div className="swiper-button-next next-icons">
-                  <FontAwesomeIcon icon={faChevronRight} />
-                </div>
-                <div className="swiper-button-prev next-icons">
-                  <FontAwesomeIcon icon={faChevronLeft} />
+                <p className="disc">
+                  Naše projekty interiérového designu se zaměřují na transformaci obytných prostor na moderní a přívětivá místa. S důrazem na funkčnost a estetiku, náš tým talentovaných návrhářů bude úzce spolupracovat.
+                </p>
+                <div className="swiper-next-prev-wrapper">
+                  <div className="swiper-button-next next-icons">
+                    <FontAwesomeIcon icon={faChevronRight} />
+                  </div>
+                  <div className="swiper-button-prev next-icons">
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="container-full mt--50">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="swiper-product-one-wrapper">
-              <Swiper
-                modules={[Navigation]}
-                navigation={{
-                  nextEl: '.swiper-button-next',
-                  prevEl: '.swiper-button-prev',
-                }}
-                spaceBetween={0}
-      
-                breakpoints={{
-                  // when window width is >= 640px
-                  640: {
-                    slidesPerView: 1,
-                  },
-                  // when window width is >= 768px
-                  768: {
-                    slidesPerView: 3,
-                  },
-                }}
-                className="swiper-product-one"
-              >
-                {firstSixProjects.map((project, index) => (
-                  <SwiperSlide key={project.id}>
-                    <div className="single-product-one">
-                      <span className="number">{index + 1}</span>
-                      <a href={`/portfolio/${project.id}`} className="thumbnail">
-                        <img src={project.images[0]} alt="product" style={{ height: "700px", objectFit: "cover" }} />
-                      </a>
-                      <div className="inenr-content-absolute">
-                        <a href={`/portfolio/${project.id}`}>
-                          <h3 className="title">{project.name}</h3>
+        <motion.div
+          ref={sliderRef}
+          initial="hidden"
+          animate={sliderInView ? 'visible' : 'hidden'}
+          variants={containerVariants}
+        >
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="swiper-product-one-wrapper">
+                <Swiper
+                  modules={[Navigation]}
+                  navigation={{
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  }}
+                  spaceBetween={0}
+                  breakpoints={{
+                    640: {
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      slidesPerView: 3,
+                    },
+                  }}
+                  className="swiper-product-one"
+                >
+                  {firstSixProjects.map((project, index) => (
+                    <SwiperSlide key={project.id}>
+                      <motion.div
+                        className="single-product-one"
+                        variants={itemVariants}
+                      >
+                        <span className="number">{index + 1}</span>
+                        <a href={`/portfolio/${project.id}`} className="thumbnail">
+                          <img src={project.images[0]} alt="product" style={{ height: "700px", objectFit: "cover" }} />
                         </a>
-                        <span className="category">Interiérový Design</span>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+                        <div className="inenr-content-absolute">
+                          <a href={`/portfolio/${project.id}`}>
+                            <h3 className="title">{project.name}</h3>
+                          </a>
+                          <span className="category">Interiérový Design</span>
+                        </div>
+                      </motion.div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

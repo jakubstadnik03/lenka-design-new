@@ -103,6 +103,12 @@ const Header = () => {
               </li>
               <li className={`has-dropdown ${showServices ? 'mm-show' : ''}`}>
                 <div className="main" onClick={toggleServices}>Naše služby</div>
+                <CSSTransition
+        in={showServices}
+        timeout={300}
+        classNames="mobile-menu"
+        unmountOnExit
+      >
                 <ul className={`mm-collapse ${showServices ? 'mm-show' : ''}`}>
                   <li><a className="mobile-menu-link" href="/nase-sluzby" onClick={closeMobileMenu}>Seznam našich služeb</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/3d-navrhy-interieru" onClick={closeMobileMenu}>3D návrhy interiéru</a></li>
@@ -115,16 +121,24 @@ const Header = () => {
                   <li><a className="mobile-menu-link" href="/nase-sluzby/navrhy-komercnich-interieru" onClick={closeMobileMenu}>Návrhy komerčních interiérů</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/realizace-celych-domu" onClick={closeMobileMenu}>Realizace celých domů</a></li>
                 </ul>
+               </CSSTransition>
                 <span className="button">
                   <FontAwesomeIcon icon={showServices ? faChevronDown : faChevronUp} />
                 </span>
               </li>
               <li className="has-dropdown">
                 <div className="main" onClick={toggleProjekty}>Projekty</div>
+                <CSSTransition
+        in={showProjekty}
+        timeout={300}
+        classNames="mobile-menu"
+        unmountOnExit
+      >
                 <ul className={`mm-collapse ${showProjekty ? 'mm-show' : ''}`}>
                   <li><a className="mobile-menu-link" href="/portfolio" onClick={closeMobileMenu}>Mé předchozí projekty</a></li>
                   <li><a className="mobile-menu-link" href="/fotogalerie" onClick={closeMobileMenu}>Fotogalerie realizací</a></li>
                 </ul>
+                </CSSTransition>
                 <span className="button">
                   <FontAwesomeIcon icon={showProjekty ? faChevronDown : faChevronUp} />
                 </span>

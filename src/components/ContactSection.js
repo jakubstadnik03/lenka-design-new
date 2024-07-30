@@ -1,8 +1,15 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const ContactSection = () => {
-    const form = useRef();
+  const form = useRef();
+  const { ref: formRef, inView: formInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -24,30 +31,60 @@ const ContactSection = () => {
         }
       );
   };
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="rts-contact-area rts-section-gap">
       <div className="container">
         <div className="row">
-          <div className="col-lg-6">
-            <div className="contct-thumbnail-left rts-reveal-one">
+          <motion.div 
+            className="col-lg-6"
+            ref={formRef}
+            initial="hidden"
+            animate={formInView ? 'visible' : 'hidden'}
+            variants={containerVariants}
+          >
+            <motion.div className="contct-thumbnail-left rts-reveal-one" variants={itemVariants}>
               <img className="rts-reveal-image-one" src="/assets/images/service/konzultace1.jpeg" alt="Kontakt" />
-            </div>
-          </div>
-          <div className="col-lg-6 pl--60 pr--100 pl_md--15 pl_sm--15 mt_md--50 mt_sm--50">
-            <div className="easy-appoinment-area">
+            </motion.div>
+          </motion.div>
+          <motion.div 
+            className="col-lg-6 pl--60 pr--100 pl_md--15 pl_sm--15 mt_md--50 mt_sm--50"
+            ref={formRef}
+            initial="hidden"
+            animate={formInView ? 'visible' : 'hidden'}
+            variants={containerVariants}
+          >
+            <motion.div className="easy-appoinment-area" variants={itemVariants}>
               <div className="title-left-style-seven-wrapper">
                 <span className="pre">Neváhejte mě kontaktovat</span>
                 <h2 className="title">Máte nějaké dotazy?</h2>
               </div>
               <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="user_name" placeholder="Vaše jméno" required />
-                <input type="tel" name="user_phone"  placeholder="Vaše číslo" required />
-                <input type="email"  name="user_email"  placeholder="Váš email" required />
+                <input type="tel" name="user_phone" placeholder="Vaše číslo" required />
+                <input type="email" name="user_email" placeholder="Váš email" required />
                 <textarea name="message" placeholder="Napište zprávu"></textarea>
                 <button className="rts-btn btn-primary" value="send" type="submit">Odeslat</button>
               </form>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

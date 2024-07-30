@@ -26,8 +26,8 @@ const Progress = () => {
   return (
     !isTop && (
       <div className="progress-wrap active-progress" onClick={scrollToTop}>
-        <div className="icon-progress">
-          <FontAwesomeIcon icon={faArrowUp} />
+        <div className="icon-progress" style={{postition: "relative", zIndex: "999"}}>
+          <FontAwesomeIcon icon={faArrowUp} /> 
         </div>
         <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
           <path

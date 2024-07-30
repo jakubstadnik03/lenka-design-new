@@ -20077,7 +20077,7 @@ a {
   }
 }
 .project-full-top-wrapper p.disc {
-  max-width: 35%;
+  max-width: 45%;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -25108,7 +25108,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .progress-wrap:hover::after {
   opacity: 1;
-  content: "\f325";
+
   font-weight: 300;
   border: 0px solid var(--color-primary);
 }
@@ -25139,7 +25139,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   opacity: 0;
 }
 
-.progress-wrap svg path {
+.progress-circle path {
   fill: none;
 }
 
@@ -25563,4 +25563,4 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   transform: translateY(-100%);
   transition: all 0.3s 1s ease-out;
 }
-/*# sourceMappingURL=../maps/style.css.map */
+/* # sourceMappingURL=../maps/style.css.map */

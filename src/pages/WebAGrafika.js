@@ -1,19 +1,29 @@
 import React from 'react';
-import { Pagination, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faPlus } from '@fortawesome/free-solid-svg-icons';
 import ContactUs from '../components/ContactUs';
-import webData from '../data/webData.json'
-// Install Swiper modules
+import webData from '../data/webData.json';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const WebAGrafika = () => {
+  const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref3, inView3] = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  const fadeInUpVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <>
-      <div className="swiper-banner-seven-main-wrapper" style={{marginTop: "-230px"}}>
+      <div className="swiper-banner-seven-main-wrapper" style={{ marginTop: "-230px" }}>
         <Swiper
-        className='mySwiper-banner-one'
+          className='mySwiper-banner-one'
           spaceBetween={50}
           slidesPerView={1}
           navigation
@@ -34,7 +44,7 @@ const WebAGrafika = () => {
                       <span className="pre-title">Tvorba webu</span>
                       <h1 className="title">Profesionální návrh <br /> a design webových stránek</h1>
                       <p className="disc">
-                        Jste začínající firma? A potřebujete web a grafiku co nejdříve, ať můžete začít vydělávat? 
+                        Jste začínající firma? A potřebujete web a grafiku co nejdříve, ať můžete začít vydělávat?
                         O vše se postaráme od designu loga, nafocení produktů, grafiky webu a nakódování celé struktury webu.
                       </p>
                     </div>
@@ -52,7 +62,7 @@ const WebAGrafika = () => {
                       <span className="pre-title">Tvorba grafiky</span>
                       <h1 className="title">Profesionální tvorba <br /> reklamní grafiky <br /> vizitky, loga, plakáty...</h1>
                       <p className="disc">
-                        Pomůžeme Vám vytvořit poutavé plakáty, vizitky, loga a reklamy, které budou oslovovat Vaše zákazníky. 
+                        Pomůžeme Vám vytvořit poutavé plakáty, vizitky, loga a reklamy, které budou oslovovat Vaše zákazníky.
                         Díky našemu talentovanému týmu grafiků, se postaráme o to, aby Vaše značka byla nejen viditelná, ale i zapamatovatelná.
                       </p>
                     </div>
@@ -70,7 +80,7 @@ const WebAGrafika = () => {
                       <span className="pre-title">Fotografování</span>
                       <h1 className="title">Profesionální fotografování <br /> produktů a interiérů</h1>
                       <p className="disc">
-                        Kvalitní fotografie jsou klíčové pro úspěch Vašeho podnikání. Nabízíme profesionální fotografické služby, 
+                        Kvalitní fotografie jsou klíčové pro úspěch Vašeho podnikání. Nabízíme profesionální fotografické služby,
                         které zajistí, že Vaše produkty a prostory budou vypadat co nejlépe.
                       </p>
                     </div>
@@ -93,7 +103,7 @@ const WebAGrafika = () => {
         </div>
       </div>
 
-      <div className="rts-projects-area rts-section-gap ">
+      <div className="rts-projects-area rts-section-gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -105,68 +115,51 @@ const WebAGrafika = () => {
                 <p className="disc">
                   Navrhneme design, díky kterému váš web vynikne. Zapamatovatelné firemní stránky podpoří viditelnost značky a odliší vás od konkurence.
                 </p>
-               
               </div>
             </div>
           </div>
           <div className="row mt--90">
             <div className="col-lg-12 rts_portfolio_animation-wrapper">
               <div className="portfolio-main-wrapper-h-six">
-                <div className="project--style-six rts-portfolio__item mb--70">
-                  <a href={`/web-a-grafika/${webData[0].nav}`} className="thumbnail">
-                    <img src={webData[0].mainImage} alt="product" />
-                  </a>
-                  <div className="inner-content">
-                    <a href={`/web-a-grafika/${webData[0].nav}`}>
-                      <h6 className="title">{webData[0].name}</h6>
+                {webData.map((project, index) => (
+                  <motion.div
+                    ref={index % 2 === 0 ? ref1 : ref2}
+                    initial="hidden"
+                    animate={inView1 || inView2 ? 'visible' : 'hidden'}
+                    variants={fadeInUpVariants}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className={`project--style-six rts-portfolio__item ${index % 2 === 0 ? 'mb--70' : ''}`}
+                    key={project.nav}
+                  >
+                    <a href={`/web-a-grafika/${project.nav}`} className="thumbnail">
+                      <img src={project.mainImage} alt="product" />
                     </a>
-                    <p className="disc">{webData[0].overview}</p>
-                  </div>
-                </div>
-                <div className="project--style-six rts-portfolio__item">
-                  <a href={`/web-a-grafika/${webData[1].nav}`} className="thumbnail">
-                    <img src={webData[1].mainImage} alt="product" />
-                  </a>
-                  <div className="inner-content">
-                    <a href={`/web-a-grafika/${webData[1].nav}`}>
-                      <h6 className="title">{webData[1].name}</h6>
-                    </a>
-                    <p className="disc">{webData[1].overview}</p>
-                  </div>
-                </div>
-                <div className="project--style-six rts-portfolio__item mb--70">
-                  <a href={`/web-a-grafika/${webData[2].nav}`} className="thumbnail">
-                    <img src={webData[2].mainImage} alt="product" />
-                  </a>
-                  <div className="inner-content">
-                    <a href={`/web-a-grafika/${webData[2].nav}`}>
-                      <h6 className="title">{webData[2].name}</h6>
-                    </a>
-                    <p className="disc">{webData[2].overview}</p>
-                  </div>
-                </div>
-                <div className="project--style-six rts-portfolio__item">
-                  <a href={`/web-a-grafika/${webData[3].nav}`} className="thumbnail">
-                    <img src={webData[3].mainImage} alt="product" />
-                  </a>
-                  <div className="inner-content">
-                    <a href={`/web-a-grafika/${webData[3].nav}`}>
-                      <h6 className="title">{webData[3].name}</h6>
-                    </a>
-                    <p className="disc">{webData[3].overview}</p>
-                  </div>
-                </div>
+                    <div className="inner-content">
+                      <a href={`/web-a-grafika/${project.nav}`}>
+                        <h6 className="title">{project.name}</h6>
+                      </a>
+                      <p className="disc">{project.overview}</p>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </div>
       <ContactUs />
-      <div className="rts-about-area-six  rts-section-gap border-top-in-container">
+      <div className="rts-about-area-six rts-section-gap border-top-in-container">
         <div className="container">
           <div className="row g-5 align-items-center">
-            <div className="col-lg-6 rts-slide-up">
-              <div className="about-right-inner-five">
+            <div className="col-lg-6">
+              <motion.div
+                ref={ref3}
+                initial="hidden"
+                animate={inView3 ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+                className="about-right-inner-five"
+              >
                 <div className="bg-image">
                   <img src="assets/images/about/09.png" alt="about" />
                 </div>
@@ -175,10 +168,10 @@ const WebAGrafika = () => {
                   <h2 className="title">Naše firma</h2>
                 </div>
                 <p className="disc-1">
-                Hledáte webovou stránku, která nejen dobře vypadá, ale také skvěle funguje? U nás jste na správném místě. V Lenka Design vytváříme moderní a uživatelsky přívětivé weby, které jsou snadno vyhledatelné na internetu. 
+                  Hledáte webovou stránku, která nejen dobře vypadá, ale také skvěle funguje? U nás jste na správném místě. V Lenka Design vytváříme moderní a uživatelsky přívětivé weby, které jsou snadno vyhledatelné na internetu.
                 </p>
                 <p className="disc">
-                Naše stránky jsou rychlé, bezpečné a optimalizované pro vyhledávače, takže vás zákazníci vždy snadno najdou.
+                  Naše stránky jsou rychlé, bezpečné a optimalizované pro vyhledávače, takže vás zákazníci vždy snadno najdou.
                 </p>
                 <div className="short-service-small">
                   <div className="single-service-small-check">
@@ -194,7 +187,7 @@ const WebAGrafika = () => {
                     Fotografování
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="col-lg-6">
               <div className="thumbnail-about-six rts-reveal-one">
@@ -215,15 +208,9 @@ const WebAGrafika = () => {
                   <h2 className="title">Tvorba grafiky</h2>
                 </div>
                 <p className="disc">
-                  Nabízíme profesionální tvorbu reklamní grafiky. Pomůžeme Vám vytvořit poutavé plakáty, vizitky, loga a reklamy, 
+                  Nabízíme profesionální tvorbu reklamní grafiky. Pomůžeme Vám vytvořit poutavé plakáty, vizitky, loga a reklamy,
                   které budou oslovovat Vaše zákazníky.
                 </p>
-                {/* <a href="/service-1.html" className="rts-read-more-circle-btn under-line">
-<i>
-                    <FontAwesomeIcon icon={faArrowRight} />
-  
-</i>                  <p>Zobrazit více o službách</p>
-                </a> */}
               </div>
             </div>
           </div>
@@ -261,10 +248,10 @@ const WebAGrafika = () => {
                     </p>
                   </div>
                   <a href="/nase-sluzby/design-vizitek" className="rts-read-more-circle-btn">
-<i>
+                    <i>
                       <FontAwesomeIcon icon={faArrowRight} />
-  
-</i>                    <p>Číst více</p>
+                    </i>
+                    <p>Číst více</p>
                   </a>
                 </div>
                 <div className="signle-service-list two">
@@ -280,10 +267,10 @@ const WebAGrafika = () => {
                     </p>
                   </div>
                   <a href="/nase-sluzby/design-loga" className="rts-read-more-circle-btn">
-<i>
+                    <i>
                       <FontAwesomeIcon icon={faArrowRight} />
-  
-</i>                    <p>Číst více</p>
+                    </i>
+                    <p>Číst více</p>
                   </a>
                 </div>
                 <div className="signle-service-list three">
@@ -299,10 +286,10 @@ const WebAGrafika = () => {
                     </p>
                   </div>
                   <a href="/nase-sluzby/design-plakatu" className="rts-read-more-circle-btn">
-<i>
+                    <i>
                       <FontAwesomeIcon icon={faArrowRight} />
-  
-</i>                    <p>Číst více</p>
+                    </i>
+                    <p>Číst více</p>
                   </a>
                 </div>
                 <div className="signle-service-list four">
@@ -318,10 +305,10 @@ const WebAGrafika = () => {
                     </p>
                   </div>
                   <a href="/nase-sluzby/fotografovani" className="rts-read-more-circle-btn">
-<i>
+                    <i>
                       <FontAwesomeIcon icon={faArrowRight} />
-  
-</i>                    <p>Číst více</p>
+                    </i>
+                    <p>Číst více</p>
                   </a>
                 </div>
               </div>
