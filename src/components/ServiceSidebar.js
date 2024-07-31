@@ -67,8 +67,8 @@ const ServiceSidebar = () => {
             <input type="text" name="user_name" placeholder="Vaše jméno" />
             <input type="tel" name="user_phone" placeholder="Vaše číslo" />
             <input type="email" name="user_email" placeholder="Váš email" />
-            <textarea placeholder="Zpáva pro mně " name="message"></textarea>
-            <button className="rts-btn btn-primary" value="send" type="submit">Obeslat</button>
+            <textarea placeholder="Zpáva pro mě " name="message"></textarea>
+            <button className="rts-btn btn-primary" value="send" type="submit">Odeslat</button>
           </form>
         </div>
       </div>

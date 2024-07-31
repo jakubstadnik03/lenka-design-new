@@ -57,7 +57,7 @@ const About = () => {
               <div className="title-style-left">
                 <div className="pre-title-area">
                   <img src="/assets/images/about/02.png" alt="about"/>
-                  <span className="pre-title">O naší firmě</span>
+                  <span className="pre-title">O mé firmě</span>
                 </div>
                 <h2 ref={titleRef} className="title mt--0 mb--25 quote reveal">Lenka Stádníková – interiérová návrhářka v Liberci</h2>
               </div>

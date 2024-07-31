@@ -21,8 +21,7 @@ const ServiceArea = () => {
                 <h2 className="title">Poskytované služby</h2>
               </div>
               <p className="disc">
-                V Luxury Living Designs se specializujeme na vytváření mimořádných obytných prostor, které vyzařují eleganci.
-              </p>
+              V Lenka Design se specializujeme na vytváření mimořádných obytných prostor, které vyzařují eleganci.              </p>
               <a href="/nase-sluzby" className="rts-read-more-circle-btn under-line">
                <i> <FontAwesomeIcon icon={faArrowRight} /></i>
                 <p>Zobrazit všechny služby</p>

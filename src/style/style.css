@@ -15246,7 +15246,6 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 58px;
-  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
   .title-left-style-seven-wrapper .title {
@@ -17962,7 +17961,6 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 70px;
-  text-transform: capitalize;
   margin-top: 10px;
 }
 @media only screen and (max-width: 575px) {
@@ -18835,7 +18833,6 @@ a {
   font-weight: 700;
   line-height: 44px;
   margin-bottom: 0;
-  text-transform: capitalize;
   transition: 0.3s;
 }
 @media only screen and (max-width: 767px) {
@@ -19259,7 +19256,6 @@ a {
   font-weight: 600;
   line-height: 44px;
   /* 129.412% */
-  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
   .service-details-content-right h3.title-main-s {
@@ -19626,7 +19622,6 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
-  text-transform: capitalize;
   margin-bottom: 10px;
 }
 .single-product-one .inenr-content-absolute .category {

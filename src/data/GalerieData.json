@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Komerční projekty",
-    "description": "Vytvořte ve svém domově oázu klidu renovací koupelny. Služby mohou zahrnovat instalaci dlažby, modernizaci příslušenství, výměnu vany a optimalizaci úložných řešení.",
+    "description": "Změníme vaše pracovní prostředí, nejen abyste se v něm cítili příjemně, ale aby Vás zároveň reprezentovalo a dobře vystihovalo vaši firmu a přitahovalo nové klienty.",
     "link": "komercni-projekty",
     "gallery": [
       "/assets/images/gallery/komercni-projekty1.jpeg",
@@ -24,9 +24,9 @@
   },
   {
     "id": 2,
-    "title": "Malý byt",
-    "description": "Optimalizujte prostor ve vašem malém bytě pomocí chytrých úložných řešení, multifunkčního nábytku a designových triků pro vytvoření iluze většího prostoru.",
-    "link": "maly-byt",
+    "title": "Byt či apartmán",
+    "description": "Optimalizujte prostor ve vašem bytě pomocí chytrých úložných řešení, multifunkčního nábytku a designových triků pro vytvoření iluze většího prostoru.",
+    "link": "byt-ci-apartman",
     "gallery": [
       "/assets/images/gallery/maly-byt1.jpeg",
       "/assets/images/gallery/maly-byt2.jpeg",

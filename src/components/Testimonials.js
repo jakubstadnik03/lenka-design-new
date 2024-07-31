@@ -37,7 +37,7 @@ const Testimonials = () => {
                 <img src="assets/images/about/02.png" alt="about" />
                 <span className="pre-title">Reference</span>
               </div>
-              <h2 className="title quote" style={{marginBottom: "0"}}>Úžasná zpětná vazba od <br /> Našich cenných klientů</h2>
+              <h2 className="title quote" style={{marginBottom: "0"}}>Zpětná vazba od <br /> našich cenných klientů</h2>
             </div>
           </div>
         </div>

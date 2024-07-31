@@ -61,28 +61,28 @@ const OurWorkProcess = () => {
           {[
             {
               number: "01",
-              title: "Konzultace a Domluva",
+              title: "Konzultace a domluva",
               description: "Tato fáze je prvním krokem, kde se setkáme s klientem, abychom pochopili jeho potřeby a vize pro designový projekt."
             },
             {
               number: "02",
-              title: "Plánování a Vývoj Konceptu",
-              description: "Tato úvodní fáze je klíčová pro nastavení základu designového projektu."
+              title: "Plánování a vývoj konceptu",
+              description: "Tato fáze zahrnuje zaměření interiéru a rozplánování prací v projektu."
             },
             {
               number: "03",
-              title: "Dokumentace a Stavební Výkresy",
-              description: "Tato fáze zahrnuje vytvoření podrobné dokumentace a stavebních výkresů pro realizaci projektu."
+              title: "Dokumentace, návrhy a Moodboard",
+              description: "Zpracování podrobných stav. výkresů a návrhů obsahující: Moodboard, 3D návrhy a vybavení interiéru."
             },
             {
               number: "04",
-              title: "Projektové Řízení a Implementace",
-              description: "V této fázi se zaměřujeme na řízení celého projektu a jeho postupnou implementaci."
+              title: "Konzultace projektu a změny",
+              description: "Konzultace návrhů a změn s klientem a zpracování finálních výkresů pro realizační firmy."
             },
             {
               number: "05",
-              title: "Implementace a Stylizace",
-              description: "Tato finální fáze zahrnuje dokončení projektu a stylizaci interiéru podle předem stanoveného konceptu."
+              title: "Projektové řízení a realizace",
+              description: "Řízení celého projektu a jeho postupná realizace. Dokončení a stylizace projektu."
             }
           ].map((step, index) => (
             <motion.div

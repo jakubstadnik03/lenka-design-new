@@ -37,9 +37,9 @@ const About = () => {
               <div className="title-style-left">
                 <div className="pre-title-area">
                   <img src="assets/images/about/02.png" alt="about" />
-                  <span className="pre-title">Náš Projekt</span>
+                  <span className="pre-title">Můj Projekt</span>
                 </div>
-                <h2 className="title">Náš Příběh</h2>
+                <h2 className="title">Můj Příběh</h2>
               </div>
               <div className="about-left-history pl--50 pt--30">
                 <img src="assets/images/about/12.png" alt="about" />
@@ -50,10 +50,10 @@ const About = () => {
             </div>
             <div className="col-lg-8 col-md-8 mt_sm--50">
               <div className="history-right-area-inner">
-              <h3 className="subtitle">Mgr. Lenka Stádníková – Interiérová návrhářka</h3>
+              <h3 className="subtitle">MgA. Lenka Stádníková – Interiérová návrhářka</h3>
 
                 <p className="disc rts-slide-up">
-                  Po absolvování Technické univerzity v Liberci v oboru Podniková Ekonomika jsem žila 14 let v zahraničí (USA, Holandsku a Velké Británii), vychovávala jsem 3 děti, čerpala jsem inspirace a zkušenosti nejen životní, ale i profesní. Po mnoha stěhování, přestavbách domů i stavbě vlastního domu a chalupy, jsem se rozhodla změnit svou profesi a studovat Interiérový design. Ve Velké Británii jsem absolvovala studium bakalářského a poté magisterského Interiérového designu. Moc mě to bavilo, až se architektura a design stali mojí prací i koníčkem.
+                  Po absolvování Technické univerzity v Liberci v oboru Podniková Ekonomika jsem žila 14 let v zahraničí (USA, Holandsku a Velké Británii), vychovávala jsem 3 děti, čerpala jsem inspirace a zkušenosti nejen životní, ale i profesní. Po mnoha stěhování, přestavbách domů i stavbě vlastního domu a chalupy, jsem se rozhodla změnit svou profesi a studovat Interiérový design. Ve Velké Británii na Staffordshire University jsem absolvovala studium na bakalářského a poté magisterského Interiérového designu. Moc mě to bavilo, až se architektura a design staly mojí prací i koníčkem.
                 </p>
                 <p className="disc rts-slide-up">
                   Pod vlastní firmou jsem zpracovala již stovku projektů, konzultací, rekonstrukcí a novostaveb. Nadále se k tomu vzdělávám, sleduji nejnovější trendy, inovace a veletrhy, aby moje záliba ušetřila klientům čas a pomohla plnit jejich sny. Každého z nás ovlivňuje a formuje, jak bydlíme, někdy stačí jen málo a dojde k veliké změně a člověk se doma cítí hned lépe.

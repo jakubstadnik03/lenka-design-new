@@ -30,8 +30,8 @@ const GallereySideBar = () => {
             <input type="text" placeholder="Vaše jméno" />
             <input type="tel" placeholder="Vaše číslo" />
             <input type="email" placeholder="Váš email" />
-            <textarea placeholder="Zpáva pro mně "></textarea>
-            <button className="rts-btn btn-primary">Obeslat</button>
+            <textarea placeholder="Zpáva pro mě "></textarea>
+            <button className="rts-btn btn-primary">Odeslat</button>
           </form>
         </div>
       </div>

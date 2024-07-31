@@ -6,12 +6,15 @@ import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 const pricingPlans = [
   {
     id: 1,
-    title: "Balíček návrhu místnosti",
+    title: "Populární plán",
     price: "Od 8 000 Kč / místnost",
-    description: "Úvodní konzultace je schůzka mezi designérem a klientem k projednání projektu.",
+    description: "",
     features: [
       { name: "Zaměření", available: true },
       { name: "Moodboard (barevná koláž použitých barev v interiéru)", available: true },
+      { name: "Komplexní návrh interiéru ", available: true },
+      { name: "2D půdorys místnosti s rozměry ", available: true },
+      { name: "3D vizualizace interiéru s vybavením", available: true },
       { name: "Komplexní návrh interiéru ", available: true },
       { name: "Doporučení zdrojů nábytku", available: true },
       { name: "Nákupní seznam doporučeného nábytku a doplňků", available: true },
@@ -25,13 +28,17 @@ const pricingPlans = [
   {
     id: 3,
     title: "Prémiový plán",
-    price: "419 Kč",
-    description: "Úvodní konzultace je schůzka mezi designérem a klientem k projednání projektu.",
+    price: "od 12000Kč/místnost",
+    description: "",
     features: [
-      { name: "Vývoj konceptu", available: true },
-      { name: "Vývoj designu", available: true },
-      { name: "Administrace výstavby", available: true },
-      { name: "Další služby", available: true },
+      { name: "Vše co je součástí populárního plánu", available: true },
+      { name: "Sestavení harmonogramu prací v projektu", available: true },
+      { name: "Stavební výkresy a požadavky pro realizační firmy", available: true },
+      { name: "Zprostředkování a komunikace s realizační firmou", available: true },
+      { name: "Podrobná elektroinstalace", available: true },
+      { name: "Řízení celého projektu", available: true },
+      { name: "Dohled na realizaci", available: true },
+      { name: "Po dokončení stylizace projektu", available: true },
     ],
   },
 ];
@@ -40,20 +47,25 @@ const serviceDetails = {
   heading: "Ceník služeb interiérového designu",
   subheading: "S každým klientem prodiskutuji jeho požadavky a následně předložím cenovou nabídku.",
   details: [
-    "Každý projekt je individuální, proto nelze říct přesnou částku ceny dopředu, aniž bych o projektu něco věděla. Záleží na domluvě s klientem, jaké služby designu požaduje, jaké detailní vybavení požaduje, výrobu na míru či hotové výrobky… a mnoho dalších aspektů od kterých se cena odvíjí.",
-    "1. schůzka ZDARMA před zadáním projektu",
-    "Nejprve se sejdeme k bezplatné konzultační schůzce (cca 1hod), kde zjistím Vaše požadavky. Doporučuji připravit fotografie či jiné podklady, abych lépe porozuměla Vašim představám. Doprava mimo Liberec je zpoplatněna.",
-    "Dále dojde k zaměření a domluvení termínu. Poté Vám zašlu cenovou nabídku a po Vašem souhlasu zálohovou fakturu na 60% z celkové částky. Následně budu pracovat na projektu dle dohody a požadavků. Během přípravy projektu budu s Vámi ve spojení telefonicky, emailem či videokonferencí a budeme případně konzultovat rozpracovaný projekt. Vždy zasílám několik verzí a možností, které konzultuji s klientem. Po dokončení projektu Vás požádám o doplatek ceny.",
-    "Jsem plátce DPH a níže uvedené ceny jsou bez DPH."
+    "Každý projekt je individuální, proto nelze říct přesnou částku ceny dopředu, aniž bych o projektu něco věděla.",
+    "Nejprve se sejdeme ke konzultační schůzce, nejlépe v místě realizace nebo u mě ve studiu.",
+    "S každým klientem prodiskutuji jeho požadavky a následně předložím cenovou nabídku. ",
+    "Doporučuji připravit fotografie inspirací v jakém stylu si interiér zhruba představujete, abych lépe porozuměla Vašim představám. Případně pokud máte staré plány či projekt nového domu.",
+    "Součástí první schůzky je často již i zaměření interiéru.",
+    "Poté Vám zašlu cenovou nabídku a po Vašem souhlasu zálohovou fakturu na 60% z celkové částky. Následně budu pracovat na projektu dle dohody a požadavků. Během přípravy projektu budu s Vámi ve spojení telefonicky, emailem či videokonferencí a budeme případně konzultovat rozpracovaný projekt. Vždy zasílám několik verzí a možností, které konzultuji s klientem. Po dokončení projektu Vás požádám o doplatek ceny dle cenové nabídky.",
+    "Jsem plátce DPH a níže uvedené ceny jsou bez DPH.",
+   "Doprava mimo Liberec je zpoplatněna."
   ],
   subheading2: "Konzultace nad projektem či doporučení změn a tipů v interiéru",
-  details2: ["Konzultace bytového designu provádím nejčastěji v místě realizace změn či online po dodání podkladů. Časté konzultace jsou ohledně změn daného projektu od projektanta, aby se již zohlednil nábytek či ostatní požadavky na vybavení.", "Možno zakoupit dárkový poukaz, s platností 1 rok, na konzultaci či doporučení změn v interiéru. Součástí poukazu je následný souhrn doporučených změn a tipů v elektronické podobě."],
+  details2: ["Konzultace bytového designu provádím nejčastěji v místě realizace nebo v mém studiu či online po dodání podkladů.",
+  "Konzultace se nejčastěji týká ohledně zútulnění či zmodernizování interiéru.",
+  "Časté konzultace jsou přímo nad projektem od projektanta či architekta nejlépe před hrubou stavbou. Z vlastních zkušeností poradím, jak interiér udělat praktičtější a jak nejlépe uspořádat nábytek. Doporučím styl klientům na míru, aby se v interiéru cítil útulně. Také doporučuji vyzkoušené stavební firmy, které provádějí kvalitní služby či výrobky. Dále například truhláře, na nábytek či doplňky na míru, realizace výmalby a dekoračních stěrek, kompletace nábytku, realizace živých stěn, osvětlení atd."],
   subheading3: "Home staging - příprava nemovitosti k prodeji či pronájmu",
   details3: ["Nejprve domluvíme schůzku a konzultaci v místě nemovitosti. V průběhu konzultace s Vámi projdu celou nemovitost a zapíšu navrhované změny, úpravy a typy v jednotlivých místnostech k dosažení největšího efektu. Poté ode mě obdržíte podrobný rozpis a plán navrhovaných úprav, vše v ceně konzultace. Dále seznam a ceny produktů, které jsou doporučeny do interiéru doplnit, případně ode mě zapůjčit.", "Zapůjčené produkty jsou zpoplatnění dle doby zapůjčení. Cenová nabídka ihned po konzultaci."],
  subheading4: "Fotodokumentace",
 details4: ["Fotodokumentace nemovitosti se nejčastěji provádí ihned po provedení doporučených úprav Home stagingu, ale také na požádání kdykoliv.", "Pěkné, vhodné fotografie jsou vhodné na inzerci nemovitosti na pronájme či prodej. Hotové fotografie Vám budou dodány na flashdisku do 5 pracovních dní." ],
   pricing: [
-    { service: "Konzultace nad projektem či změn v interiéru", price: "1500 Kč/1hod." },
+    { service: "Konzultace s klientem v terénu či v showroomu", price: "1500 Kč/hod." },
     { service: "3D vizualizace jedné místnosti", price: "6800 - 10000 Kč" },
     { service: "Návrh dispozic interiéru ve 2D", price: "4000 - 6000 Kč" },
     { service: "On-Line 3D vizualizace jedné místnosti", price: "6500 - 8000 Kč" },
@@ -79,8 +91,7 @@ const PricingPlans = () => {
               </div>
               <h2 className="title mt--10">Cenový plán</h2>
               <p className="disc">
-                Vyberte si nejlepší cenový plán pro interiérový a architektonický design.
-              </p>
+              Vyberte si nejlepší cenový plán pro váš projekt na míru.              </p>
             </div>
           </div>
         </div>
@@ -100,7 +111,7 @@ const PricingPlans = () => {
                       {feature.name}
                     </div>
                   ))}
-                  <a href="/" className="rts-btn btn-border">Začít</a>
+                  <a href="/kontakt" className="rts-btn btn-border">Kontaktovat</a>
                 </div>
               </div>
             </div>

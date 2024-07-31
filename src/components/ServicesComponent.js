@@ -69,15 +69,15 @@ const ServicesComponent = () => {
                   </AccordionBody>
                 </AccordionItem>
                 <AccordionItem eventKey="1">
-                  <AccordionHeader>Nabízíte služby projektového managementu?</AccordionHeader>
+                  <AccordionHeader>Nabízíte i služby realizace?</AccordionHeader>
                   <AccordionBody>
-                    Ano, nabízíme. Naši odborníci se postarají o to, aby váš projekt probíhal hladce a efektivně od začátku do konce.
+                  Ano, nabízíme. Doporučíme odborné, vyzkoušené firmy, aby váš projekt probíhal hladce a efektivně od začátku do konce a výsledek byl dle našich návrhů.
                   </AccordionBody>
                 </AccordionItem>
                 <AccordionItem eventKey="2">
                   <AccordionHeader>Jaké jsou fáze vašich služeb?</AccordionHeader>
                   <AccordionBody>
-                    Naše služby zahrnují plánování a vývoj konceptu, dokumentaci a stavební výkresy, projektový management a implementaci, včetně stylování.
+                  Naše služby zahrnují konzultace, plánování a vývoj konceptu, dokumentaci a stavební výkresy, projektové řízení a realizaci, včetně stylování.
                   </AccordionBody>
                 </AccordionItem>
               </Accordion>

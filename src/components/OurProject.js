@@ -54,15 +54,15 @@ const OurProject = () => {
                 <div className="title-style-left">
                   <div className="pre-title-area">
                     <img src="assets/images/about/02.png" alt="about" />
-                    <span className="pre-title">Naše Projekty</span>
+                    <span className="pre-title">Naše projekty</span>
                   </div>
                   <h2 className="title quote" style={{ opacity: "1 !important" }}>
-                    Prozkoumejte naše úžasné <br />
+                    Prozkoumejte naše <br />
                     návrhy interiérů
                   </h2>
                 </div>
                 <p className="disc">
-                  Naše projekty interiérového designu se zaměřují na transformaci obytných prostor na moderní a přívětivá místa. S důrazem na funkčnost a estetiku, náš tým talentovaných návrhářů bude úzce spolupracovat.
+                Naše projekty interiérového designu se zaměřují na přeměnu obytných prostor na moderní a příjemné interiéry. Celý můj tým klade důraz nejen na estetiku, ale i na funkčnost a praktičnost.
                 </p>
                 <div className="swiper-next-prev-wrapper">
                   <div className="swiper-button-next next-icons">

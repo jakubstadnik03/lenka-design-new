@@ -112,7 +112,7 @@ const ServiceDetail = () => {
                   Každého z nás ovlivňuje a formuje, jak bydlíme, někdy stačí jen málo a dojde k veliké změně a člověk se doma cítí hned lépe.
                   </p>
                   <p className="disc">
-                  Doporučuji konzultace s designérem již v době hrubé stavby, ušetříte si stres i náklady do budoucna. Vkusně, prakticky a zodpovědně dojdeme ke správnému cíli.
+                  Vkusně, prakticky a zodpovědně dojdeme ke správnému cíli.
                   </p>
                 </div>
               </div>
