@@ -65,11 +65,11 @@ const Portfolio = () => {
             {portfolioData.map(item => (
               <motion.div key={item.id} className="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12" variants={itemVariants}>
                 <div className="portfolio-style-custom-4 rts-portfolio__item">
-                  <Link to={`/portfolio/${item.id}`} className="thumbnail">
+                  <Link to={`/portfolio/${item.nav}`} className="thumbnail">
                     <img src={item.images[0]} alt="product" />
                   </Link>
                   <div className="inner-content">
-                    <Link to={`/portfolio/${item.id}`}>
+                    <Link to={`/portfolio/${item.nav}`}>
                       <h4 className="title">{item.name}</h4>
                     </Link>
                     <span>{item.category}</span>

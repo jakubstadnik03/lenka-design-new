@@ -41,7 +41,7 @@
   {
     "id": 3,
     "title": "Celý dům",
-    "description": "Komplexní renovace celého domu, včetně všech místností, zajišťuje konzistentní styl a funkčnost v celém vašem domově.",
+    "description": "Komplexní renovace či nové vybavení celého domu, včetně všech místností, zajišťuje konzistentní styl a funkčnost v celém vašem domově.",
     "link": "cely-dum",
     "gallery": [
       "/assets/images/gallery/cely-dum1.jpeg",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "title": "Obývací pokoje",
-    "description": "Vytvořte příjemný a stylový obývací pokoj, který bude sloužit jako hlavní prostor pro relaxaci a setkání s rodinou a přáteli.",
+    "description": "Vytvoříme příjemný a stylový obývací pokoj, který bude sloužit jako hlavní prostor pro relaxaci a setkání s rodinou a přáteli.",
     "link": "obyvaci-pokoje",
     "gallery": [
       "/assets/images/gallery/obyvaci-pokoje1.jpeg",
@@ -102,7 +102,7 @@
   {
     "id": 7,
     "title": "Dětské pokoje",
-    "description": "Navrhněte dětský pokoj, který kombinuje hravost a funkčnost, a poskytne vašim dětem inspirativní a bezpečné prostředí.",
+    "description": "Navrhneme dětský pokoj, který kombinuje hravost a funkčnost, a poskytne vašim dětem inspirativní a bezpečné prostředí.",
     "link": "detske-pokoje",
     "gallery": [
       "/assets/images/gallery/detske-pokoje1.jpeg",
@@ -116,7 +116,7 @@
   {
     "id": 8,
     "title": "Ložnice",
-    "description": "Transformujte svou ložnici v klidné útočiště s moderními prvky, pohodlným nábytkem a harmonickým designem.",
+    "description": "Transformujeme ložnici v klidné útočiště s moderními prvky, pohodlným nábytkem a harmonickým designem.",
     "link": "loznice",
     "gallery": [
       "/assets/images/gallery/loznice1.jpeg",
@@ -184,7 +184,7 @@
   {
     "id": 12,
     "title": "Nábytek na míru",
-    "description": "Vytvořte si jedinečný nábytek na míru, který perfektně zapadne do vašeho interiéru a splní všechny vaše potřeby a přání.",
+    "description": "Navrhneme a vytvoříme jedinečný nábytek na míru, který perfektně zapadne do vašeho interiéru a splní všechny vaše potřeby a přání.",
     "link": "nabytek-na-miru",
     "gallery": [
       "/assets/images/gallery/nabytek-na-miru1.jpeg",

@@ -10,13 +10,13 @@ import portfolioData from '../data/portfolioData.json';
 import SEOHead from "../SEOHead"
 
 const PortfolioDetail = () => {
-  const { id } = useParams();
+  const { nav } = useParams();
   const [portfolioItem, setPortfolioItem] = useState(null);
 
   useEffect(() => {
-    const item = portfolioData.find((item) => item.id === parseInt(id));
+    const item = portfolioData.find((item) => item.nav === nav);
     setPortfolioItem(item);
-  }, [id]);
+  }, [nav]);
 
   useEffect(() => {
     if (portfolioItem) {
@@ -66,7 +66,7 @@ const PortfolioDetail = () => {
               <div className="product-details-left-one">
                 <h3 className="title mt--0">Stručný popis projektu</h3>
                 <p className="disc">{portfolioItem.description}</p>
-                <p className="disc">{portfolioItem.scope}</p>
+                <p className="disc" dangerouslySetInnerHTML={{ __html: portfolioItem.scope }}></p>
               </div>
             </div>
             <div className="col-lg-4 pl--60 pl_md--15 pl_sm--15 mt_md--50 mt_sm--50">
@@ -92,6 +92,18 @@ const PortfolioDetail = () => {
                       <p className="name">{portfolioItem.duration}</p>
                     </div>
                   </div>
+                  <div className="single-details-short">
+                    <div >
+                      <span>Odkaz: </span>
+                      <br />
+                      <a href={portfolioItem.link} target={'_blank'} className="name">{portfolioItem.link}</a>
+                     { portfolioItem.link2 && <>
+                     <br />
+                      <a href={portfolioItem.link2} target={'_blank'} className="name">{portfolioItem.link2}</a>
+                      </>}
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -100,7 +112,7 @@ const PortfolioDetail = () => {
             <div className="col-lg-12">
               <div className="thumbnail-project-details-top">
                 <img src={portfolioItem.images[0]} alt="product_details" style={{ width: '100%', objectFit: 'cover', maxHeight: '700px' }} />
-                <span>{portfolioItem.name} realizováno firmou Innovat Ltd.</span>
+                <span>{portfolioItem.name} realizováno firmou Lenka Design</span>
               </div>
             </div>
           </div>
@@ -108,7 +120,7 @@ const PortfolioDetail = () => {
             <div className="col-lg-12">
               <div className="product-details-padding-lr">
                 <h4 className="title">Řešení projektu:</h4>
-                <p className="disc">{portfolioItem.solution}</p>
+                <p className="disc" dangerouslySetInnerHTML={{ __html: portfolioItem.solution }}></p>
               </div>
             </div>
           </div>

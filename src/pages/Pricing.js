@@ -21,7 +21,7 @@ const Pricing = () => {
                   <a className="active" href="/cenik">Ceník služeb</a>
                 </div>
                 <div className="bottom-title">
-                  <h1 className="title">ceník služeb</h1>
+                  <h1 className="title">Ceník služeb</h1>
                 </div>
               </div>
             </div>

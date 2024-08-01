@@ -68,7 +68,7 @@ const Header = () => {
                 <li className="has-dropdown">
                   <Link className="nav-link" to="/cenik">Ceník</Link>
                 </li>
-                <li><Link to="/kontakt">Kontaktovat</Link></li>
+                <li><Link to="/kontakt">Kontakt</Link></li>
               </ul>
             </nav>
           </div>
