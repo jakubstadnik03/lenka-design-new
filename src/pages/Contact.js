@@ -26,7 +26,7 @@ const Contact = () => {
       );
   };
   return (
-    <>
+    <main>
       <SEOHead
     title={`Kontaktujte mě - Lenka Design`}
     description="Kontaktujte LenkuDesign.cz pro profesionální návrhy interiérů a homestaging v Liberci. Realizujte svůj vysněný domov s expertkou v designu. Zavolejte nám nebo napište e-mail ještě dnes!"
@@ -42,7 +42,7 @@ const Contact = () => {
                   <a className="active" href="/contact">Kontakt</a>
                 </div>
                 <div className="bottom-title">
-                  <h1 className="title">Kontakt</h1>
+                  <h1 className="title">Kontaktní údaje Lenka Design</h1>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.046698326372!2d1
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

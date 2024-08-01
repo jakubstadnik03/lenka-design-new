@@ -60,6 +60,7 @@ const Header = () => {
                   <ul className="submenu">
                     <li className='lim'><a className="sdm-main" href="/portfolio">Mé předchozí projekty</a></li>
                     <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/fotogalerie">Fotogalerie realizací</a></li>
+                    <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/web-a-grafika">Webové aplikace a grafika</a></li>
                   </ul>
                 </li>
                 <li className="has-dropdown">
@@ -137,6 +138,8 @@ const Header = () => {
                 <ul className={`mm-collapse ${showProjekty ? 'mm-show' : ''}`}>
                   <li><a className="mobile-menu-link" href="/portfolio" onClick={closeMobileMenu}>Mé předchozí projekty</a></li>
                   <li><a className="mobile-menu-link" href="/fotogalerie" onClick={closeMobileMenu}>Fotogalerie realizací</a></li>
+                  <li><a className="mobile-menu-link"  href="/web-a-grafika" onClick={closeMobileMenu}>Webové aplikace a grafika</a></li>
+
                 </ul>
                 </CSSTransition>
                 <span className="button">
