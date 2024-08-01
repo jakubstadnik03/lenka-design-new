@@ -53,9 +53,9 @@ const Footer = () => {
                   <div className="location">
                     <h6 className="title">Sociální sítě</h6>
                     <ul className="social-style-two-wrapper social-anim">
-                <li style={{padding: "7px"}}><a className="counter__anim" href="https://www.facebook.com/lenkadesign.cz"><FontAwesomeIcon icon={faFacebookF} /></a></li>
-                <li style={{padding: "7px"}}><a className="counter__anim" href="https://www.instagram.com/designlenka/?hl=cs"><FontAwesomeIcon icon={faInstagram} /></a></li>
-                <li style={{padding: "7px"}}><a className="counter__anim" href="https://cz.linkedin.com/in/lenka-stádn%C3%ADková"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+                <li style={{padding: "7px"}}><a className="counter__anim" aria-label="facebook link" href="https://www.facebook.com/lenkadesign.cz"><FontAwesomeIcon icon={faFacebookF} /></a></li>
+                <li style={{padding: "7px"}}><a className="counter__anim" aria-label="instagram link"href="https://www.instagram.com/designlenka/?hl=cs"><FontAwesomeIcon icon={faInstagram} /></a></li>
+                <li style={{padding: "7px"}}><a className="counter__anim" aria-label="linkedin link" href="https://cz.linkedin.com/in/lenka-stádn%C3%ADková"><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
               </ul>
                   </div>
                   

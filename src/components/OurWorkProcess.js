@@ -93,7 +93,7 @@ const OurWorkProcess = () => {
               <div className={`single-working-process-one ${index + 1}`}>
                 <div className="inner">
                   <span>{step.number}</span>
-                  <h4 className="title">{step.title}</h4>
+                  <h3 className="title">{step.title}</h3>
                   <p className="disc">{step.description}</p>
                 </div>
               </div>
