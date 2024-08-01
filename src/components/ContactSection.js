@@ -78,7 +78,7 @@ const ContactSection = () => {
               </div>
               <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name="user_name" placeholder="Vaše jméno" required />
-                <input type="tel" name="user_phone" placeholder="Vaše číslo" required />
+                <input type="tel" name="user_phone" placeholder="Vaše telefonní číslo" required />
                 <input type="email" name="user_email" placeholder="Váš email" required />
                 <textarea name="message" placeholder="Napište zprávu"></textarea>
                 <button className="rts-btn btn-primary" value="send" type="submit">Odeslat</button>

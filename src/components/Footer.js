@@ -27,10 +27,11 @@ const Footer = () => {
                   </div>
                   <div className="contact-call">
                   <a href="tel:+420723838086">+420 723 838 086</a>
-                    <span>Neváhejte zavolat</span>
+                    <span>Neváhejte mě kontaktovat</span>
                   </div>
                   <div className="contact-call">
-                  <a href="mailto:tadnikovalenka@gmail.com">stadnikovalenka@gmail.com</a>                    <span>jakékoliv dotazy zodpovím</span>
+                  <a href="mailto:tadnikovalenka@gmail.com">stadnikovalenka@gmail.com</a>                    
+                  <span>Zodpovím Vám jakékoliv dotazy</span>
                   </div>
                 </div>
               </div>

@@ -60,14 +60,14 @@ const ServiceSidebar = () => {
       <div className="service-left-sidebar-wized">
         <div className="topa-rea">
           <span className="pre">Kontakt</span>
-          <h4 className="title">Pište nebo volejte, ráda Vám pomohu a odpovím na Vaše otázky….</h4>
+          <h4 className="title">Kontaktujte mě v případě dotazů nebo zájmu o spolupráci</h4>
         </div>
         <div className="body">
           <form ref={form} onSubmit={sendEmail}>
             <input type="text" name="user_name" placeholder="Vaše jméno" />
-            <input type="tel" name="user_phone" placeholder="Vaše číslo" />
+            <input type="tel" name="user_phone" placeholder="Vaše telefonní číslo" />
             <input type="email" name="user_email" placeholder="Váš email" />
-            <textarea placeholder="Zpáva pro mě " name="message"></textarea>
+            <textarea placeholder="Zpáva" name="message"></textarea>
             <button className="rts-btn btn-primary" value="send" type="submit">Odeslat</button>
           </form>
         </div>

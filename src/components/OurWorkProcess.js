@@ -62,12 +62,12 @@ const OurWorkProcess = () => {
             {
               number: "01",
               title: "Konzultace a domluva",
-              description: "Tato fáze je prvním krokem, kde se setkáme s klientem, abychom pochopili jeho potřeby a vize pro designový projekt."
+              description: "Náš první krok, kde se setkáme s klientem, abychom pochopili jeho potřeby a vize pro designový projekt."
             },
             {
               number: "02",
               title: "Plánování a vývoj konceptu",
-              description: "Tato fáze zahrnuje zaměření interiéru a rozplánování prací v projektu."
+              description: "Zaměření interiéru a rozplánování prací v projektu."
             },
             {
               number: "03",

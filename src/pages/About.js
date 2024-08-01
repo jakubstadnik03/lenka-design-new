@@ -23,7 +23,7 @@ const About = () => {
                   <a className="active" href="/o-nas">O nás</a>
                 </div>
                 <div className="bottom-title">
-                  <h1 className="title">O nás</h1>
+                  <h1 className="title">O firmě Lenka Design</h1>
                 </div>
               </div>
             </div>
@@ -50,7 +50,8 @@ const About = () => {
             </div>
             <div className="col-lg-8 col-md-8 mt_sm--50">
               <div className="history-right-area-inner">
-              <h3 className="subtitle">MgA. Lenka Stádníková – Interiérová návrhářka</h3>
+              <h3 className="subtitle">MgA. Lenka Stádníková – Interiérová návrhářka, majitelka firmy Lenka design</h3>
+              <h3 className="subtitle" style={{fontSize: "20px", lineHeight: "20px"}}>Bc. Aneta Novická – Interiérová návrhářka, Absolventka Mendelovi univerzity v Brně v oboru Tvorba a výroba nábytku</h3>
 
                 <p className="disc rts-slide-up">
                   Po absolvování Technické univerzity v Liberci v oboru Podniková Ekonomika jsem žila 14 let v zahraničí (USA, Holandsku a Velké Británii), vychovávala jsem 3 děti, čerpala jsem inspirace a zkušenosti nejen životní, ale i profesní. Po mnoha stěhování, přestavbách domů i stavbě vlastního domu a chalupy, jsem se rozhodla změnit svou profesi a studovat Interiérový design. Ve Velké Británii na Staffordshire University jsem absolvovala studium na bakalářského a poté magisterského Interiérového designu. Moc mě to bavilo, až se architektura a design staly mojí prací i koníčkem.
