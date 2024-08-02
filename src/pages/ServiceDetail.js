@@ -105,7 +105,7 @@ const ServiceDetail = () => {
               </div>
               <div className="row mt--40">
                 <div className="col-lg-4">
-                  <img src="/assets/images/lenka.jpg" alt="service" />
+                  <img src="/assets/images/lenka-portret.jpeg" style={{width: "280px", height: "280px", objectFit: "cover" }} alt="service" />
                 </div>
                 <div className="col-lg-8">
                   <p className="disc mb--10">

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const pricingPlans = [
   {
@@ -54,16 +55,24 @@ const serviceDetails = {
     "Součástí první schůzky je často již i zaměření interiéru.",
     "Poté Vám zašlu cenovou nabídku a po Vašem souhlasu zálohovou fakturu na 60% z celkové částky. Následně budu pracovat na projektu dle dohody a požadavků. Během přípravy projektu budu s Vámi ve spojení telefonicky, emailem či videokonferencí a budeme případně konzultovat rozpracovaný projekt. Vždy zasílám několik verzí a možností, které konzultuji s klientem. Po dokončení projektu Vás požádám o doplatek ceny dle cenové nabídky.",
     "Jsem plátce DPH a níže uvedené ceny jsou bez DPH.",
-   "Doprava mimo Liberec je zpoplatněna."
+    "Doprava mimo Liberec je zpoplatněna."
   ],
   subheading2: "Konzultace nad projektem či doporučení změn a tipů v interiéru",
-  details2: ["Konzultace bytového designu provádím nejčastěji v místě realizace nebo v mém studiu či online po dodání podkladů.",
-  "Konzultace se nejčastěji týká ohledně zútulnění či zmodernizování interiéru.",
-  "Časté konzultace jsou přímo nad projektem od projektanta či architekta nejlépe před hrubou stavbou. Z vlastních zkušeností poradím, jak interiér udělat praktičtější a jak nejlépe uspořádat nábytek. Doporučím styl klientům na míru, aby se v interiéru cítil útulně. Také doporučuji vyzkoušené stavební firmy, které provádějí kvalitní služby či výrobky. Dále například truhláře, na nábytek či doplňky na míru, realizace výmalby a dekoračních stěrek, kompletace nábytku, realizace živých stěn, osvětlení atd."],
+  details2: [
+    "Konzultace bytového designu provádím nejčastěji v místě realizace nebo v mém studiu či online po dodání podkladů.",
+    "Konzultace se nejčastěji týká ohledně zútulnění či zmodernizování interiéru.",
+    "Časté konzultace jsou přímo nad projektem od projektanta či architekta nejlépe před hrubou stavbou. Z vlastních zkušeností poradím, jak interiér udělat praktičtější a jak nejlépe uspořádat nábytek. Doporučím styl klientům na míru, aby se v interiéru cítil útulně. Také doporučuji vyzkoušené stavební firmy, které provádějí kvalitní služby či výrobky. Dále například truhláře, na nábytek či doplňky na míru, realizace výmalby a dekoračních stěrek, kompletace nábytku, realizace živých stěn, osvětlení atd."
+  ],
   subheading3: "Home staging - příprava nemovitosti k prodeji či pronájmu",
-  details3: ["Nejprve domluvíme schůzku a konzultaci v místě nemovitosti. V průběhu konzultace s Vámi projdu celou nemovitost a zapíšu navrhované změny, úpravy a typy v jednotlivých místnostech k dosažení největšího efektu. Poté ode mě obdržíte podrobný rozpis a plán navrhovaných úprav, vše v ceně konzultace. Dále seznam a ceny produktů, které jsou doporučeny do interiéru doplnit, případně ode mě zapůjčit.", "Zapůjčené produkty jsou zpoplatnění dle doby zapůjčení. Cenová nabídka ihned po konzultaci."],
- subheading4: "Fotodokumentace",
-details4: ["Fotodokumentace nemovitosti se nejčastěji provádí ihned po provedení doporučených úprav Home stagingu, ale také na požádání kdykoliv.", "Pěkné, vhodné fotografie jsou vhodné na inzerci nemovitosti na pronájme či prodej. Hotové fotografie Vám budou dodány na flashdisku do 5 pracovních dní." ],
+  details3: [
+    "Nejprve domluvíme schůzku a konzultaci v místě nemovitosti. V průběhu konzultace s Vámi projdu celou nemovitost a zapíšu navrhované změny, úpravy a typy v jednotlivých místnostech k dosažení největšího efektu. Poté ode mě obdržíte podrobný rozpis a plán navrhovaných úprav, vše v ceně konzultace. Dále seznam a ceny produktů, které jsou doporučeny do interiéru doplnit, případně ode mě zapůjčit.",
+    "Zapůjčené produkty jsou zpoplatnění dle doby zapůjčení. Cenová nabídka ihned po konzultaci."
+  ],
+  subheading4: "Fotodokumentace",
+  details4: [
+    "Fotodokumentace nemovitosti se nejčastěji provádí ihned po provedení doporučených úprav Home stagingu, ale také na požádání kdykoliv.",
+    "Pěkné, vhodné fotografie jsou vhodné na inzerci nemovitosti na pronájme či prodej. Hotové fotografie Vám budou dodány na flashdisku do 5 pracovních dní."
+  ],
   pricing: [
     { service: "Konzultace s klientem v terénu či v showroomu", price: "1500 Kč/hod." },
     { service: "3D vizualizace jedné místnosti", price: "6800 - 10000 Kč" },
@@ -75,29 +84,66 @@ details4: ["Fotodokumentace nemovitosti se nejčastěji provádí ihned po prove
     { service: "Konzultace s klientem v terénu či v showroomu", price: "800Kč/hod." },
     { service: "Doprava mimo Liberec", price: "20Kč/km" },
     { service: "Home staging bytu", price: "od 9000Kč" },
-    { service: "Fotodokumentace nemovitosti", price: "od 5000 Kč" }  ]
+    { service: "Fotodokumentace nemovitosti", price: "od 5000 Kč" }
+  ]
+};
+
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
 };
 
 const PricingPlans = () => {
+  const { ref: titleRef, inView: titleInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: plansRef, inView: plansInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: detailsRef, inView: detailsInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <div className="rts-pricing-area rts-section-gap">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
-            <div className="title-style-center">
+            <motion.div
+              className="title-style-center"
+              ref={titleRef}
+              initial="hidden"
+              animate={titleInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
               <div className="pre-title-area">
                 <img src="assets/images/about/02.png" alt="about" />
                 <span className="pre-title">Ceník služeb</span>
               </div>
               <h2 className="title mt--10">Cenový plán</h2>
               <p className="disc">
-              Vyberte si nejlepší cenový plán pro váš projekt na míru.              </p>
-            </div>
+                Vyberte si nejlepší cenový plán pro váš projekt na míru.
+              </p>
+            </motion.div>
           </div>
         </div>
         <div className="row g-5 mt--30">
-          {pricingPlans.map(plan => (
-            <div key={plan.id} className="col-lg-6 col-md-6 col-sm-12 col-12">
+          {pricingPlans.map((plan, index) => (
+            <motion.div
+              key={plan.id}
+              className="col-lg-6 col-md-6 col-sm-12 col-12"
+              ref={plansRef}
+              initial="hidden"
+              animate={titleInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
               <div className="single-pricing-main">
                 <div className="head">
                   <span>{plan.title}</span>
@@ -114,17 +160,49 @@ const PricingPlans = () => {
                   <a href="/kontakt" className="rts-btn btn-border">Kontaktovat</a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         <div className="row mt--50">
           <div className="col-lg-12">
-            <h3>{serviceDetails.heading}</h3>
-            <p>{serviceDetails.subheading}</p>
+            <motion.h3
+              ref={plansRef}
+              initial="hidden"
+              animate={plansInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
+              {serviceDetails.heading}
+            </motion.h3>
+            <motion.p
+              ref={detailsRef}
+              initial="hidden"
+              animate={plansInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
+              {serviceDetails.subheading}
+            </motion.p>
             {serviceDetails.details.map((detail, index) => (
-              <p key={index}>{detail}</p>
+              <motion.p
+                key={index}
+                ref={detailsRef}
+                initial="hidden"
+                animate={plansInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
+                {detail}
+              </motion.p>
             ))}
-            <table className="table table-striped">
+            <motion.table
+              className="table table-striped"
+              ref={detailsRef}
+              initial="hidden"
+              animate={plansInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
               <thead>
                 <tr>
                   <th>Služba</th>
@@ -139,20 +217,70 @@ const PricingPlans = () => {
                   </tr>
                 ))}
               </tbody>
-            </table>
-            <h3>{serviceDetails.subheading2}</h3>
+            </motion.table>
+            <motion.h3
+              ref={detailsRef}
+              initial="hidden"
+              animate={plansInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
+              {serviceDetails.subheading2}
+            </motion.h3>
             {serviceDetails.details2.map((detail, index) => (
-              <p key={index}>{detail}</p>
+              <motion.p
+                key={index}
+                ref={detailsRef}
+                initial="hidden"
+                animate={plansInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
+                {detail}
+              </motion.p>
             ))}
-            <h3>{serviceDetails.subheading3}</h3>
+            <motion.h3
+              ref={detailsRef}
+              initial="hidden"
+              animate={plansInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
+              {serviceDetails.subheading3}
+            </motion.h3>
             {serviceDetails.details3.map((detail, index) => (
-              <p key={index}>{detail}</p>
+              <motion.p
+                key={index}
+                ref={detailsRef}
+                initial="hidden"
+                animate={plansInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
+                {detail}
+              </motion.p>
             ))}
-            <h3>{serviceDetails.subheading4}</h3>
+            <motion.h3
+              ref={detailsRef}
+              initial="hidden"
+              animate={plansInView ? 'visible' : 'hidden'}
+              variants={fadeInUpVariants}
+              transition={{ duration: 0.5 }}
+            >
+              {serviceDetails.subheading4}
+            </motion.h3>
             {serviceDetails.details4.map((detail, index) => (
-              <p key={index}>{detail}</p>
+              <motion.p
+                key={index}
+                ref={detailsRef}
+                initial="hidden"
+                animate={plansInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
+                {detail}
+              </motion.p>
             ))}
-        
           </div>
         </div>
       </div>

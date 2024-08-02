@@ -77,7 +77,7 @@ const About = () => {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="history-image-left mt--55 rts-reveal-one"
                 >
-                  <img className="rts-reveal-image-one" src="assets/images/lenka.jpg" alt="about" style={{ width: "420px" }} />
+                  <img className="rts-reveal-image-one" src="assets/images/lenka-portret.jpeg" alt="about" style={{ width: "420px" }} />
                 </motion.div>
               </div>
               <div className="col-lg-8 col-md-8 mt_sm--50">
@@ -89,9 +89,7 @@ const About = () => {
                   className="history-right-area-inner"
                 >
                   <h3 className="subtitle">MgA. Lenka Stádníková – Interiérová návrhářka, majitelka firmy Lenka design</h3>
-                  <h3 className="subtitle" style={{ fontSize: "20px", lineHeight: "20px" }}>
-                    Bc. Aneta Novická – Interiérová návrhářka, Absolventka Mendelovi univerzity v Brně v oboru Tvorba a výroba nábytku
-                  </h3>
+                 
                   <p className="disc rts-slide-up">
                     Po absolvování Technické univerzity v Liberci v oboru Podniková Ekonomika jsem žila 14 let v zahraničí (USA, Holandsku a Velké Británii), vychovávala jsem 3 děti, čerpala jsem inspirace a zkušenosti nejen životní, ale i profesní. Po mnoha stěhování, přestavbách domů i stavbě vlastního domu a chalupy, jsem se rozhodla změnit svou profesi a studovat Interiérový design. Ve Velké Británii na Staffordshire University jsem absolvovala studium na bakalářského a poté magisterského Interiérového designu. Moc mě to bavilo, až se architektura a design staly mojí prací i koníčkem.
                   </p>
@@ -101,6 +99,14 @@ const About = () => {
                   <p className="disc rts-slide-up">
                     Doporučuji konzultace s designérem již v době hrubé stavby, ušetříte si stres i náklady do budoucna. Vkusně, prakticky a zodpovědně dojdeme ke správnému cíli. Věnuji se návrhům interiérů, bytovému designu a Home stagingu již přes 10 let, mým cílem je, aby každý klient byl spokojen. Mohu Vám nabídnout 3D vizualizaci, návrhy dispozic nebo jen osobní konzultaci v interiérovém designu. Pracuji i online a přes videokonference. Soustředím se na projekty a návrhy interiérů v Liberci a okolí. Upřednostňuji přírodní materiály či jejich imitace. Mojí největší inspirací je příroda. Příroda nás vytvořila, ovlivňuje nás, a proto se v její blízkosti cítíme nejlépe. Nechci Vás ale ovlivňovat mým stylem, mým cílem je pochopit ten Váš a pomoci Vám zrealizovat Váš sen, který máte.
                   </p>
+                  <h3 className="subtitle" style={{ fontSize: "20px", lineHeight: "20px" }}>
+                    Bc. Aneta Novická – Interiérová návrhářka, Absolventka Mendelovi univerzity v Brně v oboru Tvorba a výroba nábytku
+                  </h3>
+                  <p className="disc rts-slide-up">
+                  Absolventka Střední školy Kateřinky v oboru Design interiéru. Během maturitního vzdělávání získala také výuční list v oboru Truhlář. Následovala tříměsíční stáž v Lotyšské Rize, kde pracovala v prestižním designovém studiu Agnes Rudzite Interiors a čerpala inspiraci zahraničního designu. Poté absolvovala Mendelovu univerzitu v Brně v oboru Tvorba a výroba nábytku a rozšířila si díky tomu další znalosti.
+                    </p>
+
+
                   <motion.div
                     initial="hidden"
                     animate={inView1 ? 'visible' : 'hidden'}

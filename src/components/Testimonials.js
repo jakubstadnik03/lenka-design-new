@@ -72,7 +72,7 @@ const Testimonials = () => {
                           <img src={testimonial.authorImage} alt="tstimonials" />
                         </div>
                         <div className="info">
-                          <h6 className="title">{testimonial.authorName}</h6>
+                          <h3 style={{fontSize: "16px", lineHeight: "16px"}} className="title">{testimonial.authorName}</h3>
                           <span>{testimonial.authorTitle}</span>
                         </div>
                       </div>

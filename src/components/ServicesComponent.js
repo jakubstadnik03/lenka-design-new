@@ -102,7 +102,7 @@ const ServicesComponent = () => {
                     <div className="icon">
                       <img src={serviceIcons[index]} alt="icon" />
                     </div>
-                    <h4 className="title">{service.title}</h4>
+                    <h3 className="title">{service.title}</h3>
                     <p className="disc">{service.details[0]}</p>
                     <a href={`/nase-sluzby/${service.nav}`} className="read-more-btn">
                       Přečtěte si více<FontAwesomeIcon icon={faChevronRight} />
