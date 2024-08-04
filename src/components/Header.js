@@ -41,6 +41,24 @@ const Header = () => {
                 <li className="has-dropdown">
                   <Link className="nav-link" to="/o-nas">O nás</Link>
                 </li>
+               
+                <li className="has-dropdown">
+                  <Link className="nav-link" to="/portfolio">Projekty</Link>
+                  <ul className="submenu">
+                    <li class="sub-dropdown lim">
+                                    <a class="sdm-main" href="/portfolio">Mé předchozí projekty</a>
+                                    <ul class="submenu third-lvl base">
+                                        <li class="lim"><a class="mobile-menu-link" href="/portfolio/vila-albatros">Vila Albatros</a></li>
+                                        <li class="lim"><a class="mobile-menu-link" href="portfolio/kadernicky-salon">Kadeřnictví</a></li>
+                                        <li class="lim"><a class="mobile-menu-link" href="/portfolio/renovace-chalupy">Renovace chalupy</a></li>
+                                       
+                                    </ul>
+                                </li>
+                    <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/fotogalerie">Fotogalerie realizací</a>
+                    </li>
+                    <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/web-a-grafika">Webové aplikace a grafika</a></li>
+                  </ul>
+                </li>
                 <li className="has-dropdown">
                   <Link className="nav-link" to="/nase-sluzby">Naše služby</Link>
                   <ul className="submenu">
@@ -53,14 +71,6 @@ const Header = () => {
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/navrhy-bytovych-interieru">Navrhy bytovych interieru</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/navrhy-komercnich-interieru">Navrhy komerčních interieru</a></li>
                     <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/nase-sluzby/realizace-celych-domu">Realizace celých domů</a></li>
-                  </ul>
-                </li>
-                <li className="has-dropdown">
-                  <Link className="nav-link" to="/portfolio">Projekty</Link>
-                  <ul className="submenu">
-                    <li className='lim'><a className="sdm-main" href="/portfolio">Mé předchozí projekty</a></li>
-                    <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/fotogalerie">Fotogalerie realizací</a></li>
-                    <li className="lim"><a className="sdm-main" style={{ borderBottom: "0" }} href="/web-a-grafika">Webové aplikace a grafika</a></li>
                   </ul>
                 </li>
                 <li className="has-dropdown">
@@ -136,7 +146,8 @@ const Header = () => {
         unmountOnExit
       >
                 <ul className={`mm-collapse ${showProjekty ? 'mm-show' : ''}`}>
-                  <li><a className="mobile-menu-link" href="/portfolio" onClick={closeMobileMenu}>Mé předchozí projekty</a></li>
+                  <li><a className="mobile-menu-link" href="/portfolio" onClick={closeMobileMenu}>Mé předchozí projekty</a>
+                  </li>
                   <li><a className="mobile-menu-link" href="/fotogalerie" onClick={closeMobileMenu}>Fotogalerie realizací</a></li>
                   <li><a className="mobile-menu-link"  href="/web-a-grafika" onClick={closeMobileMenu}>Webové aplikace a grafika</a></li>
 
