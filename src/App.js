@@ -19,6 +19,8 @@ import PodminkyAPravidla from './pages/PodminkyAPravidla';
 import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
 import WebAGrafika from './pages/WebAGrafika';
 import WebDetail from './pages/ProjectDetail'
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 const App = () => {
   
   return (
@@ -44,7 +46,7 @@ const App = () => {
       </Routes>
       <Footer />
       <Progress />
-
+      <SpeedInsights />
       </>
   );
 };
