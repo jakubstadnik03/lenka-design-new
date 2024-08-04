@@ -4,7 +4,9 @@ import projectData from '../data/webData.json'; // Adjust the path to your JSON 
 import SEOHead from "../SEOHead"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-
+import '../style/vendor/bootstrap.min.css';
+import '../style/vendor/metismenu.css';
+import '../style/style.css';
 const ProjectDetail = () => {
   const { nav } = useParams(); // Get the project name from the URL
   const navigate = useNavigate();

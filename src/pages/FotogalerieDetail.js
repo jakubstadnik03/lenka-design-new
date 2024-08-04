@@ -6,7 +6,9 @@ import LightGallery from 'lightgallery/react';
 import lgZoom from 'lightgallery/plugins/zoom';
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-zoom.css';
-
+import '../style/vendor/bootstrap.min.css';
+import '../style/vendor/metismenu.css';
+import '../style/style.css';
 const FotogalerieDetail = () => {
   const { nav } = useParams();
   const [service, setService] = useState(null);
