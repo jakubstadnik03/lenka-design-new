@@ -49,7 +49,7 @@ const Header = () => {
                                     <a class="sdm-main" href="/portfolio">Mé předchozí projekty</a>
                                     <ul class="submenu third-lvl base">
                                         <li class="lim"><a class="mobile-menu-link" href="/portfolio/vila-albatros">Vila Albatros</a></li>
-                                        <li class="lim"><a class="mobile-menu-link" href="portfolio/kadernicky-salon">Kadeřnictví</a></li>
+                                        <li class="lim"><a class="mobile-menu-link" href="/portfolio/kadernicky-salon">Kadeřnictví</a></li>
                                         <li class="lim"><a class="mobile-menu-link" href="/portfolio/renovace-chalupy">Renovace chalupy</a></li>
                                        
                                     </ul>
