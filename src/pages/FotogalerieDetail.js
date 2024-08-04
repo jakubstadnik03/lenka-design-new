@@ -64,7 +64,7 @@ const FotogalerieDetail = () => {
                     {service.gallery.map((image, index) => (
                       <a
                         key={index}
-                        className="gallery__item"
+                        className="gallery__item gallery"
                         href={image}
                         data-lg-size="1600-2400"
                       >

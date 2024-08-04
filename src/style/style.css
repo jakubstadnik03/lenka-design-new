@@ -16459,11 +16459,13 @@ a {
 }
 
 .gallery__item img {
-  width: 100%;
-  height: 100%;
+
   object-fit: cover;
 }
-
+.gallery__item.gallery img {
+  width: 100%;
+  height: 100%;
+}
 .left-swiper-area-start .single-left-banner-swiper-start {
   background: #30373e;
   width: 354px;
