@@ -45,7 +45,7 @@ const Header = () => {
                   <Link className="nav-link" to="/nase-sluzby">Naše služby</Link>
                   <ul className="submenu">
                     <li className='lim'><a className="sdm-main" href="/nase-sluzby/3d-navrhy-interieru">3D návrhy interiéru</a></li>
-                    <li className="lim"><a className="sdm-main" href="/nase-sluzby/2d-navrhy-interiéru">2D návrhy interiéru</a></li>
+                    <li className="lim"><a className="sdm-main" href="/nase-sluzby/2d-navrhy-interieru">2D návrhy interiéru</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/realizace">Realizace</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/konzultace">Konzultace</a></li>
                     <li className="lim"><a className="sdm-main" href="/nase-sluzby/homestaging">Homestaging</a></li>
@@ -113,7 +113,7 @@ const Header = () => {
                 <ul className={`mm-collapse ${showServices ? 'mm-show' : ''}`}>
                   <li><a className="mobile-menu-link" href="/nase-sluzby" onClick={closeMobileMenu}>Seznam našich služeb</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/3d-navrhy-interieru" onClick={closeMobileMenu}>3D návrhy interiéru</a></li>
-                  <li><a className="mobile-menu-link" href="/nase-sluzby/2d-navrhy-interiéru" onClick={closeMobileMenu}>2D návrhy interiéru</a></li>
+                  <li><a className="mobile-menu-link" href="/nase-sluzby/2d-navrhy-interieru" onClick={closeMobileMenu}>2D návrhy interiéru</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/realizace" onClick={closeMobileMenu}>Realizace</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/konzultace" onClick={closeMobileMenu}>Konzultace</a></li>
                   <li><a className="mobile-menu-link" href="/nase-sluzby/homestaging" onClick={closeMobileMenu}>Homestaging</a></li>

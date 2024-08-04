@@ -22,7 +22,7 @@ const ContactUs = () => {
               </div>
               <h2 className="title">
                 Mate zájem o mou práci? <br />
-                Neváhejte se ozvat.
+                Neváhejte nás kontaktovat.
               </h2>
               <button
                 onClick={handleNavigate}

@@ -55,9 +55,9 @@ const About = () => {
                 >
                   <div className="pre-title-area">
                     <img src="assets/images/about/02.png" alt="about" />
-                    <span className="pre-title">Můj Projekt</span>
+                    <span className="pre-title">Můj projekt</span>
                   </div>
-                  <h2 className="title">Můj Příběh</h2>
+                  <h2 className="title">Můj příběh</h2>
                 </motion.div>
                 <motion.div
                   ref={ref2}

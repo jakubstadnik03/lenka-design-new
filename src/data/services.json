@@ -41,16 +41,13 @@
       "title2": "Detailní plány pro vaše projekty",
       "image": "/assets/images/service/2dNavrhy1.jpg",
       "details": [
-          "Poskytujeme profesionální 2D návrhy interiérů, které zahrnují detailní plány rozmístění nábytku a dalších prvků za účelem plného využití interiéru. 2D návrhy jsou praktickým nástrojem pro plánování a realizaci vašeho interiéru.",
-          "Naše 2D plány zahrnují podrobné rozměry a uspořádání, které zajišťují efektivní využití prostoru."
-      ],
+          "Poskytujeme profesionální 2D návrhy interiérů, které zahrnují detailní plány rozmístění nábytku a dalších prvků za účelem plného využití interiéru. 2D návrhy jsou praktickým nástrojem pro plánování a realizaci vašeho interiéru."      ],
       "additionalImages": [
           "/assets/images/service/2dNavrhy2.jpg",
           "/assets/images/service/2dNavrhy3.jpg"
       ],
       "additionalDetails": [
-          "2D návrhy interiérů jsou základem každého úspěšného designového projektu.  Můžete mít jistotu, že váš interiér bude navržen a uspořádán s maximální přesností, efektivitou a citem pro detail.",
-          "S našimi 2D návrhy můžete snadno vizualizovat a upravovat uspořádání vašeho interiéru před zahájením fyzických úprav."
+         "2D návrhy poskytují jasný přehled o rozmístění jednotlivých prvků v prostoru, což usnadňuje plánování a realizaci."
       ],
       "listItems": [
           "Detailní plány",
@@ -60,9 +57,7 @@
       ],
       "finalImage": "/assets/images/service/2dNavrhy4.jpg",
       "conclusion": [
-          "2D návrhy interiérů jsou základem každého úspěšného designového projektu. Umožňují přesné plánování a efektivní realizaci.",
-          "Díky našim 2D návrhům můžete mít jistotu, že váš interiér bude navržen a uspořádán s maximální přesností a efektivitou."
-      ],
+          "2D návrhy interiérů jsou základem každého úspěšného designového projektu. Umožňují přesné plánování a efektivní realizaci."      ],
       "seo": {
           "title": "2D návrhy Interiérů - Detailní Plány",
           "description": "Profesionální 2D návrhy interiérů s detailními plány rozmístění nábytku a dalších prvků. Efektivní využití prostoru a jasné rozměry.",
@@ -84,9 +79,7 @@
           "/assets/images/service/realizace3.webp"
       ],
       "additionalDetails": [
-          "I během realizace stále spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou zohledněny. Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků.",
-          "Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."
-      ],
+          "I během realizace stále spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou zohledněny. Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."      ],
       "listItems": [
           "Kompletní služby",
           "Vysoce kvalitní materiály",
@@ -129,9 +122,7 @@
       ],
       "finalImage": "/assets/images/service/konzultace4.jpeg",
       "conclusion": [
-          "Konzultace v oblasti interiérového designu jsou klíčovým krokem k dosažení vašich designových cílů. Naše odborné rady vám pomohou vytvořit prostor, který je krásný a funkční.",
-          "S našimi konzultacemi můžete mít jistotu, že váš interiér bude navržen přesně podle vašich představ a potřeb."
-      ],
+          "Konzultace v oblasti interiérového designu jsou klíčovým krokem k dosažení vašich designových cílů. Naše odborné rady vám pomohou vytvořit prostor, který je krásný a funkční."      ],
       "seo": {
           "title": "Konzultace Interiérového Designu - Odborné Rady",
           "description": "Odborné konzultace v oblasti interiérového designu. Pomoc s návrhem, výběrem materiálů a barev, a cenné rady pro vytvoření harmonického prostoru.",
@@ -143,13 +134,13 @@
       "title": "Homestaging",
       "nav": "homestaging",
       "title2": "Připravte váš domov na prodej",
-      "image": "/assets/images/service/homestaging1.jpeg",
+      "image": "/assets/images/service/homestaging2.jpeg",
       "details": [
           "Specializujeme se na homestaging, který vám pomůže připravit váš domov na prodej nebo pronájem. Naše služby homestagingu zahrnují úpravy interiéru, které zvýší atraktivitu vašeho prostoru pro potenciální kupce nebo nájemce.",
           "Pomocí homestagingu vytvoříme přívětivý a atraktivní prostor, který osloví co nejširší okruh zájemců."
       ],
       "additionalImages": [
-          "/assets/images/service/homestaging2.jpeg",
+          "/assets/images/service/homestaging1.jpeg",
           "/assets/images/service/homestaging3.jpeg"
       ],
       "additionalDetails": [

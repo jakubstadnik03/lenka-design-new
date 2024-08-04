@@ -5,6 +5,10 @@
     "description": "Změníme vaše pracovní prostředí, nejen abyste se v něm cítili příjemně, ale aby Vás zároveň reprezentovalo a dobře vystihovalo vaši firmu a přitahovalo nové klienty.",
     "link": "komercni-projekty",
     "gallery": [
+      "/assets/images/gallery/komercni-projekty12.jpg",
+      "/assets/images/gallery/komercni-projekty13.jpg",
+      "/assets/images/gallery/komercni-projekty14.jpg",
+      "/assets/images/gallery/komercni-projekty15.jpg",
       "/assets/images/gallery/komercni-projekty1.jpeg",
       "/assets/images/gallery/komercni-projekty2.jpeg",
       "/assets/images/gallery/komercni-projekty3.jpeg",
@@ -14,12 +18,7 @@
       "/assets/images/gallery/komercni-projekty7.jpeg",
       "/assets/images/gallery/komercni-projekty8.jpeg",
       "/assets/images/gallery/komercni-projekty9.jpeg",
-      "/assets/images/gallery/komercni-projekty10.jpeg",
-      "/assets/images/gallery/komercni-projekty11.jpeg",
-      "/assets/images/gallery/komercni-projekty12.jpeg",
-      "/assets/images/gallery/komercni-projekty13.jpeg",
-      "/assets/images/gallery/komercni-projekty14.jpeg",
-      "/assets/images/gallery/komercni-projekty15.jpeg"
+      "/assets/images/gallery/komercni-projekty10.jpeg"
     ]
   },
   {
@@ -44,6 +43,9 @@
     "description": "Komplexní renovace či nové vybavení celého domu, včetně všech místností, zajišťuje konzistentní styl a funkčnost v celém vašem domově.",
     "link": "cely-dum",
     "gallery": [
+      "/assets/images/product/chalupa2.jpeg",
+      "/assets/images/product/chalupa6.jpeg",
+      "/assets/images/product/chalupa7.jpeg",
       "/assets/images/gallery/cely-dum1.jpeg",
       "/assets/images/gallery/cely-dum2.jpeg",
       "/assets/images/gallery/cely-dum3.jpeg",
@@ -58,12 +60,17 @@
     "description": "Homestaging vám pomůže připravit váš domov k prodeji nebo pronájmu, zvýrazní jeho přednosti a zaujme potenciální kupce či nájemce.",
     "link": "homestaging",
     "gallery": [
+      "/assets/images/service/homestaging_large3.jpeg",
+      "/assets/images/service/homestaging_large4.jpeg",
+      "/assets/images/service/homestaging_large6.jpeg",
       "/assets/images/gallery/homestaging1.jpeg",
       "/assets/images/gallery/homestaging2.jpeg",
-      "/assets/images/gallery/homestaging3.jpeg",
-      "/assets/images/gallery/homestaging4.jpeg",
-      "/assets/images/gallery/homestaging5.jpeg",
-      "/assets/images/gallery/homestaging6.jpeg"
+      "/assets/images/service/homestaging_large7.jpeg",
+      "/assets/images/service/homestaging_large8.jpeg",
+      "/assets/images/service/homestaging_large9.jpeg",
+      "/assets/images/service/homestaging_large10.jpeg",
+      "/assets/images/service/homestaging_large11.jpeg",
+      "/assets/images/service/homestaging_large12.jpeg"
     ]
   },
   {
@@ -72,15 +79,18 @@
     "description": "Renovace kuchyně zahrnuje modernizaci spotřebičů, instalaci nových skříněk a pracovních ploch a vytvoření funkčního a stylového prostoru pro vaření.",
     "link": "kuchyne",
     "gallery": [
+      "/assets/images/product/chalupa4.jpeg",
+      "/assets/images/product/chalupa13.jpeg",
+      "/assets/images/product/chalupa12.jpeg",
+      "/assets/images/gallery/kuchyne7.jpeg",
+      "/assets/images/gallery/kuchyne8.jpeg",
+      "/assets/images/gallery/kuchyne6.jpeg",
+      "/assets/images/gallery/kuchyne9.jpeg",
       "/assets/images/gallery/kuchyne1.jpeg",
       "/assets/images/gallery/kuchyne2.jpeg",
       "/assets/images/gallery/kuchyne3.jpeg",
       "/assets/images/gallery/kuchyne4.jpeg",
       "/assets/images/gallery/kuchyne5.jpeg",
-      "/assets/images/gallery/kuchyne6.jpeg",
-      "/assets/images/gallery/kuchyne7.jpeg",
-      "/assets/images/gallery/kuchyne8.jpeg",
-      "/assets/images/gallery/kuchyne9.jpeg",
       "/assets/images/gallery/kuchyne10.jpeg"
     ]
   },
@@ -90,6 +100,8 @@
     "description": "Vytvoříme příjemný a stylový obývací pokoj, který bude sloužit jako hlavní prostor pro relaxaci a setkání s rodinou a přáteli.",
     "link": "obyvaci-pokoje",
     "gallery": [
+      "/assets/images/product/chalupa6.jpeg",
+      "/assets/images/product/chalupa11.jpeg",
       "/assets/images/gallery/obyvaci-pokoje1.jpeg",
       "/assets/images/gallery/obyvaci-pokoje2.jpeg",
       "/assets/images/gallery/obyvaci-pokoje3.jpeg",
@@ -119,16 +131,14 @@
     "description": "Transformujeme ložnici v klidné útočiště s moderními prvky, pohodlným nábytkem a harmonickým designem.",
     "link": "loznice",
     "gallery": [
-      "/assets/images/gallery/loznice1.jpeg",
-      "/assets/images/gallery/loznice2.jpeg",
-      "/assets/images/gallery/loznice3.jpeg",
+      "/assets/images/product/chalupa8.jpeg",
+      "/assets/images/product/chalupa9.jpeg",
+      "/assets/images/product/chalupa10.jpeg",
       "/assets/images/gallery/loznice4.jpeg",
       "/assets/images/gallery/loznice5.jpeg",
       "/assets/images/gallery/loznice6.jpeg",
       "/assets/images/gallery/loznice7.jpeg",
-      "/assets/images/gallery/loznice8.jpeg",
-      "/assets/images/gallery/loznice9.jpeg"
-    ]
+      "/assets/images/gallery/loznice8.jpeg"    ]
   },
   {
     "id": 9,
@@ -173,6 +183,9 @@
     "description": "Optimalizujte své chodby pro lepší využití prostoru a přidejte stylové prvky, které propojí jednotlivé místnosti ve vašem domě.",
     "link": "chodby",
     "gallery": [
+      "/assets/images/product/chalupa7.jpeg",
+      "/assets/images/product/chalupa1.jpeg",
+      "/assets/images/product/chalupa3.jpeg",
       "/assets/images/gallery/chodby1.jpeg",
       "/assets/images/gallery/chodby2.jpeg",
       "/assets/images/gallery/chodby3.jpeg",
