@@ -82,7 +82,6 @@ const Portfolio = () => {
         </div>
       </div>
       <GalerieList />
-      <BeforeAfter />
     </>
   );
 };
