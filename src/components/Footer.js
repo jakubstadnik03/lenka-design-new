@@ -38,7 +38,7 @@ const Footer = () => {
               <div className="single-footer-wized">
                 <div className="location-information">
                   <div className="location">
-                    <h6 className="title">Užitečné odkazy</h6>
+                    <h2 className="title" style={{fontSize: "18px", lineHeight: "1.25"}}>Užitečné odkazy</h2>
                   </div>
                   <ul>
                     <li><a href="/o-nas">O nás</a></li>
@@ -51,7 +51,7 @@ const Footer = () => {
               <div className="single-footer-wized">
                 <div className="location-information">
                   <div className="location">
-                    <h6 className="title">Sociální sítě</h6>
+                    <h2 className="title" style={{fontSize: "18px", lineHeight: "1.25"}}>Sociální sítě</h2>
                     <ul className="social-style-two-wrapper social-anim">
                 <li style={{padding: "7px"}}><a className="counter__anim" aria-label="facebook link" href="https://www.facebook.com/lenkadesign.cz"><FontAwesomeIcon icon={faFacebookF} /></a></li>
                 <li style={{padding: "7px"}}><a className="counter__anim" aria-label="instagram link"href="https://www.instagram.com/designlenka/?hl=cs"><FontAwesomeIcon icon={faInstagram} /></a></li>

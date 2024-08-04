@@ -1,6 +1,13 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
-import SEOHead from "../SEOHead"
+import SEOHead from "../SEOHead";
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
+const fadeInUpVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Contact = () => {
   const form = useRef();
@@ -17,7 +24,6 @@ const Contact = () => {
       .then(
         (result) => {
           alert("Vaš dotaz byl úspěšně odeslán!");
-        
           console.log(result.text);
         },
         (error) => {
@@ -25,13 +31,29 @@ const Contact = () => {
         }
       );
   };
+
+  const { ref: titleRef, inView: titleInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: contactInfoRef, inView: contactInfoInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  const { ref: formRef, inView: formInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
     <main>
       <SEOHead
-    title={`Kontaktujte mě - Lenka Design`}
-    description="Kontaktujte LenkuDesign.cz pro profesionální návrhy interiérů a homestaging v Liberci. Realizujte svůj vysněný domov s expertkou v designu. Zavolejte nám nebo napište e-mail ještě dnes!"
-    keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
-  />
+        title={`Kontaktujte mě - Lenka Design`}
+        description="Kontaktujte LenkuDesign.cz pro profesionální návrhy interiérů a homestaging v Liberci. Realizujte svůj vysněný domov s expertkou v designu. Zavolejte nám nebo napište e-mail ještě dnes!"
+        keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+      />
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">
           <div className="row">
@@ -53,26 +75,47 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="top">
+              <motion.div
+                className="top"
+                ref={titleRef}
+                initial="hidden"
+                animate={titleInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
                 <h2 className="title">Neváhejte nás kontaktovat!</h2>
-              </div>
+              </motion.div>
             </div>
           </div>
           <div className="row mt--0 g-5">
             <div className="col-lg-4 col-md-6">
-              <div className="left-contact">
+              <motion.div
+                className="left-contact"
+                ref={contactInfoRef}
+                initial="hidden"
+                animate={contactInfoInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
                 <h4 className="top mb--30">MgA. Lenka Stádníková</h4>
                 <p className="disc mb--20">
                   Interiérová designérka s dlouholetými zkušenostmi v oboru. 
                   Nabízím profesionální návrhy interiérů pro rodinné i komerční prostory.
                 </p>
                 <p style={{marginTop: "10px", marginBottom: "10px"}}>IČO: 03911446 </p>
-<p style={{marginTop: "10px", marginBottom: "10px"}}>DIČ: CZ7555242563</p>
-<p style={{marginTop: "10px", marginBottom: "10px"}}>Jsem plátcem DPH.</p>
-              </div>
+                <p style={{marginTop: "10px", marginBottom: "10px"}}>DIČ: CZ7555242563</p>
+                <p style={{marginTop: "10px", marginBottom: "10px"}}>Jsem plátcem DPH.</p>
+              </motion.div>
             </div>
             <div className="col-lg-4 col-md-6 pl--50 pl_md--15 pl_sm--15">
-              <div className="contact-info-mid">
+              <motion.div
+                className="contact-info-mid"
+                ref={contactInfoRef}
+                initial="hidden"
+                animate={contactInfoInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
                 <p className="top-contact mb--20">Kontaktní údaje</p>
                 <div className="single-information mt--30">
                   <span>Adresa:</span>
@@ -89,32 +132,46 @@ const Contact = () => {
                   <span>Email:</span>
                   <a href="mailto:stadnikovalenka@gmail.com">stadnikovalenka@gmail.com</a>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="col-lg-4 col-md-6">
-              <form ref={form} onSubmit={sendEmail} className="contact-form-conatct-page">
+              <motion.form
+                ref={form}
+                onSubmit={sendEmail}
+                className="contact-form-conatct-page"
+                initial="hidden"
+                animate={formInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              >
                 <p className="top-contact mb--20">Kontaktní formulář</p>
-                <input type="text"   name="user_name" placeholder="Vaše jméno" required />
-                <input type="tel"  name="user_phone" placeholder="Telefonní číslo" />
-                <input type="email"  name="user_email" placeholder="Email" />
+                <input type="text" name="user_name" placeholder="Vaše jméno" required />
+                <input type="tel" name="user_phone" placeholder="Telefonní číslo" />
+                <input type="email" name="user_email" placeholder="Email" />
                 <textarea name="message" placeholder="Vaše zpráva"></textarea>
                 <button className="rts-btn btn-primary mt--30" value="send" type="submit">Odeslat</button>
-              </form>
+              </motion.form>
             </div>
           </div>
         </div>
         <div className="container mt--120">
           <div className="row">
             <div className="col-lg-12">
-              <iframe
-              title='map'
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.046698326372!2d15.063394499999998!3d50.774707899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935f116200101%3A0xefc5d6945328bb4f!2zTEVOS0EgRGVzaWduIC0gTWdBLkxlbmthIFN0w6FkbsOta292w6EsIE7DoXZyaHkgaW50ZXJpw6lyxa8!5e0!3m2!1scs!2scz!4v1721140495858!5m2!1scs!2scz"          width="600"
+              <motion.iframe
+                title='map'
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2523.046698326372!2d15.063394499999998!3d50.774707899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935f116200101%3A0xefc5d6945328bb4f!2zTEVOS0EgRGVzaWduIC0gTWdBLkxlbmthIFN0w6FkbsOta292w6EsIE7DoXZyaHkgaW50ZXJpw6lyxa8!5e0!3m2!1scs!2scz!4v1721140495858!5m2!1scs!2scz"
+                width="600"
                 height="450"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+                ref={formRef}
+                initial="hidden"
+                animate={formInView ? 'visible' : 'hidden'}
+                variants={fadeInUpVariants}
+                transition={{ duration: 0.5 }}
+              ></motion.iframe>
             </div>
           </div>
         </div>
