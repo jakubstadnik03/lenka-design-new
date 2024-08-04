@@ -54,7 +54,7 @@
 :root {
   --color-primary: #B19777;
   --color-secondary: #1F1F25;
-  --color-body: #494949;
+  --color-body: #7D7D7D;
   --color-heading-1: #30373E;
   --color-white:#fff;
   --color-success: #3EB75E;
@@ -15246,6 +15246,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 58px;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
   .title-left-style-seven-wrapper .title {
@@ -15899,7 +15900,7 @@ a {
 }
 
 .banner_bg-6 {
-  background-image: url(../assets/images/11.jpg);
+  background-image: url(../images/11.jpg);
   height: 980px;
 }
 @media only screen and (max-width: 767px) {
@@ -15909,7 +15910,7 @@ a {
 }
 
 .banner_bg-7 {
-  background-image: url(../assets/images/29.jpg);
+  background-image: url(../images/29.jpg);
   height: 980px;
 }
 @media only screen and (max-width: 767px) {
@@ -15919,7 +15920,7 @@ a {
 }
 
 .banner_bg-8 {
-  background-image: url(../assets/images/30.jpg);
+  background-image: url(../images/30.jpg);
   height: 980px;
 }
 @media only screen and (max-width: 767px) {
@@ -16129,7 +16130,7 @@ a {
 }
 
 .bg_banner-4 {
-  background-image: url(../assets/images/15.jpg);
+  background-image: url(../images/15.jpg);
   height: 980px;
   position: relative;
   z-index: 0;
@@ -16460,7 +16461,6 @@ a {
 
 .gallery__item img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -17928,7 +17928,7 @@ a {
 }
 
 .breadcrumb-area-bg {
-  background-image: url(../assets/images/20.jpg);
+  background-image: url(../images/20.jpg);
 }
 .breadcrumb-area-bg .bread-crumb-area-inner {
   text-align: center;
@@ -17962,6 +17962,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 70px;
+  text-transform: capitalize;
   margin-top: 10px;
 }
 @media only screen and (max-width: 575px) {
@@ -18260,13 +18261,13 @@ a {
   }
 }
 .single-service-area-one.two::after {
-  background-image: url(../assets/images/service/01.jpg);
+  background-image: url(../images/service/01.jpg);
 }
 .single-service-area-one.three::after {
-  background-image: url(../assets/images/service/16.jpg);
+  background-image: url(../images/service/16.jpg);
 }
 .single-service-area-one.four::after {
-  background-image: url(../assets/images/service/17.jpg) !important;
+  background-image: url(../images/service/17.jpg) !important;
 }
 .single-service-area-one::after {
   position: absolute;
@@ -18275,7 +18276,7 @@ a {
   top: 50%;
   transform: translate(-50%, -50%) scale(0);
   width: 100%;
-  background-image: url(../assets/images/service/15.jpg) !important;
+  background-image: url(../images/service/15.jpg) !important;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -18789,7 +18790,7 @@ a {
   max-height: 0%;
   z-index: -1;
   height: 200px;
-  background-image: url(../assets/images/service/08.jpg);
+  background-image: url(../images/service/08.jpg);
   background-size: cover;
   transition: 0.3s;
   width: 100%;
@@ -18834,6 +18835,7 @@ a {
   font-weight: 700;
   line-height: 44px;
   margin-bottom: 0;
+  text-transform: capitalize;
   transition: 0.3s;
 }
 @media only screen and (max-width: 767px) {
@@ -19257,6 +19259,7 @@ a {
   font-weight: 600;
   line-height: 44px;
   /* 129.412% */
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 767px) {
   .service-details-content-right h3.title-main-s {
@@ -19352,13 +19355,13 @@ a {
   height: 100%;
 }
 .single-working-process-one.two .inner::after {
-  background-image: url(../assets/images/why-choose/06.jpg) ;
+  background-image: url(../images/why-choose/06.jpg) ;
 }
 .single-working-process-one.three .inner::after {
-  background-image: url(../assets/images/why-choose/06.jpg) ;;
+  background-image: url(../images/why-choose/06.jpg) ;;
 }
 .single-working-process-one.four .inner::after {
-  background-image: url(../assets/images/why-choose/06.jpg) ;;
+  background-image: url(../images/why-choose/06.jpg) ;;
 }
 .single-working-process-one .inner {
   height: 100%;
@@ -19375,7 +19378,7 @@ a {
 .single-working-process-one .inner::after {
   position: absolute;
   content: "";
-  background-image: url(../assets/images/why-choose/05.jpg) !important;
+  background-image: url(../images/why-choose/05.jpg) !important;
   width: 0%;
   height: 100%;
   background-repeat: no-repeat;
@@ -19623,6 +19626,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 44px;
+  text-transform: capitalize;
   margin-bottom: 10px;
 }
 .single-product-one .inenr-content-absolute .category {
@@ -20073,7 +20077,7 @@ a {
   }
 }
 .project-full-top-wrapper p.disc {
-  max-width: 45%;
+  max-width: 35%;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -21313,7 +21317,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 }
 
 .bg-testimonials-1 {
-  background-image: url(../assets/images/01.jpg);
+  background-image: url(../images/01.jpg);
 }
 
 .sigle-testimonials-one {
@@ -23636,7 +23640,7 @@ object-fit: cover;
 }
 
 .cta-inner-area {
-  background-image: url(../assets/images/cta/03.jpg);
+  background-image: url(../images/cta/03.jpg);
 }
 .cta-inner-area a.rts-btn {
   margin: auto;
@@ -25104,7 +25108,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .progress-wrap:hover::after {
   opacity: 1;
-
+  content: "\f325";
   font-weight: 300;
   border: 0px solid var(--color-primary);
 }
@@ -25135,7 +25139,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   opacity: 0;
 }
 
-.progress-circle path {
+.progress-wrap svg path {
   fill: none;
 }
 
@@ -25345,6 +25349,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   font-style: normal;
   font-weight: 600;
   line-height: 58px;
+  text-transform: capitalize;
   line-height: 16px;
 }
 
@@ -25558,4 +25563,4 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   transform: translateY(-100%);
   transition: all 0.3s 1s ease-out;
 }
-/* # sourceMappingURL=../maps/style.css.map */
+/*# sourceMappingURL=../maps/style.css.map */

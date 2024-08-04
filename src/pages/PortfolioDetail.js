@@ -8,9 +8,7 @@ import 'lightgallery/css/lg-zoom.css';
 import 'flickr-justified-gallery/src/fjGallery.css';
 import portfolioData from '../data/portfolioData.json';
 import SEOHead from "../SEOHead"
-import '../style/vendor/bootstrap.min.css';
-import '../style/vendor/metismenu.css';
-import '../style/style.css';
+
 const PortfolioDetail = () => {
   const { nav } = useParams();
   const [portfolioItem, setPortfolioItem] = useState(null);

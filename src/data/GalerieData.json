@@ -62,8 +62,7 @@
     "gallery": [
       "/assets/images/service/homestaging_large3.jpeg",
       "/assets/images/service/homestaging_large4.jpeg",
-      "/assets/images/service/homestaging_large6.jpeg",
-      "/assets/images/gallery/homestaging1.jpeg",
+     
       "/assets/images/gallery/homestaging2.jpeg",
       "/assets/images/service/homestaging_large7.jpeg",
       "/assets/images/service/homestaging_large8.jpeg",
@@ -87,7 +86,6 @@
       "/assets/images/gallery/kuchyne6.jpeg",
       "/assets/images/gallery/kuchyne9.jpeg",
       "/assets/images/gallery/kuchyne1.jpeg",
-      "/assets/images/gallery/kuchyne2.jpeg",
       "/assets/images/gallery/kuchyne3.jpeg",
       "/assets/images/gallery/kuchyne4.jpeg",
       "/assets/images/gallery/kuchyne5.jpeg",
@@ -105,7 +103,6 @@
       "/assets/images/gallery/obyvaci-pokoje1.jpeg",
       "/assets/images/gallery/obyvaci-pokoje2.jpeg",
       "/assets/images/gallery/obyvaci-pokoje3.jpeg",
-      "/assets/images/gallery/obyvaci-pokoje4.jpeg",
       "/assets/images/gallery/obyvaci-pokoje5.jpeg",
       "/assets/images/gallery/obyvaci-pokoje6.jpeg",
       "/assets/images/gallery/obyvaci-pokoje7.jpeg"
@@ -146,9 +143,7 @@
     "description": "Renovujte svou koupelnu moderními materiály, elegantními prvky a praktickými řešeními, která zvýší komfort a styl vašeho domova.",
     "link": "koupelny",
     "gallery": [
-      "/assets/images/gallery/koupelny1.jpeg",
       "/assets/images/gallery/koupelny2.jpeg",
-      "/assets/images/gallery/koupelny3.jpeg",
       "/assets/images/gallery/koupelny4.jpeg",
       "/assets/images/gallery/koupelny5.jpeg",
       "/assets/images/gallery/koupelny6.jpeg",
@@ -156,7 +151,6 @@
       "/assets/images/gallery/koupelny8.jpeg",
       "/assets/images/gallery/koupelny9.jpeg",
       "/assets/images/gallery/koupelny10.jpeg",
-      "/assets/images/gallery/koupelny11.jpeg",
       "/assets/images/gallery/koupelny12.jpeg",
       "/assets/images/gallery/koupelny13.jpeg",
       "/assets/images/gallery/koupelny14.jpeg",
@@ -190,9 +184,7 @@
       "/assets/images/gallery/chodby2.jpeg",
       "/assets/images/gallery/chodby3.jpeg",
       "/assets/images/gallery/chodby4.jpeg",
-      "/assets/images/gallery/chodby5.jpeg",
-      "/assets/images/gallery/chodby6.jpeg"
-    ]
+      "/assets/images/gallery/chodby5.jpeg"    ]
   },
   {
     "id": 12,

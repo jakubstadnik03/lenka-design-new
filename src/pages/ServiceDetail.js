@@ -4,9 +4,7 @@ import { useParams } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import ServiceSidebar from '../components/ServiceSidebar';
 import SEOHead from "../SEOHead"
-import '../style/vendor/bootstrap.min.css';
-import '../style/vendor/metismenu.css';
-import '../style/style.css';
+
 const ServiceDetail = () => {
   const { nav } = useParams();
   const [service, setService] = useState(null);
