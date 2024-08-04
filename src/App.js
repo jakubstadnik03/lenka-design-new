@@ -19,7 +19,7 @@ import PodminkyAPravidla from './pages/PodminkyAPravidla';
 import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
 import WebAGrafika from './pages/WebAGrafika';
 import WebDetail from './pages/ProjectDetail'
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App = () => {
   
