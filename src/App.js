@@ -47,7 +47,7 @@ const App = () => {
       <Footer />
       <Progress />
       <SpeedInsights />
-      </>
+    </>
   );
 };
 
