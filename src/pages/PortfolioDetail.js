@@ -8,6 +8,7 @@ import 'lightgallery/css/lg-zoom.css';
 import 'flickr-justified-gallery/src/fjGallery.css';
 import portfolioData from '../data/portfolioData.json';
 import SEOHead from "../SEOHead"
+import BeforeAfter from '../components/BeforeAfter';
 
 const PortfolioDetail = () => {
   const { nav } = useParams();
@@ -123,6 +124,14 @@ const PortfolioDetail = () => {
                 <p className="disc" dangerouslySetInnerHTML={{ __html: portfolioItem.solution }}></p>
               </div>
             </div>
+            <div className='befores-after-small rts-section-gapBottom'>
+              <div className='container'>
+                <div className='row g-5'>
+                  {portfolioItem.beforeImg && <BeforeAfter beforeImage={portfolioItem.beforeImg}  afterImage={portfolioItem.afterImg} />}
+                  {portfolioItem.beforeImg2 && <BeforeAfter beforeImage={portfolioItem.beforeImg2}  afterImage={portfolioItem.afterImg2} />}
+                </div>
+              </div>
+              </div>
           </div>
           <div className="row mt--60 g-5">
             <div className="col-lg-12">

@@ -23891,12 +23891,14 @@ object-fit: cover;
 }
 .after-before-main-wrapper-one .cd-image-container {
   position: relative;
-  width: 700px;
+  width: 600px;
+  height: 400px;
   margin: 0em auto;
 }
 .after-before-main-wrapper-one .cd-image-container img {
   display: block;
   height: 100%;
+  width: 100%;
 }
 .after-before-main-wrapper-one .cd-image-label {
   position: absolute;
@@ -23920,6 +23922,10 @@ object-fit: cover;
 }
 .after-before-main-wrapper-one .cd-image-label.is-hidden {
   visibility: hidden;
+}
+.after-before-main-wrapper-one{
+
+  user-select: none
 }
 .after-before-main-wrapper-one .is-visible .cd-image-label {
   opacity: 1;
@@ -23945,6 +23951,42 @@ object-fit: cover;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+/* Loader.css */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Ensure it covers other elements */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #4caf50; /* Primary color */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader p {
+  font-size: 1.2rem;
+  color: #4caf50; /* Primary color */
+}
+
 .after-before-main-wrapper-one .cd-resize-img img {
   position: absolute;
   left: 0;

@@ -29,22 +29,24 @@ const BeforeAfter = ({ beforeImage, afterImage }) => {
   }, []);
 
   return (
-    <div className="rts-after-before-area-start rts-section-gap">
-      <div className="container-full">
-        <div className="row">
-          <div className="col-lg-12">
-            <div className="after-before-main-wrapper-one" ref={containerRef}>
-              <figure className="cd-image-container is-visible">
-                <img src="assets/images/before-after/01.png" alt="Original Image" />
-                <span className="cd-image-label" data-type="original">Potom</span>
-
-                <div className="cd-resize-img" style={{ width: `${sliderPosition}%` }}>
-                  <img src="assets/images/before-after/02.png" alt="Modified Image" />
-                  <span className="cd-image-label" data-type="modified">Předtím</span>
-                </div>
-
-                <span className="cd-handle" style={{ left: `${sliderPosition}%` }}></span>
-              </figure>
+    <div className='col-lg-6'>
+      <div className="rts-after-before-area-start rts-section-gap">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <div className="after-before-main-wrapper-one" ref={containerRef}>
+                <figure className="cd-image-container is-visible">
+                  <img src={afterImage} alt="Original Image" />
+                  <span className="cd-image-label" data-type="original">Potom</span>
+  
+                  <div className="cd-resize-img" style={{ width: `${sliderPosition}%` }}>
+                    <img src={beforeImage} alt="Modified Image" />
+                    <span className="cd-image-label" data-type="modified">Předtím</span>
+                  </div>
+  
+                  <span className="cd-handle" style={{ left: `${sliderPosition}%` }}></span>
+                </figure>
+              </div>
             </div>
           </div>
         </div>

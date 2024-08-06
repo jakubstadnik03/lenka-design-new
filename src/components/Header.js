@@ -45,12 +45,12 @@ const Header = () => {
                 <li className="has-dropdown">
                   <Link className="nav-link" to="/portfolio">Projekty</Link>
                   <ul className="submenu">
-                    <li class="sub-dropdown lim">
-                                    <a class="sdm-main" href="/portfolio">Mé předchozí projekty</a>
-                                    <ul class="submenu third-lvl base">
-                                        <li class="lim"><a class="mobile-menu-link" href="/portfolio/vila-albatros">Vila Albatros</a></li>
-                                        <li class="lim"><a class="mobile-menu-link" href="/portfolio/kadernicky-salon">Kadeřnictví</a></li>
-                                        <li class="lim"><a class="mobile-menu-link" href="/portfolio/renovace-chalupy">Renovace chalupy</a></li>
+                    <li className="sub-dropdown lim">
+                                    <a className="sdm-main" href="/portfolio">Mé předchozí projekty</a>
+                                    <ul className="submenu third-lvl base">
+                                        <li className="lim"><a className="mobile-menu-link" href="/portfolio/vila-albatros">Vila Albatros</a></li>
+                                        <li className="lim"><a className="mobile-menu-link" href="/portfolio/kadernicky-salon">Kadeřnictví</a></li>
+                                        <li className="lim"><a className="mobile-menu-link" href="/portfolio/renovace-chalupy">Renovace chalupy</a></li>
                                        
                                     </ul>
                                 </li>

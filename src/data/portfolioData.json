@@ -141,6 +141,10 @@
       "/assets/images/product/advokatni-kancelar11.webp",
       "/assets/images/product/advokatni-kancelar12.webp",
       "/assets/images/product/advokatni-kancelar13.webp"
-    ]
+    ],
+    "beforeImg": "/assets/images/product/zrnovsky-before.jpg",
+    "afterImg": "/assets/images/product/advokatni-kancelar6.webp",
+    "beforeImg2": "/assets/images/product/advokat-before-2.jpg",
+    "afterImg2": "/assets/images/product/advokatni-kancelar8.webp"
   }
 ]

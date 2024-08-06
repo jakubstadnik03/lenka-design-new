@@ -100,7 +100,7 @@ const About = () => {
                     Doporučuji konzultace s designérem již v době hrubé stavby, ušetříte si stres i náklady do budoucna. Vkusně, prakticky a zodpovědně dojdeme ke správnému cíli. Věnuji se návrhům interiérů, bytovému designu a Home stagingu již přes 10 let, mým cílem je, aby každý klient byl spokojen. Mohu Vám nabídnout 3D vizualizaci, návrhy dispozic nebo jen osobní konzultaci v interiérovém designu. Pracuji i online a přes videokonference. Soustředím se na projekty a návrhy interiérů v Liberci a okolí. Upřednostňuji přírodní materiály či jejich imitace. Mojí největší inspirací je příroda. Příroda nás vytvořila, ovlivňuje nás, a proto se v její blízkosti cítíme nejlépe. Nechci Vás ale ovlivňovat mým stylem, mým cílem je pochopit ten Váš a pomoci Vám zrealizovat Váš sen, který máte.
                   </p>
                   <h3 className="subtitle" style={{ fontSize: "20px", lineHeight: "20px" }}>
-                    Bc. Aneta Novická – Interiérová návrhářka, Absolventka Mendelovi univerzity v Brně v oboru Tvorba a výroba nábytku
+                    Bc. Aneta Novická – Interiérová návrhářka, Absolventka Mendelovy univerzity v Brně v oboru Tvorba a výroba nábytku
                   </h3>
                   <p className="disc rts-slide-up">
                   Absolventka Střední školy Kateřinky v oboru Design interiéru. Během maturitního vzdělávání získala také výuční list v oboru Truhlář. Následovala tříměsíční stáž v Lotyšské Rize, kde pracovala v prestižním designovém studiu Agnes Rudzite Interiors a čerpala inspiraci zahraničního designu. Poté absolvovala Mendelovu univerzitu v Brně v oboru Tvorba a výroba nábytku a rozšířila si díky tomu další znalosti.
