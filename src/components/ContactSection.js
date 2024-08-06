@@ -61,7 +61,7 @@ const ContactSection = () => {
             variants={containerVariants}
           >
             <motion.div className="contct-thumbnail-left rts-reveal-one" variants={itemVariants}>
-              <img className="rts-reveal-image-one" src="/assets/images/service/konzultace1.jpeg" alt="Kontakt" />
+              <img className="rts-reveal-image-one" src="/assets/images/service/konzultace1.webp" alt="Kontakt" />
             </motion.div>
           </motion.div>
           <motion.div 

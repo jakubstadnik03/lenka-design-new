@@ -111,7 +111,7 @@ const OurProject = () => {
                         variants={itemVariants}
                       >
                         <span className="number">{index + 1}</span>
-                        <a href={`/portfolio/${project.id}`} className="thumbnail">
+                        <a href={`/portfolio/${project.nav}`} className="thumbnail">
                           <img src={project.images[0]} alt="product" style={{ height: "700px", objectFit: "cover" }} />
                         </a>
                         <div className="inenr-content-absolute">
