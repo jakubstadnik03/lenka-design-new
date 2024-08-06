@@ -20,7 +20,7 @@ import ZasadyObchodnichUdaju from './pages/ZasadyObchodnichUdaju';
 import WebAGrafika from './pages/WebAGrafika';
 import WebDetail from './pages/ProjectDetail'
 import { SpeedInsights } from '@vercel/speed-insights/react';
-
+import { Analytics } from "@vercel/analytics/react"
 const App = () => {
   
   return (
@@ -47,6 +47,7 @@ const App = () => {
       <Footer />
       <Progress />
       <SpeedInsights />
+      <Analytics />
     </>
   );
 };
