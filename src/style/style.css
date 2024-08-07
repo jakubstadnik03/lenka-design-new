@@ -17008,7 +17008,7 @@ a {
 .mySwiper-banner-one .swiper-pagination {
   position: absolute;
   bottom: 20px !important;
-  left: 48vw !important;
+  left: 800px !important;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -21451,6 +21451,7 @@ body.portfolio-boxes .swiper-product-one-box-page .thumbnail {
 .banner-img{
 height: 90vh;
  width: 100vw;
+ max-height: 1080px;
 object-fit: cover;
  object-position: left;
 }
