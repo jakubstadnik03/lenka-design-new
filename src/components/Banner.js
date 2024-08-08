@@ -99,7 +99,7 @@ const Banner = () => {
       </div>
       <div className="left-swiper-area-start">
         <div className="right-shape">
-          <img src="/assets/images/bannerImg/03.png" alt="" />
+          <img src="/assets/images/bannerImg/03.svg" alt="" />
         </div>
         <div className="mySwiper-banner-oneleft">
           <div className="swiper-wrapper">

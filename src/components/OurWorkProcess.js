@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const OurWorkProcess = () => {
   const { ref: titleRef, inView: titleInView } = useInView({
@@ -38,12 +38,13 @@ const OurWorkProcess = () => {
             <motion.div
               ref={titleRef}
               initial="hidden"
-              animate={titleInView ? 'visible' : 'hidden'}
+              animate={titleInView ? "visible" : "hidden"}
               variants={{
                 hidden: { opacity: 0, y: -50 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
               }}
               className="title-process-stock-text"
+              style={{ minHeight: "60px" }} // Set a minimum height to prevent layout shifts
             >
               <h2 className="stock-text-1 title-large-3 end">
                 JAK PROBÍHÁ SPOLUPRÁCE?
@@ -54,7 +55,7 @@ const OurWorkProcess = () => {
         <motion.div
           ref={stepsRef}
           initial="hidden"
-          animate={stepsInView ? 'visible' : 'hidden'}
+          animate={stepsInView ? "visible" : "hidden"}
           variants={containerVariants}
           className="row g-5 mt--30 mt_sm--0 separetor-process-top rts-slide-up"
         >
@@ -62,33 +63,39 @@ const OurWorkProcess = () => {
             {
               number: "01",
               title: "Konzultace a domluva",
-              description: "Náš první krok, kde se setkáme s klientem, abychom pochopili jeho potřeby a vize pro designový projekt."
+              description:
+                "Náš první krok, kde se setkáme s klientem, abychom pochopili jeho potřeby a vize pro designový projekt.",
             },
             {
               number: "02",
               title: "Plánování a vývoj konceptu",
-              description: "Zaměření interiéru a rozplánování prací v projektu."
+              description:
+                "Zaměření interiéru a rozplánování prací v projektu.",
             },
             {
               number: "03",
               title: "Dokumentace, návrhy a Moodboard",
-              description: "Zpracování podrobných stav. výkresů a návrhů obsahující: Moodboard, 3D návrhy a vybavení interiéru."
+              description:
+                "Zpracování podrobných stav. výkresů a návrhů obsahující: Moodboard, 3D návrhy a vybavení interiéru.",
             },
             {
               number: "04",
               title: "Konzultace projektu a změny",
-              description: "Konzultace návrhů a změn s klientem a zpracování finálních výkresů pro realizační firmy."
+              description:
+                "Konzultace návrhů a změn s klientem a zpracování finálních výkresů pro realizační firmy.",
             },
             {
               number: "05",
               title: "Projektové řízení a realizace",
-              description: "Řízení celého projektu a jeho postupná realizace. Dokončení a stylizace projektu."
-            }
+              description:
+                "Řízení celého projektu a jeho postupná realizace. Dokončení a stylizace projektu.",
+            },
           ].map((step, index) => (
             <motion.div
               key={index}
               className="col-lg-3 col-md-6 col-sm-6 col-12 pt--50 pt_md--15 pt_sm--10"
               variants={itemVariants}
+              style={{ minHeight: "200px" }} // Set a minimum height for each step to prevent layout shifts
             >
               <div className={`single-working-process-one ${index + 1}`}>
                 <div className="inner">
