@@ -1,16 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Pagination, Autoplay } from 'swiper/modules';
-
+import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Pagination, Autoplay } from "swiper/modules";
 
 const banners = [
-  { img: "/assets/images/bannerImg/1.webp", link: "navrhy-bytovych-interieru", title: "Návrh bytových interiérů", description: "Oživte svůj prostor s našimi návrhy - proměňte ho v dokonalý domov!" },
-  { img: "/assets/images/bannerImg/2.webp", link: "realizace", title: "Naše realizace návrhů ", description: "Realizujeme vaše návrhy - proměňte naše návrhy ve vysněný domov!" },
-  { img: "/assets/images/product/advokatni-kancelar6.webp", link: "navrhy-komercnich-interieru", title: "Návrh komerčních interiérů", description: "Proměňte svůj komerční prostor s našimi profesionálními návrhy!" },
-  { img: "/assets/images/bannerImg/4.webp", link: "3d-navrhy-interieru", title: "3D návrhy Interiérů", description: "3D vizualizace Vám ukáže interiér ještě před tím, nežli se pustíte do realizace." }
+  {
+    img: "/assets/images/bannerImg/1.webp",
+    imgSmall: "/assets/images/bannerImg/1-small.webp",
+    link: "navrhy-bytovych-interieru",
+    title: "Návrh bytových interiérů",
+    description:
+      "Oživte svůj prostor s našimi návrhy - proměňte ho v dokonalý domov!",
+  },
+  {
+    img: "/assets/images/bannerImg/2.webp",
+    imgSmall: "/assets/images/bannerImg/2-small.webp",
+    link: "realizace",
+    title: "Naše realizace návrhů",
+    description:
+      "Realizujeme vaše návrhy - proměňte naše návrhy ve vysněný domov!",
+  },
+  {
+    img: "/assets/images/product/advokatni-kancelar6.webp",
+    imgSmall: "/assets/images/product/advokatni-kancelar6-small.webp",
+    link: "navrhy-komercnich-interieru",
+    title: "Návrh komerčních interiérů",
+    description:
+      "Proměňte svůj komerční prostor s našimi profesionálními návrhy!",
+  },
+  {
+    img: "/assets/images/bannerImg/4.webp",
+    imgSmall: "/assets/images/bannerImg/4-small.webp",
+    link: "3d-navrhy-interieru",
+    title: "3D návrhy Interiérů",
+    description:
+      "3D vizualizace Vám ukáže interiér ještě před tím, nežli se pustíte do realizace.",
+  },
 ];
 
 const Banner = () => {
@@ -54,7 +81,13 @@ const Banner = () => {
                   <SwiperSlide key={index}>
                     <div className="signle-swiper-start">
                       <div className="thumbnail-banner-one">
-                        <img src={banner.img} alt="banner" className="banner-img"  />
+                        <img
+                          srcSet={`${banner.imgSmall} 600w, ${banner.img} 1200w`}
+                          sizes="(max-width: 600px) 600px, 1200px"
+                          alt="banner"
+                          className="banner-img"
+                          loading="lazy"
+                        />
                       </div>
                     </div>
                   </SwiperSlide>
@@ -71,12 +104,33 @@ const Banner = () => {
         <div className="mySwiper-banner-oneleft">
           <div className="swiper-wrapper">
             {banners.map((banner, index) => (
-              <div className={`swiper-slide ${index === activeIndex ? 'active' : ''}`} key={index}>
+              <div
+                className={`swiper-slide ${
+                  index === activeIndex ? "active" : ""
+                }`}
+                key={index}
+              >
                 <div className={`single-left-banner-swiper-start `}>
-                  <h1 style={{fontSize: "0.8em", lineHeight: "1em"}}> <span className="pre">Lenka Design</span></h1>            
-                  <h2 className={`title ${animating ? 'animate-fade-in-up' : ''}`}>{banner.title}</h2>
-                  <p className={`disc ${animating ? 'animate-fade-in-up' : ''}`}>{banner.description}</p>
-                  <a href={`/nase-sluzby/${banner.link}`} className="rts-btn btn-border">Zjistit více</a>
+                  <h1 style={{ fontSize: "0.8em", lineHeight: "1em" }}>
+                    {" "}
+                    <span className="pre">Lenka Design</span>
+                  </h1>
+                  <h2
+                    className={`title ${animating ? "animate-fade-in-up" : ""}`}
+                  >
+                    {banner.title}
+                  </h2>
+                  <p
+                    className={`disc ${animating ? "animate-fade-in-up" : ""}`}
+                  >
+                    {banner.description}
+                  </p>
+                  <a
+                    href={`/nase-sluzby/${banner.link}`}
+                    className="rts-btn btn-border"
+                  >
+                    Zjistit více
+                  </a>
                 </div>
               </div>
             ))}

@@ -50,7 +50,6 @@
 /* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://db.onlinewebfonts.com/c/41ef03052040400ec0acd500990fdc97?family=URW+Imperial+W01+Regular");
 :root {
   --color-primary: #B19777;
   --color-secondary: #1F1F25;
@@ -87,7 +86,6 @@
   --transition: 0.3s;
   --font-primary: "Overpass", sans-serif;
   --font-secondary: "Plus Jakarta Sans", sans-serif;
-  --font-title-8: "URW Imperial W01 Regular", sans-serif;
   --font-3: "fontawesome", sans-serif;
   --font-size-b1: 18px;
   --font-size-b2: 16px;
@@ -17275,7 +17273,6 @@ a {
   background: #F6F6F6;
 }
 .index-eight .title-main {
-  font-family: var(--font-title-8);
   font-weight: 400;
   line-height: 1.2;
   font-size: 64px;
@@ -17307,7 +17304,6 @@ a {
   }
 }
 .index-eight .title {
-  font-family: var(--font-title-8);
   font-weight: 400;
   line-height: 1.2;
 }
