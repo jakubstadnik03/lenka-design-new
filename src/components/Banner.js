@@ -5,6 +5,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
+// Preload banner images
+const preloadImage = (url) => {
+  const img = new Image();
+  img.src = url;
+};
+
 const banners = [
   {
     img: "/assets/images/bannerImg/1.webp",
@@ -43,6 +49,14 @@ const banners = [
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+
+  useEffect(() => {
+    // Preload the images for the banner
+    banners.forEach((banner) => {
+      preloadImage(banner.img);
+      preloadImage(banner.imgSmall);
+    });
+  }, []);
 
   useEffect(() => {
     setAnimating(true);
@@ -84,9 +98,10 @@ const Banner = () => {
                         <img
                           srcSet={`${banner.imgSmall} 600w, ${banner.img} 1200w`}
                           sizes="(max-width: 600px) 600px, 1200px"
+                          src={banner.img} // fallback for older browsers
                           alt="banner"
                           className="banner-img"
-                          loading="lazy"
+                          loading="eager" // use eager loading for critical LCP image
                         />
                       </div>
                     </div>
@@ -99,7 +114,7 @@ const Banner = () => {
       </div>
       <div className="left-swiper-area-start">
         <div className="right-shape">
-          <img src="/assets/images/bannerImg/03.svg" alt="" />
+          <img src="/assets/images/bannerImg/03.png" alt="" />
         </div>
         <div className="mySwiper-banner-oneleft">
           <div className="swiper-wrapper">
