@@ -49,7 +49,7 @@
 ========================================*/
 /* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
   --color-primary: #B19777;
   --color-secondary: #1F1F25;
@@ -21803,7 +21803,6 @@ object-fit: cover;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  font-family: "URWImperialW01-Regular";
 }
 .testimonials-style-8 span.stars {
   position: absolute;
