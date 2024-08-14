@@ -1,9 +1,9 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const testimonialsData = [
   {
@@ -34,10 +34,17 @@ const Testimonials = () => {
           <div className="col-lg-12">
             <div className="title-style-center">
               <div className="pre-title-area">
-                <img src="assets/images/about/02.png" alt="about" />
+                <img
+                  src="assets/images/about/02.png"
+                  alt="about"
+                  width="64"
+                  height="64"
+                />
                 <span className="pre-title">Reference</span>
               </div>
-              <h2 className="title quote" style={{marginBottom: "0"}}>Zpětná vazba od <br /> našich cenných klientů</h2>
+              <h2 className="title quote" style={{ marginBottom: "0" }}>
+                Zpětná vazba od <br /> našich cenných klientů
+              </h2>
             </div>
           </div>
         </div>
@@ -49,30 +56,44 @@ const Testimonials = () => {
                 pagination={{ clickable: true }}
                 spaceBetween={30}
                 breakpoints={{
-                    // when window width is >= 640px
-                    640: {
-                      slidesPerView: 1,
-                    },
-                    // when window width is >= 768px
-                    768: {
-                      slidesPerView: 2,
-                    },
-                  }}
+                  640: {
+                    slidesPerView: 1,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                  },
+                }}
                 className="swiper-testimonails-one"
               >
                 {testimonialsData.map((testimonial, index) => (
                   <SwiperSlide key={index}>
                     <div className="sigle-testimonials-one">
                       <div className="top-quote">
-                        <img src="assets/images/testimonials/03.png" alt="tstimonials" />
+                        <img
+                          src="assets/images/testimonials/03.png"
+                          alt="tstimonials"
+                          width="48"
+                          height="48"
+                        />
                       </div>
                       <p>{testimonial.text}</p>
                       <div className="author-area">
                         <div className="thumbnail">
-                          <img src={testimonial.authorImage} alt="tstimonials" />
+                          <img
+                            src={testimonial.authorImage}
+                            alt="tstimonials"
+                            width="64"
+                            height="64"
+                            loading="lazy"
+                          />
                         </div>
                         <div className="info">
-                          <h3 style={{fontSize: "16px", lineHeight: "16px"}} className="title">{testimonial.authorName}</h3>
+                          <h3
+                            style={{ fontSize: "16px", lineHeight: "16px" }}
+                            className="title"
+                          >
+                            {testimonial.authorName}
+                          </h3>
                           <span>{testimonial.authorTitle}</span>
                         </div>
                       </div>
