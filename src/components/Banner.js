@@ -97,7 +97,7 @@ const Banner = () => {
                       <div className="thumbnail-banner-one">
                         <img
                           srcSet={`${banner.imgSmall} 600w, ${banner.img} 1200w`}
-                          sizes="(max-width: 600px) 600px, 1200px"
+                          sizes="(max-width: 600px) 100vw, (min-width: 601px) 50vw"
                           src={banner.img} // fallback for older browsers
                           alt="banner"
                           className="banner-img"

@@ -1,13 +1,16 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import portfolioData from '../data/portfolioData.json';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronRight,
+  faChevronLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import portfolioData from "../data/portfolioData.json";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const OurProject = () => {
   const firstSixProjects = portfolioData.slice(0, 6);
@@ -45,7 +48,7 @@ const OurProject = () => {
         <motion.div
           ref={titleRef}
           initial="hidden"
-          animate={titleInView ? 'visible' : 'hidden'}
+          animate={titleInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
           <div className="row">
@@ -56,13 +59,19 @@ const OurProject = () => {
                     <img src="assets/images/about/02.png" alt="about" />
                     <span className="pre-title">Naše projekty</span>
                   </div>
-                  <h2 className="title quote" style={{ opacity: "1 !important" }}>
+                  <h2
+                    className="title quote"
+                    style={{ opacity: "1 !important" }}
+                  >
                     Prozkoumejte naše <br />
                     návrhy interiérů
                   </h2>
                 </div>
                 <p className="disc">
-                Naše projekty interiérového designu se zaměřují na přeměnu obytných prostor na moderní a příjemné interiéry. Celý můj tým klade důraz nejen na estetiku, ale i na funkčnost a praktičnost.
+                  Naše projekty interiérového designu se zaměřují na přeměnu
+                  obytných prostor na moderní a příjemné interiéry. Celý můj tým
+                  klade důraz nejen na estetiku, ale i na funkčnost a
+                  praktičnost.
                 </p>
                 <div className="swiper-next-prev-wrapper">
                   <div className="swiper-button-next next-icons">
@@ -81,7 +90,7 @@ const OurProject = () => {
         <motion.div
           ref={sliderRef}
           initial="hidden"
-          animate={sliderInView ? 'visible' : 'hidden'}
+          animate={sliderInView ? "visible" : "hidden"}
           variants={containerVariants}
         >
           <div className="row">
@@ -90,8 +99,8 @@ const OurProject = () => {
                 <Swiper
                   modules={[Navigation]}
                   navigation={{
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
                   }}
                   spaceBetween={0}
                   breakpoints={{
@@ -111,8 +120,18 @@ const OurProject = () => {
                         variants={itemVariants}
                       >
                         <span className="number">{index + 1}</span>
-                        <a href={`/portfolio/${project.nav}`} className="thumbnail">
-                          <img src={project.images[0]} alt="product" style={{ height: "700px", objectFit: "cover" }} />
+                        <a
+                          href={`/portfolio/${project.nav}`}
+                          className="thumbnail"
+                        >
+                          <img
+                            srcSet={`${project.imgSmall} 600w, ${project.images[0]} 1200w`}
+                            sizes="(max-width: 600px) 100vw, 50vw"
+                            src={project.images[0]}
+                            alt="product"
+                            style={{ height: "700px", objectFit: "cover" }}
+                            loading="lazy"
+                          />
                         </a>
                         <div className="inenr-content-absolute">
                           <a href={`/portfolio/${project.id}`}>
