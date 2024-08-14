@@ -101,7 +101,7 @@ const Banner = () => {
                           src={banner.img} // fallback for older browsers
                           alt="banner"
                           className="banner-img"
-                          loading="eager" // use eager loading for critical LCP image
+                          loading={index === 0 ? "eager" : "lazy"} // eager loading for the first banner image
                         />
                       </div>
                     </div>

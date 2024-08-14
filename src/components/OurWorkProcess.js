@@ -95,7 +95,7 @@ const OurWorkProcess = () => {
               key={index}
               className="col-lg-3 col-md-6 col-sm-6 col-12 pt--50 pt_md--15 pt_sm--10"
               variants={itemVariants}
-              style={{ minHeight: "200px" }} // Set a minimum height for each step to prevent layout shifts
+              style={{ minHeight: "250px" }} // Set a minimum height for each step to prevent layout shifts
             >
               <div className={`single-working-process-one ${index + 1}`}>
                 <div className="inner">
