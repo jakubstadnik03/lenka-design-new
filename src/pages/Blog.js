@@ -87,7 +87,7 @@ const Blog = () => {
                         <h2 className="title">{blog.title}</h2>
                       </a>
                       <p className="disc">{blog.description}</p>
-                      <a href={blog.link} className="btn-read-more-blog">
+                      <a href={`/blog/${blog.link}`} className="btn-read-more-blog">
                         Read More <FontAwesomeIcon icon={faArrowRight} />
                       </a>
                     </div>

@@ -39,7 +39,7 @@ const App = () => {
         <Route path="/cenik" element={<Pricing />} />
         <Route path="/podminky-a-pravidla" element={<PodminkyAPravidla />} />
         <Route path="/zasady-obchodnich-udaju" element={<ZasadyObchodnichUdaju />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/blog/:link" element={<BlogDetail />} />
         <Route path="/fotogalerie/:nav" element={<FotogalerieDetail />} />
         <Route path='/web-a-grafika' element={<WebAGrafika />} />
         <Route path='/web-a-grafika/:nav' element={<WebDetail />} />

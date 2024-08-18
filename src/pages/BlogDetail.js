@@ -5,14 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
 import ServiceSidebar from '../components/ServiceSidebar';
 const BlogDetails = () => {
-  const { id } = useParams();
+  const { link } = useParams();
   const [post, setPost] = useState(null);
   const [recentPosts, setRecentPosts] = useState([]);
 
   useEffect(() => {
-    const selectedPost = blogPosts.find(blog => blog.id.toString() === id);
+    const selectedPost = blogPosts.find(blog => blog.link === link);
     setPost(selectedPost);
-  }, [id]);
+  }, [link]);
 
   useEffect(() => {
     const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -32,7 +32,7 @@ const BlogDetails = () => {
               <div className="bread-crumb-area-inner">
                 <div className="breadcrumb-top">
                   <a href="/blog">Blog</a> /
-                  <a className="active" href={`/${post.id}`}>{post.title}</a>
+                  <a className="active" href={`/blog/${post.link}`}>{post.title}</a>
                 </div>
                 <div className="bottom-title">
                   <h1 className="title">{post.title}</h1>
@@ -65,7 +65,9 @@ const BlogDetails = () => {
                       <span>{post.tags.join(', ')}</span>
                     </div>
                   </div>
-                  <h2 className="title animated fadeIn">{post.title}</h2>
+                  <h2 className="title animated fadeIn">
+  {post.mainTitle? post.mainTitle : post.title}
+</h2>
                   <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
                   {post.subtitle && (
                     <>
@@ -123,13 +125,13 @@ const BlogDetails = () => {
                     {recentPosts.map(recent => (
                       <div key={recent.id} className="recent-post-single">
                         <div className="thumbnail">
-                          <a href={`/blog/${recent.id}`}><img src={recent.coverImage} style={{width: "100px", height: "100px", minWidth: "auto"}} alt="Recent Post" /></a>
+                          <a href={`/blog/${recent.link}`}><img src={recent.coverImage} style={{width: "100px", height: "100px", minWidth: "auto"}} alt="Recent Post" /></a>
                         </div>
                         <div className="content-area text-start">
                           <div className="user">
                           <FontAwesomeIcon icon={faClock} />                            <span>{new Date(recent.date).toLocaleDateString()}</span>
                           </div>
-                          <a className="post-title" href={`/blog/${recent.id}`}>
+                          <a className="post-title" href={`/blog/${recent.link}`}>
                             <h6 className="title">{recent.title}</h6>
                           </a>
                         </div>
