@@ -83,7 +83,7 @@ const Blog = () => {
                         <span className="tag">{blog.category}</span>
                         <span>{new Date(blog.date).toLocaleDateString()}</span>
                       </div>
-                      <a href={blog.link}>
+                      <a href={`/blog/${blog.link}`}>
                         <h2 className="title">{blog.title}</h2>
                       </a>
                       <p className="disc">{blog.description}</p>
