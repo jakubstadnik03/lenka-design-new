@@ -10,7 +10,7 @@
     "description": "Projekt Vila Albatros zahrnoval komplexní návrh výstavby vily, určené pro krátkodobý pronájem. Vila se nachází u golfového hřiště Malevil v Severních Čechách a stavba byla realizována od projektu až po celkovou realizaci. Cílem bylo vytvořit komfortní a atraktivní ubytování pro majitele, dále pro golfové nadšence a návštěvníky oblasti.",
     "scope": "Projekt zahrnoval kompletní návrh vnitřního prostoru vily i venkovní obložení domu. Návrhy obsahovaly celkové vybavení domu, jako např. veškerých materiálů, podlahy, dveří, krbu, schodiště, nábytku na míru, dekorační výmalbu, osvětlení, stínění oken, dekorace a doplňky.",
     "solution": "Nejprve byla provedena analýza místa a promyšlení stylu domu, aby době zapadla do zdejšího prostředí. Zajistit, aby stavba odpovídala všem požadavkům klientů a na komfort a estetiku jak zvenku, tak uvnitř. Vybrat vhodné materiály a zařídit interiér tak, aby byl příjemný pro hosty a prolínal se celým domem. </br> Dále bylo zde řešeno rozmístění jednotlivých pokojů a koupelen, aby splňovaly podmínky klientů a umožňovaly komfort pro hosty. </br> Během realizace se řešily jednotlivé řemeslnické postupy, nečekané změny, dodání materiálů a výrobků. </br> Majitelé domu byli skvělí a trpěliví, výstavba domu trvala něco málo přes rok a nyní je k dispozici krátkodobého pronájmu. Neváhejte navštívit!",
-    "imgSmall": "/assets/images/product/chalupa2.jpeg",
+    "imgSmall": "/assets/images/product/chalupa2-small.jpeg",
     "link": "https://www.e-chalupy.cz/ubytovani-hermanice-v-podjestedi-vila-abatros-o1270",
     "images": [
       "/assets/images/product/chalupa2.jpeg",
@@ -36,7 +36,7 @@
     "startDate": "15.05.2023",
     "duration": "4 měsíce",
     "location": "Liberec, Česká republika",
-    "imgSmall": "/assets/images/product/kadernictvi1.jpg",
+    "imgSmall": "/assets/images/product/kadernictvi1-small.jpeg",
     "description": "Projekt kadeřnického salónu zahrnoval renovaci a redesign prostoru tak, aby poskytoval moderní a příjemné prostředí pro zákazníky. Cílem bylo vytvořit funkční a esteticky přitažlivý interiér, který podporuje relaxaci a pohodlí.",
     "scope": "Renovace včetně nových podlah, osvětlení, nábytku a dekorací. Vytvoření ergonomického prostoru pro kadeřníky a zákazníky, který splňuje všechny hygienické normy.",
     "solution": "Navrhnout optimální uspořádání prostoru, vybrat kvalitní a trvanlivé materiály, zajistit dostatečné osvětlení a vytvořit příjemnou atmosféru. Vypracovat detailní plány a zajistit profesionální realizaci.",
@@ -60,7 +60,7 @@
     "location": "Světlá pod Ještědem, Česká republika",
     "description": "Renovace 200 let staré chalupy spočívala v proměně této historické stavby v nádhernou chalupu, která zachovala svůj původní charakter a krásu. Projekt zahrnoval citlivé renovace a modernizace, které zajišťují komfort a funkčnost.",
     "scope": "Celková rekonstrukce zahrnující strukturální opravy, obnovu historických prvků, modernizaci interiérů a instalaci nových technologií. Zahrnovala také krajinářské úpravy okolí chalupy.",
-    "imgSmall": "/assets/images/product/rozstani-pronajem1.jpeg",
+    "imgSmall": "/assets/images/product/rozstani-pronajem1-small.jpeg",
     "solution": "Provést důkladnou analýzu stavu budovy, navrhnout plán renovace, který zachová historický charakter, a zajistit všechny potřebné stavební práce. Vybrat materiály a techniky odpovídající původnímu stylu, ale zajistit moderní komfort.",
    "link": "https://www.podjestedka.cz",
     "images": [
@@ -87,7 +87,7 @@
     "scope": "<p>Kompletní renovace apartmá včetně nových podlah, stěn, osvětlení a nábytku. Zahrnovalo také instalaci moderních technologií a zařízení, které zvyšují komfort a funkcionalitu.</p> <p>Tento apartmá také slouží jako vzorový byt studia Lenka Design, kde klienti se mohou seznámit s použitými materiály, nábytkem na míru a vidět práci řemeslníků našeho týmu. </p> <p> Apartmán je také možno krátkodobě pronajmout <a href='https://www.booking.com/hotel/cz/designovy-byt-v-centru-liberce.cs.html?msockid=1a7740ef52c96a2719205491538b6bbb'>Designový apartmán v centru Liberce</a> </p>",
     "solution": "<p>Provést detailní analýzu prostoru a navrhnout optimální rozložení. Vybrat moderní a luxusní materiály, které dodají interiéru elegantní vzhled. Zajistit profesionální realizaci s důrazem na detaily a kvalitu provedení.</p> <p>  Tento byt je navržen s ohledem na luxus a pohodlí hostů.</p> <p> Obývací pokoj je vybavený italským nábytkem, který nabízí komfortní posezení před velkou 60 ultra HD TV s přístupem na Netflix.</p><p> Kuchyň je plně vybavená moderními spotřebiči. V koupelně se najde vše, co je třeba, pračku, vanu, sprchu dvojumyvadlo a oddělené WC. Šatna nabízí dostatek úložného prostoru pro vaše věci. A je oddělena krásnými prosklenými dveřmi od obývacího prostoru</p>    <p>Ložnice jsou vybaveny kvalitními, novými matracemi a designovými postelemi z Itálie. V ložnicích nechybí úložné prostory a výstup na terasu. </p>",
     "link": "https://www.booking.com/hotel/cz/designovy-byt-v-centru-liberce.cs.html?msockid=1a7740ef52c96a2719205491538b6bbb",
-    "imgSmall": "/assets/images/product/durychova-large7.webp",
+    "imgSmall": "/assets/images/product/durychova-large7-small.jpeg",
 
     "images": [
       "/assets/images/product/durychova-large7.webp",
@@ -115,7 +115,7 @@
     "description": "Projekt wellness salónu zahrnoval výstavbu moderního relaxačního centra s výřivkou, saunou a dalšími wellness prvky. Salón se nachází u malebného jezera a nabízí návštěvníkům možnost relaxace a regenerace v příjemném prostředí.",
     "scope": "Kompletní výstavba wellness salónu včetně všech potřebných zařízení, interiérového designu a krajinářských úprav okolí. Zahrnovalo také instalaci moderních technologií pro zajištění komfortu a funkčnosti.",
     "solution": "Provést detailní analýzu místa a navrhnout optimální rozložení wellness prvků. Vybrat kvalitní materiály a zařízení, které zajistí luxusní zážitek pro návštěvníky. Zajistit profesionální realizaci s důrazem na estetiku a komfort.",
-    "imgSmall": "/assets/images/product/wellness1.jpeg",
+    "imgSmall": "/assets/images/product/wellness1-small.jpeg",
     "images": [
       "/assets/images/product/wellness1.jpeg",
       "/assets/images/product/wellness2.jpeg",

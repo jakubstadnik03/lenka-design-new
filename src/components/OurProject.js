@@ -130,7 +130,7 @@ const OurProject = () => {
                             src={project.images[0]}
                             alt="product"
                             style={{ height: "700px", objectFit: "cover" }}
-                            loading="lazy"
+                            loading={index === 0 ? "eager" : "lazy"} // Lazy loading for all except first image
                           />
                         </a>
                         <div className="inenr-content-absolute">

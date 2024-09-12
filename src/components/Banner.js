@@ -5,12 +5,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper/modules";
 
-// Preload banner images
-const preloadImage = (url) => {
-  const img = new Image();
-  img.src = url;
-};
-
 const banners = [
   {
     img: "/assets/images/bannerImg/1.webp",
@@ -49,14 +43,6 @@ const banners = [
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-
-  useEffect(() => {
-    // Preload the images for the banner
-    banners.forEach((banner) => {
-      preloadImage(banner.img);
-      preloadImage(banner.imgSmall);
-    });
-  }, []);
 
   useEffect(() => {
     setAnimating(true);
@@ -101,7 +87,7 @@ const Banner = () => {
                           src={banner.img} // fallback for older browsers
                           alt="banner"
                           className="banner-img"
-                          loading={index === 0 ? "eager" : "lazy"} // eager loading for the first banner image
+                          loading={index === 0 ? "eager" : "lazy"} // Lazy loading for all except first image
                         />
                       </div>
                     </div>

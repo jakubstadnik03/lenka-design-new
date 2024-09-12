@@ -1,15 +1,15 @@
-import React, { lazy, Suspense } from 'react';
-import Banner from '../components/Banner';
+import React, { lazy, Suspense } from "react";
+import Banner from "../components/Banner";
 import SEOHead from "../SEOHead";
-import Loader from '../components/Loader'; // Import the Loader component
+import Loader from "../components/Loader"; // Import the Loader component
 
 // Lazy load components
-const About = lazy(() => import('../components/About'));
-const OurWorkProcess = lazy(() => import('../components/OurWorkProcess'));
-const OurProject = lazy(() => import('../components/OurProject'));
-const ServicesComponent = lazy(() => import('../components/ServicesComponent'));
-const Testimonials = lazy(() => import('../components/Testimonials'));
-const ContactSection = lazy(() => import('../components/ContactSection'));
+const About = lazy(() => import("../components/About"));
+const OurWorkProcess = lazy(() => import("../components/OurWorkProcess"));
+const OurProject = lazy(() => import("../components/OurProject"));
+const ServicesComponent = lazy(() => import("../components/ServicesComponent"));
+const Testimonials = lazy(() => import("../components/Testimonials"));
+const ContactSection = lazy(() => import("../components/ContactSection"));
 
 const Home = () => {
   return (
@@ -42,6 +42,6 @@ const Home = () => {
       </main>
     </>
   );
-}
+};
 
 export default Home;
