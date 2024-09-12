@@ -1,21 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import blogPosts from '../data/blogData.json';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock } from '@fortawesome/free-solid-svg-icons';
-import ServiceSidebar from '../components/ServiceSidebar';
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import blogPosts from "../data/blogData.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClock } from "@fortawesome/free-solid-svg-icons";
+import ServiceSidebar from "../components/ServiceSidebar";
 const BlogDetails = () => {
   const { link } = useParams();
   const [post, setPost] = useState(null);
   const [recentPosts, setRecentPosts] = useState([]);
 
   useEffect(() => {
-    const selectedPost = blogPosts.find(blog => blog.link === link);
+    const selectedPost = blogPosts.find((blog) => blog.link === link);
     setPost(selectedPost);
   }, [link]);
 
   useEffect(() => {
-    const sortedPosts = [...blogPosts].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const sortedPosts = [...blogPosts].sort(
+      (a, b) => new Date(b.date) - new Date(a.date)
+    );
     setRecentPosts(sortedPosts.slice(0, 4));
   }, []);
 
@@ -32,7 +34,9 @@ const BlogDetails = () => {
               <div className="bread-crumb-area-inner">
                 <div className="breadcrumb-top">
                   <a href="/blog">Blog</a> /
-                  <a className="active" href={`/blog/${post.link}`}>{post.title}</a>
+                  <a className="active" href={`/blog/${post.link}`}>
+                    {post.title}
+                  </a>
                 </div>
                 <div className="bottom-title">
                   <h1 className="title">{post.title}</h1>
@@ -48,13 +52,17 @@ const BlogDetails = () => {
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
               <div className="blog-single-post-listing details mb--0">
                 <div className="thumbnail">
-                  <img src={post.coverImage} alt="Blog Cover" />
+                  <img
+                    src={post.coverImage}
+                    alt={`Cover image for ${post.title}`}
+                  />
+                  <div className="image-source">Zdroj: {post.imageSource}</div>
                 </div>
                 <div className="blog-listing-content">
                   <div className="user-info">
                     <div className="single">
                       <i className="far fa-user-circle"></i>
-                      <span>by {post.author.name}</span>
+                      <span>{post.author}</span>
                     </div>
                     <div className="single">
                       <i className="far fa-clock"></i>
@@ -62,44 +70,64 @@ const BlogDetails = () => {
                     </div>
                     <div className="single">
                       <i className="far fa-tags"></i>
-                      <span>{post.tags.join(', ')}</span>
+                      <span>{post.tags.join(", ")}</span>
                     </div>
                   </div>
                   <h2 className="title animated fadeIn">
-  {post.mainTitle? post.mainTitle : post.title}
-</h2>
+                    {post.mainTitle ? post.mainTitle : post.title}
+                  </h2>
                   <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
                   {post.subtitle && (
                     <>
-                      <h3 className="title mt--40 mt_sm--20">{post.subtitle}</h3>
-                      <div dangerouslySetInnerHTML={{ __html: post.content2 }}></div>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content2 }}
+                      ></div>
                     </>
                   )}
                   {post.subtitle2 && (
                     <>
-                      <h3 className="title mt--40 mt_sm--20">{post.subtitle2}</h3>
-                      <div dangerouslySetInnerHTML={{ __html: post.content3 }}></div>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle2}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content3 }}
+                      ></div>
                     </>
                   )}
                   {post.subtitle3 && (
                     <>
-                      <h3 className="title mt--40 mt_sm--20">{post.subtitle3}</h3>
-                      <div dangerouslySetInnerHTML={{ __html: post.content4 }}></div>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle3}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content4 }}
+                      ></div>
                     </>
                   )}
                   {post.subtitle4 && (
                     <>
-                      <h3 className="title mt--40 mt_sm--20">{post.subtitle4}</h3>
-                      <div dangerouslySetInnerHTML={{ __html: post.content5 }}></div>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle4}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content5 }}
+                      ></div>
                     </>
                   )}
                   {post.subtitle5 && (
                     <>
-                      <h3 className="title mt--40 mt_sm--20">{post.subtitle5}</h3>
-                      <div dangerouslySetInnerHTML={{ __html: post.content6 }}></div>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle5}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content6 }}
+                      ></div>
                     </>
                   )}
-               
+
                   <div className="author-area">
                     <div className="thumbnail details mb_sm--15">
                       <img src="/assets/images/lenka.jpg" alt="Author" />
@@ -108,7 +136,9 @@ const BlogDetails = () => {
                       <span className="title-g">Interiérová návrhářka</span>
                       <h5 className="title-g">Lenka Stádníková</h5>
                       <p className="disc title-g">
-                        Inspirací mi je příroda a snažím se vytvářet unikátní interiéry, které respektují přírodní prostředí a zároveň vyhovují klientovým požadavkům.
+                        Inspirací mi je příroda a snažím se vytvářet unikátní
+                        interiéry, které respektují přírodní prostředí a zároveň
+                        vyhovují klientovým požadavkům.
                       </p>
                     </div>
                   </div>
@@ -122,16 +152,32 @@ const BlogDetails = () => {
                     <h4 className="title">Nedávné příspěvky</h4>
                   </div>
                   <div className="wized-body">
-                    {recentPosts.map(recent => (
+                    {recentPosts.map((recent) => (
                       <div key={recent.id} className="recent-post-single">
                         <div className="thumbnail">
-                          <a href={`/blog/${recent.link}`}><img src={recent.coverImage} style={{width: "100px", height: "100px", minWidth: "auto"}} alt="Recent Post" /></a>
+                          <a href={`/blog/${recent.link}`}>
+                            <img
+                              src={recent.coverImage}
+                              style={{
+                                width: "100px",
+                                height: "100px",
+                                minWidth: "auto",
+                              }}
+                              alt="Recent Post"
+                            />
+                          </a>
                         </div>
                         <div className="content-area text-start">
                           <div className="user">
-                          <FontAwesomeIcon icon={faClock} />                            <span>{new Date(recent.date).toLocaleDateString()}</span>
+                            <FontAwesomeIcon icon={faClock} />{" "}
+                            <span>
+                              {new Date(recent.date).toLocaleDateString()}
+                            </span>
                           </div>
-                          <a className="post-title" href={`/blog/${recent.link}`}>
+                          <a
+                            className="post-title"
+                            href={`/blog/${recent.link}`}
+                          >
                             <h6 className="title">{recent.title}</h6>
                           </a>
                         </div>
@@ -140,13 +186,13 @@ const BlogDetails = () => {
                   </div>
                 </div>
                 <ServiceSidebar />
-                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </main>
   );
-}
+};
 
 export default BlogDetails;

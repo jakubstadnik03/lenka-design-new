@@ -1,4 +1,25 @@
 [   {
+  "id": 9,
+  "title": "Udržitelný design",
+  "category": "Udržitelnost",
+  "description": "Poznejte nábytek z vlnité lepenky – lehký, recyklovatelný a šetrný k přírodě. Tento materiál transformuje interiérový design, nabízí flexibilitu a svěží estetiku.",
+  "image": "/assets/images/blog/udrzitelnost.jpg",
+  "link": "od-zamereni-po-navrh",
+  "excerpt": "Poznejte nábytek z vlnité lepenky – lehký, recyklovatelný a šetrný k přírodě. Tento materiál transformuje interiérový design, nabízí flexibilitu a svěží estetiku pro moderní bydlení.",
+  "coverImage": "/assets/images/blog/udrzitelnost.jpg",
+  "date": "2024-09-12T05:35:07.322Z",
+  "ogImage": {
+    "url": "/assets/images/blog/udrzitelnost.jpg"
+  },
+  "mainTitle": "Udržitelnost: Nábytek z vlnité lepenky",
+  "content": "<p>Existují nějaké hranice ve světě designu?  Vlnitá lepenka je jedním z těch materiálů, který otevírá dveře nejen pro výrobu nábytku, ale i pro mnoho dalších kreativních využití. Lepenka umožňuje vytvářet moderní i odvážné kousky, které mají nejen originální vzhled, ale také duši, díky recyklovatelnosti a udržitelnosti.</p>",
+  "subtitle": "Výhody vlnité lepenky",
+  "content2": "<p>Jedním z hlavních benefitů vlnité lepenky je její ekologičnost. Je recyklovatelná a lehká, což z ní činí zajímavou volbu pro moderní designéry zaměřené na udržitelnost. Díky nízké hmotnosti je také nábytek z lepenky snadno přenosný a ideální pro dočasné nebo flexibilní prostory. Další výhodou je možnost nábytek často přestavovat a pro mladé lidi, kteří se často stěhují, může být tento nábytek skvělou volbou.</p>",
+   "author": "Lenka Stádníková",
+  "tags": ["Interiérový design"],
+  "imageSource": "roominabox.com"
+},
+  {
   "id": 8,
   "title": "Od zaměření po schválený návrh",
   "category": "Interiér",
