@@ -52,10 +52,7 @@ const BlogDetails = () => {
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
               <div className="blog-single-post-listing details mb--0">
                 <div className="thumbnail">
-                  <img
-                    src={post.coverImage}
-                    alt={`Cover image for ${post.title}`}
-                  />
+                  <img src={post.coverImage} alt={`${post.title}`} />
                   <div className="image-source">Zdroj: {post.imageSource}</div>
                 </div>
                 <div className="blog-listing-content">
@@ -97,16 +94,17 @@ const BlogDetails = () => {
                       ></div>
                     </>
                   )}
-                  {post.subtitle3 && (
-                    <>
-                      <h3 className="title mt--40 mt_sm--20">
-                        {post.subtitle3}
-                      </h3>
-                      <div
-                        dangerouslySetInnerHTML={{ __html: post.content4 }}
-                      ></div>
-                    </>
-                  )}
+                  {post.subtitle3 ||
+                    (post.content3 && (
+                      <>
+                        <h3 className="title mt--40 mt_sm--20">
+                          {post.subtitle3}
+                        </h3>
+                        <div
+                          dangerouslySetInnerHTML={{ __html: post.content4 }}
+                        ></div>
+                      </>
+                    ))}
                   {post.subtitle4 && (
                     <>
                       <h3 className="title mt--40 mt_sm--20">

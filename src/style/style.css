@@ -22118,7 +22118,12 @@ object-fit: cover;
 .rts-blog-area-start-six:hover .inner-content .rts-read-more {
   color: #fff;
 }
-
+.image-source{
+  color: var(--color-primary);
+  font-size: smaller;
+  margin-top: 5px;
+  margin-left: 5px;
+}
 .blog-style-three.when-bg-white::after {
   border: 1px solid #E3E3E3;
 }
@@ -25604,4 +25609,4 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   transform: translateY(-100%);
   transition: all 0.3s 1s ease-out;
 }
-/* # sourceMappingURL=../maps/style.css.map */
+
