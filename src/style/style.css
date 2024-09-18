@@ -25610,3 +25610,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   transition: all 0.3s 1s ease-out;
 }
 
+@media (min-width: 992px) {
+  .col-lg-3 {
+      flex: 0 0 auto;
+      width: 20% !important; 
+  }
+}
