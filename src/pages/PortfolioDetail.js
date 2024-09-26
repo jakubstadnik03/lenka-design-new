@@ -137,7 +137,8 @@ const PortfolioDetail = () => {
                 <div className="thumbnail-project-details-top">
                   <img
                     src={portfolioItem.images[0]}
-                    alt="product_details"
+                    alt={`Lenka Design – ${portfolioItem.name}`}
+
                     style={{
                       width: "100%",
                       objectFit: "cover",
@@ -202,7 +203,8 @@ const PortfolioDetail = () => {
                       <img
                         className="img-responsive"
                         src={image}
-                        alt={`portfolio ${index}`}
+                        alt={`Lenka Design – ${portfolioItem.name}`}
+
                       />
                     </a>
                   ))}

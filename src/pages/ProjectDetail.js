@@ -126,7 +126,8 @@ const ProjectDetail = () => {
             <div className="row mt--40">
               <div className="col-lg-12">
                 <div className="thumbnail-project-details-top">
-                  <img src={project.mainImage} alt="project_details" className='project-image' style={{display: "block", margin: "auto"}}/>
+                  <img src={project.mainImage}                     alt={`Lenka Design – ${project.name}`}
+ className='project-image' style={{display: "block", margin: "auto"}}/>
                   <span>{project.mainImageDescription}</span>
                 </div>
               </div>
@@ -148,7 +149,7 @@ const ProjectDetail = () => {
               {project.galleryImages.map((image, index) => (
                 <div key={index} className="col-lg-4 col-md-6 col-sm-6 col-12" style={{display: "flex", alignItems: "center"}} >
                   <div className="thumbnail-g-3" >
-                    <img src={image} alt={`project_${index}`} />
+                    <img src={image}  alt={`Lenka Design – ${project.name}`} />
                   </div>
                 </div>
               ))}
@@ -162,7 +163,7 @@ const ProjectDetail = () => {
               </div>
               <div className="col-lg-6">
                 <div className="thumbnail-pd-video">
-                  <img src={project.challengeImage} alt="project-details" />
+                  <img src={project.challengeImage}  alt={`Lenka Design – ${project.name}`} />
                 </div>
               </div>
             </div>

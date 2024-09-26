@@ -56,7 +56,7 @@ const ServiceDetail = () => {
                   <div className="large-image">
                     <img
                       src={service.image}
-                      alt="service"
+                      alt={`Lenka Design – ${service.title}`}
                       style={{
                         height: "400px",
                         objectFit:
@@ -82,7 +82,7 @@ const ServiceDetail = () => {
                           height: "100%",
                         }}
                         src={image}
-                        alt="services"
+                        alt={`Lenka Design – ${service.title}`}
                       />
                     </div>
                   ))}
@@ -105,7 +105,7 @@ const ServiceDetail = () => {
                   </div>
                   <div className="col-lg-8">
                     <div className="slice-iameg-service-detials">
-                      <img src={service.finalImage} alt="service" />
+                      <img src={service.finalImage} alt={`Lenka Design – ${service.title}`}/>
                     </div>
                   </div>
                 </div>
