@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';

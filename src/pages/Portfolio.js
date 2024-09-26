@@ -5,7 +5,6 @@ import GalerieList from '../components/GalerieList';
 import SEOHead from "../SEOHead";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import BeforeAfter from '../components/BeforeAfter';
 
 const Portfolio = () => {
   const containerVariants = {

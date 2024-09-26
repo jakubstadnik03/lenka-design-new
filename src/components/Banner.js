@@ -31,8 +31,8 @@ const banners = [
       "Proměňte svůj komerční prostor s našimi profesionálními návrhy!",
   },
   {
-    img: "/assets/images/bannerImg/4.webp",
-    imgSmall: "/assets/images/bannerImg/4-small.webp",
+    img: "/assets/images/bannerImg/uvodni_foto_vizualizace.jpeg",
+    imgSmall: "/assets/images/bannerImg/uvodni_foto_vizualizac_small.jpeg",
     link: "3d-navrhy-interieru",
     title: "3D návrhy Interiérů",
     description:

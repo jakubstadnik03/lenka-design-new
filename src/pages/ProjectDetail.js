@@ -52,7 +52,7 @@ const ProjectDetail = () => {
                 <div className="bread-crumb-area-inner">
                   <div className="breadcrumb-top">
                     <a href="/web-a-grafika">Webové aplikace a grafika</a> /
-                    <a className="active" href="#">{project.name}</a>
+                    <a className="active" href="/web-a-grafika">{project.name}</a>
                   </div>
                   <div className="bottom-title">
                     <h1 className="title">{project.name}</h1>

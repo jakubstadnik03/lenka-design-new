@@ -19,12 +19,12 @@
         "Nasazení a testování"
       ],
       "galleryImages": [
-        "assets/images/projects/lenka_design_1.jpg",
-        "assets/images/projects/lenka_design_2.jpg",
-        "assets/images/projects/lenka_design_3.jpg"
+        "/assets/images/web/business_card5.jpg",
+        "/assets/images/web/lenka-design-web.png",
+        "/assets/icons/lenka-design-logo.svg"
       ],
       "challenge": "Hlavní výzvou bylo vytvořit vizuálně atraktivní a funkční web, který by odrážel jedinečnost značky Lenka Design a zároveň poskytoval snadnou navigaci a uživatelskou přívětivost.",
-      "challengeImage": "assets/images/projects/lenka_design_challenge.jpg",
+      "challengeImage": "/assets/images/web/lenka-design-web.png",
       "finalSolution": "Konečným výsledkem je moderní webová aplikace s intuitivním designem, která zvyšuje viditelnost značky a nabízí skvělý uživatelský zážitek.",
       "websiteLink": "https://www.lenkadesign.cz",
       "websiteLook": "lenkadesign.cz"
