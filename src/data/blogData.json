@@ -1,10 +1,39 @@
-[   {
+[  {
+  "id": 10,
+  "title": "Originální keramika s nádechem přírody",
+  "category": "Řemesla",
+  "description": "Oslovili jsme autorku ručně vyráběné keramiky s přírodním otiskem a nahlédli do jejího kreativního procesu.",
+  "image": "/assets/images/blog/keramika1.jpg",
+  "link": "originalni-keramika",
+  "excerpt": "Oslovili jsme autorku ručně vyráběné keramiky s přírodním otiskem a nahlédli do jejího kreativního procesu.",
+  "coverImage": "/assets/images/blog/keramika1.jpg",
+  "date": "2024-09-26T05:35:07.322Z",
+  "ogImage": {
+    "url": "/assets/images/blog/keramika2.jpg"
+  },
+  "mainTitle": "Originální keramika s nádechem přírody",
+  "content": "<p>Oslovili jsme autorku ručně vyráběné keramiky s přírodním otiskem. Společně jsme prostřednictvím otázek nahlédli do jejího kreativního procesu a dozvěděli se více o tomto řemeslu.</p>",
+  "subtitle": "Kde čerpáte inspiraci pro své květinové vzory a jejich kombinace?",
+  "content2": "<div style='display: flex;' class='mobile-side'><p>Inspiraci pro svou keramickou tvorbu čerpám v přírodě. Nejraději mám všechny zelené listy, keře nebo trávy, obzvlášť kapradiny pro jejich krásnou strukturu a symboliku lesa.</p><div><img style='min-width: 300px' src='/assets/images/blog/keramika2.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div></div>",
+  "subtitle2": "Jaký je proces výroby Vaší keramiky?",
+  "content3": "<div><p>Tvorba začíná mým nápadem, který si nakreslím a z poté vytvořím šablonu. Ze zpracované hlíny vyválím plát, otisknu do něj přírodninu a vykrojím tvar. Po mírném zaschnutí hlíny stavím nádobu, kterou dotvářím pomocí keramických nástrojů. Po několika dnech, co nádoba vysychá ji patinuji a poté vypaluji v peci. Konečným výpalem vznikne hotový výrobek – vždy mám velkou radost, když se vše povede.</p><div><img src='/assets/images/blog/keramika3.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div>",
+  "subtitle3": "Jak dlouho trvá, než vznikne jeden keramický výrobek od začátku až do konce?",
+  "content4": "<div><p>Proces tvorby jedné keramické nádoby z hliněných plátů trvá celkem 3 až 4 hodiny, v závislosti na velikosti a tvaru. Každou nádobu stavím postupně, krok po kroku.  Návrh se šablonou je hotový obvykle za 30 minut. Zpracování hlíny a vyválení plátů trvá 45 minut. Stavění a slepování stěn nádoby, včetně retuše, trvá přibližně 2 hodiny. Patinování a retuš za sucha trvá dalších 15 minut. Následují dva výpaly v keramické peci – před druhým výpalem nanáším glazuru. Je to umělecko-řemeslný proces, během níž vzniká něco hmatatelného a výjimečného.</p><div><img src='/assets/images/blog/keramika4.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div>",
+  "subtitle4": "Jaký je Váš nejoblíbenější kousek z kolekce, a proč?",
+  "content5": "<div style='display: flex;' class='mobile-side'><p>Mám ráda všechny své výtvory, protože každá nádoba má svůj jedinečný charakter a účel. Momentálně tvořím keramiku různých tvarů – obaly na květináče, vázy, svícny, talíře či mýdlenky s přírodním otiskem. Keramika v interiéru pro mě má smysl, protože se ráda obklopuji přírodními materiály. Ve své práci propojuji hlínu s přírodou – to, co z ní vyrůstá, do ní opět vtiskuji. Myslím, že je důležité podporovat ruční práci, která má na trhu své nezastupitelné místo. Vždy mě potěší, když někdo ocení mou tvorbu zakoupením mých výrobků.</p><div><img  style='min-width:300px' src='/assets/images/blog/keramika5.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div>",
+  "subtitle5": "Máte nějaké plány do budoucna, například nové kolekce nebo spolupráce?",
+  "content6": "<div><p>Ano. Začala jsem ve své podstatě teprve nedávno a je to mému srdci blízké. Plánuji vytvářet zahradní plastiky a interiérové objekty nových tvarů. Ráda bych také spolupracovala s designéry nebo s těmi, kteří by chtěli mít mou autorskou keramiku doma. Aktuálně spolupracuji s interiérovou návrhářkou Lenkou Stádníkovou.</p><b>Děkuji za Váš čas a odpovědi.</b> <p> Aneta Novická</p><div><img style='min-width: 300px' src='/assets/images/blog/keramika6.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div>",
+  "author": "Aneta Novická",
+  "tags": ["Keramika", "Řemesla"],
+  "imageSource": "Aneta Novická"
+},
+ {
   "id": 9,
   "title": "Udržitelný design",
   "category": "Udržitelnost",
   "description": "Poznejte nábytek z vlnité lepenky – lehký, recyklovatelný a šetrný k přírodě. Tento materiál transformuje interiérový design, nabízí flexibilitu a svěží estetiku.",
   "image": "/assets/images/blog/udrzitelnost.jpg",
-  "link": "od-zamereni-po-navrh",
+  "link": "udrzitelny-design",
   "excerpt": "Poznejte nábytek z vlnité lepenky – lehký, recyklovatelný a šetrný k přírodě. Tento materiál transformuje interiérový design, nabízí flexibilitu a svěží estetiku pro moderní bydlení.",
   "coverImage": "/assets/images/blog/udrzitelnost.jpg",
   "date": "2024-09-12T05:35:07.322Z",
@@ -17,7 +46,8 @@
   "content2": "<div><p>Jedním z hlavních benefitů vlnité lepenky je její ekologičnost. Je recyklovatelná a lehká, což z ní činí zajímavou volbu pro moderní designéry zaměřené na udržitelnost. Díky nízké hmotnosti je také nábytek z lepenky snadno přenosný a ideální pro dočasné nebo flexibilní prostory. Další výhodou je možnost nábytek často přestavovat a pro mladé lidi, kteří se často stěhují, může být tento nábytek skvělou volbou.</p><img src='/assets/images/blog/udrzitelnost2.jpg' />                  <div class='image-source'>Zdroj: cartonlab.com</div>  </div>",
    "subtitle2": "Omezení materiálu",
    "content3": "<div><p>Určité vizuální omezení je jistě slabinou vlnité lepenky. Nicméně tento materiál nabízí mnoho způsobů, jak jej vylepšit a dodat mu osobitost. Povrch lepenky lze snadno potisknout, pokreslit nebo gravírovat, čímž vznikají zajímavé grafické vzory a textury. Grafická úprava, od minimalistických potisků až po komplexní ilustrace, navíc umožňuje přizpůsobit nábytek z lepenky tak, aby ladil s různými interiéry a estetickými preferencemi.</p><div style='display: flex; max-height: 300px;justify-content: space-evenly;'><div><img src='/assets/images/blog/udrzitelnost3.jpg' style='object-fit: contain;max-height: 300px;max-width: 45vw;' /><div class='image-source'>Zdroj: vlastní výroba</div></div><div style='display: flex;justify-content: space-between;flex-direction: column;'><img src='/assets/images/blog/udrzitelnost4.jpeg' style='object-fit: contain;width: 300px;max-width: 45vw;' /><div class='image-source'>Zdroj: refold.co</div> </div></div></div>",
-  "content4": "<p>V jednom z nadcházejících článků vám představíme zajímavý projekt z vysoké školy, kde prozkoumáme možnosti, jak využít potenciál vlnité lepenky k úložnému prostoru.</p>",
+   "subtitle3": "Projekt z vysoké školy",
+   "content4": "<p>V jednom z nadcházejících článků vám představíme zajímavý projekt z vysoké školy, kde prozkoumáme možnosti, jak využít potenciál vlnité lepenky k úložnému prostoru.</p>",
   "author": "Lenka Stádníková",
   "tags": ["Interiérový design"],
   "imageSource": "roominabox.com"
@@ -42,7 +72,9 @@
   "subtitle2": "Nábytek na míru",
   "content3": "<p>Nábytek na míru je navrhován a modelován přímo do specifického prostoru, který byl změřen. Po projednání různých variant si klient vybírá jednu z možností, která je následně předána truhláři k vypracování cenové nabídky. Truhlář poté provede vlastní měření prostoru a na základě zvolených dekorů, které si klient vybral ve vzornících během konzultací, je nábytek pečlivě, kvalitně vyroben.</p>",
  "author": "Lenka Stádníková",
-  "tags": ["Interiérový design"]
+  "tags": ["Interiérový design"],
+  "imageSource": "Lenka design"
+
 },
 
   {
@@ -71,7 +103,9 @@
    "subtitle5": "Je možná kombinace těchto stylů?",
    "content6": "<p>Pokud váháte, pro který styl se rozhodnout, je třeba zvážit, že tyto dva styly lze úspěšně propojit. Je možné navrhnout například více minimalistickou kuchyň s jídelnou, zatímco do obývacího pokoje zakomponujete barevnou sedačku a jednu stěnu v chodbě vymalujete výrazně. Pokud nevíte jak na to, po konzultaci s designérem se váš domov může transformovat na originální prostor, který bude kombinovat prvky jednoduchosti a výraznosti.</p>",
    "author": "Lenka Stádníková",
-    "tags": ["Interiérový design"]
+    "tags": ["Interiérový design"],
+    "imageSource": "decorilla.com"
+
   },
   {
           "id": 5,

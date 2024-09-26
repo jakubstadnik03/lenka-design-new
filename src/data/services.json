@@ -4,14 +4,14 @@
       "title": "3D návrhy Interiérů",
       "nav": "3d-navrhy-interieru",
       "title2": "Realistické vizualizace pro váš interiér",
-      "image": "/assets/images/service/3dNavrhy1.jpg",
+      "image": "/assets/images/bannerImg/uvodni_foto_vizualizace.jpeg",
       "details": [
           "Nabízíme detailní 3D vizualizace, které vám umožní vidět váš interiér ještě před realizací. Naše 3D návrhy vám poskytnou realistický pohled na váš budoucí prostor a pomohou vám při rozhodování o designu.",
           "Pomocí moderních technologií vytváříme přesné a detailní 3D modely, které vám umožní prozkoumat každý kout vašeho nového interiéru."
       ],
       "additionalImages": [
-          "/assets/images/service/3dNavrhy2.jpg",
-          "/assets/images/service/3dNavrhy3.jpg"
+          "/assets/images/service/vizualizace1.jpeg",
+          "/assets/images/service/vizualizace2.jpeg"
       ],
       "additionalDetails": [
           "3D vizualizace zlepšují komunikaci mezi designérem a klientem a zajišťují, že konečný výsledek bude přesně odpovídat vašim představám.",
@@ -43,8 +43,8 @@
       "details": [
           "Poskytujeme profesionální 2D návrhy interiérů, které zahrnují detailní plány rozmístění nábytku a dalších prvků za účelem plného využití interiéru. 2D návrhy jsou praktickým nástrojem pro plánování a realizaci vašeho interiéru."      ],
       "additionalImages": [
-          "/assets/images/service/2dNavrhy2.jpg",
-          "/assets/images/service/2dNavrhy3.jpg"
+          "/assets/images/service/pudorys.jpg",
+          "/assets/images/service/pudorys3.jpg"
       ],
       "additionalDetails": [
          "2D návrhy poskytují jasný přehled o rozmístění jednotlivých prvků v prostoru, což usnadňuje plánování a realizaci."
@@ -55,7 +55,7 @@
           "Jasné rozměry",
           "Přesné uspořádání"
       ],
-      "finalImage": "/assets/images/service/2dNavrhy4.jpg",
+      "finalImage": "/assets/images/service/pudorys2.jpg",
       "conclusion": [
           "2D návrhy interiérů jsou základem každého úspěšného designového projektu. Umožňují přesné plánování a efektivní realizaci."      ],
       "seo": {
