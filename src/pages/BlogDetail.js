@@ -131,7 +131,7 @@ const BlogDetails = () => {
 
                   <div className="author-area">
                     <div className="thumbnail details mb_sm--15">
-                      <img src="assets/images/lenka-portret.jpeg" alt="Lenka Stádníková" />
+                      <img src="/assets/images/lenka-portret.jpeg" alt="Lenka Stádníková" />
                     </div>
                     <div className="author-details team">
                       <span className="title-g">Interiérová návrhářka</span>
