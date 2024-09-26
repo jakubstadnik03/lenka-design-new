@@ -35,7 +35,7 @@ const Header = () => {
           <img
             src="/assets/icons/lenka-design-logo.svg"
             style={{ height: "55px" }}
-            alt="logo"
+            alt="Lenka Design Logo"
           />
         </Link>
         <div className="header-right">

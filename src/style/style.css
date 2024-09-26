@@ -547,6 +547,9 @@ ol ul {
     font-size: 30px;
     line-height: 45px;
   }
+  .mobile-side{
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 575px) {
   h1 {

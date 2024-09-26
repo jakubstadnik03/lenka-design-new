@@ -127,7 +127,7 @@ const ServiceDetail = () => {
                         height: "280px",
                         objectFit: "cover",
                       }}
-                      alt="service"
+                      alt="Lenka Stádníková – Interiérová návrhářka"
                     />
                   </div>
                   <div className="col-lg-8">

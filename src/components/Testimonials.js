@@ -71,7 +71,7 @@ const Testimonials = () => {
                       <div className="top-quote">
                         <img
                           src="assets/images/testimonials/03.png"
-                          alt="tstimonials"
+                          alt="recenze Lenka Design"
                           width="48"
                           height="48"
                         />
@@ -81,7 +81,7 @@ const Testimonials = () => {
                         <div className="thumbnail">
                           <img
                             src={testimonial.authorImage}
-                            alt="tstimonials"
+                            alt="recenze Lenka Design"
                             width="64"
                             height="64"
                             loading="lazy"

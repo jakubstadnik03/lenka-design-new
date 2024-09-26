@@ -52,7 +52,7 @@ const ServiceList = () => {
         >
           <div className="singe-serice-style-two">
             <a href={`/nase-sluzby/${service.nav}`} className="thumbnail">
-              <img src={service.image} alt="service" style={{ height: "300px", objectFit: "cover" }} />
+              <img src={service.image} alt="Lenka Design služby" style={{ height: "300px", objectFit: "cover" }} />
             </a>
             <div className="body">
               <div className="wrapper">

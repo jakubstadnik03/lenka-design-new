@@ -66,7 +66,7 @@ const FotogalerieDetail = () => {
                         href={image}
                         data-lg-size="1600-2400"
                       >
-                        <img className="img-responsive" src={image} alt={`portfolio ${index}`} />
+                        <img className="img-responsive" src={image} alt="Lenka Design" />
                       </a>
                     ))}
                   </LightGallery>

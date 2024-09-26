@@ -77,7 +77,7 @@ const About = () => {
                   transition={{ duration: 0.5, delay: 0.4 }}
                   className="history-image-left mt--55 rts-reveal-one"
                 >
-                  <img className="rts-reveal-image-one" src="assets/images/lenka-portret.jpeg" alt="about" style={{ width: "420px" }} />
+                  <img className="rts-reveal-image-one" src="assets/images/lenka-portret.jpeg" alt="Lenka Stádníková" style={{ width: "420px" }} />
                 </motion.div>
               </div>
               <div className="col-lg-8 col-md-8 mt_sm--50">
@@ -114,7 +114,7 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.6 }}
                     className="history-right-img mt--80 rts-reveal-one"
                   >
-                    <img className="rts-reveal-image-one" src="/assets/images/service/konzultace1.jpeg" alt="" style={{ height: "500px", width: "885px", objectFit: "cover" }} />
+                    <img className="rts-reveal-image-one" src="/assets/images/service/konzultace1.jpeg" alt="Lenka Design kancelář" style={{ height: "500px", width: "885px", objectFit: "cover" }} />
                   </motion.div>
                 </motion.div>
               </div>
