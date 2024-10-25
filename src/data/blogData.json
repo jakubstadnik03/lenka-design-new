@@ -1,4 +1,33 @@
-[  {
+[  
+  {
+    "id": 11,
+    "title": "Designový svět: For Interior a Designblok",
+    "category": "Design",
+    "description": "Praha je centrem mnoha kreativních akcí, ale dvě z nich vynikají svou popularitou a významem",
+    "image": "/assets/images/blog/praha1.jpg",
+    "link": "for-interior-&-designblok",
+    "excerpt": "Praha je centrem mnoha kreativních akcí, ale dvě z nich vynikají svou popularitou a významem: For Interior a Designblok.",
+    "coverImage": "/assets/images/blog/praha1.jpg",
+    "date": "2024-10-25T08:45:00.000Z",
+    "ogImage": {
+      "url": "/assets/images/blog/designblok_forinterior.jpg"
+    },
+    "mainTitle": "Designový svět v srdci Prahy: For Interior & Designblok",
+    "content": "<div style='display: flex;' class='mobile-side'><p>Praha je centrem mnoha kreativních akcí, ale dvě z nich vynikají svou popularitou a významem v oblasti designu a interiérového vybavení: For Interior a Designblok. Obě výstavy se konají vždy na podzim a přitahují návštěvníky z celého světa, ale každá má své unikátní zaměření a atmosféru.</p><div><img style='min-width: 300px'; margin-left: 10px src='/assets/images/blog/praha2.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div></div>",
+    "subtitle": "For Interior: Interiérový design v centru pozornosti",
+    "content2": "<div><p>For Interior se zaměřuje především na interiérový design a vybavení domácnosti. Tato výstava nabízí širokou škálu produktů od nábytku po dekorace a osvětlení. Je ideální pro ty, kteří hledají inspiraci pro své domovy nebo chtějí objevovat nové trendy a nové firmy v oblasti interiérového designu.</p></div>",
+    "subtitle2": "Designblok: Kreativní oslavy umění a módy",
+    "content3": "<div style='display: flex;' class='mobile-side'><p>Na druhé straně Designblok je více než jen výstava. Je to festival designu, módy a umění, který spojuje různé kreativní oblasti. Návštěvníci se mohou těšit na interaktivní instalace, módní přehlídky a prezentace inovativních projektů. Designblok se snaží prozkoumat širší kontext designu a jeho vliv na každodenní život, čímž oslovuje jak odborníky, tak širokou veřejnost.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/praha3.jpg'><div class='image-source'>Zdroj: Aneta Novická</div></div></div>",
+    "subtitle3": "Rozdíly v zaměření a atmosféře",
+    "content4": "<div><p>Zatímco For Interior se více zaměřuje na praktické aspekty interiérového designu a nákupy, Designblok se prezentuje jako platforma pro experimentální design a umění. For Interior může být ideální pro ty, kteří plánují renovaci nebo vybavení domácnosti, zatímco Designblok láká ty, kteří hledají inspiraci v různých formách designu a umění.</p></div>",
+    "subtitle4": "Závěr: Který veletrh navštívit?",
+    "content5": "<div><p>Obě akce nabízejí jedinečné zážitky, inspiraci a možnosti objevování. Pokud vás zajímají trendy v interiérovém designu a hledáte konkrétní produkty, For Interior bude pro vás skvělou volbou. Naopak, pokud chcete zažít širokou paletu kreativního vyjádření a uměleckého designu, nadchne vás Designblok. Bez ohledu na to, kterou akci zvolíte, obě nabídnou nezapomenutelný pohled na svět designu. Za jeden den se dají stihnout obě akce najednou, ale jelikož obě vždy trvají více dní včetně víkendu, doporučujeme si návštěvy rozdělit a užít si výstavy naplno.</p></div>",
+    "author": "Aneta Novická",
+    "tags": ["Design", "Praha", "Interiérový design", "Výstavy"],
+    "imageSource": "Aneta Novická"
+  },
+  
+  {
   "id": 10,
   "title": "Originální keramika s nádechem přírody",
   "category": "Řemesla",

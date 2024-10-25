@@ -1,113 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import sanityClient from '@sanity/client';
-import { PortableText } from '@portabletext/react';
+import blogPosts from "../data/blogData.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import ServiceSidebar from "../components/ServiceSidebar";
-import imageUrlBuilder from '@sanity/image-url'; // Import image URL builder
-
-// Nastavení klienta pro Sanity
-const client = sanityClient({
-  projectId: '0v66wq85', // Zkontroluj, že máš správné Project ID
-  dataset: 'production',
-  useCdn: true,
-});
-
-// Configure image URL builder
-const builder = imageUrlBuilder(client);
-
-// Function to get image URL
-function urlFor(source) {
-  return builder.image(source);
-}
-
-// Vlastní komponenty pro renderování obsahu, včetně obrázků
-const components = {
-  types: {
-    image: ({ value }) => {
-      if (!value?.asset?._ref) {
-        return null;
-      }
-
-      // Use urlFor to get the image URL
-      const imageUrl = urlFor(value.asset).url();
-
-      // Zpracování pozice obrázku
-      const position = value.position || 'full';
-      const imgStyle = {
-        full: { width: "100%", height: "auto", margin: '20px 0' },
-        left: { float: "left", marginRight: "20px", width: "50%", height: "auto" },
-        right: { float: "right", marginLeft: "20px", width: "50%", height: "auto" },
-      };
-
-      return (
-        <div style={{ margin: '20px 0', textAlign: 'center' }}>
-          <img
-            src={imageUrl}
-            alt={value.alt || 'Blog Image'}
-            style={imgStyle[position]} // Dynamické zarovnání podle pozice
-          />
-          {value.imageSource && <div className="image-source">Zdroj: {value.imageSource}</div>}
-        </div>
-      );
-    },
-  },
-  block: {
-    // Přidání vlastních stylů pro blokové elementy
-    h1: ({ children }) => <h1 className="custom-h1">{children}</h1>,
-    h2: ({ children }) => <h2 className="custom-h2">{children}</h2>,
-    h3: ({ children }) => <h3 className="custom-h3">{children}</h3>,
-  },
-};
-
 const BlogDetails = () => {
   const { link } = useParams();
   const [post, setPost] = useState(null);
   const [recentPosts, setRecentPosts] = useState([]);
-console.log(post);
-  // Načítání vybraného příspěvku z Sanity
+
   useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post" && slug.current == $slug]{
-          title,
-          author,
-          date,
-          coverImage{
-            asset->{
-              url // Získání URL obrázku
-            }
-          },
-          imageSource,
-          body,  // Načtení blockContent včetně obrázků
-          tags
-        }`,
-        { slug: link }
-      )
-      .then((data) => {
-        setPost(data[0]);
-      })
-      .catch(console.error);
+    const selectedPost = blogPosts.find((blog) => blog.link === link);
+    setPost(selectedPost);
   }, [link]);
 
-  // Načítání posledních příspěvků z Sanity
   useEffect(() => {
-    client
-      .fetch(
-        `*[_type == "post"] | order(date desc)[0..3]{
-          title,
-          date,
-          coverImage{
-            asset->{
-              url // Získání URL obrázku
-            }
-          },
-          slug
-        }`
-      )
-      .then((data) => setRecentPosts(data))
-      .catch(console.error);
+    const sortedPosts = [...blogPosts].sort(
+      (a, b) => new Date(b.date) - new Date(a.date)
+    );
+    setRecentPosts(sortedPosts.slice(0, 4));
   }, []);
 
   if (!post) {
@@ -123,7 +34,7 @@ console.log(post);
               <div className="bread-crumb-area-inner">
                 <div className="breadcrumb-top">
                   <a href="/blog">Blog</a> /
-                  <a className="active" href={`/blog/${link}`}>
+                  <a className="active" href={`/blog/${post.link}`}>
                     {post.title}
                   </a>
                 </div>
@@ -141,15 +52,11 @@ console.log(post);
             <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
               <div className="blog-single-post-listing details mb--0">
                 <div className="thumbnail">
-                  {post.coverImage?.asset?.url && (
-                    <img
-                      src={post.coverImage.asset.url}
-                      alt={post.title}
-                      style={{ width: "100%", height: "auto" }}
-                    />
-                  )}
+                  <img src={post.coverImage} alt={`${post.title}`} />
                   {post.imageSource && (
-                    <div className="image-source">Zdroj: {post.imageSource}</div>
+                    <div className="image-source">
+                      Zdroj: {post.imageSource}
+                    </div>
                   )}
                 </div>
                 <div className="blog-listing-content">
@@ -159,25 +66,72 @@ console.log(post);
                       <span>{post.author}</span>
                     </div>
                     <div className="single">
-                      <FontAwesomeIcon icon={faClock} />{" "}
+                      <i className="far fa-clock"></i>
                       <span>{new Date(post.date).toLocaleDateString()}</span>
                     </div>
                     <div className="single">
                       <i className="far fa-tags"></i>
-                      <span>{post.tags?.join(", ")}</span>
+                      <span>{post.tags.join(", ")}</span>
                     </div>
                   </div>
-                  <h2 className="title animated fadeIn">{post.title}</h2>
-
-                  {/* Použití PortableText pro vykreslení textu a obrázků */}
-                  <PortableText value={post.body} components={components} />
+                  <h2 className="title animated fadeIn">
+                    {post.mainTitle ? post.mainTitle : post.title}
+                  </h2>
+                  <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+                  {post.subtitle && (
+                    <>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content2 }}
+                      ></div>
+                    </>
+                  )}
+                  {post.subtitle2 && (
+                    <>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle2}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content3 }}
+                      ></div>
+                    </>
+                  )}
+                  {post.subtitle3 && (
+                    <>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle3}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content4 }}
+                      ></div>
+                    </>
+                  )}
+                  {post.subtitle4 && (
+                    <>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle4}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content5 }}
+                      ></div>
+                    </>
+                  )}
+                  {post.subtitle5 && (
+                    <>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle5}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content6 }}
+                      ></div>
+                    </>
+                  )}
 
                   <div className="author-area">
                     <div className="thumbnail details mb_sm--15">
-                      <img
-                        src="/assets/images/lenka-portret.jpeg"
-                        alt="Lenka Stádníková"
-                      />
+                      <img src="/assets/images/lenka-portret.jpeg" alt="Lenka Stádníková" />
                     </div>
                     <div className="author-details team">
                       <span className="title-g">Interiérová návrhářka</span>
@@ -200,11 +154,11 @@ console.log(post);
                   </div>
                   <div className="wized-body">
                     {recentPosts.map((recent) => (
-                      <div key={recent.slug.current} className="recent-post-single">
+                      <div key={recent.id} className="recent-post-single">
                         <div className="thumbnail">
-                          <a href={`/blog/${recent.slug.current}`}>
+                          <a href={`/blog/${recent.link}`}>
                             <img
-                              src={recent.coverImage?.asset?.url}
+                              src={recent.coverImage}
                               style={{
                                 width: "100px",
                                 height: "100px",
@@ -223,7 +177,7 @@ console.log(post);
                           </div>
                           <a
                             className="post-title"
-                            href={`/blog/${recent.slug.current}`}
+                            href={`/blog/${recent.link}`}
                           >
                             <h6 className="title">{recent.title}</h6>
                           </a>
