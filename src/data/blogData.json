@@ -1,4 +1,34 @@
-[  
+[  {
+  "id": 12,
+  "title": "Malé změny, velký dopad: Jak oživit interiér",
+  "category": "Design",
+  "description": "Není vždy nutné dělat radikální změny nebo investovat velké částky, abychom prostor oživili. ",
+  "image": "/assets/images/blog/listopad1.jpeg",
+  "link": "male-zmeny-velky-dopad",
+  "excerpt": "Stačí malé, jednoduché změny, které mají okamžitý efekt na vzhled a dojem z interiéru. Zde je několik praktických tipů, jak rychle a efektivně oživit váš domov.",
+  "coverImage": "/assets/images/blog/listopad1.jpeg",
+  "date": "2024-11-20T09:00:00.000Z",
+  "ogImage": {
+    "url": "/assets/images/blog/listopad4.jpeg"
+  },
+  "mainTitle": "Malé změny, velký dopad: Jak rychle a jednoduše oživit interiér",
+  "content": "<div><p>Není vždy nutné dělat radikální změny nebo investovat velké částky, abychom prostor oživili. Stačí malé, jednoduché změny, které mají okamžitý efekt na vzhled a dojem z interiéru. Zde je několik praktických tipů, jak rychle a efektivně oživit váš domov.</p></div>",
+  "subtitle": "Zaměřte se na doplňky",
+  "content2": "<div><p><strong>Polštáře a přehozy:</strong> Pokud váš interiér ztratil svůj půvab, jednoduchá výměna polštářů a přehozů může přinést okamžitou změnu. Zvolte jemné neutrální tóny pro decentní vzhled, nebo sáhněte po výraznějších barvách a vzorech pro větší efekt. Každá taková změna přinese novou energii do prostoru. Příjemné textilní doplňky na pohovkách a postelích navíc výrazně zvýší útulnost interiéru.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/listopad2.jpeg'><div class='image-source'>Zdroj: moebelix.cz</div></div></div>",
+  "subtitle2": "Závěsy",
+  "content3": "<div><p>Výměna závěsů za lehčí či barevně výraznější variantu dokáže atmosféru místnosti zcela proměnit. Lehké látky propouštějí více světla, díky čemuž prostor působí vzdušně a svěže.</p></div>",
+  "subtitle3": "Dekorativní předměty",
+  "content4": "<div><p>Dekorace, jako jsou stylové vázy, vonné svíčky, knihy nebo umělecké předměty, mohou okamžitě vnést do interiéru osobitost a příjemnou atmosféru. Pozor na překombinování – příliš mnoho dekorací může prostor snadno zahltit a působit přeplněně.</p></div>",
+  "subtitle4": "Rostliny",
+  "content5": "<div><p>Živá zeleň přináší svěžest a život do každého prostoru. Vyberte si rostliny, které odpovídají stylu vašeho interiéru.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/listopad3.jpeg'><div class='image-source'>Zdroj: Pixel-Shot, Shutterstock</div></div></div>",
+  "subtitle5": "Osvobození od zbytečností",
+  "content6": "<div><p>Naopak odstranění nadbytečných kusů nábytku nebo doplňků, které prostor zatěžují, může pomoci vytvořit čistší a harmoničtější vzhled.</p></div>",
+  "subtitle6": "Přestavení nábytku",
+  "content7": "<div><p>Pokud je u vás možnost prostor přestavit, tak to může přinést nový pohled a udělat místnost vzdušnější. Zkuste například pohovku postavit dál od stěny nebo vytvořit menší, útulné kouty na čtení, nebo hraní deskových her.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/listopad4.jpeg'><div class='image-source'>Zdroj: Shutterstock</div></div></div>",
+  "author": "Aneta Novická",
+  "tags": ["Design", "Interiérový design", "Tipy na dekorace"],
+  "imageSource": "moebelix.cz"
+},
   {
     "id": 11,
     "title": "Designový svět: For Interior a Designblok",

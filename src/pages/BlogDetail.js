@@ -128,6 +128,16 @@ const BlogDetails = () => {
                       ></div>
                     </>
                   )}
+                  {post.subtitle6 && (
+                    <>
+                      <h3 className="title mt--40 mt_sm--20">
+                        {post.subtitle6}
+                      </h3>
+                      <div
+                        dangerouslySetInnerHTML={{ __html: post.content7 }}
+                      ></div>
+                    </>
+                  )}
 
                   <div className="author-area">
                     <div className="thumbnail details mb_sm--15">
