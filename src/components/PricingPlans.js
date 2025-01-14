@@ -8,7 +8,7 @@ const pricingPlans = [
   {
     id: 1,
     title: "Populární plán",
-    price: "Od 8 000 Kč / místnost",
+    price: "od 8 000 Kč / místnost",
     description: "",
     features: [
       { name: "Zaměření", available: true },
@@ -29,7 +29,7 @@ const pricingPlans = [
   {
     id: 3,
     title: "Prémiový plán",
-    price: "od 12000Kč/místnost",
+    price: "od 12000Kč / místnost",
     description: "",
     features: [
       { name: "Vše co je součástí populárního plánu", available: true },
