@@ -1,4 +1,31 @@
-[  {
+[ {
+  "id": 13,
+  "title": "FOR INTERIOR 2025: Inspirace, trendy a ocenění v jednom dni",
+  "category": "Design",
+  "description": "Reportáž z veletrhu FOR INTERIOR 2025, který přinesl nové nápady, odborné poznatky a slavnostní vyhlášení ocenění.",
+  "image": "/blog/for-interior1.jpeg",
+  "link": "for-interior-2025-inspirace-trendy-oceneni",
+  "excerpt": "Pražské výstaviště PVA EXPO Letňany hostilo začátkem dubna veletrh FOR INTERIOR. Během jednoho dne jsme nasbírali inspiraci, vyslechli odborníky a oslavili český interiérový design.",
+  "coverImage": "/blog/for-interior1.jpeg",
+  "date": "2025-04-15T09:00:00.000Z",
+  "ogImage": {
+    "url": "/blog/for-interior2.jpeg"
+  },
+  "mainTitle": "FOR INTERIOR 2025: Inspirace, trendy a ocenění v jednom dni",
+  "content": "<div><p>Začátek dubna byl ve znamení interiérového designu, protože pražské výstaviště PVA EXPO Letňany se opět proměnilo v místo plné nápadů, novinek i profesních setkání. V rámci veletrhu FOR INTERIOR jsme se 3. dubna zúčastnili bohatého programu, který jsme si užili od začátku až do konce a vše vám chceme předat v tomto blogu.</p></div>",
+  "subtitle": "Trendy na dosah: dopolední procházka světem interiérů",
+  "content2": "<div><p>Na veletrhu jsme nasávali inspiraci doslova na každém kroku – od nových materiálů a technologických vychytávek až po originální nábytek a dekorace. Během veletrhu bylo možné vidět více než stovku vystavovatelů z Česka i zahraničí. Mezi expozicemi jsme objevovali nejen designové novinky, ale i nápady, které mohou osvěžit jakýkoli prostor – ať už jde o byt, dům, kancelář nebo veřejný interiér.</p><div><img style='min-width: 300px; margin-left: 10px' src='/blog/for-interior2.jpeg'></div></div>",
+  "subtitle2": "Odborný vhled: konference od 13:00",
+  "content3": "<div><p>Odpoledne jsme zamířili na odbornou konferenci, která přinesla cenné postřehy ze světa interiérového designu. Architekti, designéři a jiní odborníci sdíleli zkušenosti, diskutovali o budoucnosti udržitelného designu i o tom, jak se mění potřeby klientů v dnešní době. Nechyběla témata jako chytré technologie v interiéru, vliv barev na psychiku či proměna stylů v čase.</p></div>",
+  "subtitle3": "Slavnostní tečka: vyhlášení Czech Interior Award",
+  "content4": "<div><p>Den jsme zakončili stylově – vyhlášením vítězů Czech Interior Award. Moderátorka Markéta Hrubešová svou energií skvěle provázela celým programem. Atmosféra byla slavnostní, a zároveň plná uznání. Inspirace byla cítit z každého projektu a bylo to skvělé připomenutí, že český design má co nabídnout a rozhodně se neztratí!</p><div><img style='min-width: 300px; margin-left: 10px' src='/blog/for-interior3.jpeg'></div></div>",
+  "subtitle4": "Co si z veletrhu odnášíme?",
+  "content5": "<div><p>FOR INTERIOR pro nás není jen o nových kontaktech nebo produktech – je to místo, ze kterého si odnášíme spoustu nápadů, nadšení a potvrzení, že design má smysl – když tvoříme srdcem a s ohledem na člověka a přírodu.</p></div>",
+  "author": "Redakce",
+  "tags": ["Design", "Veletrh", "Interiérový design", "Události"],
+  "imageSource": "PVA EXPO Praha"
+},
+ {
   "id": 12,
   "title": "Malé změny, velký dopad: Jak oživit interiér",
   "category": "Design",
