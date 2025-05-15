@@ -88,7 +88,7 @@ const Blog = () => {
                       </a>
                       <p className="disc">{blog.description}</p>
                       <a href={`/blog/${blog.link}`} className="btn-read-more-blog">
-                        Read More <FontAwesomeIcon icon={faArrowRight} />
+                        Číst více <FontAwesomeIcon icon={faArrowRight} />
                       </a>
                     </div>
                   </div>

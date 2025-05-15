@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Progress = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -27,7 +27,7 @@ const Progress = () => {
     !isTop && (
       <div className="progress-wrap active-progress" onClick={scrollToTop}>
         <div className="icon-progress" style={{postition: "relative", zIndex: "999"}}>
-          <FontAwesomeIcon icon={faArrowUp} /> 
+          <FontAwesomeIcon icon={faChevronUp} /> 
         </div>
         <svg className="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
           <path

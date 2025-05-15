@@ -18,6 +18,8 @@ const Home = () => {
         title="Lenka Design | design interiéru v Liberci"
         description="Oživte svůj domov nebo kancelář v Liberci s exkluzivními návrhy interiérů od Lenky Stádníkové. Objednejte si konzultaci ještě dnes a transformujte svůj prostor do místa, kde budete chtít trávit každou minutu."
         keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+        image="/assets/images/og-home.jpg"
+        canonical="https://www.lenkadesign.cz/"
       />
       <main>
         <Banner />
