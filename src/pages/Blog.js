@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Blog = () => {
+  const isMobile = window.innerWidth <= 768;
+
   const containerVariants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
@@ -54,48 +56,77 @@ const Blog = () => {
           </div>
         </div>
         <div className="rts-blog-area rts-section-gap">
-          <motion.div
-            className="container"
-            style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}
-            ref={ref}
-            initial="hidden"
-            animate={inView ? 'visible' : 'hidden'}
-            variants={containerVariants}
-          >
-            {blogData.map((blog, index) => (
-              <motion.div
-                className={`row g-5 mt--40 ${index >= 2 ? 'mt_sm--0' : ''}`}
-                style={{ width: "680px" }}
-                key={blog.id}
-                variants={itemVariants}
-              >
-                <div className="col-xl-6 col-lg-12 col-md-12 col-sm-6">
-                  <div className="blog-style-three when-bg-white">
-                    <a href={blog.link} className="thumbnail">
-                      <img
-                        src={blog.image}
-                        style={{ height: "380px", minWidth: "auto", maxWidth: "300px", objectFit: "cover", width: "300px" }}
-                        alt="blog"
-                      />
-                    </a>
-                    <div className="body-information" style={{ minWidth: "300px" }}>
-                      <div className="blog-top">
-                        <span className="tag">{blog.category}</span>
-                        <span>{new Date(blog.date).toLocaleDateString()}</span>
-                      </div>
-                      <a href={`/blog/${blog.link}`}>
-                        <h2 className="title">{blog.title}</h2>
-                      </a>
-                      <p className="disc">{blog.description}</p>
-                      <a href={`/blog/${blog.link}`} className="btn-read-more-blog">
-                        Číst více <FontAwesomeIcon icon={faArrowRight} />
-                      </a>
+          {isMobile ? (
+            <div className="container" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+              {blogData.map((blog, index) => (
+                <div className="blog-style-three when-bg-white" key={blog.id}>
+                  <a href={blog.link} className="thumbnail">
+                    <img
+                      src={blog.image}
+                      style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                      alt="blog"
+                    />
+                  </a>
+                  <div className="body-information">
+                    <div className="blog-top">
+                      <span className="tag">{blog.category}</span>
+                      <span>{new Date(blog.date).toLocaleDateString()}</span>
                     </div>
+                    <a href={`/blog/${blog.link}`}>
+                      <h2 className="title">{blog.title}</h2>
+                    </a>
+                    <p className="disc">{blog.description}</p>
+                    <a href={`/blog/${blog.link}`} className="btn-read-more-blog">
+                      Číst více <FontAwesomeIcon icon={faArrowRight} />
+                    </a>
                   </div>
                 </div>
-              </motion.div>
-            ))}
-          </motion.div>
+              ))}
+            </div>
+          ) : (
+            <motion.div
+              className="container"
+              style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}
+              ref={ref}
+              initial="hidden"
+              animate={inView ? 'visible' : 'hidden'}
+              variants={containerVariants}
+            >
+              {blogData.map((blog, index) => (
+                <motion.div
+                  className={`row g-5 mt--40 ${index >= 2 ? 'mt_sm--0' : ''}`}
+                  style={{ width: "680px" }}
+                  key={blog.id}
+                  variants={itemVariants}
+                >
+                  <div className="col-xl-6 col-lg-12 col-md-12 col-sm-6">
+                    <div className="blog-style-three when-bg-white">
+                      <a href={blog.link} className="thumbnail">
+                        <img
+                          src={blog.image}
+                          style={{ height: "380px", minWidth: "auto", maxWidth: "300px", objectFit: "cover", width: "300px" }}
+                          alt="blog"
+                        />
+                      </a>
+                      <div className="body-information" style={{ minWidth: "300px" }}>
+                        <div className="blog-top">
+                          <span className="tag">{blog.category}</span>
+                          <span>{new Date(blog.date).toLocaleDateString()}</span>
+                        </div>
+                        <a href={`/blog/${blog.link}`}>
+                          <h2 className="title">{blog.title}</h2>
+                        </a>
+                        <p className="disc">{blog.description}</p>
+                        <a href={`/blog/${blog.link}`} className="btn-read-more-blog">
+                          Číst více <FontAwesomeIcon icon={faArrowRight} />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          )}
         </div>
       </main>
     </>
