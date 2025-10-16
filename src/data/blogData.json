@@ -1,4 +1,33 @@
 [ {
+  "id": 15,
+  "title": "Design na míru – výhody nábytku pro váš domov",
+  "category": "Interiér",
+  "description": "Nábytek na míru přináší praktičnost, estetickou hodnotu i dlouhodobou životnost. Využijte každý centimetr prostoru a získejte řešení přesně podle vašich potřeb.",
+  "image": "/assets/images/blog/blog-zari3.jpeg",
+  "link": "design-na-miru-vyhody-nabytku-navrzeneho-specialne-pro-vas-domov",
+  "excerpt": "Proč se vyplatí nábytek na míru? Maximální využití prostoru, kvalita, funkčnost bez kompromisů a nadčasová investice.",
+  "coverImage": "/assets/images/blog/blog-zari3.jpeg",
+  "date": "2025-10-16T09:00:00.000Z",
+  "ogImage": {
+    "url": "/assets/images/blog/blog-zari3.jpeg"
+  },
+  "mainTitle": "Design na míru – výhody nábytku navrženého speciálně pro váš domov",
+  "content": "<div><p>Každý interiér je jiný a málokdy do každého jeho koutu dokonale zapadne sériový nábytek z obchodu. Nábytek na míru je řešení, které přináší nejen praktičnost, ale i estetickou a individuální hodnotu. Našimi návrhy na míru dokážeme podtrhnout charakter prostoru a přizpůsobit se přesně vašim potřebám – to v obchodě málokdy najdete.</p></div>",
+  "subtitle": "Maximální využití prostoru",
+  "content2": "<div><p>Nábytek na míru umožňuje efektivně využít i místa, jako jsou šikminy, výklenky nebo úzké chodby. Se sériově vyráběným nábytkem toho často nelze dosáhnout. V interiéru se vyplatí využít každý centimetr.</p><div style='display: flex;'><img style='min-width: 300px; margin: auto; max-height: 400px; object-fit: cover;' src='/assets/images/blog/blog-zari2.jpeg'></div></div>",
+  "subtitle2": "Originalita a osobitost",
+  "content3": "<div><p>Místo kompromisů dostanete řešení, které odpovídá vašemu stylu, potřebám i zvykům. Váš interiér se stane unikátem, ne kopií katalogu.</p></div>",
+  "subtitle3": "Kvalitní materiály a zpracování",
+  "content4": "<div><p>Na rozdíl od masové výroby je možné vybrat odolné materiály, kvalitní kování i další detaily, které prodlouží životnost nábytku a zvýší komfort používání.</p><div style='display: flex;'><img style='min-width: 300px; margin: auto; max-height: 400px; object-fit: cover;' src='/assets/images/blog/blog-zari3.jpeg'></div></div>",
+  "subtitle4": "Funkčnost bez kompromisů",
+  "content5": "<div><p>Všechno navrhujeme podle toho, co skutečně potřebujete – ať jde o více úložného prostoru, netypické rozměry, skryté řešení kabeláže nebo chytré uspořádání polic.</p><div style='display: flex;'><img style='min-width: 300px; margin: auto; max-height: 400px; object-fit: cover;' src='/assets/images/blog/blog-zari1.jpeg'></div></div>",
+  "subtitle5": "Dlouhodobá investice",
+  "content6": "<div><p>I když je pořizovací cena vyšší, nábytek na míru se vrací v podobě delší životnosti, nadčasového vzhledu a každodenní spokojenosti.</p><p>Nábytek na míru je víc než jen praktické řešení – je to investice do pohodlí, estetiky i hodnoty vašeho domova. Pokud hledáte interiér, který bude dokonale odrážet váš styl a zároveň využije každý centimetr prostoru, je to ta správná cesta.</p></div>",
+  "author": "Lenka Stádníková",
+  "tags": ["Interiérový design", "Nábytek na míru", "Interiér"],
+  "imageSource": "Lenka design"
+},
+{
   "id": 14,
   "title": "Onyxová světla: Když se příroda spojí s designem",
   "category": "Design",
