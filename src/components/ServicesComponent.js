@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 import servicesData from '../data/services.json';
 
 const serviceIcons = ["/assets/icons/icon1.svg", "/assets/images/icons/icon2.svg", "/assets/images/icons/icon3.svg", "/assets/images/icons/icon4.svg"];
+const serviceIconsWhite = ["/assets/icons/icon1-white.svg", "/assets/icons/icon2-white.svg", "/assets/icons/icon3-white.svg", "/assets/icons/icon4-white.svg"];
 
 const ServicesComponent = () => {
   const { ref: leftAreaRef, inView: leftAreaInView } = useInView({
@@ -35,6 +36,8 @@ const ServicesComponent = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
+
+  const [hoveredIndex, setHoveredIndex] = React.useState(null);
 
   return (
     <div className="rts-service-area rts-section-gap bg-light" id="service">
@@ -98,9 +101,16 @@ const ServicesComponent = () => {
                   key={service.nav}
                   variants={itemVariants}
                 >
-                  <div className={`single-service-area-one ${index + 1}`}>
+                  <div
+                    className={`single-service-area-one ${index + 1}`}
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}
+                  >
                     <div className="icon">
-                      <img src={serviceIcons[index]} alt="icon" />
+                      <img
+                        src={hoveredIndex === index ? serviceIconsWhite[index] : serviceIcons[index]}
+                        alt="icon"
+                      />
                     </div>
                     <h3 className="title">{service.title}</h3>
                     <p className="disc">{service.details[0]}</p>

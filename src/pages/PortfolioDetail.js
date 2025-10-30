@@ -151,6 +151,41 @@ const PortfolioDetail = () => {
                 </div>
               </div>
             </div>
+            {portfolioItem.beforeImages && portfolioItem.beforeImages.length > 0 && (
+              <div className="row mt--40">
+                <div className="col-lg-12">
+                  <h3 className="title">Fotky před rekonstrukcí</h3>
+                  <LightGallery
+                    plugins={[lgZoom]}
+                    mode="lg-fade"
+                    pager={false}
+                    thumbnail={true}
+                    galleryId="before-images"
+                    elementClassNames="gallery gallery-grid"
+                    showCloseIcon={false}
+                    download={false}
+                    getCaptionFromTitleOrAlt={false}
+                  >
+                    {portfolioItem.beforeImages.map((img, idx) => (
+                      <a
+                        key={idx}
+                        className="gallery__item"
+                        href={img}
+                        data-lg-size="1600-2400"
+                        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '430px', background: '#fff' }}
+                      >
+                        <img
+                          className="img-responsive"
+                          src={img}
+                          alt={"Fotka před rekonstrukcí"}
+                          style={{ maxWidth: '100%', maxHeight: '430px', objectFit: 'contain', borderRadius: 0, margin: 'auto', display: 'block' }}
+                        />
+                      </a>
+                    ))}
+                  </LightGallery>
+                </div>
+              </div>
+            )}
             <div className="row">
               <div className="col-lg-12">
                 <div className="product-details-padding-lr">
@@ -188,7 +223,7 @@ const PortfolioDetail = () => {
                   pager={false}
                   thumbnail={true}
                   galleryId="nature"
-                  elementClassNames="gallery"
+                  elementClassNames="gallery gallery-grid"
                   showCloseIcon={false}
                   download={false}
                   getCaptionFromTitleOrAlt={false}
@@ -199,12 +234,13 @@ const PortfolioDetail = () => {
                       className="gallery__item"
                       href={image}
                       data-lg-size="1600-2400"
+                      style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', height: '430px', background: '#fff' }}
                     >
                       <img
                         className="img-responsive"
                         src={image}
                         alt={`Lenka Design – ${portfolioItem.name}`}
-
+                        style={{ maxWidth: '100%', maxHeight: '430px', objectFit: 'contain', borderRadius: 0, margin: 'auto', display: 'block' }}
                       />
                     </a>
                   ))}

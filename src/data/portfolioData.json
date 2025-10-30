@@ -1,4 +1,37 @@
 [
+ 
+  {
+    "id": 7,
+    "name": "Zasedací místnost společnosti Preciosa",
+    "nav": "preciosa-zasedaci-mistnost",
+    "client": "Preciosa, a.s.",
+    "startDate": "12.2024",
+    "duration": "10 měsíců",
+    "location": "Jablonec nad Nisou, Česká republika",
+    "description": "Projekt Zasedací místnosti Preciosy v Jablonci nad Nisou zahrnoval kompletní návrh a realizaci moderního a reprezentativního prostoru pro firemní jednání a prezentace. Návrh vznikal od samého počátku – od prvotního konceptu a první návrhy, přes úpravy a schválení návrhu až po kompletní rekonstrukci. Součástí realizace byly i rozsáhlé řemeslnické práce včetně odstranění původního stropu.",
+    "scope": "Cílem bylo vytvořit funkční a elegantní prostředí, které odpovídá prestiži společnosti a zároveň nabízí maximální komfort při užívání. V rámci projektu vzniklo nové osvětlení, moderní napínaný strop v bílém lesku a integrovaná kuchyňka, kterou lze snadno skrýt za posuvné dveře.",
+    "solution": "Projekt tak představuje propojení technické preciznosti, čistého designu a praktických detailů, které společně vytvářejí reprezentativní prostor pro každodenní firemní setkávání.",
+    "imgSmall": "/assets/images/product/preciosa1.jpeg",
+    "images": [
+      "/assets/images/product/preciosa1.jpeg",
+      "/assets/images/product/preciosa2.jpeg",
+      "/assets/images/product/preciosa3.jpeg",
+      "/assets/images/product/preciosa4.jpeg",
+      "/assets/images/product/preciosa5.jpeg",
+      "/assets/images/product/preciosa6.jpeg",
+      "/assets/images/product/preciosa7.jpeg",
+      "/assets/images/product/preciosa8.jpeg"
+    ],
+    "beforeImages": [
+      "/assets/images/product/preciosa-before1.jpeg",
+      "/assets/images/product/preciosa-before2.jpeg",
+      "/assets/images/product/preciosa-before3.jpeg",
+      "/assets/images/product/preciosa-before4.jpeg",
+      "/assets/images/product/preciosa-before5.jpeg",
+      "/assets/images/product/preciosa-before6.jpeg",
+      "/assets/images/product/preciosa-before7.jpeg"
+    ]
+  },
   {
     "id": 1,
     "nav": "vila-albatros",
@@ -73,6 +106,33 @@
       "/assets/images/product/rozstani-pronajem7.webp",
       "/assets/images/product/rozstani-pronajem8.webp",
       "/assets/images/product/rozstani-pronajem9.webp"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Kompletní rekonstrukce panelákového bytu",
+    "nav": "kompletni-rekonstrukce-byt-desna",
+    "client": "soukromý",
+    "startDate": "01.2025",
+    "duration": "4 měsíce",
+    "location": "Desná, Česká republika",
+    "description": "Projekt rekonstrukce panelákového bytu představoval komplexní návrh změn interiéru a designu, od podlah až po stropy, součástí byla realizace, dohled na rekonstrukci, nábytek na míru až po dodání doplňků. Realizace zahrnovala nové kompletní vybavení interiéru a návrh byl zpracován s důrazem na funkčnost, estetiku a harmonické propojení materiálů.",
+    "scope": "Veškerý nábytek byl zvolen v souladu s celkovým konceptem a rozpočtem – kombinací prvků z obchodní sítě a nábytku vyrobeného na míru, který dokonale respektuje prostorové možnosti i požadavky investora. Závěsy na míru, které byly řešeny při posledních úpravách, přispívají k zútulnění interiéru, zajišťují efektivní stínění a podtrhují celkový designový záměr. Dekorativní panely v obývací a jídelní části dodávají prostoru jedinečný charakter a vizuální hloubku. Výsledkem je moderní a útulný interiér, který vyniká a jen tak neomrzí.",
+    "imgSmall": "/assets/images/product/byt-desná10.jpeg",
+    "images": [
+      "/assets/images/product/byt-desná10.jpeg",
+      "/assets/images/product/byt-desná2.jpeg",
+      "/assets/images/product/byt-desná3.jpeg",
+      "/assets/images/product/byt-desná4.jpeg",
+      "/assets/images/product/byt-desná5.jpeg",
+      "/assets/images/product/byt-desná6.jpeg",
+      "/assets/images/product/byt-desná7.jpeg",
+      "/assets/images/product/byt-desná8.jpeg",
+      "/assets/images/product/byt-desná9.jpeg",
+      "/assets/images/product/byt-desná1.jpeg",
+      "/assets/images/product/byt-desná11.jpeg",
+      "/assets/images/product/byt-desná12.jpeg",
+      "/assets/images/product/byt-desná13.jpeg"
     ]
   },
   {

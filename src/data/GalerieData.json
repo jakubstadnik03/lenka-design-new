@@ -5,6 +5,10 @@
     "description": "Změníme vaše pracovní prostředí, nejen abyste se v něm cítili příjemně, ale aby Vás zároveň reprezentovalo a dobře vystihovalo vaši firmu a přitahovalo nové klienty.",
     "link": "komercni-projekty",
     "gallery": [
+      "/assets/images/product/preciosa1.jpeg",
+      "/assets/images/product/preciosa7.jpeg",
+      "/assets/images/product/preciosa8.jpeg",
+
       "/assets/images/gallery/komercni-projekty12.jpg",
       "/assets/images/gallery/komercni-projekty13.jpg",
       "/assets/images/gallery/komercni-projekty14.jpg",
@@ -15,7 +19,6 @@
       "/assets/images/gallery/komercni-projekty4.jpeg",
       "/assets/images/gallery/komercni-projekty5.jpeg",
       "/assets/images/gallery/komercni-projekty6.jpeg",
-      "/assets/images/gallery/komercni-projekty7.jpeg",
       "/assets/images/gallery/komercni-projekty8.jpeg",
       "/assets/images/gallery/komercni-projekty9.jpeg",
       "/assets/images/gallery/komercni-projekty10.jpeg"
@@ -34,7 +37,9 @@
       "/assets/images/gallery/maly-byt5.jpeg",
       "/assets/images/gallery/maly-byt6.jpeg",
       "/assets/images/gallery/maly-byt7.jpeg",
-      "/assets/images/gallery/maly-byt8.jpeg"
+      "/assets/images/gallery/maly-byt8.jpeg",
+      "/assets/images/product/byt-desná10.jpeg",
+      "/assets/images/product/byt-desná6.jpeg"
     ]
   },
   {
@@ -117,7 +122,6 @@
       "/assets/images/gallery/detske-pokoje1.jpeg",
       "/assets/images/gallery/detske-pokoje2.jpeg",
       "/assets/images/gallery/detske-pokoje3.jpeg",
-      "/assets/images/gallery/detske-pokoje4.jpeg",
       "/assets/images/gallery/detske-pokoje5.jpeg",
       "/assets/images/gallery/detske-pokoje6.jpeg"
     ]
@@ -135,7 +139,9 @@
       "/assets/images/gallery/loznice5.jpeg",
       "/assets/images/gallery/loznice6.jpeg",
       "/assets/images/gallery/loznice7.jpeg",
-      "/assets/images/gallery/loznice8.jpeg"    ]
+      "/assets/images/gallery/loznice8.jpeg",
+      "/assets/images/product/byt-desná6.jpeg"
+    ]
   },
   {
     "id": 9,
