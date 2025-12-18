@@ -1,4 +1,36 @@
-[ {
+[  {
+  "id": 16,
+  "title": "Interiérové trendy, které ovládnou rok 2026",
+  "category": "Design",
+  "description": "Inspirace pro teplé, útulné a osobité bydlení",
+  "image": "/assets/images/blog/trendy1.jpg",
+  "link": "interierove-trendy-ktere-ovladnou-rok-2026",
+  "excerpt": "Rok 2026 posouvá interiérový design směrem k útulnosti, autenticitě a lidskosti. Po období chladného minimalismu přichází návrat k teplým odstínům, přírodním materiálům a prostorům, které působí domácky a přirozeně.",
+  "coverImage": "/assets/images/blog/trendy1.jpg",
+  "date": "2025-01-20T09:00:00.000Z",
+  "ogImage": {
+    "url": "/assets/images/blog/trendy1.jpg"
+  },
+  "mainTitle": "Interiérové trendy, které ovládnou rok 2026",
+  "content": "<div><p>Rok 2026 posouvá interiérový design směrem k útulnosti, autenticitě a lidskosti. Po období chladného minimalismu přichází návrat k teplým odstínům, přírodním materiálům a prostorům, které působí domácky a přirozeně. Domov se stává místem, kde chceme být více času a neunikat z něho.</p></div>",
+  "subtitle": "Udržitelnost a přírodní materiály",
+  "content2": "<div><p>Ekologické myšlení už je standard a interiéry pro rok 2026 staví hlavně na recyklovatelných materiálech, dřevu, lnu a vlně. Nešlápnete vedle ani s přírodními kameny a vše podtrhnete s energeticky úsporným osvětlením. Tyto prvky nejen že snižují ekologickou stopu, ale přinášejí také přirozenou krásu a nadčasovost, která vám bude dělat radost několik let.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/trendy2.jpg'><div class='image-source'>Zdroj: hgtvhomebysherwinwilliams.com</div></div></div>",
+  "subtitle2": "Teplé neutrály a zemité odstíny",
+  "content3": "<div><p>Studené šedé postupně odcházejí, aby uvolnily místo barvám, které uklidňují a zahřívají. Například terracotta, teplá karamelová, olivově zelená i písková barva vás v roce 2026 nesmí minout. Textilie a textury – jutové koberce, vlněné plédy, ratan či lněné závěsy – dodávají prostoru hloubku a útulnost.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/trendy3.jpg'><div class='image-source'>Zdroj: inlitefurnishings.com</div></div></div>",
+  "subtitle3": "Flexibilní a chytré prostory",
+  "content4": "<div><p>Bydlení musí být živé – stejně jako my. Rok 2026 klade důraz na funkčnost bez kompromisů. Modulární pohovky a stoly dávají více svobody při každodenním užívání. Skládací nebo výsuvné pracovní kouty umožní vše schovat. Zóny, které lze rychle změnit podle potřeby nám dají možnost si z prostoru vždy udělat to, co po něm žádáme. Domov se stává pracovištěm, relaxační zónou i kreativním ateliérem v jednom.</p></div>",
+  "subtitle4": "Textury a architektonické detaily",
+  "content5": "<div><p>Luxus už není o lesku, ale o detailu. Budou stále více žádány strukturované stěrky, již zmiňovaný přírodní kámen v interiéru a masivní dřevo. Detail vynikne i na tvarovaných panelech, přidaných trámech do interiéru a podobných designovkách. Interiér díky tomu působí hlubší a promyšlenější.</p></div>",
+  "subtitle5": "Bydlení propojené s přírodou",
+  "content6": "<div><p>Příroda zůstává hlavním zdrojem klidu a inspirace. Do interiéru bude čím dál tím více pronikat velkorysé denní světlo, pokojové rostliny všech velikostí, voda a přírodní zvuky... Takový prostor podporuje psychickou pohodu a vytváří přirozeně harmonické prostředí.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/trendy4.jpg'><div class='image-source'>Zdroj: zipwater.co.uk</div></div></div>",
+  "subtitle6": "Vintage a individuální styl",
+  "content7": "<div><p>Charakter je novým luxusem. V roce 2026 se mísí vintage nábytek, retro dekorace a moderní prvky. Každý kus, který má historii nebo výraz, dodává interiéru osobní hloubku. Vrstvení starého a nového stylu můžete ve formě doplňků z cest, ruční výroby, osobních artefaktů i sbírek. Domov má vyprávět příběh – ten váš.</p></div>",
+  "subtitle7": "Závěr",
+  "content8": "<div><p>Trendy roku 2026 přinášejí teplo, udržitelnost, flexibilitu a originalitu. Design spojuje moderní technologie s přírodou, podporuje pohodu a vytváří prostředí, které je inspirativní, živé a osobní. Domov už není showroom – je to místo, kde se opravdu cítíme dobře a místo, které patří pouze nám.</p></div>",
+  "author": "Lenka Stádníková",
+  "tags": ["Design", "Interiérový design", "Trendy"],
+  "imageSource": "hgtvhomebysherwinwilliams.com"
+},{
   "id": 15,
   "title": "Design na míru – výhody nábytku pro váš domov",
   "category": "Interiér",
