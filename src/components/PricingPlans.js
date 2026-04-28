@@ -104,7 +104,7 @@ const PricingPlans = () => {
     threshold: 0.1,
   });
 
-  const { ref: detailsRef, inView: detailsInView } = useInView({
+  const { ref: detailsRef } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });

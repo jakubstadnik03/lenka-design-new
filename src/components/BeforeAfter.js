@@ -38,14 +38,14 @@ const BeforeAfter = ({ beforeImage, afterImage }) => {
             <div className="col-lg-12">
               <div className="after-before-main-wrapper-one" ref={containerRef}>
                 <figure className="cd-image-container is-visible">
-                  <img src={afterImage} alt="Original" />
+                  <img src={afterImage} alt="Stav po realizaci" />
                   <span className="cd-image-label" data-type="original">Potom</span>
-  
+
                   <div className="cd-resize-img" style={{ width: `${sliderPosition}%` }}>
-                    <img src={beforeImage} alt="Modified" />
+                    <img src={beforeImage} alt="Stav před realizací" />
                     <span className="cd-image-label" data-type="modified">Předtím</span>
                   </div>
-  
+
                   <span className="cd-handle" style={{ left: `${sliderPosition}%` }}></span>
                 </figure>
               </div>
