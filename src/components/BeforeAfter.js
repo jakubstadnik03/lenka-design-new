@@ -1,32 +1,34 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 const BeforeAfter = ({ beforeImage, afterImage }) => {
   const containerRef = useRef(null);
   const [sliderPosition, setSliderPosition] = useState(50);
 
-  const handleSliderChange = (e) => {
+  const handleSliderChange = useCallback((e) => {
+    if (!containerRef.current) return;
     const containerWidth = containerRef.current.offsetWidth;
     const newPosition = (e.clientX / containerWidth) * 100;
     setSliderPosition(newPosition);
-  };
+  }, []);
 
-  const handleMouseDown = (e) => {
-    document.addEventListener('mousemove', handleSliderChange);
-    document.addEventListener('mouseup', handleMouseUp);
-  };
-
-  const handleMouseUp = () => {
+  const handleMouseUp = useCallback(() => {
     document.removeEventListener('mousemove', handleSliderChange);
     document.removeEventListener('mouseup', handleMouseUp);
-  };
+  }, [handleSliderChange]);
+
+  const handleMouseDown = useCallback((e) => {
+    document.addEventListener('mousemove', handleSliderChange);
+    document.addEventListener('mouseup', handleMouseUp);
+  }, [handleMouseUp, handleSliderChange]);
 
   useEffect(() => {
     const container = containerRef.current;
+    if (!container) return undefined;
     container.addEventListener('mousedown', handleMouseDown);
     return () => {
       container.removeEventListener('mousedown', handleMouseDown);
     };
-  }, []);
+  }, [handleMouseDown]);
 
   return (
     <div className='col-lg-6'>
@@ -36,11 +38,11 @@ const BeforeAfter = ({ beforeImage, afterImage }) => {
             <div className="col-lg-12">
               <div className="after-before-main-wrapper-one" ref={containerRef}>
                 <figure className="cd-image-container is-visible">
-                  <img src={afterImage} alt="Original Image" />
+                  <img src={afterImage} alt="Original" />
                   <span className="cd-image-label" data-type="original">Potom</span>
   
                   <div className="cd-resize-img" style={{ width: `${sliderPosition}%` }}>
-                    <img src={beforeImage} alt="Modified Image" />
+                    <img src={beforeImage} alt="Modified" />
                     <span className="cd-image-label" data-type="modified">Předtím</span>
                   </div>
   
