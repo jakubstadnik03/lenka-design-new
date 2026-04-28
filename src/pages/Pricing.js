@@ -8,6 +8,8 @@ const Pricing = () => {
       title= "Ceník poskytovaných služeb - Lenka Design"
       description="S každým klientem prodiskutuji jeho požadavky a následně předložím cenovou nabídku"
       keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+      canonical="/cenik"
+      breadcrumbs={[{ name: "Domů", url: "/" }, { name: "Ceník", url: "/cenik" }]}
     />
     <main>
         

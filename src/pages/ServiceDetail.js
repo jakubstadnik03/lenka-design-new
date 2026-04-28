@@ -1,6 +1,6 @@
 // ServiceDetail.js
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import servicesData from "../data/services.json";
 import ServiceSidebar from "../components/ServiceSidebar";
 import SEOHead from "../SEOHead";
@@ -24,6 +24,13 @@ const ServiceDetail = () => {
         title={service.seo.title}
         description={service.seo.description}
         keywords={service.seo.keywords}
+        image={service.image}
+        canonical={`/nase-sluzby/${service.nav}`}
+        breadcrumbs={[
+          { name: "Domů", url: "/" },
+          { name: "Naše služby", url: "/nase-sluzby" },
+          { name: service.title, url: `/nase-sluzby/${service.nav}` },
+        ]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">
@@ -32,10 +39,10 @@ const ServiceDetail = () => {
               <div className="col-lg-12">
                 <div className="bread-crumb-area-inner">
                   <div className="breadcrumb-top">
-                    <a href="/nase-sluzby">Naše služby</a> /
-                    <a className="active" href="/services">
+                    <Link to="/nase-sluzby">Naše služby</Link> /
+                    <Link className="active" to={`/nase-sluzby/${service.nav}`}>
                       {service.title}
-                    </a>
+                    </Link>
                   </div>
                   <div className="bottom-title">
                     <h1 className="title"> {service.title}</h1>

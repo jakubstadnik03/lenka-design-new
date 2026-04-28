@@ -40,9 +40,15 @@ const ProjectDetail = () => {
   return (
     <>
       <SEOHead
-        title={` ${project.name} - Lenka Design`}
+        title={`${project.name} | Web a Grafika | Lenka Design`}
         description={project.overview}
         keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci"
+        canonical={`/web-a-grafika/${project.nav}`}
+        breadcrumbs={[
+          { name: "Domů", url: "/" },
+          { name: "Web a Grafika", url: "/web-a-grafika" },
+          { name: project.name, url: `/web-a-grafika/${project.nav}` },
+        ]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">

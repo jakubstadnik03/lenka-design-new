@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import galleryData from '../data/GalerieData.json';
 import GallerySideBar from '../components/GallerySideBar';
 import LightGallery from 'lightgallery/react';
@@ -27,6 +27,13 @@ const FotogalerieDetail = () => {
         title={service.title + " – Fotogalerie | Lenka Design"}
         description={service.description || service.title}
         keywords={service.keywords ? service.keywords.join(', ') : service.title}
+        image={(service.gallery && service.gallery[0]) || service.image}
+        canonical={`/fotogalerie/${service.link}`}
+        breadcrumbs={[
+          { name: "Domů", url: "/" },
+          { name: "Fotogalerie", url: "/fotogalerie" },
+          { name: service.title, url: `/fotogalerie/${service.link}` },
+        ]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">
@@ -35,8 +42,8 @@ const FotogalerieDetail = () => {
               <div className="col-lg-12">
                 <div className="bread-crumb-area-inner">
                   <div className="breadcrumb-top">
-                    <a href="/nase-sluzby">Naše služby</a> /
-                    <a className="active" href={`/fotogalerie/${service.link}`}>{service.title}</a>
+                    <Link to="/fotogalerie">Fotogalerie</Link> /
+                    <Link className="active" to={`/fotogalerie/${service.link}`}>{service.title}</Link>
                   </div>
                   <div className="bottom-title">
                     <h1 className="title">{service.title}</h1>

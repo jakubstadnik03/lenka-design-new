@@ -34,8 +34,11 @@ const Blog = () => {
   return (
     <>
       <SEOHead
-        title={`Blog | Lenka Design`}
-        keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+        title="Blog o interiérovém designu | Lenka Design"
+        description="Inspirace, trendy a tipy z interiérového designu od Lenky Stádníkové. Návrhy interiérů, materiály, barvy a praktické rady pro váš domov i kancelář."
+        keywords="blog interiérový design, trendy bydlení, návrhy interiérů, Lenka Design, inspirace bydlení, Liberec"
+        canonical="/blog"
+        breadcrumbs={[{ name: "Domů", url: "/" }, { name: "Blog", url: "/blog" }]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">
@@ -114,7 +117,18 @@ const Blog = () => {
                           <span>{new Date(blog.date).toLocaleDateString()}</span>
                         </div>
                         <a href={`/blog/${blog.link}`}>
-                          <h2 className="title">{blog.title}</h2>
+                          <h2
+                            className="title"
+                            style={{
+                              display: "-webkit-box",
+                              WebkitLineClamp: 3,
+                              WebkitBoxOrient: "vertical",
+                              overflow: "hidden",
+                              textOverflow: "ellipsis",
+                            }}
+                          >
+                            {blog.title}
+                          </h2>
                         </a>
                         <p className="disc">{blog.description}</p>
                         <a href={`/blog/${blog.link}`} className="btn-read-more-blog">

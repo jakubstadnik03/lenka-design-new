@@ -8,6 +8,7 @@ import ContactUs from '../components/ContactUs';
 import webData from '../data/webData.json';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import SEOHead from '../SEOHead';
 
 const WebAGrafika = () => {
   const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -21,6 +22,13 @@ const WebAGrafika = () => {
 
   return (
     <>
+      <SEOHead
+        title="Web a Grafika | Lenka Design"
+        description="Tvorba webových stránek, log a grafického designu pro firmy. Moderní, responzivní weby s důrazem na vizuální identitu."
+        keywords="webové stránky, grafický design, logo, vizitky, Lenka Design"
+        canonical="/web-a-grafika"
+        breadcrumbs={[{ name: "Domů", url: "/" }, { name: "Web a Grafika", url: "/web-a-grafika" }]}
+      />
       <div className="swiper-banner-seven-main-wrapper" style={{ marginTop: "-230px" }}>
         <Swiper
           className='mySwiper-banner-one'

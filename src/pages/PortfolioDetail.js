@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import LightGallery from "lightgallery/react";
 import lgZoom from "lightgallery/plugins/zoom";
 import fjGallery from "flickr-justified-gallery";
@@ -37,9 +37,16 @@ const PortfolioDetail = () => {
   return (
     <>
       <SEOHead
-        title={`${portfolioItem.name} - Lenka Design`}
-        description={portfolioItem.scope}
+        title={`${portfolioItem.name} | Portfolio | Lenka Design`}
+        description={portfolioItem.scope || portfolioItem.description || portfolioItem.name}
         keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+        image={(portfolioItem.gallery && portfolioItem.gallery[0]) || portfolioItem.image}
+        canonical={`/portfolio/${portfolioItem.nav}`}
+        breadcrumbs={[
+          { name: "Domů", url: "/" },
+          { name: "Portfolio", url: "/portfolio" },
+          { name: portfolioItem.name, url: `/portfolio/${portfolioItem.nav}` },
+        ]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">
@@ -48,13 +55,13 @@ const PortfolioDetail = () => {
               <div className="col-lg-12">
                 <div className="bread-crumb-area-inner">
                   <div className="breadcrumb-top">
-                    <a href="/portfolio">Projekty</a> /
-                    <a
+                    <Link to="/portfolio">Projekty</Link> /
+                    <Link
                       className="active"
-                      href={`/portfolio/${portfolioItem.id}`}
+                      to={`/portfolio/${portfolioItem.nav}`}
                     >
                       {portfolioItem.name}
-                    </a>
+                    </Link>
                   </div>
                   <div className="bottom-title">
                     <h1 className="title">{portfolioItem.name}</h1>

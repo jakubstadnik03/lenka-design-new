@@ -53,6 +53,8 @@ const Contact = () => {
         title={`Kontaktujte mě - Lenka Design`}
         description="Kontaktujte LenkuDesign.cz pro profesionální návrhy interiérů a homestaging v Liberci. Realizujte svůj vysněný domov s expertkou v designu. Zavolejte nám nebo napište e-mail ještě dnes!"
         keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci, ceník poskytovaných služeb Lenka Design"
+        canonical="/kontakt"
+        breadcrumbs={[{ name: "Domů", url: "/" }, { name: "Kontakt", url: "/kontakt" }]}
       />
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">

@@ -1,8 +1,14 @@
 import React from 'react';
+import SEOHead from '../SEOHead';
 
 const PodminkyAPravidla = () => {
   return (
     <main>
+      <SEOHead
+        title="Podmínky a pravidla | Lenka Design"
+        description="Obchodní podmínky a pravidla služby Lenka Design."
+        canonical="/podminky-a-pravidla"
+      />
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">
           <div className="row">

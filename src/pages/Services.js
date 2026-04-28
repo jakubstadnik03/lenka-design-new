@@ -12,6 +12,9 @@ const Services = () => {
       title="Seznam poskytovaných služeb - Lenka Design"
       description="Objevte špičkové služby v oblasti designu interiérů od LenkaDesign.cz – od osobních konzultací až po exkluzivní nábytek a homestaging v Liberci. Přeměňte svůj prostor v dokonalý domov s naší pomocí!"
       keywords="interiérový design, architektura, Lenka Design, Lenka Stádníková, design interiéru, design interiéru v liberci, design v liberci"
+      canonical="/nase-sluzby"
+      image="/assets/images/og-default.jpg"
+      breadcrumbs={[{ name: "Domů", url: "/" }, { name: "Naše služby", url: "/nase-sluzby" }]}
     />
     <main>
       <div className="breadcrumb-area-bg bg_image">

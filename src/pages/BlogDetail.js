@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import blogPosts from "../data/blogData.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
@@ -30,9 +30,23 @@ const BlogDetails = () => {
   return (
     <>
       <SEOHead
-        title={post.title}
+        title={`${post.title} | Lenka Design`}
         description={post.description || post.excerpt || post.title}
         keywords={post.tags ? post.tags.join(", ") : "interiérový design, blog"}
+        image={(post.ogImage && post.ogImage.url) || post.coverImage || post.image}
+        canonical={`/blog/${post.link}`}
+        type="article"
+        article={{
+          publishedTime: post.date,
+          modifiedTime: post.modified || post.date,
+          author: post.author,
+          tags: post.tags,
+        }}
+        breadcrumbs={[
+          { name: "Domů", url: "/" },
+          { name: "Blog", url: "/blog" },
+          { name: post.title, url: `/blog/${post.link}` },
+        ]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">
@@ -41,13 +55,13 @@ const BlogDetails = () => {
               <div className="col-lg-12">
                 <div className="bread-crumb-area-inner">
                   <div className="breadcrumb-top">
-                    <a href="/blog">Blog</a> /
-                    <a className="active" href={`/blog/${post.link}`}>
+                    <Link to="/blog">Blog</Link> /
+                    <Link className="active" to={`/blog/${post.link}`}>
                       {post.title}
-                    </a>
+                    </Link>
                   </div>
                   <div className="bottom-title">
-                    <h1 className="title">{post.title}</h1>
+                    <h1 className="title">{post.mainTitle || post.title}</h1>
                   </div>
                 </div>
               </div>
@@ -60,7 +74,13 @@ const BlogDetails = () => {
               <div className="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
                 <div className="blog-single-post-listing details mb--0">
                   <div className="thumbnail">
-                    <img src={post.coverImage} alt={`${post.title}`} />
+                    <img
+                      src={post.coverImage}
+                      alt={post.title}
+                      width="900"
+                      height="600"
+                      fetchpriority="high"
+                    />
                     {post.imageSource && (
                       <div className="image-source">
                         Zdroj: {post.imageSource}
@@ -183,7 +203,7 @@ const BlogDetails = () => {
                       {recentPosts.map((recent) => (
                         <div key={recent.id} className="recent-post-single">
                           <div className="thumbnail">
-                            <a href={`/blog/${recent.link}`}>
+                            <Link to={`/blog/${recent.link}`}>
                               <img
                                 src={recent.coverImage}
                                 style={{
@@ -192,9 +212,12 @@ const BlogDetails = () => {
                                   minWidth: "auto",
                                   objectFit: "cover",
                                 }}
-                                alt="Recent Post"
+                                alt={recent.title}
+                                loading="lazy"
+                                width="100"
+                                height="100"
                               />
-                            </a>
+                            </Link>
                           </div>
                           <div className="content-area text-start">
                             <div className="user">
@@ -203,12 +226,12 @@ const BlogDetails = () => {
                                 {new Date(recent.date).toLocaleDateString()}
                               </span>
                             </div>
-                            <a
+                            <Link
                               className="post-title"
-                              href={`/blog/${recent.link}`}
+                              to={`/blog/${recent.link}`}
                             >
                               <h6 className="title">{recent.title}</h6>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       ))}

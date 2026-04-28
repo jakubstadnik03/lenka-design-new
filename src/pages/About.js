@@ -23,7 +23,8 @@ const About = () => {
         description="Poznejte tým Lenka Design a naši filozofii interiérového designu. Inspirace přírodou, individuální přístup a důraz na detail."
         keywords="o nás, tým, interiérový design, Lenka Design, filozofie, příroda, individuální přístup"
         image="/assets/images/og-about.jpg"
-        canonical="https://www.lenkadesign.cz/o-nas"
+        canonical="/o-nas"
+        breadcrumbs={[{ name: "Domů", url: "/" }, { name: "O nás", url: "/o-nas" }]}
       />
       <main>
         <div className="breadcrumb-area-bg bg_image">

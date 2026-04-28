@@ -1,8 +1,14 @@
 import React from 'react';
+import SEOHead from '../SEOHead';
 
 const ZasadyObchodnichUdaju = () => {
   return (
     <main>
+      <SEOHead
+        title="Zásady ochrany osobních údajů | Lenka Design"
+        description="Informace o zpracování osobních údajů na webu Lenka Design."
+        canonical="/zasady-obchodnich-udaju"
+      />
       <div className="breadcrumb-area-bg bg_image">
         <div className="container">
           <div className="row">

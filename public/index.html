@@ -5,18 +5,32 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <title>Lenka Design | design interiéru v Liberci</title>
     <meta
       name="description"
       content="Oživte svůj domov nebo kancelář v Liberci s exkluzivními návrhy interiérů od Lenky Stádníkové. Objednejte si konzultaci ještě dnes a transformujte svůj prostor do místa, kde budete chtít trávit každou minutu."
     />
+    <link rel="canonical" href="https://www.lenkadesign.cz/" />
+    <meta name="robots" content="index, follow" />
     <meta
       name="google-site-verification"
       content="_q5NAJ16N1ceI-HEQX8sF9cUCWRclZ3Xx6h5ppmemzg"
     />
 
+    <!-- Open Graph fallback (přepíše react-helmet-async per stránku) -->
+    <meta property="og:site_name" content="Lenka Design" />
+    <meta property="og:locale" content="cs_CZ" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.lenkadesign.cz/" />
+    <meta property="og:title" content="Lenka Design | design interiéru v Liberci" />
+    <meta property="og:description" content="Exkluzivní návrhy interiérů v Liberci od Lenky Stádníkové." />
+    <meta property="og:image" content="https://www.lenkadesign.cz/assets/images/og-default.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <!-- Preconnect to Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 
     <!-- Load Google Fonts -->
     <link
@@ -28,23 +42,56 @@
       rel="stylesheet"
     />
 
-    <!-- Load Font Awesome -->
+    <!-- Load Font Awesome non-blocking (async via media trick) -->
     <link
-      rel="stylesheet"
+      rel="preload"
+      as="style"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEXRQ3S16G">
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    </noscript>
+
+    <!-- Organization JSON-LD (statický fallback, react-helmet vyrenderuje navíc per stránku) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.lenkadesign.cz/#organization",
+        "name": "Lenka Design | interiérová návrhářka",
+        "url": "https://www.lenkadesign.cz",
+        "logo": "https://www.lenkadesign.cz/logo.png",
+        "image": "https://www.lenkadesign.cz/assets/images/lenka-portret.jpeg",
+        "description": "Interiérová designérka Lenka Stádníková — návrhy interiérů, 3D vizualizace a kompletní realizace pro domácnosti i firmy v Liberci a okolí.",
+        "telephone": "+420-723-838-086",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Liberec",
+          "addressCountry": "CZ"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Liberec" },
+          { "@type": "City", "name": "Jablonec nad Nisou" },
+          { "@type": "AdministrativeArea", "name": "Liberecký kraj" }
+        ]
+      }
     </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XEXRQ3S16G"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-XEXRQ3S16G');
     </script>
-    <title>Lenka Design | design interiéru v Liberci</title>
   </head>
   <body>
+    <noscript>Pro zobrazení tohoto webu prosím povolte JavaScript.</noscript>
     <div id="root"></div>
   </body>
 </html>

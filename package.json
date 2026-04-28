@@ -41,9 +41,20 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "node scripts/generate-sitemap.js",
     "build": "react-scripts build",
+    "postbuild": "node scripts/maybe-prerender.js",
+    "prerender": "react-snap",
+    "sitemap": "node scripts/generate-sitemap.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "reactSnap": {
+    "source": "build",
+    "include": ["/", "/o-nas", "/nase-sluzby", "/portfolio", "/fotogalerie", "/blog", "/kontakt", "/cenik", "/web-a-grafika", "/podminky-a-pravidla", "/zasady-obchodnich-udaju"],
+    "crawl": true,
+    "inlineCss": false,
+    "puppeteerArgs": ["--no-sandbox", "--disable-setuid-sandbox"]
   },
   "eslintConfig": {
     "extends": [
@@ -64,6 +75,7 @@
     ]
   },
   "devDependencies": {
+    "react-snap": "^1.23.0",
     "webpack-bundle-analyzer": "^4.10.2"
   }
 }
