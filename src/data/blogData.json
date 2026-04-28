@@ -1,4 +1,31 @@
 [  {
+  "id": 17,
+  "title": "AI jako náš kolega — tvoříme interiéry v nové éře",
+  "category": "Design",
+  "description": "AI nám pomáhá rychleji vizualizovat materiály a barvy. Realizaci, ergonomii a poctivé řemeslo ale necháváme v rukou designéra.",
+  "image": "/assets/images/blog/ai-loznice.jpg",
+  "link": "ai-jako-nas-kolega-jak-tvorime-interiery-v-nove-ere",
+  "excerpt": "AI nám pomáhá rychleji ukázat náladu prostoru a experimentovat s barvami a materiály v reálném čase. Ale obrázek z AI je jen krásný sen — my jsme ti, kdo ho promění v realitu, ve které můžete bydlet.",
+  "coverImage": "/assets/images/blog/ai-loznice.jpg",
+  "date": "2026-04-28T09:00:00.000Z",
+  "ogImage": {
+    "url": "/assets/images/blog/ai-loznice.jpg"
+  },
+  "mainTitle": "AI jako náš kolega, ne jako náhrada: Jak tvoříme interiéry v nové éře",
+  "content": "<div><p>Svět interiérového designu se mění a my v našem studiu jdeme s dobou. Možná jste si všimli, že se stále častěji mluví o umělé inteligenci (AI). Někteří se jí bojí, jiní ji přehlížejí. My jsme se rozhodli pro třetí cestu: <strong>přijali jsme ji jako pomocníka</strong>.</p></div>",
+  "subtitle": "Vize rychlostí blesku",
+  "content2": "<div><p>Díky zapojení AI do naší práce dokážeme hned na začátku spolupráce vizualizovat emoce a náladu prostoru mnohem rychleji. AI nám umožňuje experimentovat s barvami a materiály v reálném čase. AI nemusí vše vymýšlet, ale pomáhá nám měnit materiály během chvíle, abyste měli jasnou představu. <strong>My jsme stále vůdci</strong> a vše projde pod naším dohledem víckrát, než byste čekali.</p><div style='display: flex; flex-direction: column; gap: 10px; margin-top: 20px;'><img style='width: 100%; max-width: 700px; margin: auto; object-fit: cover;' src='/assets/images/blog/ai-kuchyne-varianta1.jpg' alt='Vizualizace kuchyně — varianta s dřevěnými skříňkami'><img style='width: 100%; max-width: 700px; margin: auto; object-fit: cover;' src='/assets/images/blog/ai-kuchyne-varianta2.jpg' alt='Vizualizace kuchyně — varianta s bílými skříňkami'></div></div>",
+  "subtitle2": "Nebojíme se říct: Zkuste si to klidně i sami!",
+  "content3": "<div><p>Existuje spousta nástrojů, kde si můžete vygenerovat obrázek vysněné ložnice. Je to skvělá inspirace a my budeme jen rádi, když nám takovou vizi ukážete. Ale právě tady přichází ten nejdůležitější moment.</p><blockquote style='border-left: 4px solid #c9a86a; padding-left: 20px; margin: 30px 0; font-style: italic; font-size: 1.1em;'>„Obrázek z AI je jen krásný sen. My jsme ti, kdo ho probudí k životu a promění v realitu, ve které můžete skutečně bydlet.\"</blockquote></div>",
+  "subtitle3": "Od pixelů k poctivému řemeslu",
+  "content4": "<div><p>Tady se láme chleba. Umělá inteligence totiž neumí změřit křivost vašich stěn, neví, kde vedou rozvody elektřiny, a nevyrobí vám kuchyňskou linku na míru. <strong>Naše práce zůstává nezastupitelná v té nejtěžší části: realizaci.</strong></p><p>Truhlářům a řemeslníkům nestačí pouze obrázek. Každý krásný render a schválený moodboard musíme my designéři „přeložit\" do řeči technických výkresů. Zkrátka při návrhu celého interiéru stejně vše elektronicky modelujeme a obarvujeme ručně. Vše má v konečné fázi návrhu přesný rozměr a přesný dekor.</p><p><strong>Musíme zařídit:</strong></p><ul><li>Přesné zaměření a technickou dokumentaci.</li><li>Výběr reálných materiálů, které ladí nejen na monitoru, ale i na dotek.</li><li>Komunikaci s truhláři a dozor nad výrobou.</li></ul></div>",
+  "subtitle4": "Proč chtít designéra i v době AI?",
+  "content5": "<div><p>Protože domov není jen o hezkém obrázku na Instagramu. Je o ergonomii, o tom, jak se v prostoru budete cítit za pět let. Je také o doporučení osvědčených dodavatelů a o tom, že se při rekonstrukci nezblázníte.</p><p>Jdeme s dobou, využíváme nejmodernější nástroje, ale stále sázíme na <strong>lidský přístup a poctivé řemeslo</strong>.</p><div style='display: flex; margin-top: 20px;'><img style='width: 100%; max-width: 700px; margin: auto; object-fit: cover;' src='/assets/images/blog/ai-materialy.jpg' alt='Designér vybírá vzorky materiálů — dřevo, kámen, textilie a barvy'></div></div>",
+  "author": "Lenka Stádníková",
+  "tags": ["AI", "Interiérový design", "Vizualizace", "Design"],
+  "imageSource": "Lenka design"
+},
+{
   "id": 16,
   "title": "Interiérové trendy, které ovládnou rok 2026",
   "category": "Design",
