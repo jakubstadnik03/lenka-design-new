@@ -10,8 +10,12 @@
           "Pomocí moderních technologií vytváříme přesné a detailní 3D modely, které vám umožní prozkoumat každý kout vašeho nového interiéru."
       ],
       "additionalImages": [
+          "/assets/images/service/kuchyne-balaz.jpg",
+          "/assets/images/service/salon-beauty.jpg",
           "/assets/images/service/detsky-pokoj-1.jpg",
-          "/assets/images/service/pracovna.jpg"
+          "/assets/images/service/fitness-1.jpg",
+          "/assets/images/service/pracovna.jpg",
+          "/assets/images/service/kuchyne-bezova.jpg"
       ],
       "additionalDetails": [
           "3D vizualizace zlepšují komunikaci mezi designérem a klientem a zajišťují, že konečný výsledek bude přesně odpovídat vašim představám.",
@@ -76,7 +80,9 @@
       ],
       "additionalImages": [
           "/assets/images/service/realizace2.jpg",
-          "/assets/images/service/realizace3.webp"
+          "/assets/images/service/realizace3.webp",
+          "/assets/images/service/kuchyne-balaz.jpg",
+          "/assets/images/service/kuchyne-bezova.jpg"
       ],
       "additionalDetails": [
           "I během realizace stále spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou zohledněny. Používáme pouze vysoce kvalitní materiály a nejnovější technologie, abychom dosáhli vynikajících výsledků."      ],
@@ -176,7 +182,9 @@
       ],
       "additionalImages": [
           "/assets/images/service/kuchyne-bezova.jpg",
-          "/assets/images/service/detsky-pokoj-1.jpg"
+          "/assets/images/service/detsky-pokoj-1.jpg",
+          "/assets/images/service/detsky-pokoj-2.jpg",
+          "/assets/images/service/pracovna.jpg"
       ],
       "additionalDetails": [
           "Naše návrhy bytových interiérů kombinují estetiku a funkčnost, aby vytvořily pohodlný a krásný domov.",
@@ -211,7 +219,9 @@
       ],
       "additionalImages": [
           "/assets/images/service/salon-beauty.jpg",
-          "/assets/images/service/fitness-2.jpg"
+          "/assets/images/service/fitness-2.jpg",
+          "/assets/images/service/pracovna.jpg",
+          "/assets/images/service/salon-2.jpg"
       ],
       "additionalDetails": [
           "Naše návrhy komerčních interiérů kombinují estetiku a funkčnost, aby vytvořily efektivní a příjemné pracovní prostředí.",
@@ -247,7 +257,11 @@
       ],
       "additionalImages": [
           "/assets/images/service/celyDum2.jpeg",
-          "/assets/images/service/celyDum3.jpg"
+          "/assets/images/service/celyDum3.jpg",
+          "/assets/images/service/kuchyne-balaz.jpg",
+          "/assets/images/service/detsky-pokoj-1.jpg",
+          "/assets/images/service/detsky-pokoj-2.jpg",
+          "/assets/images/service/pracovna.jpg"
       ],
       "additionalDetails": [
           "Během realizace celých domů úzce spolupracujeme s klienty, abychom zajistili, že všechny jejich požadavky a představy jsou přesně zohledněny.",
