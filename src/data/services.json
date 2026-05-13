@@ -4,14 +4,14 @@
       "title": "3D návrhy Interiérů",
       "nav": "3d-navrhy-interieru",
       "title2": "Realistické vizualizace pro váš interiér",
-      "image": "/assets/images/bannerImg/uvodni_foto_vizualizace.jpeg",
+      "image": "/assets/images/service/detsky-pokoj-2.jpg",
       "details": [
           "Nabízíme detailní 3D vizualizace, které vám umožní vidět váš interiér ještě před realizací. Naše 3D návrhy vám poskytnou realistický pohled na váš budoucí prostor a pomohou vám při rozhodování o designu.",
           "Pomocí moderních technologií vytváříme přesné a detailní 3D modely, které vám umožní prozkoumat každý kout vašeho nového interiéru."
       ],
       "additionalImages": [
-          "/assets/images/service/vizualizace1.jpeg",
-          "/assets/images/service/vizualizace2.jpeg"
+          "/assets/images/service/detsky-pokoj-1.jpg",
+          "/assets/images/service/pracovna.jpg"
       ],
       "additionalDetails": [
           "3D vizualizace zlepšují komunikaci mezi designérem a klientem a zajišťují, že konečný výsledek bude přesně odpovídat vašim představám.",
@@ -169,14 +169,14 @@
       "title": "Návrhy bytových interiérů",
       "nav": "navrhy-bytovych-interieru",
       "title2": "Vytvořte dokonalý domov",
-      "image": "/assets/images/service/bytInterier1.webp",
+      "image": "/assets/images/service/kuchyne-balaz.jpg",
       "details": [
           "Vytváříme návrhy bytových interiérů, které odrážejí váš osobní styl a potřeby. Naše návrhy zahrnují vše od výběru barev a materiálů po rozmístění nábytku a dekorací.",
           "Soustředíme se na vytvoření harmonického a funkčního prostoru, který je přizpůsoben vašemu životnímu stylu."
       ],
       "additionalImages": [
-          "/assets/images/service/bytInterier2.webp",
-          "/assets/images/service/bytInterier3.webp"
+          "/assets/images/service/kuchyne-bezova.jpg",
+          "/assets/images/service/detsky-pokoj-1.jpg"
       ],
       "additionalDetails": [
           "Naše návrhy bytových interiérů kombinují estetiku a funkčnost, aby vytvořily pohodlný a krásný domov.",
@@ -204,15 +204,14 @@
       "title": "Návrhy komerčních interiérů",
       "nav": "navrhy-komercnich-interieru",
       "title2": "Profesionální prostory pro váš byznys",
-      "image": "/assets/images/service/komercniInterier1.jpg",
+      "image": "/assets/images/service/fitness-1.jpg",
       "details": [
           "Navrhujeme komerční interiéry, které jsou funkční a esteticky přitažlivé. Naše návrhy zohledňují specifické požadavky vašich obchodních prostor a pomohou vytvořit prostředí, které podpoří váš obchodní úspěch.",
           "Soustředíme se na vytvoření profesionálního a inspirujícího prostoru, který zvýší produktivitu a spokojenost vašich zaměstnanců."
       ],
       "additionalImages": [
-          "/assets/images/service/komercniInterier2.jpeg",
-          "/assets/images/service/akz-zrnovsky-kancelar21.jpeg"
-         
+          "/assets/images/service/salon-beauty.jpg",
+          "/assets/images/service/fitness-2.jpg"
       ],
       "additionalDetails": [
           "Naše návrhy komerčních interiérů kombinují estetiku a funkčnost, aby vytvořily efektivní a příjemné pracovní prostředí.",
@@ -224,7 +223,7 @@
           "Podpora produktivity",
           "Inspirující prostředí"
       ],
-      "finalImage":  "/assets/images/service/komercniInterier3.jpeg",
+      "finalImage": "/assets/images/service/salon-2.jpg",
       "conclusion": [
           "Návrhy komerčních interiérů jsou klíčové pro vytvoření efektivního a příjemného pracovního prostředí. Naše služby vám pomohou vytvořit prostor, který podporuje vaše obchodní cíle.",
           "S našimi návrhy můžete mít jistotu, že váš komerční prostor bude navržen s ohledem na estetiku i funkčnost."
