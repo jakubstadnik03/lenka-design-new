@@ -145,8 +145,8 @@ const SEOHead = ({
           <link
             rel="preload"
             as="image"
-            href="/assets/images/bannerImg/kuchyne-balaz.webp"
-            imagesrcset="/assets/images/bannerImg/kuchyne-balaz-small.webp 600w, /assets/images/bannerImg/kuchyne-balaz.webp 1200w"
+            href="/assets/images/bannerImg/1.webp"
+            imagesrcset="/assets/images/bannerImg/1-small.webp 600w, /assets/images/bannerImg/1.webp 1200w"
             imagesizes="(max-width: 600px) 100vw, (min-width: 601px) 50vw"
           />
         )}

@@ -7,32 +7,32 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const banners = [
   {
-    img: "/assets/images/bannerImg/kuchyne-balaz.webp",
-    imgSmall: "/assets/images/bannerImg/kuchyne-balaz-small.webp",
+    img: "/assets/images/bannerImg/1.webp",
+    imgSmall: "/assets/images/bannerImg/1-small.webp",
     link: "navrhy-bytovych-interieru",
     title: "Návrh bytových interiérů",
     description:
       "Oživte svůj prostor s našimi návrhy - proměňte ho v dokonalý domov!",
   },
   {
-    img: "/assets/images/bannerImg/kuchyne-bezova.webp",
-    imgSmall: "/assets/images/bannerImg/kuchyne-bezova-small.webp",
+    img: "/assets/images/bannerImg/kuchyne-balaz.webp",
+    imgSmall: "/assets/images/bannerImg/kuchyne-balaz-small.webp",
     link: "realizace",
     title: "Naše realizace návrhů",
     description:
       "Realizujeme vaše návrhy - proměňte naše návrhy ve vysněný domov!",
   },
   {
-    img: "/assets/images/bannerImg/salon-beauty.webp",
-    imgSmall: "/assets/images/bannerImg/salon-beauty-small.webp",
+    img: "/assets/images/bannerImg/fitness-1.webp",
+    imgSmall: "/assets/images/bannerImg/fitness-1-small.webp",
     link: "navrhy-komercnich-interieru",
     title: "Návrh komerčních interiérů",
     description:
       "Proměňte svůj komerční prostor s našimi profesionálními návrhy!",
   },
   {
-    img: "/assets/images/bannerImg/detsky-pokoj-2.webp",
-    imgSmall: "/assets/images/bannerImg/detsky-pokoj-2-small.webp",
+    img: "/assets/images/bannerImg/salon-beauty.webp",
+    imgSmall: "/assets/images/bannerImg/salon-beauty-small.webp",
     link: "3d-navrhy-interieru",
     title: "3D návrhy Interiérů",
     description:
