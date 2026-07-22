@@ -1,5 +1,28 @@
 [
- 
+  {
+    "id": 9,
+    "name": "Kadeřnický a beauty salon Mezzo Gate",
+    "nav": "mezzo-gate-kadernicky-salon",
+    "client": "Mezzo Gate",
+    "startDate": "2026",
+    "duration": "realizace 2026",
+    "location": "Liberec, Česká republika",
+    "description": "Kadeřnický a beauty salon Mezzo Gate v centru Liberce je realizací, ve které se snoubí čistý moderní design s přírodními materiály. Vysoký prostor jsme využili vestavěným dřevěným mezaninem, který dodává interiéru charakter a zároveň otevírá další využitelné patro. Návrh propojuje bílou mramorovou dlažbu, masivní dřevěné trámy a zlaté detaily do vzdušného a elegantního celku.",
+    "scope": "Cílem bylo vytvořit reprezentativní a zároveň útulný prostor pro kadeřnické i beauty služby. V rámci návrhu vznikla kadeřnická stanoviště s podsvícenými kulatými zrcadly, mycí zóna, kosmetická a nehtová část, recepce i pohodlný lounge kout u prosklené uliční fasády. Dominantou interiéru je dřevěná konstrukce mezaninu, která opticky člení prostor a přináší teplo do jinak minimalistického bílého interiéru.",
+    "solution": "Výsledkem je světlý a nadčasový salon, kde se přírodní dřevo potkává s leskem mramoru a zlatými akcenty. Prostor působí prostorně, čistě a luxusně a nabízí příjemné prostředí jak pro klienty, tak pro personál.",
+    "imgSmall": "/assets/images/product/mezzo-gate1.jpg",
+    "images": [
+      "/assets/images/product/mezzo-gate1.jpg",
+      "/assets/images/product/mezzo-gate2.jpg",
+      "/assets/images/product/mezzo-gate3.jpg",
+      "/assets/images/product/mezzo-gate4.jpg",
+      "/assets/images/product/mezzo-gate5.jpg",
+      "/assets/images/product/mezzo-gate6.jpg",
+      "/assets/images/product/mezzo-gate7.jpg",
+      "/assets/images/product/mezzo-gate8.jpg",
+      "/assets/images/product/mezzo-gate9.jpg"
+    ]
+  },
   {
     "id": 7,
     "name": "Zasedací místnost společnosti Preciosa",

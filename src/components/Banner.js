@@ -23,6 +23,14 @@ const banners = [
       "Realizujeme vaše návrhy - proměňte naše návrhy ve vysněný domov!",
   },
   {
+    img: "/assets/images/bannerImg/mezzo-gate.jpg",
+    imgSmall: "/assets/images/bannerImg/mezzo-gate-small.jpg",
+    href: "/portfolio/mezzo-gate-kadernicky-salon",
+    title: "Kadeřnický a beauty salon Mezzo Gate",
+    description:
+      "Naše nová realizace – moderní salon v centru Liberce, kde se dřevo potkává s mramorem.",
+  },
+  {
     img: "/assets/images/bannerImg/fitness-1.webp",
     imgSmall: "/assets/images/bannerImg/fitness-1-small.webp",
     link: "navrhy-komercnich-interieru",
@@ -127,7 +135,7 @@ const Banner = () => {
                     {banner.description}
                   </p>
                   <a
-                    href={`/nase-sluzby/${banner.link}`}
+                    href={banner.href || `/nase-sluzby/${banner.link}`}
                     className="rts-btn btn-border"
                   >
                     Zjistit více
