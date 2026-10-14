@@ -1,4 +1,33 @@
 [  {
+  "id": 22,
+  "title": "Koupelna s nádechem luxusu",
+  "category": "Interiér",
+  "description": "Realizace koupelny, ve které se propojuje minimalismus s luxusními materiály – skleněné příčky na míru, měděné detaily, tmavě modrý nábytek a otisky kapradin ve stěrce.",
+  "image": "/assets/images/blog/koupelna-cover.jpg",
+  "link": "koupelna-s-nadechem-luxusu",
+  "excerpt": "Koupelna už dávno nemusí být pouze praktickou místností. V této realizaci jsme propojili minimalismus s luxusními materiály, výraznými detaily a jemnou barevností – skleněné příčky na míru, měděné prvky, tmavě modrý nábytek a otisky kapradin.",
+  "coverImage": "/assets/images/blog/koupelna-cover.jpg",
+  "date": "2026-11-03T09:00:00.000Z",
+  "ogImage": {
+    "url": "/assets/images/blog/koupelna-cover.jpg"
+  },
+  "mainTitle": "Koupelna s nádechem luxusu",
+  "content": "<div><p>Koupelna už dávno nemusí být pouze praktickou místností tvořenou obklady, dlažbou a základním sanitárním vybavením. V této realizaci jsme chtěli vytvořit prostor, který bude působit nadčasově, elegantně a zároveň osobitě. Výsledkem je koupelna, ve které se propojuje minimalismus s luxusními materiály, výraznými detaily a jemnou barevností.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/koupelna-cover.jpg' alt='Luxusní koupelna s obloukovými skleněnými příčkami a saunou'></div></div>",
+  "subtitle": "Skleněné příčky na míru",
+  "content2": "<div><p>Jedním z nejvýraznějších prvků celého prostoru jsou skleněné příčky vyrobené na míru a zakončené elegantním půlkruhem. Sklo má jemný béžovo-růžový podtón, který koupelně dodává měkkost a příjemně doplňuje ostatní použité odstíny.</p><p>Právě díky tomuto detailu nepůsobí skleněné plochy pouze jako praktické oddělení sprchového prostoru, ale stávají se plnohodnotnou součástí celého interiérového konceptu.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/koupelna-priecky.jpg' alt='Obloukové skleněné příčky s béžovo-růžovým podtónem'></div></div>",
+  "subtitle2": "Měděné detaily",
+  "content3": "<div><p>Výrazným motivem celé koupelny jsou také kovové prvky v měděném odstínu. Tento povrch jsme využili nejen u vodovodních baterií, ale také na rámech zrcadel, koupelnovém žebříku a drobných doplňcích.</p><p>Opakováním stejného materiálu napříč celým interiérem vzniká vizuální propojení jednotlivých částí koupelny a výsledný prostor tak působí harmonicky a promyšleně.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/koupelna-wc-sprcha.jpg' alt='Sprchový kout a toaleta oddělené skleněnými příčkami, měděná sprcha'></div></div>",
+  "subtitle3": "Tmavě modrý nábytek jako kotva",
+  "content4": "<div><p>Kontrast k jemným odstínům stěn a skla vytváří tmavě modrý nábytek. Ten celý prostor opticky uzemňuje, dodává mu hloubku a vytváří výraznější základ celé kompozice.</p><p>Dominantou je závěsná umyvadlová skříňka s prostornými zásuvkami a zaoblenými otevřenými policemi. Jejich křivky následně kopíruje také deska s keramickým umyvadlem. Čistotu celé sestavy podtrhuje podomítková baterie, díky které zůstává pracovní plocha vizuálně jednoduchá a nechává vyniknout jednotlivé materiály i tvary.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/koupelna-nabytek.jpg' alt='Tmavě modrá závěsná umyvadlová skříňka se dvěma oválnými zrcadly'></div></div>",
+  "subtitle4": "Otisky kapradin ve stěrce",
+  "content5": "<div><p>Dalším originálním detailem jsou otisky přírodních kapradin zakomponované přímo do dekorační stěrky. Jemný botanický motiv narušuje jednolitost povrchu a dodává stěnám hloubku i přirozený charakter.</p><p>Právě propojení přírodních motivů s moderními materiály vytváří příjemnou atmosféru, díky které koupelna nepůsobí chladně.</p><div><img style='min-width: 300px; margin-left: 10px' src='/assets/images/blog/koupelna-kapradiny.jpg' alt='Otisky kapradin v dekorační stěrce a podsvícené kulaté zrcadlo'></div></div>",
+  "subtitle5": "Výsledek – luxus, který vydrží",
+  "content6": "<div><p>Celý návrh stojí na kombinaci kontrastů – jemných stěrek a výrazného nábytku, oblých tvarů a čistých linií, barevného skla a kovových detailů. Přesto všechny prvky fungují jako jeden celek.</p><p>Výsledkem je koupelna, která působí luxusně, ale nikoli okázale. Je nadčasová, funkční a zároveň dostatečně výrazná na to, aby si zachovala vlastní charakter i po mnoha letech. Jestli se nebojíte podobných realizací, nebo hledáte nějaké jemnější řešení, ve studiu Lenka Design pro vás najdeme a navrhneme vhodný směr, který po realizaci budete milovat.</p></div>",
+  "author": "Lenka Stádníková",
+  "tags": ["Interiérový design", "Koupelna", "Realizace", "Nábytek na míru"],
+  "imageSource": "Lenka design"
+},
+{
   "id": 21,
   "title": "Podzimní tipy do interiéru: jak si zútulnit domov",
   "category": "Dekorace",
