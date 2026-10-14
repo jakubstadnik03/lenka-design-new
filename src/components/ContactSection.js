@@ -28,6 +28,9 @@ const ContactSection = () => {
         },
         (error) => {
           console.log(error.text);
+          alert(
+            "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
+          );
         }
       );
   };
