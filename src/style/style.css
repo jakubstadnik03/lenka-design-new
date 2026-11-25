@@ -17373,6 +17373,104 @@ a {
   text-decoration: underline;
 }
 
+/* Blog: share buttons */
+.blog-share {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 40px 0 10px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+}
+.blog-share__label {
+  font-weight: 600;
+  color: #1e1f22;
+}
+.blog-share__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.blog-share__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f4f1ec;
+  color: #1e1f22;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s, color 0.25s, transform 0.2s;
+}
+.blog-share__btn:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.blog-share__copied {
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+/* Blog: related articles */
+.related-posts {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #eee;
+}
+.related-posts__title {
+  margin-bottom: 24px;
+}
+.related-posts__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+@media only screen and (max-width: 767px) {
+  .related-posts__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.related-post-card {
+  display: block;
+  color: inherit;
+}
+.related-post-card__thumb {
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 3 / 2;
+}
+.related-post-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.related-post-card:hover .related-post-card__thumb img {
+  transform: scale(1.05);
+}
+.related-post-card__cat {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+.related-post-card__title {
+  margin-top: 6px;
+  font-size: 17px;
+  line-height: 1.4;
+  transition: color 0.25s;
+}
+.related-post-card:hover .related-post-card__title {
+  color: var(--color-primary);
+}
+
 .rts-about-area-three {
   background: #151618;
 }

@@ -1,5 +1,25 @@
 [
   {
+    "id": 10,
+    "name": "Koupelna s nádechem luxusu",
+    "nav": "koupelna-s-nadechem-luxusu",
+    "client": "Soukromá zakázka",
+    "startDate": "2026",
+    "duration": "realizace 2026",
+    "location": "Liberecký kraj, Česká republika",
+    "description": "Realizace koupelny, ve které se propojuje minimalismus s luxusními materiály, výraznými detaily a jemnou barevností. Koupelna už dávno nemusí být pouze praktickou místností – cílem bylo vytvořit prostor, který působí nadčasově, elegantně a zároveň osobitě.",
+    "scope": "Jedním z nejvýraznějších prvků prostoru jsou skleněné příčky vyrobené na míru a zakončené elegantním půlkruhem, s jemným béžovo-růžovým podtónem. Výrazným motivem jsou měděné kovové prvky – na bateriích, rámech zrcadel, koupelnovém žebříku i drobných doplňcích. Kontrast k jemným odstínům stěn a skla vytváří tmavě modrý nábytek s dominantní závěsnou umyvadlovou skříňkou a zaoblenými policemi, jejichž křivky kopíruje i deska s keramickým umyvadlem. Originálním detailem jsou otisky přírodních kapradin zakomponované přímo do dekorační stěrky.",
+    "solution": "Celý návrh stojí na kombinaci kontrastů – jemných stěrek a výrazného nábytku, oblých tvarů a čistých linií, barevného skla a kovových detailů. Přesto všechny prvky fungují jako jeden celek. Výsledkem je koupelna, která působí luxusně, ale nikoli okázale – nadčasová, funkční a zároveň dostatečně výrazná, aby si zachovala vlastní charakter i po mnoha letech.",
+    "imgSmall": "/assets/images/blog/koupelna-cover.jpg",
+    "images": [
+      "/assets/images/blog/koupelna-cover.jpg",
+      "/assets/images/blog/koupelna-priecky.jpg",
+      "/assets/images/blog/koupelna-wc-sprcha.jpg",
+      "/assets/images/blog/koupelna-nabytek.jpg",
+      "/assets/images/blog/koupelna-kapradiny.jpg"
+    ]
+  },
+  {
     "id": 9,
     "name": "Kadeřnický a beauty salon Mezzo Gate",
     "nav": "mezzo-gate-kadernicky-salon",

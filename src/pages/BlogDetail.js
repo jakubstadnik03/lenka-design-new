@@ -2,18 +2,41 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import blogPosts from "../data/blogData.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faLink } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookF,
+  faXTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import ServiceSidebar from "../components/ServiceSidebar";
 import SEOHead from "../SEOHead";
+
+const SITE_URL = "https://www.lenkadesign.cz";
+
+const stripHtml = (html) => (html || "").replace(/<[^>]+>/g, " ");
+
+const getReadingMinutes = (p) => {
+  const text = [
+    p.content, p.content2, p.content3, p.content4,
+    p.content5, p.content6, p.content7, p.content8,
+  ]
+    .map(stripHtml)
+    .join(" ");
+  const words = text.trim().split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 180));
+};
 
 const BlogDetails = () => {
   const { link } = useParams();
   const [post, setPost] = useState(null);
   const [recentPosts, setRecentPosts] = useState([]);
+  const [relatedPosts, setRelatedPosts] = useState([]);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const selectedPost = blogPosts.find((blog) => blog.link === link);
     setPost(selectedPost);
+    window.scrollTo(0, 0);
   }, [link]);
 
   useEffect(() => {
@@ -22,6 +45,32 @@ const BlogDetails = () => {
     );
     setRecentPosts(sortedPosts.slice(0, 4));
   }, []);
+
+  useEffect(() => {
+    if (!post) return;
+    const related = blogPosts
+      .filter(
+        (b) =>
+          b.link !== post.link &&
+          (b.category === post.category ||
+            (b.tags || []).some((t) => (post.tags || []).includes(t)))
+      )
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 3);
+    setRelatedPosts(related);
+  }, [post]);
+
+  const shareUrl = post ? `${SITE_URL}/blog/${post.link}` : SITE_URL;
+  const shareTitle = post ? post.mainTitle || post.title : "";
+
+  const handleCopyLink = () => {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(shareUrl).then(() => {
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+      });
+    }
+  };
 
   if (!post) {
     return <div>Loading...</div>;
@@ -96,6 +145,10 @@ const BlogDetails = () => {
                       <div className="single">
                         <i className="far fa-clock"></i>
                         <span>{new Date(post.date).toLocaleDateString()}</span>
+                      </div>
+                      <div className="single">
+                        <FontAwesomeIcon icon={faClock} />
+                        <span>{getReadingMinutes(post)} min čtení</span>
                       </div>
                       <div className="single">
                         <i className="far fa-tags"></i>
@@ -176,6 +229,57 @@ const BlogDetails = () => {
                         ></div>
                       </>
                     )}
+                    <div className="blog-share">
+                      <span className="blog-share__label">Sdílet článek:</span>
+                      <div className="blog-share__links">
+                        <a
+                          className="blog-share__btn"
+                          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                            shareUrl
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Sdílet na Facebooku"
+                        >
+                          <FontAwesomeIcon icon={faFacebookF} />
+                        </a>
+                        <a
+                          className="blog-share__btn"
+                          href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                            shareUrl
+                          )}&text=${encodeURIComponent(shareTitle)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Sdílet na X"
+                        >
+                          <FontAwesomeIcon icon={faXTwitter} />
+                        </a>
+                        <a
+                          className="blog-share__btn"
+                          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+                            shareUrl
+                          )}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Sdílet na LinkedIn"
+                        >
+                          <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                        <button
+                          type="button"
+                          className="blog-share__btn"
+                          onClick={handleCopyLink}
+                          aria-label="Kopírovat odkaz"
+                        >
+                          <FontAwesomeIcon icon={faLink} />
+                        </button>
+                        {copied && (
+                          <span className="blog-share__copied">
+                            Odkaz zkopírován
+                          </span>
+                        )}
+                      </div>
+                    </div>
                     <div className="author-area">
                       <div className="thumbnail details mb_sm--15">
                         <img src="/assets/images/lenka-portret.jpeg" alt="Lenka Stádníková" />
@@ -190,6 +294,36 @@ const BlogDetails = () => {
                         </p>
                       </div>
                     </div>
+                    {relatedPosts.length > 0 && (
+                      <div className="related-posts">
+                        <h4 className="related-posts__title">
+                          Související články
+                        </h4>
+                        <div className="related-posts__grid">
+                          {relatedPosts.map((rel) => (
+                            <Link
+                              key={rel.id}
+                              to={`/blog/${rel.link}`}
+                              className="related-post-card"
+                            >
+                              <div className="related-post-card__thumb">
+                                <img
+                                  src={rel.coverImage}
+                                  alt={rel.title}
+                                  loading="lazy"
+                                />
+                              </div>
+                              <span className="related-post-card__cat">
+                                {rel.category}
+                              </span>
+                              <h5 className="related-post-card__title">
+                                {rel.title}
+                              </h5>
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
