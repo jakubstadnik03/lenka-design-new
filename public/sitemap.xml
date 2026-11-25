@@ -3,69 +3,90 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.lenkadesign.cz/</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/o-nas</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/blog</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/kontakt</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/cenik</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/web-a-grafika</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/podminky-a-pravidla</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/zasady-obchodnich-udaju</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.lenkadesign.cz/blog/koupelna-s-nadechem-luxusu</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/blog/koupelna-cover.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.lenkadesign.cz/blog/podzimni-tipy-do-interieru</loc>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/blog/podzim-cover.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.lenkadesign.cz/blog/barvy-v-interieru</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/blog/barvy-komplement.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/blog/ai-jako-nas-kolega-jak-tvorime-interiery-v-nove-ere</loc>
@@ -73,6 +94,20 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/blog/ai-loznice.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.lenkadesign.cz/blog/detsky-pokoj-ktery-poroste-spolu-s-ditetem</loc>
+    <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/blog/detsky-pokoj1.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.lenkadesign.cz/blog/vestavene-skrine-v-podkrovi-chytre-vyuziti-prostoru</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/blog/skrine-podkrovi1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/blog/interierove-trendy-ktere-ovladnou-rok-2026</loc>
@@ -181,241 +216,253 @@
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/3d-navrhy-interieru</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/bannerImg/uvodni_foto_vizualizace.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/detsky-pokoj-2.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/2d-navrhy-interieru</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/2dNavrhy1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/realizace</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/realizace1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/konzultace</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/konzultace1.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/homestaging</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/homestaging2.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/navrhy-bytovych-interieru</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/bytInterier1.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/kuchyne-balaz.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/navrhy-komercnich-interieru</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/komercniInterier1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/fitness-1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/realizace-celych-domu</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/celyDum1.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/design-vizitek</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/web/business_card.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/design-loga</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/web/logo4.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/design-plakatu</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/web/plakat1.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/nase-sluzby/fotografovani</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/kadernictvi1.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://www.lenkadesign.cz/portfolio/koupelna-s-nadechem-luxusu</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.lenkadesign.cz/portfolio/mezzo-gate-kadernicky-salon</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.lenkadesign.cz/portfolio/preciosa-zasedaci-mistnost</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/vila-albatros</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/kadernicky-salon</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/renovace-chalupy</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/kompletni-rekonstrukce-byt-desna</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/luxusni-apartma</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/wellness-salon</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/portfolio/renovace-advokatni--kancelare</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/komercni-projekty</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/preciosa1.jpeg</image:loc></image:image>
+    <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/mezzo-gate1.jpg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/byt-ci-apartman</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/gallery/maly-byt1.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/cely-dum</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/chalupa2.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/homestaging</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/service/homestaging_large3.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/kuchyne</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/chalupa4.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/obyvaci-pokoje</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/chalupa6.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/detske-pokoje</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/gallery/detske-pokoje1.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/loznice</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/chalupa8.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/koupelny</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/gallery/koupelny2.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/wellness</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/gallery/wellness1.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/chodby</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/product/chalupa7.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/fotogalerie/nabytek-na-miru</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <image:image><image:loc>https://www.lenkadesign.cz/assets/images/gallery/nabytek-na-miru1.jpeg</image:loc></image:image>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/web-a-grafika/lenka-design</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/web-a-grafika/akz-advokatni-kancelar</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/web-a-grafika/truhlarstvi-webstranka</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.lenkadesign.cz/web-a-grafika/kurzy-siti-web</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
