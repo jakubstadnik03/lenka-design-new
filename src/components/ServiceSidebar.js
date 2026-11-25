@@ -67,10 +67,21 @@ const ServiceSidebar = () => {
         </div>
         <div className="body">
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="user_name" placeholder="Vaše jméno" />
-            <input type="tel" name="user_phone" placeholder="Vaše telefonní číslo" />
-            <input type="email" name="user_email" placeholder="Váš email" />
-            <textarea placeholder="Zpráva" name="message"></textarea>
+            <label htmlFor="ss-jmeno" className="sr-only">Vaše jméno</label>
+            <input id="ss-jmeno" type="text" name="user_name" placeholder="Vaše jméno" required />
+            <label htmlFor="ss-telefon" className="sr-only">Vaše telefonní číslo</label>
+            <input id="ss-telefon" type="tel" name="user_phone" placeholder="Vaše telefonní číslo" />
+            <label htmlFor="ss-email" className="sr-only">Váš email</label>
+            <input id="ss-email" type="email" name="user_email" placeholder="Váš email" />
+            <label htmlFor="ss-zprava" className="sr-only">Zpráva</label>
+            <textarea id="ss-zprava" placeholder="Zpráva" name="message"></textarea>
+            <div className="form-consent">
+              <input id="ss-souhlas" type="checkbox" name="consent" required />
+              <label htmlFor="ss-souhlas">
+                Souhlasím se zpracováním osobních údajů. Více v{" "}
+                <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.
+              </label>
+            </div>
             <button className="rts-btn btn-primary" value="send" type="submit">Odeslat</button>
           </form>
         </div>

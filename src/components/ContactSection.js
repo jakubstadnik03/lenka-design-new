@@ -94,28 +94,43 @@ const ContactSection = () => {
                 <h2 className="title">Máte nějaké dotazy?</h2>
               </div>
               <form ref={form} onSubmit={sendEmail}>
+                <label htmlFor="cs-jmeno" className="sr-only">Vaše jméno</label>
                 <input
+                  id="cs-jmeno"
                   type="text"
                   name="user_name"
                   placeholder="Vaše jméno"
                   required
                 />
+                <label htmlFor="cs-telefon" className="sr-only">Vaše telefonní číslo</label>
                 <input
+                  id="cs-telefon"
                   type="tel"
                   name="user_phone"
                   placeholder="Vaše telefonní číslo"
                   required
                 />
+                <label htmlFor="cs-email" className="sr-only">Váš email</label>
                 <input
+                  id="cs-email"
                   type="email"
                   name="user_email"
                   placeholder="Váš email"
                   required
                 />
+                <label htmlFor="cs-zprava" className="sr-only">Napište zprávu</label>
                 <textarea
+                  id="cs-zprava"
                   name="message"
                   placeholder="Napište zprávu"
                 ></textarea>
+                <div className="form-consent">
+                  <input id="cs-souhlas" type="checkbox" name="consent" required />
+                  <label htmlFor="cs-souhlas">
+                    Souhlasím se zpracováním osobních údajů za účelem vyřízení mého dotazu. Více v{" "}
+                    <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.
+                  </label>
+                </div>
                 <button
                   className="rts-btn btn-primary"
                   value="send"

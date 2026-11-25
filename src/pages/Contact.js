@@ -66,7 +66,7 @@ const Contact = () => {
               <div className="bread-crumb-area-inner">
                 <div className="breadcrumb-top">
                   <a href="/">Domů</a> /
-                  <a className="active" href="/contact">Kontakt</a>
+                  <a className="active" href="/kontakt">Kontakt</a>
                 </div>
                 <div className="bottom-title">
                   <h1 className="title">Kontaktní údaje Lenka Design</h1>
@@ -150,10 +150,21 @@ const Contact = () => {
                 transition={{ duration: 0.5 }}
               >
                 <p className="top-contact mb--20">Kontaktní formulář</p>
-                <input type="text" name="user_name" placeholder="Vaše jméno" required />
-                <input type="tel" name="user_phone" placeholder="Telefonní číslo" />
-                <input type="email" name="user_email" placeholder="Email" />
-                <textarea name="message" placeholder="Vaše zpráva"></textarea>
+                <label htmlFor="kontakt-jmeno" className="sr-only">Vaše jméno</label>
+                <input id="kontakt-jmeno" type="text" name="user_name" placeholder="Vaše jméno" required />
+                <label htmlFor="kontakt-telefon" className="sr-only">Telefonní číslo</label>
+                <input id="kontakt-telefon" type="tel" name="user_phone" placeholder="Telefonní číslo" />
+                <label htmlFor="kontakt-email" className="sr-only">Email</label>
+                <input id="kontakt-email" type="email" name="user_email" placeholder="Email" />
+                <label htmlFor="kontakt-zprava" className="sr-only">Vaše zpráva</label>
+                <textarea id="kontakt-zprava" name="message" placeholder="Vaše zpráva"></textarea>
+                <div className="form-consent">
+                  <input id="kontakt-souhlas" type="checkbox" name="consent" required />
+                  <label htmlFor="kontakt-souhlas">
+                    Souhlasím se zpracováním osobních údajů za účelem vyřízení mého dotazu. Více v{" "}
+                    <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.
+                  </label>
+                </div>
                 <button className="rts-btn btn-primary mt--30" value="send" type="submit">Odeslat</button>
               </motion.form>
             </div>
