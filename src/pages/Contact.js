@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react';
+import { submitWeb3Form } from "../utils/web3forms";
 import SEOHead from "../SEOHead";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -10,29 +10,28 @@ const fadeInUpVariants = {
 };
 
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
+  const [sending, setSending] = useState(false);
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_47m0lpw",
-        "template_m58cjss",
-        form.current,
-        "na8xge_55u88BuNEA"
-      )
-      .then(
-        (result) => {
-          alert("Vaš dotaz byl úspěšně odeslán!");
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-          alert(
-            "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
-          );
-        }
+    const formEl = e.target;
+    setSending(true);
+    try {
+      const data = await submitWeb3Form(formEl);
+      if (data.success) {
+        alert("Děkujeme! Vaše zpráva byla odeslána. Brzy se vám ozveme.");
+        formEl.reset();
+      } else {
+        alert(
+          "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
+        );
+      }
+    } catch (error) {
+      alert(
+        "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
       );
+    } finally {
+      setSending(false);
+    }
   };
 
   const { ref: titleRef, inView: titleInView } = useInView({
@@ -141,7 +140,6 @@ const Contact = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <motion.form
-                ref={form}
                 onSubmit={sendEmail}
                 className="contact-form-conatct-page"
                 initial="hidden"
@@ -150,12 +148,15 @@ const Contact = () => {
                 transition={{ duration: 0.5 }}
               >
                 <p className="top-contact mb--20">Kontaktní formulář</p>
+                <input type="hidden" name="subject" value="Nová poptávka z webu – Lenka Design" />
+                <input type="hidden" name="from_name" value="Web Lenka Design" />
+                <input type="checkbox" name="botcheck" className="sr-only" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
                 <label htmlFor="kontakt-jmeno" className="sr-only">Vaše jméno</label>
-                <input id="kontakt-jmeno" type="text" name="user_name" placeholder="Vaše jméno" required />
+                <input id="kontakt-jmeno" type="text" name="name" placeholder="Vaše jméno" required />
                 <label htmlFor="kontakt-telefon" className="sr-only">Telefonní číslo</label>
-                <input id="kontakt-telefon" type="tel" name="user_phone" placeholder="Telefonní číslo" />
+                <input id="kontakt-telefon" type="tel" name="phone" placeholder="Telefonní číslo" />
                 <label htmlFor="kontakt-email" className="sr-only">Email</label>
-                <input id="kontakt-email" type="email" name="user_email" placeholder="Email" />
+                <input id="kontakt-email" type="email" name="email" placeholder="Email" />
                 <label htmlFor="kontakt-zprava" className="sr-only">Vaše zpráva</label>
                 <textarea id="kontakt-zprava" name="message" placeholder="Vaše zpráva"></textarea>
                 <div className="form-consent">
@@ -165,7 +166,7 @@ const Contact = () => {
                     <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.
                   </label>
                 </div>
-                <button className="rts-btn btn-primary mt--30" value="send" type="submit">Odeslat</button>
+                <button className="rts-btn btn-primary mt--30" value="send" type="submit" disabled={sending}>{sending ? "Odesílám…" : "Odeslat"}</button>
               </motion.form>
             </div>
           </div>

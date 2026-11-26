@@ -1,38 +1,36 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useState } from "react";
+import { submitWeb3Form } from "../utils/web3forms";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const ContactSection = () => {
-  const form = useRef();
+  const [sending, setSending] = useState(false);
   const { ref: formRef, inView: formInView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_47m0lpw",
-        "template_m58cjss",
-        form.current,
-        "na8xge_55u88BuNEA"
-      )
-      .then(
-        (result) => {
-          alert("Vaš dotaz byl úspěšně odeslán!");
-          document.location.href = "/";
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-          alert(
-            "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
-          );
-        }
+    const formEl = e.target;
+    setSending(true);
+    try {
+      const data = await submitWeb3Form(formEl);
+      if (data.success) {
+        alert("Děkujeme! Vaše zpráva byla odeslána. Brzy se vám ozveme.");
+        formEl.reset();
+      } else {
+        alert(
+          "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
+        );
+      }
+    } catch (error) {
+      alert(
+        "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
       );
+    } finally {
+      setSending(false);
+    }
   };
 
   const containerVariants = {
@@ -93,12 +91,15 @@ const ContactSection = () => {
                 <span className="pre">Neváhejte mě kontaktovat</span>
                 <h2 className="title">Máte nějaké dotazy?</h2>
               </div>
-              <form ref={form} onSubmit={sendEmail}>
+              <form onSubmit={sendEmail}>
+                <input type="hidden" name="subject" value="Nová poptávka z webu – Lenka Design" />
+                <input type="hidden" name="from_name" value="Web Lenka Design" />
+                <input type="checkbox" name="botcheck" className="sr-only" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
                 <label htmlFor="cs-jmeno" className="sr-only">Vaše jméno</label>
                 <input
                   id="cs-jmeno"
                   type="text"
-                  name="user_name"
+                  name="name"
                   placeholder="Vaše jméno"
                   required
                 />
@@ -106,7 +107,7 @@ const ContactSection = () => {
                 <input
                   id="cs-telefon"
                   type="tel"
-                  name="user_phone"
+                  name="phone"
                   placeholder="Vaše telefonní číslo"
                   required
                 />
@@ -114,7 +115,7 @@ const ContactSection = () => {
                 <input
                   id="cs-email"
                   type="email"
-                  name="user_email"
+                  name="email"
                   placeholder="Váš email"
                   required
                 />
@@ -135,8 +136,9 @@ const ContactSection = () => {
                   className="rts-btn btn-primary"
                   value="send"
                   type="submit"
+                  disabled={sending}
                 >
-                  Odeslat
+                  {sending ? "Odesílám…" : "Odeslat"}
                 </button>
               </form>
             </motion.div>

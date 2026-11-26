@@ -1,37 +1,35 @@
-import React, { useRef } from 'react';
-import emailjs from "@emailjs/browser";
+import React, { useState } from 'react';
+import { submitWeb3Form } from "../utils/web3forms";
 import { useNavigate } from 'react-router-dom';
 import servicesData from '../data/services.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ServiceSidebar = () => {
-  const form = useRef();
+  const [sending, setSending] = useState(false);
   const navigate = useNavigate();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_47m0lpw",
-        "template_m58cjss",
-        form.current,
-        "na8xge_55u88BuNEA"
-      )
-      .then(
-        (result) => {
-          alert("Vaš dotaz byl úspěšně odeslán!");
-          document.location.href = "/";
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-          alert(
-            "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
-          );
-        }
+    const formEl = e.target;
+    setSending(true);
+    try {
+      const data = await submitWeb3Form(formEl);
+      if (data.success) {
+        alert("Děkujeme! Vaše zpráva byla odeslána. Brzy se vám ozveme.");
+        formEl.reset();
+      } else {
+        alert(
+          "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
+        );
+      }
+    } catch (error) {
+      alert(
+        "Zprávu se bohužel nepodařilo odeslat. Zkuste to prosím znovu, nebo nás kontaktujte přímo na stadnikovalenka@gmail.com či +420 723 838 086."
       );
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleLinkClick = (nav) => {
@@ -66,13 +64,16 @@ const ServiceSidebar = () => {
           <h4 className="title">Kontaktujte mě v případě dotazů nebo zájmu o spolupráci</h4>
         </div>
         <div className="body">
-          <form ref={form} onSubmit={sendEmail}>
+          <form onSubmit={sendEmail}>
+            <input type="hidden" name="subject" value="Nová poptávka z webu – Lenka Design" />
+            <input type="hidden" name="from_name" value="Web Lenka Design" />
+            <input type="checkbox" name="botcheck" className="sr-only" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
             <label htmlFor="ss-jmeno" className="sr-only">Vaše jméno</label>
-            <input id="ss-jmeno" type="text" name="user_name" placeholder="Vaše jméno" required />
+            <input id="ss-jmeno" type="text" name="name" placeholder="Vaše jméno" required />
             <label htmlFor="ss-telefon" className="sr-only">Vaše telefonní číslo</label>
-            <input id="ss-telefon" type="tel" name="user_phone" placeholder="Vaše telefonní číslo" />
+            <input id="ss-telefon" type="tel" name="phone" placeholder="Vaše telefonní číslo" />
             <label htmlFor="ss-email" className="sr-only">Váš email</label>
-            <input id="ss-email" type="email" name="user_email" placeholder="Váš email" />
+            <input id="ss-email" type="email" name="email" placeholder="Váš email" />
             <label htmlFor="ss-zprava" className="sr-only">Zpráva</label>
             <textarea id="ss-zprava" placeholder="Zpráva" name="message"></textarea>
             <div className="form-consent">
@@ -82,7 +83,7 @@ const ServiceSidebar = () => {
                 <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.
               </label>
             </div>
-            <button className="rts-btn btn-primary" value="send" type="submit">Odeslat</button>
+            <button className="rts-btn btn-primary" value="send" type="submit" disabled={sending}>{sending ? "Odesílám…" : "Odeslat"}</button>
           </form>
         </div>
       </div>
