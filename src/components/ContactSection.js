@@ -99,7 +99,7 @@ const ContactSection = () => {
                 <input
                   id="cs-jmeno"
                   type="text"
-                  name="Jméno"
+                  name="Jmeno"
                   placeholder="Vaše jméno"
                   required
                 />
@@ -122,7 +122,7 @@ const ContactSection = () => {
                 <label htmlFor="cs-zprava" className="sr-only">Napište zprávu</label>
                 <textarea
                   id="cs-zprava"
-                  name="Zpráva"
+                  name="Zprava"
                   placeholder="Napište zprávu"
                 ></textarea>
                 <div className="form-consent">

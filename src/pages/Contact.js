@@ -152,13 +152,13 @@ const Contact = () => {
                 <input type="hidden" name="from_name" value="Web Lenka Design" />
                 <input type="checkbox" name="botcheck" className="sr-only" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
                 <label htmlFor="kontakt-jmeno" className="sr-only">Vaše jméno</label>
-                <input id="kontakt-jmeno" type="text" name="Jméno" placeholder="Vaše jméno" required />
+                <input id="kontakt-jmeno" type="text" name="Jmeno" placeholder="Vaše jméno" required />
                 <label htmlFor="kontakt-telefon" className="sr-only">Telefonní číslo</label>
                 <input id="kontakt-telefon" type="tel" name="Telefon" placeholder="Telefonní číslo" />
                 <label htmlFor="kontakt-email" className="sr-only">Email</label>
                 <input id="kontakt-email" type="email" name="E-mail" placeholder="Email" />
                 <label htmlFor="kontakt-zprava" className="sr-only">Vaše zpráva</label>
-                <textarea id="kontakt-zprava" name="Zpráva" placeholder="Vaše zpráva"></textarea>
+                <textarea id="kontakt-zprava" name="Zprava" placeholder="Vaše zpráva"></textarea>
                 <div className="form-consent">
                   <input id="kontakt-souhlas" type="checkbox" name="Souhlas" value="Ano, souhlasím se zpracováním osobních údajů" required />
                   <label htmlFor="kontakt-souhlas">
