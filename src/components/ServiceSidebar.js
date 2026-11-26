@@ -69,15 +69,15 @@ const ServiceSidebar = () => {
             <input type="hidden" name="from_name" value="Web Lenka Design" />
             <input type="checkbox" name="botcheck" className="sr-only" style={{ display: "none" }} tabIndex="-1" autoComplete="off" />
             <label htmlFor="ss-jmeno" className="sr-only">Vaše jméno</label>
-            <input id="ss-jmeno" type="text" name="name" placeholder="Vaše jméno" required />
+            <input id="ss-jmeno" type="text" name="Jméno" placeholder="Vaše jméno" required />
             <label htmlFor="ss-telefon" className="sr-only">Vaše telefonní číslo</label>
-            <input id="ss-telefon" type="tel" name="phone" placeholder="Vaše telefonní číslo" />
+            <input id="ss-telefon" type="tel" name="Telefon" placeholder="Vaše telefonní číslo" />
             <label htmlFor="ss-email" className="sr-only">Váš email</label>
-            <input id="ss-email" type="email" name="email" placeholder="Váš email" />
+            <input id="ss-email" type="email" name="E-mail" placeholder="Váš email" />
             <label htmlFor="ss-zprava" className="sr-only">Zpráva</label>
-            <textarea id="ss-zprava" placeholder="Zpráva" name="message"></textarea>
+            <textarea id="ss-zprava" placeholder="Zpráva" name="Zpráva"></textarea>
             <div className="form-consent">
-              <input id="ss-souhlas" type="checkbox" name="consent" required />
+              <input id="ss-souhlas" type="checkbox" name="Souhlas" value="Ano, souhlasím se zpracováním osobních údajů" required />
               <label htmlFor="ss-souhlas">
                 Souhlasím se zpracováním osobních údajů. Více v{" "}
                 <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.

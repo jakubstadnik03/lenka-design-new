@@ -99,7 +99,7 @@ const ContactSection = () => {
                 <input
                   id="cs-jmeno"
                   type="text"
-                  name="name"
+                  name="Jméno"
                   placeholder="Vaše jméno"
                   required
                 />
@@ -107,7 +107,7 @@ const ContactSection = () => {
                 <input
                   id="cs-telefon"
                   type="tel"
-                  name="phone"
+                  name="Telefon"
                   placeholder="Vaše telefonní číslo"
                   required
                 />
@@ -115,18 +115,18 @@ const ContactSection = () => {
                 <input
                   id="cs-email"
                   type="email"
-                  name="email"
+                  name="E-mail"
                   placeholder="Váš email"
                   required
                 />
                 <label htmlFor="cs-zprava" className="sr-only">Napište zprávu</label>
                 <textarea
                   id="cs-zprava"
-                  name="message"
+                  name="Zpráva"
                   placeholder="Napište zprávu"
                 ></textarea>
                 <div className="form-consent">
-                  <input id="cs-souhlas" type="checkbox" name="consent" required />
+                  <input id="cs-souhlas" type="checkbox" name="Souhlas" value="Ano, souhlasím se zpracováním osobních údajů" required />
                   <label htmlFor="cs-souhlas">
                     Souhlasím se zpracováním osobních údajů za účelem vyřízení mého dotazu. Více v{" "}
                     <a href="/zasady-obchodnich-udaju" target="_blank" rel="noopener">zásadách ochrany osobních údajů</a>.

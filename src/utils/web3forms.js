@@ -8,6 +8,13 @@ export async function submitWeb3Form(formEl) {
   const formData = new FormData(formEl);
   formData.append("access_key", WEB3FORMS_ACCESS_KEY);
 
+  // Nastaví Reply-To na e-mail zákazníka, i když se pole jmenuje "E-mail"
+  // (aby šlo odpovědět přímo z doručené pošty).
+  const email = formData.get("E-mail") || formData.get("email");
+  if (email) {
+    formData.append("replyto", email);
+  }
+
   const response = await fetch("https://api.web3forms.com/submit", {
     method: "POST",
     body: formData,
