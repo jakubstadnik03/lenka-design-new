@@ -10,20 +10,21 @@
       name="description"
       content="Oživte svůj domov nebo kancelář v Liberci s exkluzivními návrhy interiérů od Lenky Stádníkové. Objednejte si konzultaci ještě dnes a transformujte svůj prostor do místa, kde budete chtít trávit každou minutu."
     />
-    <link rel="canonical" href="https://www.lenkadesign.cz/" />
     <meta name="robots" content="index, follow" />
     <meta
       name="google-site-verification"
       content="_q5NAJ16N1ceI-HEQX8sF9cUCWRclZ3Xx6h5ppmemzg"
     />
 
-    <!-- Open Graph fallback (přepíše react-helmet-async per stránku) -->
+    <!--
+      POZOR: canonical a per-stránkové Open Graph tagy (og:url/title/description/type)
+      NASTAVUJE react-helmet-async v komponentě SEOHead pro každou stránku zvlášť.
+      Nedávat je sem natvrdo – jinak by měly všechny podstránky canonical i OG
+      ukazující na homepage a Google by je bral jako duplicitu (neindexoval by je).
+      Zde zůstávají jen neměnné konstanty a výchozí náhledový obrázek jako fallback.
+    -->
     <meta property="og:site_name" content="Lenka Design" />
     <meta property="og:locale" content="cs_CZ" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.lenkadesign.cz/" />
-    <meta property="og:title" content="Lenka Design | design interiéru v Liberci" />
-    <meta property="og:description" content="Exkluzivní návrhy interiérů v Liberci od Lenky Stádníkové." />
     <meta property="og:image" content="https://www.lenkadesign.cz/assets/images/og-default.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
 
